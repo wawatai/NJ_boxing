@@ -1,0 +1,329 @@
+@charset "UTF-8";
+header ul li:nth-of-type(1) i {
+  background: url(../image/icon/sports.png) no-repeat center;
+  background-size: 100%;
+}
+
+header ul li:nth-of-type(2) i {
+  background: url(../image/icon/casino.png) no-repeat center;
+  background-size: 100%;
+}
+
+header ul li:nth-of-type(3) i {
+  background: url(../image/icon/live-casino.png) no-repeat center;
+  background-size: 100%;
+}
+
+header ul li:nth-of-type(4) i {
+  background: url(../image/icon/promotions.png) no-repeat center;
+  background-size: 100%;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  font-family: "微軟正黑體";
+}
+
+a {
+  text-decoration: none;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-family: "微軟正黑體";
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  padding: 0px;
+  font-family: "微軟正黑體";
+}
+
+select, input {
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "微軟正黑體";
+}
+
+main {
+  display: block;
+}
+
+i {
+  display: block;
+}
+
+input[type=date]::-webkit-inner-spin-button,
+input[type=date]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+html {
+  width: 100%;
+  height: auto;
+  background: #000000;
+}
+html header {
+  width: 100%;
+  height: 127px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+html header .top {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #b61d21;
+  padding: 0 24px;
+}
+html header .top .logo {
+  width: 197px;
+  height: auto;
+}
+html header .top ul {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+html header .top ul li {
+  width: auto;
+  margin-right: 25px;
+}
+html header .top ul li:last-of-type {
+  margin: 0;
+}
+html header .top ul li:hover p, html header .top ul li:active p, html header .top ul li.active p {
+  color: #f3c01a;
+}
+html header .top ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+html header .top ul li a i {
+  width: 40px;
+  height: 33px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-right: 10px;
+}
+html header .top ul li a p {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+}
+html header .top .loginArea {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+html header .top .loginArea button {
+  width: 9.5rem;
+  height: 30px;
+  margin-right: 10px;
+  border-radius: 20px;
+  background: #f3c01a;
+  color: #b61d21;
+  font-size: 0.9rem;
+  font-weight: bold;
+  -webkit-box-shadow: inset 0 -3px 0px 1px #ec992c;
+          box-shadow: inset 0 -3px 0px 1px #ec992c;
+  padding: 0 0 2px;
+}
+html header .top .loginArea button:last-child {
+  background: #ffffff;
+  margin: 0;
+}
+html header .top .loginArea button:last-child:hover, html header .top .loginArea button:last-child:active, html header .top .loginArea button:last-child.active {
+  background: #f3c01a;
+}
+html header .top .loginArea button:hover, html header .top .loginArea button:active, html header .top .loginArea button.active {
+  background: #ffffff;
+}
+html header .bottom {
+  width: 100%;
+  height: 37px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #f3c01a;
+}
+html header .bottom .center {
+  max-width: 1200px;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: flex-start;
+}
+html header .bottom .center .searchBox {
+  width: auto;
+  height: auto;
+  position: relative;
+}
+html header .bottom .center .searchBox input {
+  width: 187px;
+  height: 27px;
+  border: none;
+  padding: 0 5px;
+}
+html header .bottom .center .searchBox i {
+  width: 18px;
+  height: 18px;
+  color: #b61d21;
+  font-size: 18px;
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 100;
+}
+html header .bottom .center .checkBox {
+  width: auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 10px;
+  position: relative;
+}
+html header .bottom .center .checkBox p {
+  color: #b61d21;
+  font-size: 0.9rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+html header .bottom .center .checkBox ul {
+  display: none;
+  width: 213px;
+  height: auto;
+  background: #ffffff;
+  padding: 10px;
+  position: absolute;
+  bottom: -122px;
+  right: 0px;
+}
+html header .bottom .center .checkBox ul.display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+html header .bottom .center .checkBox ul li {
+  width: auto;
+  display: block;
+  margin: 5px;
+}
+html header .bottom .center .checkBox ul li label {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+html header .bottom .center .checkBox ul li label input {
+  border-radius: 20px;
+}
+html header .bottom .center .time {
+  color: #b61d21;
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-left: 15px;
+}

@@ -1,0 +1,192 @@
+header {
+    width: 100%;
+    height: 127px;
+    display: flex;
+    flex-direction: column;
+
+    .top {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: $header_BG_TOP;
+        padding: 0 24px;
+
+        .logo {
+            width: 197px;
+            height: auto;
+        }
+    
+        ul {
+            width: auto;
+            height: auto;
+            display: flex;
+            flex-wrap: nowrap;
+    
+            li {
+                width: auto;
+                margin-right: 25px;
+               
+                &:last-of-type {
+                    margin: 0;
+                }
+    
+                &:hover,&:active,&.active {
+                    p {
+                        color: $header_font_active;
+                    }
+                }
+    
+                a {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+    
+                    i {
+                        width: 40px;
+                        height: 33px;
+                        flex-shrink: 0;
+                        margin-right: 10px;
+                    }
+    
+                    p {
+                        flex-shrink: 0;
+                        color: $header_font;
+                        font-size: 1rem;
+                        font-weight: bold;
+                    }
+    
+                }
+            }
+        }
+
+        .loginArea {
+            width: auto;
+            height: auto;
+            display: flex;
+            flex-wrap: nowrap;
+
+            button {
+                width: 9.5rem;
+                height: 30px;
+                margin-right: 10px;
+                @include headerBtn;
+                box-shadow: inset 0 -3px 0px 1px $header_btn_boxshadow01;
+                padding: 0 0 2px;
+
+                &:last-child {
+                    background: $subColor_2;
+                    margin: 0;
+
+                    &:hover,&:active,&.active {
+                        background: $subColor;
+                    }
+                }
+
+                &:hover,&:active,&.active {
+                    background: $subColor_2;
+                }
+            }
+        }
+    }
+
+    .bottom {
+        width: 100%;
+        height: 37px;
+        display: flex;
+        justify-content: center;
+        background: $header_BG_BOT;
+
+        .center {
+            max-width: 1200px;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-items: flex-start;
+
+            .searchBox {
+                width: auto;
+                height: auto;
+                position: relative;
+
+                input {
+                    width: 187px;
+                    height: 27px;
+                    border: none;
+                    padding: 0 5px;
+                }
+    
+                i {
+                    width: 18px;
+                    height: 18px;
+                    color: $mainColor;
+                    font-size: 18px;
+                    position: absolute;
+                    right: 5px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    cursor: pointer;
+                    z-index: 100;
+                }
+            }
+
+            .checkBox {
+                width: auto;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                margin-left: 10px;
+                position: relative;
+
+                p {
+                    color: $mainColor;
+                    font-size: 0.9rem;
+                    font-weight: bold;
+                    cursor: pointer;
+                }
+
+                ul {
+                    display: none;
+                    width: 213px;
+                    height: auto;
+                    background: $subColor_2;
+                    padding: 10px;
+                    position: absolute;
+                    bottom: -122px;
+                    right: 0px;
+
+                    &.display {
+                        display: flex;
+                        flex-direction: column;
+                    }
+
+
+                    li {
+                        width: auto;
+                        display: block;
+                        margin: 5px;
+
+                        label {
+                            width: 100%;
+                            display: flex;
+                            flex-wrap: nowrap;
+                            flex-shrink: 0;
+
+                            input {
+                                border-radius: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .time {
+                color: $mainColor;
+                font-size: 0.9rem;
+                font-weight: bold;
+                margin-left: 15px;
+            }
+        }
+    }
+}

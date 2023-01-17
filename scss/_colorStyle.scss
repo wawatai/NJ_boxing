@@ -1,0 +1,22 @@
+//BG
+$BG: #000000;
+
+//主色
+$mainColor: #b61d21;
+$subColor: #f3c01a;
+$subColor_2: #ffffff;
+
+//header
+$header_BG_TOP: #b61d21;
+$header_BG_BOT: #f3c01a;
+$header_font: #ffffff;
+$header_font_active: #f3c01a;
+$header_btn_boxshadow01: #ec992c;
+
+@mixin headerBtn {
+    border-radius: 20px;
+    background: $subColor;
+    color: $mainColor;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
