@@ -3,5 +3,18 @@ html {
     height: auto;
     background: $BG;
 
+    body {
+        width: 100%;
+        height: auto;
+
+        main {
+            width: 100%;
+            height: auto;
+            padding-top: 125px;
+        }
+    }
+
     @import "./header";
+    @import "./mainWrap";
+    @import "./footer";
 }

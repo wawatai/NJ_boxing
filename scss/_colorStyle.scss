@@ -3,20 +3,126 @@ $BG: #000000;
 
 //主色
 $mainColor: #b61d21;
+$mainColor_2: #000000;
+$mainColor_3: #ffffff;
+$mainColor_4: #b1b1b1;
+
 $subColor: #f3c01a;
-$subColor_2: #ffffff;
+$subColor_2: #ffe17e;
+
+//主背景色
+$mainBG_1: #b61d21;
+$mainBG_2: #292929;
 
 //header
-$header_BG_TOP: #b61d21;
-$header_BG_BOT: #f3c01a;
-$header_font: #ffffff;
-$header_font_active: #f3c01a;
-$header_btn_boxshadow01: #ec992c;
-
+$header_bottom_BG: #f3c01a;
 @mixin headerBtn {
-    border-radius: 20px;
-    background: $subColor;
-    color: $mainColor;
-    font-size: 0.9rem;
+    background: #f3c01a;
+    border-radius: 30px;
+    box-shadow: 0 3px 0 1px #ec992c;
+    color: #b61d21;
+    font-size: 15px;
     font-weight: bold;
+    transition: 0.3s all;
+
+    &:hover,&:active,&.active {
+        background: #ffffff;
+        transform: translateY(2px);
+        box-shadow: none;
+    }
+}
+$headerBtn_secondBG: #ffffff;
+
+//right
+$rightNav_bottom_BG: #cb3539;
+$rightNav_bottom_Color: #eca3a6;
+$rightNav_bottom_ActiveColor: #851316;
+@mixin rightNavBtn {
+    background: #cb3539;
+    border-radius: 30px;
+    box-shadow: 0 3px 0 1px #b61d21;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.3s all;
+
+    &:hover,&:active,&.active {
+        transform: translateY(2px);
+        box-shadow: none;
+    }
+}
+
+//jumpWindow
+$filter: #00000080;
+
+//input
+@mixin inputStyle_1 {
+    background: #ffffff;
+    border-radius: 3px;
+    border: none;
+    color: #000000;
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+//共用
+@mixin checkboxStyle_1 {
+    position: relative;
+    cursor: pointer;
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        width: 100%;
+        height: 100%;
+        border: solid 2px #36424b;
+        border-radius: 50%;
+    }
+
+    &::after {
+        display: none;
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        width: 60%;
+        height: 60%;
+        background: #36424b;
+        border-radius: 50%;
+    }
+
+    &.active {
+
+        &::after {
+            display: block;
+        }
+    }
+}
+
+@mixin bottomList {
+    display: none;
+    background: #ffffff;
+    border-radius: 3px;
+    padding: 10px;
+
+    &:before {
+        content: "";
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0px 4px 6px 4px;
+        border-color: #ffffff transparent;
+        position: absolute;
+        top: -6px;
+        right: 10px;
+    }
+
+    &.display {
+        display: block;
+    }
 }

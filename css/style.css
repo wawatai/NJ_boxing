@@ -1,22 +1,12 @@
 @charset "UTF-8";
-header ul li:nth-of-type(1) i {
-  background: url(../image/icon/sports.png) no-repeat center;
-  background-size: 100%;
+header .top li i {
+  background: url("../image/icon/header_ic.png") no-repeat;
+  background-size: 500%;
 }
 
-header ul li:nth-of-type(2) i {
-  background: url(../image/icon/casino.png) no-repeat center;
-  background-size: 100%;
-}
-
-header ul li:nth-of-type(3) i {
-  background: url(../image/icon/live-casino.png) no-repeat center;
-  background-size: 100%;
-}
-
-header ul li:nth-of-type(4) i {
-  background: url(../image/icon/promotions.png) no-repeat center;
-  background-size: 100%;
+footer .flag.jp {
+  background: url("../image/icon/flag/JP.svg") no-repeat center;
+  background-size: contain;
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -114,19 +104,27 @@ html {
   height: auto;
   background: #000000;
 }
+html body {
+  width: 100%;
+  height: auto;
+}
+html body main {
+  width: 100%;
+  height: auto;
+  padding-top: 125px;
+}
 html header {
   width: 100%;
-  height: 127px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
 }
 html header .top {
   width: 100%;
+  height: 90px;
+  background: #b61d21;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -136,12 +134,16 @@ html header .top {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background: #b61d21;
   padding: 0 24px;
 }
 html header .top .logo {
-  width: 197px;
+  width: auto;
   height: auto;
+}
+html header .top .logo img {
+  height: 69px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 html header .top ul {
   width: auto;
@@ -149,8 +151,10 @@ html header .top ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 html header .top ul li {
   width: auto;
@@ -163,6 +167,8 @@ html header .top ul li:hover p, html header .top ul li:active p, html header .to
   color: #f3c01a;
 }
 html header .top ul li a {
+  width: auto;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -174,15 +180,23 @@ html header .top ul li a {
           justify-content: space-between;
 }
 html header .top ul li a i {
-  width: 40px;
-  height: 33px;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  margin-right: 10px;
+  width: 50px;
+  height: 50px;
+  margin-right: 5px;
+}
+html header .top ul li a i.sport {
+  background-position-x: 25%;
+}
+html header .top ul li a i.casino {
+  background-position-x: 50%;
+}
+html header .top ul li a i.live {
+  background-position-x: 75%;
+}
+html header .top ul li a i.event {
+  background-position-x: 100%;
 }
 html header .top ul li a p {
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
   color: #ffffff;
   font-size: 1rem;
   font-weight: bold;
@@ -193,46 +207,40 @@ html header .top .loginArea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
 }
 html header .top .loginArea button {
-  width: 9.5rem;
+  width: 150px;
   height: 30px;
-  margin-right: 10px;
-  border-radius: 20px;
   background: #f3c01a;
+  border-radius: 30px;
+  -webkit-box-shadow: 0 3px 0 1px #ec992c;
+          box-shadow: 0 3px 0 1px #ec992c;
   color: #b61d21;
-  font-size: 0.9rem;
+  font-size: 15px;
   font-weight: bold;
-  -webkit-box-shadow: inset 0 -3px 0px 1px #ec992c;
-          box-shadow: inset 0 -3px 0px 1px #ec992c;
-  padding: 0 0 2px;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  margin-right: 10px;
+}
+html header .top .loginArea button:hover, html header .top .loginArea button:active, html header .top .loginArea button.active {
+  background: #ffffff;
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 html header .top .loginArea button:last-child {
   background: #ffffff;
   margin: 0;
 }
-html header .top .loginArea button:last-child:hover, html header .top .loginArea button:last-child:active, html header .top .loginArea button:last-child.active {
-  background: #f3c01a;
-}
-html header .top .loginArea button:hover, html header .top .loginArea button:active, html header .top .loginArea button.active {
-  background: #ffffff;
-}
 html header .bottom {
   width: 100%;
-  height: 37px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  height: 35px;
   background: #f3c01a;
+  position: relative;
 }
-html header .bottom .center {
-  max-width: 1200px;
-  width: 100%;
+html header .bottom .mid {
+  width: 1200px;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -240,33 +248,34 @@ html header .bottom .center {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  justify-items: flex-start;
+  margin: 0 auto;
 }
-html header .bottom .center .searchBox {
+html header .bottom .mid .searchBox {
   width: auto;
   height: auto;
   position: relative;
 }
-html header .bottom .center .searchBox input {
+html header .bottom .mid .searchBox input {
   width: 187px;
   height: 27px;
+  background: #ffffff;
+  border-radius: 3px;
   border: none;
-  padding: 0 5px;
+  color: #000000;
+  font-size: 14px;
+  font-weight: bold;
+  padding-left: 10px;
 }
-html header .bottom .center .searchBox i {
-  width: 18px;
-  height: 18px;
+html header .bottom .mid .searchBox i {
   color: #b61d21;
-  font-size: 18px;
+  font-size: 16px;
   position: absolute;
-  right: 5px;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  cursor: pointer;
-  z-index: 100;
+  right: 5px;
 }
-html header .bottom .center .checkBox {
+html header .bottom .mid .checkBox {
   width: auto;
   height: 100%;
   display: -webkit-box;
@@ -275,26 +284,581 @@ html header .bottom .center .checkBox {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 10px;
   position: relative;
+  margin-left: 10px;
 }
-html header .bottom .center .checkBox p {
+html header .bottom .mid .checkBox .title {
   color: #b61d21;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   cursor: pointer;
 }
-html header .bottom .center .checkBox ul {
-  display: none;
-  width: 213px;
+html header .bottom .mid .checkBox .title i {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 6px 4px 0 4px;
+  border-color: #b61d21 transparent;
+  margin-left: 5px;
+}
+html header .bottom .mid .checkBox ul {
+  width: 220px;
   height: auto;
+  display: none;
   background: #ffffff;
+  border-radius: 3px;
   padding: 10px;
   position: absolute;
-  bottom: -122px;
-  right: 0px;
+  top: 35px;
+  left: -110px;
 }
-html header .bottom .center .checkBox ul.display {
+html header .bottom .mid .checkBox ul:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0px 4px 6px 4px;
+  border-color: #ffffff transparent;
+  position: absolute;
+  top: -6px;
+  right: 10px;
+}
+html header .bottom .mid .checkBox ul.display {
+  display: block;
+}
+html header .bottom .mid .checkBox ul .innerTitle {
+  color: #000000;
+  font-size: 0.875rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+html header .bottom .mid .checkBox ul li {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  padding: 0 5px;
+  margin-bottom: 10px;
+}
+html header .bottom .mid .checkBox ul li:last-child {
+  margin: 0;
+}
+html header .bottom .mid .checkBox ul li label {
+  width: 15px;
+  height: 15px;
+  position: relative;
+  cursor: pointer;
+  margin-right: 10px;
+}
+html header .bottom .mid .checkBox ul li label::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  border: solid 2px #36424b;
+  border-radius: 50%;
+}
+html header .bottom .mid .checkBox ul li label::after {
+  display: none;
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 60%;
+  height: 60%;
+  background: #36424b;
+  border-radius: 50%;
+}
+html header .bottom .mid .checkBox ul li label.active::after {
+  display: block;
+}
+html header .bottom .mid .checkBox ul li label input {
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  opacity: 0;
+  margin: 0;
+}
+html header .bottom .mid .checkBox ul li p {
+  color: #b61d21;
+  font-size: 0.75rem;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+html header .bottom .mid .time {
+  color: #b61d21;
+  font-size: 0.75rem;
+  font-weight: bold;
+  margin: 0 0 2px 15px;
+}
+html .center {
+  width: 1200px;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+}
+html .center .left {
+  width: 250px;
+  height: auto;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+html .center .left .navTitle {
+  color: #f3c01a;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 10px 0;
+}
+html .center .left ul {
+  width: 100%;
+  height: auto;
+  background: #292929;
+}
+html .center .left ul li {
+  width: 100%;
+  height: 50px;
+  overflow: hidden;
+}
+html .center .left ul li:hover a, html .center .left ul li:active a {
+  -webkit-transform: translateX(-34px);
+          transform: translateX(-34px);
+}
+html .center .left ul li:hover a svg, html .center .left ul li:active a svg {
+  fill: #f3c01a;
+}
+html .center .left ul li:hover a p, html .center .left ul li:active a p {
+  color: #f3c01a;
+}
+html .center .left ul li.active a svg {
+  fill: #f3c01a;
+}
+html .center .left ul li.active a p {
+  color: #f3c01a;
+}
+html .center .left ul li a {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  padding: 0 10px;
+}
+html .center .left ul li a svg {
+  width: 24px;
+  height: 24px;
+  fill: #b1b1b1;
+  margin-right: 10px;
+}
+html .center .left ul li a p {
+  color: #b1b1b1;
+  font-size: 1rem;
+  font-weight: bold;
+}
+html .center .right {
+  width: 300px;
+  height: auto;
+}
+html .center .right .betBlock {
+  width: 100%;
+  height: auto;
+  background: #b61d21;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+html .center .right .betBlock .topList {
+  width: 100%;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+html .center .right .betBlock .topList li {
+  width: auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  cursor: pointer;
+  padding: 0 5px;
+}
+html .center .right .betBlock .topList li::before {
+  display: none;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: #ffe17e;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+html .center .right .betBlock .topList li:hover::before, html .center .right .betBlock .topList li:active::before, html .center .right .betBlock .topList li.active::before {
+  display: block;
+}
+html .center .right .betBlock .topList li:hover p, html .center .right .betBlock .topList li:active p, html .center .right .betBlock .topList li.active p {
+  color: #ffe17e;
+}
+html .center .right .betBlock .topList li p {
+  color: #b1b1b1;
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+html .center .right .betBlock .betTypeList {
+  width: 100%;
+  height: auto;
+  background: #cb3539;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 5px;
+}
+html .center .right .betBlock .betTypeList li {
+  width: auto;
+  height: auto;
+}
+html .center .right .betBlock .betTypeList li:hover a p, html .center .right .betBlock .betTypeList li:active a p, html .center .right .betBlock .betTypeList li.active a p {
+  color: #851316;
+}
+html .center .right .betBlock .betTypeList li a {
+  width: auto;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html .center .right .betBlock .betTypeList li a p {
+  color: #eca3a6;
+  font-size: 1rem;
+  font-weight: bold;
+}
+html .center .right .betBlock .betContent {
+  width: 100%;
+  height: auto;
+  min-height: 275px;
+}
+html .center .right .betBlock .betContent .noData {
+  display: none;
+  width: 100%;
+  height: auto;
+}
+html .center .right .betBlock .betContent .noData.display {
+  display: block;
+}
+html .center .right .betBlock .betContent .noData p {
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 30px 0;
+}
+html .center .right .betBlock .smallFilter {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5019607843);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+html .center .right .betBlock .smallFilter button {
+  width: 150px;
+  height: 40px;
+  background: #cb3539;
+  border-radius: 30px;
+  -webkit-box-shadow: 0 3px 0 1px #b61d21;
+          box-shadow: 0 3px 0 1px #b61d21;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: bold;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+html .center .right .betBlock .smallFilter button:hover, html .center .right .betBlock .smallFilter button:active, html .center .right .betBlock .smallFilter button.active {
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+html footer {
+  width: 100%;
+  height: auto;
+  background: #292929;
+}
+html footer .top {
+  width: 100%;
+  height: auto;
+}
+html footer .top .pageBlock {
+  width: 90%;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[6];
+  grid-template-columns: repeat(6, auto);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 30px 0;
+  margin: 0 auto;
+}
+html footer .top .pageBlock ul {
+  width: auto;
+  height: auto;
+}
+html footer .top .pageBlock ul .Bigtitle {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+html footer .top .pageBlock ul li {
+  width: 100%;
+  height: auto;
+  margin-bottom: 12px;
+}
+html footer .top .pageBlock ul li:last-child {
+  margin: 0;
+}
+html footer .top .pageBlock ul li a {
+  width: 100%;
+  height: auto;
+}
+html footer .top .pageBlock ul li a:hover p, html footer .top .pageBlock ul li a:active p, html footer .top .pageBlock ul li a.active p {
+  color: #f3c01a;
+}
+html footer .top .pageBlock ul li a p {
+  color: #b1b1b1;
+  font-size: 0.75rem;
+}
+html footer .top .infoLine {
+  width: 100%;
+  height: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+html footer .top .infoLine .lang {
+  width: auto;
+  height: 100%;
+  position: absolute;
+  left: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html footer .top .infoLine .lang .langTitle {
+  color: #ffffff;
+  font-size: 1rem;
+  margin-right: 20px;
+}
+html footer .top .infoLine .lang .flag {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+html footer .top .infoLine .lang ul {
+  width: 220px;
+  height: auto;
+  display: none;
+  background: #ffffff;
+  border-radius: 3px;
+  padding: 10px;
+  position: absolute;
+  top: 70px;
+  left: -150px;
+}
+html footer .top .infoLine .lang ul:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0px 4px 6px 4px;
+  border-color: #ffffff transparent;
+  position: absolute;
+  top: -6px;
+  right: 10px;
+}
+html footer .top .infoLine .lang ul.display {
+  display: block;
+}
+html footer .top .infoLine .lang ul .innerTitle {
+  color: #000000;
+  font-size: 0.875rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+html footer .top .infoLine .lang ul li {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  padding: 0 5px;
+  margin-bottom: 10px;
+}
+html footer .top .infoLine .lang ul li:last-child {
+  margin: 0;
+}
+html footer .top .infoLine .lang ul li .flag {
+  margin-right: 10px;
+}
+html footer .top .infoLine .lang ul li label {
+  width: 10px;
+  height: 10px;
+  position: relative;
+  cursor: pointer;
+  margin-right: 10px;
+}
+html footer .top .infoLine .lang ul li label::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  border: solid 2px #36424b;
+  border-radius: 50%;
+}
+html footer .top .infoLine .lang ul li label::after {
+  display: none;
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 60%;
+  height: 60%;
+  background: #36424b;
+  border-radius: 50%;
+}
+html footer .top .infoLine .lang ul li label.active::after {
+  display: block;
+}
+html footer .top .infoLine .lang ul li label input {
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  opacity: 0;
+  margin: 0;
+}
+html footer .top .infoLine .lang ul li p {
+  color: #b61d21;
+  font-size: 0.75rem;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+html footer .top .infoLine .payway {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+}
+html footer .top .infoLine .payway span {
+  margin: 0 5px;
+}
+html footer .top .company {
+  width: 100%;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto 20px;
+}
+html footer .top .company .logo {
+  height: 69px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+html footer .top .company .line {
+  width: 1px;
+  height: 100%;
+  background: #b1b1b1;
+  margin: 0 10px;
+}
+html footer .top .company .coDetail {
+  max-width: 670px;
+  color: #b1b1b1;
+  font-size: 1rem;
+  line-height: 20px;
+}
+html footer .bottom {
+  width: 100%;
+  height: 70px;
+  background: #b61d21;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -302,28 +866,18 @@ html header .bottom .center .checkBox ul.display {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-html header .bottom .center .checkBox ul li {
-  width: auto;
-  display: block;
-  margin: 5px;
-}
-html header .bottom .center .checkBox ul li label {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-}
-html header .bottom .center .checkBox ul li label input {
-  border-radius: 20px;
-}
-html header .bottom .center .time {
-  color: #b61d21;
-  font-size: 0.9rem;
+html footer .bottom p {
+  color: #ffffff;
+  font-size: 0.875rem;
   font-weight: bold;
-  margin-left: 15px;
+}
+html footer .bottom p:last-child {
+  margin-top: 10px;
 }
