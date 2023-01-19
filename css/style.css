@@ -482,9 +482,544 @@ html .center .left ul li a p {
   font-size: 1rem;
   font-weight: bold;
 }
+html .center .mainArea {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px 30px;
+  overflow: hidden;
+}
+html .center .mainArea .swiper {
+  width: 100%;
+  height: 215px;
+  overflow: hidden;
+}
+html .center .mainArea .middleNav {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+html .center .mainArea .middleNav .topnav {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 4px solid #b61d21;
+}
+html .center .mainArea .middleNav .topnav li {
+  width: 20%;
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #b1b1b1;
+  border-radius: 5px 5px 0 0;
+  margin-right: 5px;
+  cursor: pointer;
+}
+html .center .mainArea .middleNav .topnav li:hover, html .center .mainArea .middleNav .topnav li:active, html .center .mainArea .middleNav .topnav li.active {
+  background: #b61d21;
+}
+html .center .mainArea .middleNav .topnav li:hover p, html .center .mainArea .middleNav .topnav li:active p, html .center .mainArea .middleNav .topnav li.active p {
+  color: #ffffff;
+}
+html .center .mainArea .middleNav .topnav li p {
+  color: #000000;
+  font-size: 0.9rem;
+  font-weight: bold;
+  white-space: nowrap;
+}
+html .center .mainArea .typselect {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 10px;
+  overflow: hidden;
+}
+html .center .mainArea .typselect .gameTypeBox {
+  width: auto;
+  max-width: 105px;
+  height: auto;
+  margin: 0 10px 0 0;
+  cursor: pointer;
+}
+html .center .mainArea .typselect .gameTypeBox:hover .picBox, html .center .mainArea .typselect .gameTypeBox:active .picBox, html .center .mainArea .typselect .gameTypeBox.active .picBox {
+  border-color: #b61d21;
+}
+html .center .mainArea .typselect .gameTypeBox:hover p, html .center .mainArea .typselect .gameTypeBox:active p, html .center .mainArea .typselect .gameTypeBox.active p {
+  color: #b61d21;
+}
+html .center .mainArea .typselect .gameTypeBox .picBox {
+  width: 105px;
+  height: 105px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-width: 3px 3px 10px 3px;
+  border-style: solid;
+  border-color: #b1b1b1;
+  border-radius: 6px;
+  margin: 0 0 5px;
+}
+html .center .mainArea .typselect .gameTypeBox .picBox svg {
+  width: 24.5px;
+  height: 24.5px;
+  fill: #b1b1b1;
+  -webkit-transform: scale(2.5);
+          transform: scale(2.5);
+}
+html .center .mainArea .typselect .gameTypeBox p {
+  color: #b1b1b1;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+html .center .mainArea .countryList {
+  width: 100%;
+  height: 44px;
+  overflow: hidden;
+}
+html .center .mainArea .countryList.active {
+  height: auto;
+}
+html .center .mainArea .countryList.active .cTitle i {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+html .center .mainArea .countryList .cTitle {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #b61d21;
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding: 15px 20px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+html .center .mainArea .countryList .cTitle i {
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+html .center .mainArea .countryList ul {
+  width: 100%;
+  height: 34px;
+  overflow: hidden;
+}
+html .center .mainArea .countryList ul.active {
+  height: auto;
+}
+html .center .mainArea .countryList ul.active .smallTitle i {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+html .center .mainArea .countryList ul:not(:first-child) {
+  margin-top: 5px;
+}
+html .center .mainArea .countryList ul .smallTitle {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #851316;
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+html .center .mainArea .countryList ul .smallTitle i {
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+html .center .mainArea .countryList ul li {
+  width: 100%;
+  height: 35px;
+  border-left: 1px solid #851316;
+  border-right: 1px solid #851316;
+}
+html .center .mainArea .countryList ul li:not(:last-child) {
+  border-bottom: 1px dotted #851316;
+}
+html .center .mainArea .countryList ul li:last-child {
+  border-bottom: 1px solid #851316;
+}
+html .center .mainArea .countryList ul li a {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 20px;
+}
+html .center .mainArea .countryList ul li a p {
+  color: #b1b1b1;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+html .center .mainArea .countryList ul li a i {
+  color: #851316;
+  cursor: pointer;
+}
+html .center .mainArea .countryList ul li a i.fa-solid {
+  color: #f3c01a;
+}
+html .center .mainArea .gameContent {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px 0;
+}
+html .center .mainArea .gameContent .gtypeTitle {
+  width: 100%;
+  color: #b61d21;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0 0 20px;
+  position: relative;
+}
+html .center .mainArea .gameContent .gtypeTitle::before {
+  content: "";
+  width: 30%;
+  height: 5px;
+  background: #851316;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+}
+html .center .mainArea .gameContent .gtypeTitle::after {
+  content: "";
+  width: 100%;
+  height: 5px;
+  background: #b61d21;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+html .center .mainArea .gameContent .content {
+  width: 100%;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 20px 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px 0;
+}
+html .center .mainArea .gameContent .content .gBlock {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 5px;
+}
+html .center .mainArea .gameContent .content .gBlock .up {
+  width: 100%;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #b61d21;
+  padding: 3px 10px 0;
+  position: relative;
+}
+html .center .mainArea .gameContent .content .gBlock .up::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: #b61d21;
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  z-index: -1;
+}
+html .center .mainArea .gameContent .content .gBlock .up::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: #b61d21;
+  position: absolute;
+  bottom: -8px;
+  left: unset;
+  right: 0;
+  z-index: -1;
+}
+html .center .mainArea .gameContent .content .gBlock .up span {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  background: #851316;
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding: 7px 5px;
+  border-radius: 3px;
+  cursor: default;
+}
+html .center .mainArea .gameContent .content .gBlock .up .iconBox {
+  width: auto;
+  height: auto;
+}
+html .center .mainArea .gameContent .content .gBlock .up .iconBox svg {
+  width: 24.5px;
+  height: 24.5px;
+  fill: #ffffff;
+}
+html .center .mainArea .gameContent .content .gBlock .up .iconBox svg:first-child {
+  margin-right: 5px;
+}
+html .center .mainArea .gameContent .content .gBlock .down {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #292929;
+  border-radius: 8px;
+  border: 3px solid #b61d21;
+  padding: 20px;
+}
+html .center .mainArea .gameContent .content .gBlock .down p {
+  font-weight: bold;
+}
+html .center .mainArea .gameContent .content .gBlock .down p.timeZone {
+  color: #ffffff;
+  font-size: 0.8rem;
+  white-space: nowrap;
+  margin-bottom: 10px;
+}
+html .center .mainArea .gameContent .content .gBlock .down p.date {
+  color: #f3c01a;
+  font-size: 1.3rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 1px;
+  padding: 0 0 15px;
+  position: relative;
+}
+html .center .mainArea .gameContent .content .gBlock .down p.date::before {
+  content: "";
+  width: 30%;
+  height: 5px;
+  background: #851316;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+}
+html .center .mainArea .gameContent .content .gBlock .down p.date::after {
+  content: "";
+  width: 100%;
+  height: 5px;
+  background: #b61d21;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+html .center .mainArea .gameContent .content .gBlock .down p.winner {
+  color: #f3c01a;
+  text-align: center;
+  margin: 0 0 30px;
+}
+html .center .mainArea .gameContent .content .gBlock .down .time {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px 0 0;
+}
+html .center .mainArea .gameContent .content .gBlock .down .time svg {
+  width: 24.5px;
+  height: 24.5px;
+  fill: #b1b1b1;
+  margin-right: 5px;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+html .center .mainArea .gameContent .content .gBlock .down .time p {
+  color: #b1b1b1;
+  font-size: 0.9rem;
+}
+html .center .mainArea .gameContent .content .gBlock .down .pkTeam {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: cevter;
+      -ms-flex-align: cevter;
+          align-items: cevter;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #b1b1b1;
+  padding: 20px 20px 10px;
+  margin: 30px 0;
+}
+html .center .mainArea .gameContent .content .gBlock .down .pkTeam .team {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+html .center .mainArea .gameContent .content .gBlock .down .pkTeam .team svg {
+  width: 48.5px;
+  height: 48.5px;
+  fill: #b1b1b1;
+  margin: 10px 10px 40px 10px;
+}
+html .center .mainArea .gameContent .content .gBlock .down .pkTeam .team .teamName {
+  color: #000000;
+  font-size: 0.9rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+html .center .mainArea .gameContent .content .gBlock .down .pkTeam .team button {
+  width: 100%;
+  background: #b61d21;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 3px;
+  padding: 5px;
+}
+html .center .mainArea .gameContent .content .gBlock .down .pkTeam p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html .center .mainArea .gameContent .content .gBlock .down .more {
+  width: 130px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #cb3539;
+  border-radius: 30px;
+  -webkit-box-shadow: 0 3px 0 1px #b61d21;
+          box-shadow: 0 3px 0 1px #b61d21;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: bold;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  margin: 0 auto;
+}
+html .center .mainArea .gameContent .content .gBlock .down .more:hover, html .center .mainArea .gameContent .content .gBlock .down .more:active, html .center .mainArea .gameContent .content .gBlock .down .more.active {
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
 html .center .right {
   width: 300px;
   height: auto;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 html .center .right .betBlock {
   width: 100%;

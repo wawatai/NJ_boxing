@@ -6,6 +6,7 @@ $mainColor: #b61d21;
 $mainColor_2: #000000;
 $mainColor_3: #ffffff;
 $mainColor_4: #b1b1b1;
+$mainColor_5: #851316;
 
 $subColor: #f3c01a;
 $subColor_2: #ffe17e;
@@ -125,4 +126,10 @@ $filter: #00000080;
     &.display {
         display: block;
     }
+}
+
+@mixin textHide {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
