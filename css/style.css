@@ -498,7 +498,71 @@ html .center .mainArea {
 html .center .mainArea .swiper {
   width: 100%;
   height: 215px;
+  margin-bottom: 10px;
   overflow: hidden;
+  position: relative;
+}
+html .center .mainArea .swiper .swiper-wrapper {
+  width: 100%;
+  height: auto;
+}
+html .center .mainArea .swiper .swiper-wrapper .swiper-slide .banner {
+  width: 100%;
+}
+html .center .mainArea .swiper .swiper-button-prev,
+html .center .mainArea .swiper .swiper-button-next {
+  position: absolute;
+  top: 45px;
+}
+html .center .mainArea .swiper .swiper-button-prev::before, html .center .mainArea .swiper .swiper-button-prev::after,
+html .center .mainArea .swiper .swiper-button-next::before,
+html .center .mainArea .swiper .swiper-button-next::after {
+  content: " ";
+}
+html .center .mainArea .swiper .swiper-button-prev {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  cursor: pointer;
+}
+html .center .mainArea .swiper .swiper-button-prev::before {
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  border: 2px solid #ffffff;
+  position: absolute;
+  right: -485px;
+  z-index: 50;
+}
+html .center .mainArea .swiper .swiper-button-prev i {
+  font-size: 20px;
+  color: #ffffff;
+  position: absolute;
+  top: 5px;
+  right: -474px;
+  z-index: 50;
+}
+html .center .mainArea .swiper .swiper-button-next {
+  position: absolute;
+  cursor: pointer;
+}
+html .center .mainArea .swiper .swiper-button-next::before {
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  border: 2px solid #ffffff;
+  position: absolute;
+  top: -2px;
+  right: 13px;
+  z-index: 50;
+}
+html .center .mainArea .swiper .swiper-button-next i {
+  font-size: 20px;
+  color: #ffffff;
+  position: absolute;
+  top: 6px;
+  right: 25px;
+  z-index: 50;
 }
 html .center .mainArea .middleNav {
   width: 100%;
@@ -553,7 +617,7 @@ html .center .mainArea .middleNav .topnav li p {
   font-weight: bold;
   white-space: nowrap;
 }
-html .center .mainArea .typselect {
+html .center .mainArea .typselect.swiper02 {
   width: 100%;
   height: auto;
   display: -webkit-box;
@@ -564,21 +628,29 @@ html .center .mainArea .typselect {
           align-items: center;
   padding: 20px 10px;
   overflow: hidden;
+  position: relative;
 }
-html .center .mainArea .typselect .gameTypeBox {
+html .center .mainArea .typselect.swiper02 .swiper-wrapper {
+  width: 100%;
+  height: auto;
+}
+html .center .mainArea .typselect.swiper02 .swiper-wrapper .swiper-slide {
+  width: 116px !important;
+}
+html .center .mainArea .typselect.swiper02 .swiper-wrapper .swiper-slide .gameTypeBox {
   width: auto;
   max-width: 105px;
   height: auto;
   margin: 0 10px 0 0;
   cursor: pointer;
 }
-html .center .mainArea .typselect .gameTypeBox:hover .picBox, html .center .mainArea .typselect .gameTypeBox:active .picBox, html .center .mainArea .typselect .gameTypeBox.active .picBox {
+html .center .mainArea .typselect.swiper02 .swiper-wrapper .swiper-slide .gameTypeBox:hover .picBox, html .center .mainArea .typselect.swiper02 .swiper-wrapper .swiper-slide .gameTypeBox:active .picBox, html .center .mainArea .typselect.swiper02 .swiper-wrapper .swiper-slide .gameTypeBox.active .picBox {
   border-color: #b61d21;
 }
-html .center .mainArea .typselect .gameTypeBox:hover p, html .center .mainArea .typselect .gameTypeBox:active p, html .center .mainArea .typselect .gameTypeBox.active p {
+html .center .mainArea .typselect.swiper02 .swiper-wrapper .swiper-slide .gameTypeBox:hover p, html .center .mainArea .typselect.swiper02 .swiper-wrapper .swiper-slide .gameTypeBox:active p, html .center .mainArea .typselect.swiper02 .swiper-wrapper .swiper-slide .gameTypeBox.active p {
   color: #b61d21;
 }
-html .center .mainArea .typselect .gameTypeBox .picBox {
+html .center .mainArea .typselect.swiper02 .swiper-wrapper .swiper-slide .gameTypeBox .picBox {
   width: 105px;
   height: 105px;
   display: -webkit-box;
@@ -596,14 +668,14 @@ html .center .mainArea .typselect .gameTypeBox .picBox {
   border-radius: 6px;
   margin: 0 0 5px;
 }
-html .center .mainArea .typselect .gameTypeBox .picBox svg {
+html .center .mainArea .typselect.swiper02 .swiper-wrapper .swiper-slide .gameTypeBox .picBox svg {
   width: 24.5px;
   height: 24.5px;
   fill: #b1b1b1;
   -webkit-transform: scale(2.5);
           transform: scale(2.5);
 }
-html .center .mainArea .typselect .gameTypeBox p {
+html .center .mainArea .typselect.swiper02 .swiper-wrapper .swiper-slide .gameTypeBox p {
   color: #b1b1b1;
   font-size: 1rem;
   font-weight: bold;
@@ -611,6 +683,64 @@ html .center .mainArea .typselect .gameTypeBox p {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+html .center .mainArea .typselect.swiper02 .swiper-button-prev02,
+html .center .mainArea .typselect.swiper02 .swiper-button-next02 {
+  width: 24px;
+  height: 52px;
+  position: absolute;
+  top: 170px;
+}
+html .center .mainArea .typselect.swiper02 .swiper-button-prev02::before, html .center .mainArea .typselect.swiper02 .swiper-button-prev02::after,
+html .center .mainArea .typselect.swiper02 .swiper-button-next02::before,
+html .center .mainArea .typselect.swiper02 .swiper-button-next02::after {
+  content: " ";
+}
+html .center .mainArea .typselect.swiper02 .swiper-button-prev02 {
+  position: absolute;
+  left: -20px;
+  cursor: pointer;
+}
+html .center .mainArea .typselect.swiper02 .swiper-button-prev02::before {
+  width: 40px;
+  height: 40px;
+  background: rgba(49, 49, 49, 0.8078431373);
+  border-radius: 5px;
+  position: absolute;
+  top: -115px;
+  left: 20px;
+  z-index: 50;
+}
+html .center .mainArea .typselect.swiper02 .swiper-button-prev02 i {
+  font-size: 20px;
+  color: #ffffff;
+  position: absolute;
+  top: -105px;
+  left: 31px;
+  z-index: 50;
+}
+html .center .mainArea .typselect.swiper02 .swiper-button-next02 {
+  position: absolute;
+  right: 20px;
+  cursor: pointer;
+}
+html .center .mainArea .typselect.swiper02 .swiper-button-next02::before {
+  width: 40px;
+  height: 40px;
+  background: rgba(49, 49, 49, 0.8078431373);
+  border-radius: 5px;
+  position: absolute;
+  top: -115px;
+  right: -20px;
+  z-index: 50;
+}
+html .center .mainArea .typselect.swiper02 .swiper-button-next02 i {
+  font-size: 20px;
+  color: #ffffff;
+  position: absolute;
+  top: -104px;
+  left: 16px;
+  z-index: 50;
 }
 html .center .mainArea .countryList {
   width: 100%;
@@ -736,7 +866,7 @@ html .center .mainArea .gameContent {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 20px 0;
+  padding: 20px 0 0;
 }
 html .center .mainArea .gameContent .gtypeTitle {
   width: 100%;
@@ -800,6 +930,7 @@ html .center .mainArea .gameContent .content .gBlock .up {
       -ms-flex-pack: justify;
           justify-content: space-between;
   background: #b61d21;
+  border-radius: 8px 8px 0 0;
   padding: 3px 10px 0;
   position: relative;
 }
@@ -1014,6 +1145,318 @@ html .center .mainArea .gameContent .content .gBlock .down .more:hover, html .ce
           transform: translateY(2px);
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+html .center .mainArea .swiper03 {
+  width: 100%;
+  height: 529px;
+  overflow: hidden;
+  position: relative;
+}
+html .center .mainArea .swiper03 .swiper-wrapper {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide {
+  width: 275px !important;
+}
+html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock {
+  width: 285px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 5px;
+}
+html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .up {
+  width: 100%;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #b61d21;
+  border-radius: 8px 8px 0 0;
+  padding: 3px 10px 0;
+  position: relative;
+}
+html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .up::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: #b61d21;
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  z-index: -1;
+}
+html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .up::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: #b61d21;
+  position: absolute;
+  bottom: -8px;
+  left: unset;
+  right: 0;
+  z-index: -1;
+}
+html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .up span {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  background: #851316;
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding: 7px 5px;
+  border-radius: 3px;
+  cursor: default;
+}
+html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .up .iconBox {
+  width: auto;
+  height: auto;
+}
+html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .up .iconBox svg {
+  width: 24.5px;
+  height: 24.5px;
+  fill: #ffffff;
+}
+html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .up .iconBox svg:first-child {
+  margin-right: 5px;
+}
+html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #292929;
+  border-radius: 8px;
+  border: 3px solid #b61d21;
+  padding: 20px;
+}
+html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down p {
+  font-weight: bold;
+}
+html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down p.timeZone {
+  color: #ffffff;
+  font-size: 0.8rem;
+  white-space: nowrap;
+  margin-bottom: 10px;
+}
+html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down p.date {
+  color: #f3c01a;
+  font-size: 1.3rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 1px;
+  padding: 0 0 15px;
+  position: relative;
+}
+html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down p.date::before {
+  content: "";
+  width: 30%;
+  height: 5px;
+  background: #851316;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+}
+html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down p.date::after {
+  content: "";
+  width: 100%;
+  height: 5px;
+  background: #b61d21;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down p.winner {
+  color: #f3c01a;
+  text-align: center;
+  margin: 0 0 30px;
+}
+html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .time {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px 0 0;
+}
+html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .time svg {
+  width: 24.5px;
+  height: 24.5px;
+  fill: #b1b1b1;
+  margin-right: 5px;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .time p {
+  color: #b1b1b1;
+  font-size: 0.9rem;
+}
+html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .pkTeam {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: cevter;
+      -ms-flex-align: cevter;
+          align-items: cevter;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #b1b1b1;
+  padding: 20px 20px 10px;
+  margin: 30px 0;
+}
+html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .pkTeam .team {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .pkTeam .team svg {
+  width: 48.5px;
+  height: 48.5px;
+  fill: #b1b1b1;
+  margin: 10px 10px 40px 10px;
+}
+html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .pkTeam .team .teamName {
+  color: #000000;
+  font-size: 0.9rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .pkTeam .team button {
+  width: 100%;
+  background: #b61d21;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 3px;
+  padding: 5px;
+}
+html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .pkTeam p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .more {
+  width: 130px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #cb3539;
+  border-radius: 30px;
+  -webkit-box-shadow: 0 3px 0 1px #b61d21;
+          box-shadow: 0 3px 0 1px #b61d21;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: bold;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  margin: 0 auto;
+}
+html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .more:hover, html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .more:active, html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .more.active {
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+html .center .mainArea .swiper03 .swiper-button-prev03,
+html .center .mainArea .swiper03 .swiper-button-next03 {
+  position: absolute;
+}
+html .center .mainArea .swiper03 .swiper-button-prev03::before, html .center .mainArea .swiper03 .swiper-button-prev03::after,
+html .center .mainArea .swiper03 .swiper-button-next03::before,
+html .center .mainArea .swiper03 .swiper-button-next03::after {
+  content: " ";
+}
+html .center .mainArea .swiper03 .swiper-button-prev03 {
+  position: absolute;
+  left: -20px;
+  cursor: pointer;
+}
+html .center .mainArea .swiper03 .swiper-button-prev03::before {
+  width: 40px;
+  height: 40px;
+  background: rgba(49, 49, 49, 0.8078431373);
+  border-radius: 5px;
+  position: absolute;
+  top: -280px;
+  left: 20px;
+  z-index: 50;
+}
+html .center .mainArea .swiper03 .swiper-button-prev03 i {
+  font-size: 20px;
+  color: #ffffff;
+  position: absolute;
+  top: -270px;
+  left: 33px;
+  z-index: 50;
+}
+html .center .mainArea .swiper03 .swiper-button-next03 {
+  position: absolute;
+  right: 20px;
+  cursor: pointer;
+}
+html .center .mainArea .swiper03 .swiper-button-next03::before {
+  width: 40px;
+  height: 40px;
+  background: rgba(49, 49, 49, 0.8078431373);
+  border-radius: 5px;
+  position: absolute;
+  top: -280px;
+  right: -20px;
+  z-index: 50;
+}
+html .center .mainArea .swiper03 .swiper-button-next03 i {
+  font-size: 20px;
+  color: #ffffff;
+  position: absolute;
+  top: -270px;
+  right: -8px;
+  z-index: 50;
 }
 html .center .right {
   width: 300px;

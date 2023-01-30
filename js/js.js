@@ -93,42 +93,62 @@ $(function(){
           clickable: true,
         },
     });
-    // var gtswiper = new Swiper('.gtswiper', {
-    //     autoHeight: true,
-    //     // autoplay: {
-    //     //     delay: 1500,
-    //     //     disableOnInteraction: false,
-    //     //     pauseOnMouseEnter: true,
-    //     // },
-    //     slidesPerView: 3,
-    //     spaceBetween: 30,
-    //     grid: {
-    //         fill: 'row',
-    //         rows: 2,
-    //     },
-    //     // breakpoints: {
-    //         // 1600: {
-    //         //     slidesPerView: 1,
-    //         //     spaceBetween: 30,
-    //         // },
-    //         // 1260: {
-    //         //     slidesPerView: 1,
-    //         //     spaceBetween: 30,
-    //         // },
-    //         // 1000: {
-    //         //     slidesPerView: 1,
-    //         //     spaceBetween: 0,
-    //         // }
-    //     // },
-    //     navigation: {
-    //         nextEl: '.gtswiper-button-next',
-    //         prevEl: '.gtswiper-button-prev',
-    //       },
-    //     // pagination: {
-    //     //   el: '.swiper-pagination',
-    //     //   clickable: true,
-    //     // },
-    // });
+
+    var swiper02 = new Swiper('.swiper02', {
+        autoHeight: true,
+        // autoplay: {
+        //     delay: 1500,
+        //     disableOnInteraction: false,
+        //     pauseOnMouseEnter: true,
+        // },
+        spaceBetween: 5,
+        // breakpoints: {
+            // 1600: {
+            //     slidesPerView: 1,
+            //     spaceBetween: 30,
+            // },
+            // 1260: {
+            //     slidesPerView: 1,
+            //     spaceBetween: 30,
+            // },
+            // 1000: {
+            //     slidesPerView: 1,
+            //     spaceBetween: 0,
+            // }
+        // },
+        navigation: {
+            nextEl: '.swiper-button-next02',
+            prevEl: '.swiper-button-prev02',
+          },
+    });
+    var swiper03 = new Swiper('.swiper03', {
+        autoHeight: true,
+        // autoplay: {
+        //     delay: 1500,
+        //     disableOnInteraction: false,
+        //     pauseOnMouseEnter: true,
+        // },
+        // slidesPerView: 3,
+        spaceBetween: 30,
+        // breakpoints: {
+            // 1600: {
+            //     slidesPerView: 1,
+            //     spaceBetween: 30,
+            // },
+            // 1260: {
+            //     slidesPerView: 1,
+            //     spaceBetween: 30,
+            // },
+            // 1000: {
+            //     slidesPerView: 1,
+            //     spaceBetween: 0,
+            // }
+        // },
+        navigation: {
+            nextEl: '.swiper-button-next03',
+            prevEl: '.swiper-button-prev03',
+          },
+    });
  
     //countryList 國別一覽
     $(".mainArea .countryList .cTitle").click(function(){
@@ -151,7 +171,9 @@ $(function(){
     $(".typselect .gameTypeBox").click(function(){
         $(this)
         .toggleClass("active")
+        .closet("swiper-slide")
         .siblings()
+        .find(".gameTypeBox")
         .removeClass("active");
     })
  

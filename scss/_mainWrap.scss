@@ -86,13 +86,86 @@
         height: auto;
         display: flex;
         flex-direction: column;
-        padding: 20px 30px ;
+        padding: 20px 30px;
         overflow: hidden;
 
         .swiper {
             width: 100%;
             height: 215px;
+            margin-bottom: 10px;
             overflow: hidden;
+            position: relative;
+
+            .swiper-wrapper {
+                width: 100%;
+                height: auto;
+
+                .swiper-slide {
+                    .banner {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .swiper-button-prev,
+            .swiper-button-next {
+                position: absolute;
+                top: 45px;
+                &::before,
+                &::after {
+                    content: " ";
+                }
+            }
+            .swiper-button-prev {
+                width: 30px;
+                height: 30px;
+                position: absolute;
+                cursor: pointer;
+                
+                &::before {
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50px;
+                    border: 2px solid $mainColor_3;
+                    position: absolute;
+                    right: -485px;
+                    z-index: 50;
+                }
+
+                i {
+                    font-size: 20px;
+                    color: $mainColor_3;
+                    position: absolute;
+                    top: 5px;
+                    right: -474px;
+                    z-index: 50;
+                }
+            }
+
+            .swiper-button-next {
+                position: absolute;
+                cursor: pointer;
+
+                &::before {
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50px;
+                    border: 2px solid $mainColor_3;
+                    position: absolute;
+                    top: -2px;
+                    right: 13px;
+                    z-index: 50;
+                }
+
+                i {
+                    font-size: 20px;
+                    color: $mainColor_3;
+                    position: absolute;
+                    top: 6px;
+                    right: 25px;
+                    z-index: 50;
+                }
+            }
         }
 
         .middleNav {
@@ -139,56 +212,133 @@
         }
 
         .typselect {
-            width: 100%;
-            height: auto;
-            display: flex;
-            align-items: center;
-            padding: 20px 10px;
-            overflow: hidden;
 
-            .gameTypeBox {
-                width: auto;
-                max-width: 105px;
+            &.swiper02 {
+                width: 100%;
                 height: auto;
-                margin: 0 10px 0 0;
-                cursor: pointer;
+                display: flex;
+                align-items: center;
+                padding: 20px 10px;
+                overflow: hidden;
+                position: relative;
 
-                &:hover,&:active,&.active {
-                    .picBox {
-                        border-color: $mainColor;
-                    }
+                .swiper-wrapper {
+                    width: 100%;
+                    height: auto;
 
-                    p {
-                        color: $mainColor;
+                    .swiper-slide {
+                        width: 116px !important;
+
+                        .gameTypeBox {
+                            width: auto;
+                            max-width: 105px;
+                            height: auto;
+                            margin: 0 10px 0 0;
+                            cursor: pointer;
+            
+                            &:hover,&:active,&.active {
+                                .picBox {
+                                    border-color: $mainColor;
+                                }
+            
+                                p {
+                                    color: $mainColor;
+                                }
+                            }
+            
+                            .picBox {
+                                width: 105px;
+                                height: 105px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                border-width: 3px 3px 10px 3px;
+                                border-style: solid;
+                                border-color: $mainColor_4;
+                                border-radius: 6px;
+                                margin: 0 0 5px;
+            
+                                svg {
+                                    width: 24.5px;
+                                    height: 24.5px;
+                                    fill: $mainColor_4;
+                                    transform: scale(2.5);
+                                }
+                            }
+            
+                            p {
+                                color: $mainColor_4;
+                                font-size: 1rem;
+                                font-weight: bold;
+                                text-align: center;
+                                @include textHide;
+                            }
+                        }
                     }
                 }
 
-                .picBox {
-                    width: 105px;
-                    height: 105px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    border-width: 3px 3px 10px 3px;
-                    border-style: solid;
-                    border-color: $mainColor_4;
-                    border-radius: 6px;
-                    margin: 0 0 5px;
+                .swiper-button-prev02,
+                .swiper-button-next02 {
+                    width: 24px;
+                    height: 52px;
+                    position: absolute;
+                    top: 170px;
 
-                    svg {
-                        width: 24.5px;
-                        height: 24.5px;
-                        fill: $mainColor_4;
-                        transform: scale(2.5);
+                    &::before,
+                    &::after {
+                        content: " ";
+                    }
+                }
+                .swiper-button-prev02 {
+                    position: absolute;
+                    left: -20px;
+                    cursor: pointer;
+                    
+                    &::before {
+                        width: 40px;
+                        height: 40px;
+                        background: $subColor_3;
+                        border-radius: 5px;
+                        position: absolute;
+                        top: -115px;
+                        left: 20px;
+                        z-index: 50;
+                    }
+
+                    i {
+                        font-size: 20px;
+                        color: $mainColor_3;
+                        position: absolute;
+                        top: -105px;
+                        left: 31px;
+                        z-index: 50;
                     }
                 }
 
-                p {
-                    color: $mainColor_4;
-                    font-size: 1rem;
-                    font-weight: bold;
-                    text-align: center;
-                    @include textHide;
+                .swiper-button-next02 {
+                    position: absolute;
+                    right: 20px;
+                    cursor: pointer;
+
+                    &::before {
+                        width: 40px;
+                        height: 40px;
+                        background: $subColor_3;
+                        border-radius: 5px;
+                        position: absolute;
+                        top: -115px;
+                        right: -20px;
+                        z-index: 50;
+                    }
+
+                    i {
+                        font-size: 20px;
+                        color: $mainColor_3;
+                        position: absolute;
+                        top: -104px;
+                        left: 16px;
+                        z-index: 50;
+                    }
                 }
             }
         }
@@ -309,7 +459,7 @@
             height: auto;
             display: flex;
             flex-direction: column;
-            padding: 20px 0;
+            padding: 20px 0 0;
 
             .gtypeTitle {
                 width: 100%;
@@ -363,6 +513,7 @@
                         align-items: center;
                         justify-content: space-between;
                         background: $mainColor;
+                        border-radius: 8px 8px 0 0;
                         padding: 3px 10px 0;
                         position: relative;
 
@@ -555,6 +706,291 @@
                     }
                 }
             }
+        }
+
+        .swiper03 {
+            width: 100%;
+            height: 529px;
+            overflow: hidden;
+            position: relative;
+
+            .swiper-wrapper {
+                width: 100%;
+                height: auto;
+                display: flex;
+
+                .swiper-slide {
+                    width: 275px !important;
+
+                    .gBlock {
+                        width: 285px;
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        border-radius: 5px;
+
+                        .up {
+                            width: 100%;
+                            height: 40px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            background: $mainColor;
+                            border-radius: 8px 8px 0 0;
+                            padding: 3px 10px 0;
+                            position: relative;
+
+                            &::before {
+                                content: "";
+                                width: 10px;
+                                height: 10px;
+                                background: $mainColor;
+                                position: absolute;
+                                bottom: -8px;
+                                left: 0;
+                                z-index: -1;
+                            }
+
+                            &::after {
+                                content: "";
+                                width: 10px;
+                                height: 10px;
+                                background: $mainColor;
+                                position: absolute;
+                                bottom: -8px;
+                                left: unset;
+                                right: 0;
+                                z-index: -1;
+                            }
+
+                            span {
+                                flex-shrink: 0;
+                                background: $mainColor_5;
+                                color: $mainColor_3;
+                                font-size: 0.9rem;
+                                font-weight: bold;
+                                padding: 7px 5px;
+                                border-radius: 3px;
+                                cursor: default;
+                            }
+
+                            .iconBox {
+                                width: auto;
+                                height: auto;
+                                
+                                svg {
+                                    width: 24.5px;
+                                    height: 24.5px;
+                                    fill: $mainColor_3;
+
+                                    &:first-child {
+                                        margin-right: 5px;
+                                    }
+                                }
+                            }
+                        }
+
+                        .down {
+                            width: 100%;
+                            height: auto;
+                            display: flex;
+                            flex-direction: column;
+                            background: $mainBG_2;
+                            border-radius: 8px;
+                            border: 3px solid $mainColor;
+                            padding: 20px;
+
+                            p {
+                                font-weight: bold;
+
+                                &.timeZone {
+                                    color: $mainColor_3;
+                                    font-size: 0.8rem;
+                                    white-space: nowrap;
+                                    margin-bottom: 10px;
+                                }
+
+                                &.date {
+                                    color: $subColor;
+                                    font-size: 1.3rem;
+                                    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                                    letter-spacing: 1px;
+                                    padding: 0 0 15px;
+                                    position: relative;
+                                    
+                                    &::before {
+                                        content: "";
+                                        width: 30%;
+                                        height: 5px;
+                                        background: $mainColor_5;
+                                        position: absolute;
+                                        left: 0;
+                                        bottom: 0;
+                                        z-index: 10;
+                                    }
+
+                                    &::after {
+                                        content: "";
+                                        width: 100%;
+                                        height: 5px;
+                                        background: $mainColor;
+                                        position: absolute;
+                                        left: 0;
+                                        bottom: 0;
+                                    }
+                                }
+
+                                &.winner {
+                                    color: $subColor;
+                                    text-align: center;
+                                    margin: 0 0 30px;
+                                }
+                            }
+
+                            .time {
+                                width: 100%;
+                                display: flex;
+                                align-items: center;
+                                margin: 10px 0 0;
+                                    
+                                svg {
+                                    width: 24.5px;
+                                    height: 24.5px;
+                                    fill: $mainColor_4;
+                                    margin-right: 5px;
+                                    transform: scale(0.9);
+                                }
+
+                                p {
+                                    color: $mainColor_4;
+                                    font-size: 0.9rem;
+                                }
+                            }
+
+                            .pkTeam {
+                                width: 100%;
+                                height: auto;
+                                display: flex;
+                                align-items: cevter;
+                                justify-content: space-between;
+                                background: $mainColor_4;
+                                padding: 20px 20px 10px;
+                                margin: 30px 0;
+
+                                .team {
+                                    width: auto;
+                                    height: auto;
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    justify-content: center;
+
+                                    svg {
+                                        width: 48.5px;
+                                        height: 48.5px;
+                                        fill: $mainColor_4;
+                                        margin: 10px 10px 40px 10px;
+                                        // transform: scale(1.2);
+                                    }
+
+                                    .teamName {
+                                        color: $mainColor_2;
+                                        font-size: 0.9rem;
+                                        text-align: center;
+                                        margin-bottom: 30px;
+                                    }
+
+                                    button {
+                                        width: 100%;
+                                        background: $mainColor;
+                                        color: $mainColor_3;
+                                        font-weight: bold;
+                                        border-radius: 3px;
+                                        padding: 5px;
+                                    }
+                                }
+
+                                p {
+                                    display: flex;
+                                    align-items: center;
+                                }
+
+                            }
+
+                            .more {
+                                width: 130px;
+                                height: 30px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                @include rightNavBtn;
+                                margin: 0 auto;
+                            }
+                        }
+                    }
+                }
+            }
+
+                .swiper-button-prev03,
+                .swiper-button-next03 {
+                    position: absolute;
+
+                    &::before,
+                    &::after {
+                        content: " ";
+                    }
+                }
+                .swiper-button-prev03 {
+                    position: absolute;
+                    left: -20px;
+                    cursor: pointer;
+                    
+                    &::before {
+                        width: 40px;
+                        height: 40px;
+                        background: $subColor_3;
+                        border-radius: 5px;
+                        position: absolute;
+                        top: -280px;
+                        left: 20px;
+                        z-index: 50;
+                    }
+
+                    i {
+                        font-size: 20px;
+                        color: $mainColor_3;
+                        position: absolute;
+                        top: -270px;
+                        left: 33px;
+                        z-index: 50;
+                    }
+                }
+
+                .swiper-button-next03 {
+                    position: absolute;
+                    right: 20px;
+                    cursor: pointer;
+
+                    &::before {
+                        width: 40px;
+                        height: 40px;
+                        background: $subColor_3;
+                        border-radius: 5px;
+                        position: absolute;
+                        top: -280px;
+                        right: -20px;
+                        z-index: 50;
+                    }
+
+                    i {
+                        font-size: 20px;
+                        color: $mainColor_3;
+                        position: absolute;
+                        top: -270px;
+                        right: -8px;
+                        z-index: 50;
+                    }
+                }
         }
     }
 
