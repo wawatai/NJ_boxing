@@ -12,6 +12,12 @@ html {
             height: auto;
             padding-top: 125px;
         }
+
+        @media only screen and (max-width: 1020px) {
+            main {
+                padding-top: 100px;
+            }
+        }
     }
 
     @import "./header";

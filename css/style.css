@@ -113,6 +113,11 @@ html body main {
   height: auto;
   padding-top: 125px;
 }
+@media only screen and (max-width: 1020px) {
+  html body main {
+    padding-top: 100px;
+  }
+}
 html header {
   width: 100%;
   height: auto;
@@ -207,6 +212,107 @@ html header .top .loginArea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html header .top .loginArea .checkBox {
+  width: auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  margin-right: 10px;
+  opacity: 0;
+}
+html header .top .loginArea .checkBox .title {
+  color: #f3c01a;
+  font-size: 0.85rem;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+html header .top .loginArea .checkBox .title i {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 6px 4px 0 4px;
+  border-color: #f3c01a transparent;
+  margin-left: 5px;
+}
+html header .top .loginArea .checkBox ul {
+  display: none;
+  width: 220px;
+  height: auto;
+  display: none;
+  background: #ffffff;
+  border-radius: 3px;
+  padding: 10px;
+  padding: 20px;
+  position: absolute;
+  top: 25px;
+  left: -20px;
+  z-index: 100;
+}
+html header .top .loginArea .checkBox ul:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0px 4px 6px 4px;
+  border-color: #ffffff transparent;
+  position: absolute;
+  top: -6px;
+  right: 10px;
+}
+html header .top .loginArea .checkBox ul.display {
+  display: block;
+}
+html header .top .loginArea .checkBox ul.display {
+  display: block;
+}
+html header .top .loginArea .checkBox ul .innerTitle {
+  color: #000000;
+  font-size: 0.875rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+html header .top .loginArea .checkBox ul li {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+html header .top .loginArea .checkBox ul li:last-child {
+  margin: 0;
+}
+html header .top .loginArea .checkBox ul li a {
+  width: 100%;
+  height: auto;
+}
+html header .top .loginArea .checkBox ul li a p {
+  color: #b61d21;
+  font-size: 0.75rem;
+  font-weight: bold;
+  margin-bottom: 2px;
 }
 html header .top .loginArea button {
   width: 150px;
@@ -232,6 +338,30 @@ html header .top .loginArea button:hover, html header .top .loginArea button:act
 html header .top .loginArea button:last-child {
   background: #ffffff;
   margin: 0;
+}
+html header .top .rwd_TOPNav {
+  display: none;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+html header .top .rwd_TOPNav .itemBox {
+  width: auto;
+  height: auto;
+  padding: 8px;
+}
+html header .top .rwd_TOPNav .itemBox.active {
+  background: #f3c01a;
+}
+html header .top .rwd_TOPNav .itemBox i {
+  width: 21px;
+  height: 21px;
+}
+html header .top .rwd_TOPNav .itemBox p {
+  color: #ffffff;
+  font-size: 0.9rem;
 }
 html header .bottom {
   width: 100%;
@@ -411,6 +541,67 @@ html header .bottom .mid .time {
   font-size: 0.75rem;
   font-weight: bold;
   margin: 0 0 2px 15px;
+}
+@media only screen and (max-width: 1315px) {
+  html header .top ul {
+    left: 40%;
+  }
+  html header .top ul li:last-child {
+    display: none;
+  }
+  html header .top .loginArea {
+    margin-left: 15px;
+  }
+  html header .top .loginArea .checkBox {
+    opacity: 1;
+    pointer-events: auto !important;
+    cursor: pointer;
+  }
+}
+@media only screen and (max-width: 1188px) {
+  html header .top ul li:nth-of-type(3) {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1020px) {
+  html header .top {
+    padding: 0;
+    position: relative;
+  }
+  html header .top .logo img {
+    height: 40px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+  }
+  html header .top ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    left: 21%;
+    top: 60px;
+  }
+  html header .top ul li:nth-of-type(3), html header .top ul li:nth-of-type(4) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  html header .top ul li a i {
+    display: none;
+  }
+  html header .top .loginArea {
+    display: none;
+  }
+  html header .top .rwd_TOPNav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  html header .bottom {
+    display: none;
+  }
 }
 html .center {
   width: 1200px;

@@ -88,6 +88,83 @@ header {
             width: auto;
             height: auto;
             display: flex;
+            align-items: center;
+
+            .checkBox {
+                width: auto;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                position: relative;
+                margin-right: 10px;
+                opacity: 0;
+
+                .title {
+                    color: $subColor;
+                    font-size: 0.85rem;
+                    font-weight: bold;
+                    display: flex;
+                    align-items: center;
+                    user-select: none;
+
+                    i {
+                        width: 0;
+                        height: 0;
+                        border-style: solid;
+                        border-width: 6px 4px 0 4px;
+                        border-color: $subColor transparent;
+                        margin-left: 5px;
+                    }
+                }
+
+                ul {
+                    display: none;
+                    width: 220px;
+                    height: auto;
+                    @include bottomList;
+                    padding: 20px;
+                    position: absolute;
+                    top: 25px;
+                    left: -20px;
+                    z-index: 100;
+
+                    &.display {
+                        display: block;
+                    }
+
+                    .innerTitle {
+                        color: $mainColor_2;
+                        font-size: 0.875rem;
+                        font-weight: bold;
+                        margin-bottom: 20px;
+                    }
+
+                    li {
+                        width: 100%;
+                        height: auto;
+                        display: flex;
+                        align-items: center;
+                        cursor: pointer;
+                        margin-bottom: 10px;
+
+                        &:last-child {
+                            margin: 0;
+                        }
+
+                        a {
+                            width: 100%;
+                            height: auto;
+
+                            p {
+                                color: $mainColor;
+                                font-size: 0.75rem;
+                                font-weight: bold;
+                                margin-bottom: 2px;
+                            }
+                        }
+                    }
+                }
+            }
 
             button {
                 width: 150px;
@@ -98,6 +175,36 @@ header {
                 &:last-child {
                     background: $headerBtn_secondBG;
                     margin: 0;
+                }
+            }
+        }
+
+        .rwd_TOPNav {
+            display: none;
+            width: auto;
+            height: auto;
+            position: absolute;
+            top: 0;
+            right: 0;
+
+
+            .itemBox {
+                width: auto;
+                height: auto;
+                padding: 8px;
+
+                &.active {
+                    background: $subColor;
+                }
+
+                i {
+                    width: 21px;
+                    height: 21px;
+                }
+
+                p {
+                    color: $mainColor_3;
+                    font-size: 0.9rem;
                 }
             }
         }
@@ -224,6 +331,85 @@ header {
                 font-weight: bold;
                 margin: 0 0 2px 15px;
             }
+        }
+    }
+
+    @media only screen and (max-width: 1315px) {
+        .top {
+            ul {
+                left: 40%;
+                li {
+                    &:last-child {
+                        display: none;
+                    }
+                }
+            }
+            .loginArea {
+                margin-left: 15px;
+
+                .checkBox {
+                    opacity: 1;
+                    pointer-events: auto !important;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 1188px) {
+        .top {
+            ul {
+                li {
+                    &:nth-of-type(3) {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 1020px) {
+        .top {
+            padding: 0;
+            position: relative;
+
+            .logo {
+    
+                img {
+                    height: 40px;
+                    object-fit: contain;
+                    position: absolute;
+                    top: 5px;
+                    left: 5px;
+                }
+            }
+            ul {
+                display: flex;
+                left: 21%;
+                top: 60px;
+                
+                li {
+                    &:nth-of-type(3),
+                    &:nth-of-type(4){
+                        display: flex;
+                    }
+                    a {
+                        i {
+                            display: none;
+                        }
+                    }
+                }
+            }
+            .loginArea {
+                display: none;
+            }
+
+            .rwd_TOPNav {
+                display: flex;
+            }
+        }
+        .bottom {
+            display: none;
         }
     }
 }
