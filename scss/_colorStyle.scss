@@ -54,6 +54,9 @@ $rightNav_bottom_ActiveColor: #851316;
     }
 }
 
+//register
+$register_BG: #1f1f1f;
+
 //jumpWindow
 $filter: #00000080;
 
@@ -133,4 +136,22 @@ $filter: #00000080;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+}
+
+
+@mixin scrollbarStyle_1 {
+    
+    &::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #b61d21;
+        border-radius: 30px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: #b1b1b1;
+        border-radius: 30px;
+    }
 }

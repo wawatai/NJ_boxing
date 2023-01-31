@@ -638,6 +638,649 @@ html header .bottom .mid .time {
     display: none;
   }
 }
+html .login {
+  width: 1100px;
+  height: auto;
+  background: #1f1f1f;
+  border-radius: 5px;
+  padding: 40px 70px 10px;
+  margin: 0 auto;
+}
+html .login .inputArea {
+  width: 100%;
+  height: auto;
+}
+html .login .inputArea > li {
+  width: 100%;
+  height: auto;
+  border-bottom: dotted 1px #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 16px 0;
+}
+html .login .inputArea > li .typeName {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html .login .inputArea > li .typeName p {
+  color: #b61d21;
+  font-size: 1rem;
+  font-weight: bold;
+}
+html .login .inputArea > li .rightBox {
+  width: 50%;
+  height: auto;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+html .login .inputArea > li .rightBox .inputBox {
+  width: 100%;
+  height: auto;
+}
+html .login .inputArea > li .rightBox .inputBox input {
+  width: 100%;
+  height: 36px;
+  background: #ffffff;
+  border-radius: 3px;
+  border: none;
+  color: #000000;
+  font-size: 14px;
+  font-weight: bold;
+  padding-left: 10px;
+}
+html .login .check {
+  width: 100%;
+  height: auto;
+  padding: 40px 0;
+}
+html .login .check .checkBox {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+html .login .check .checkBox label {
+  width: 15px;
+  height: 15px;
+  position: relative;
+  cursor: pointer;
+  margin-right: 10px;
+}
+html .login .check .checkBox label::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  border: solid 2px #36424b;
+  border-radius: 50%;
+}
+html .login .check .checkBox label::after {
+  display: none;
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 60%;
+  height: 60%;
+  background: #36424b;
+  border-radius: 50%;
+}
+html .login .check .checkBox label.active::after {
+  display: block;
+}
+html .login .check .checkBox label input {
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  opacity: 0;
+  margin: 0;
+}
+html .login .check .checkBox p {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+}
+html .login .check button {
+  width: 150px;
+  height: 40px;
+  background: #f3c01a;
+  border-radius: 30px;
+  -webkit-box-shadow: 0 3px 0 1px #ec992c;
+          box-shadow: 0 3px 0 1px #ec992c;
+  color: #b61d21;
+  font-size: 15px;
+  font-weight: bold;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  background: #ffffff;
+  display: block;
+  margin: 20px auto 0;
+}
+html .login .check button:hover, html .login .check button:active, html .login .check button.active {
+  background: #ffffff;
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+html .registerBox {
+  width: 1100px;
+  height: auto;
+  background: #1f1f1f;
+  border-radius: 5px;
+  padding: 20px 0;
+  margin: 40px auto;
+}
+html .registerBox p {
+  width: 100%;
+  color: #f3c01a;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+html .registerBox button {
+  width: 130px;
+  height: 30px;
+  background: #f3c01a;
+  border-radius: 30px;
+  -webkit-box-shadow: 0 3px 0 1px #ec992c;
+          box-shadow: 0 3px 0 1px #ec992c;
+  color: #b61d21;
+  font-size: 15px;
+  font-weight: bold;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  display: block;
+  margin: 0 auto;
+}
+html .registerBox button:hover, html .registerBox button:active, html .registerBox button.active {
+  background: #ffffff;
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+html .register {
+  width: 1100px;
+  height: auto;
+  background: #1f1f1f;
+  border-radius: 5px;
+  padding: 40px 70px 10px;
+  margin: 0 auto;
+}
+html .register .bigTitle {
+  width: 100%;
+  height: auto;
+  margin-bottom: 40px;
+}
+html .register .bigTitle p {
+  color: #b61d21;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+html .register .bigTitle span {
+  color: #ffffff;
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+html .register .inputArea {
+  width: 100%;
+  height: auto;
+}
+html .register .inputArea > li {
+  width: 100%;
+  height: auto;
+  border-bottom: dotted 1px #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 16px 0;
+}
+html .register .inputArea > li .typeName {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html .register .inputArea > li .typeName svg {
+  fill: #b61d21;
+  margin-right: 20px;
+}
+html .register .inputArea > li .typeName p {
+  color: #b61d21;
+  font-size: 1rem;
+  font-weight: bold;
+}
+html .register .inputArea > li .rightBox {
+  width: 50%;
+  height: auto;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+html .register .inputArea > li .rightBox .inputBox {
+  width: 100%;
+  height: auto;
+  position: relative;
+  margin-right: 10px;
+}
+html .register .inputArea > li .rightBox .inputBox:nth-last-of-type(1) {
+  margin: 0;
+}
+html .register .inputArea > li .rightBox .inputBox input {
+  width: 100%;
+  height: 36px;
+  background: #ffffff;
+  border-radius: 3px;
+  border: none;
+  color: #000000;
+  font-size: 14px;
+  font-weight: bold;
+  padding-left: 10px;
+}
+html .register .inputArea > li .rightBox .inputBox input.phone {
+  padding-left: 60px;
+}
+html .register .inputArea > li .rightBox .inputBox select {
+  width: 100%;
+  height: 36px;
+  background: #ffffff;
+  border-radius: 3px;
+  border: none;
+  color: #000000;
+  font-size: 14px;
+  font-weight: bold;
+  padding-left: 10px;
+}
+html .register .inputArea > li .rightBox .inputBox div {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 10px;
+}
+html .register .inputArea > li .rightBox .inputBox div span {
+  color: #b1b1b1;
+  font-size: 1rem;
+  font-weight: bold;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-right: 10px;
+}
+html .register .inputArea > li .rightBox .inputBox .remind {
+  width: 100%;
+  color: #b1b1b1;
+  font-size: 0.85rem;
+  line-height: 1rem;
+  margin-top: 10px;
+}
+html .register .inputArea > li .rightBox .inputBox .arrow {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 4px 0 4px;
+  border-color: #000000 transparent;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  pointer-events: none;
+}
+html .register .inputArea > li .rightBox .inputBox .chooseCountry {
+  width: 60px;
+  height: 36px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+html .register .inputArea > li .rightBox .inputBox .chooseCountry .flagBox {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+html .register .inputArea > li .rightBox .inputBox .chooseCountry .flagBox .flag {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+}
+html .register .inputArea > li .rightBox .inputBox .chooseCountry ul {
+  width: 220px;
+  height: auto;
+  display: none;
+  background: #ffffff;
+  border-radius: 3px;
+  padding: 10px;
+  position: absolute;
+  top: 40px;
+  left: -175px;
+  z-index: 100;
+}
+html .register .inputArea > li .rightBox .inputBox .chooseCountry ul:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0px 4px 6px 4px;
+  border-color: #ffffff transparent;
+  position: absolute;
+  top: -6px;
+  right: 10px;
+}
+html .register .inputArea > li .rightBox .inputBox .chooseCountry ul.display {
+  display: block;
+}
+html .register .inputArea > li .rightBox .inputBox .chooseCountry ul .innerTitle {
+  color: #000000;
+  font-size: 0.875rem;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+html .register .inputArea > li .rightBox .inputBox .chooseCountry ul .flag {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+html .register .inputArea > li .rightBox .inputBox .chooseCountry ul ol {
+  width: 100%;
+  height: auto;
+  max-height: 160px;
+  overflow-y: overlay;
+}
+html .register .inputArea > li .rightBox .inputBox .chooseCountry ul ol::-webkit-scrollbar {
+  width: 5px;
+}
+html .register .inputArea > li .rightBox .inputBox .chooseCountry ul ol::-webkit-scrollbar-thumb {
+  background: #b61d21;
+  border-radius: 30px;
+}
+html .register .inputArea > li .rightBox .inputBox .chooseCountry ul ol::-webkit-scrollbar-track {
+  background: #b1b1b1;
+  border-radius: 30px;
+}
+html .register .inputArea > li .rightBox .inputBox .chooseCountry ul ol li {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  padding: 0 5px;
+  margin-bottom: 10px;
+}
+html .register .inputArea > li .rightBox .inputBox .chooseCountry ul ol li:last-child {
+  margin: 0;
+}
+html .register .inputArea > li .rightBox .inputBox .chooseCountry ul ol li label {
+  width: 10px;
+  height: 10px;
+  position: relative;
+  cursor: pointer;
+  margin-right: 10px;
+}
+html .register .inputArea > li .rightBox .inputBox .chooseCountry ul ol li label::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  border: solid 2px #36424b;
+  border-radius: 50%;
+}
+html .register .inputArea > li .rightBox .inputBox .chooseCountry ul ol li label::after {
+  display: none;
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 60%;
+  height: 60%;
+  background: #36424b;
+  border-radius: 50%;
+}
+html .register .inputArea > li .rightBox .inputBox .chooseCountry ul ol li label.active::after {
+  display: block;
+}
+html .register .inputArea > li .rightBox .inputBox .chooseCountry ul ol li label input {
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  opacity: 0;
+  margin: 0;
+}
+html .register .inputArea > li .rightBox .inputBox .chooseCountry ul ol li p {
+  color: #b61d21;
+  font-size: 0.75rem;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+html .register .inputArea > li .rightBox .inputBox .eye {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+html .register .inputArea > li .rightBox .inputBox .sercurity {
+  width: 100%;
+  height: auto;
+  border-bottom: solid 1px #ffffff;
+  padding: 10px 0;
+}
+html .register .inputArea > li .rightBox .inputBox .sercurity p {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+}
+html .register .inputArea > li .rightBox .must {
+  width: auto;
+  height: auto;
+  background: #b61d21;
+  border-radius: 3px;
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: -50px;
+  padding: 5px;
+}
+html .register .check {
+  width: 100%;
+  height: auto;
+  padding: 40px 0;
+}
+html .register .check .checkBox {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+html .register .check .checkBox label {
+  width: 15px;
+  height: 15px;
+  position: relative;
+  cursor: pointer;
+  margin-right: 30px;
+}
+html .register .check .checkBox label::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  border: solid 2px #36424b;
+  border-radius: 50%;
+}
+html .register .check .checkBox label::after {
+  display: none;
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 60%;
+  height: 60%;
+  background: #36424b;
+  border-radius: 50%;
+}
+html .register .check .checkBox label.active::after {
+  display: block;
+}
+html .register .check .checkBox label input {
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  opacity: 0;
+  margin: 0;
+}
+html .register .check .checkBox p {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.5rem;
+}
+html .register .check .checkBox p a {
+  color: #ffe17e;
+}
+html .register .check button {
+  width: 150px;
+  height: 40px;
+  background: #f3c01a;
+  border-radius: 30px;
+  -webkit-box-shadow: 0 3px 0 1px #ec992c;
+          box-shadow: 0 3px 0 1px #ec992c;
+  color: #b61d21;
+  font-size: 15px;
+  font-weight: bold;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  display: block;
+  margin: 20px auto 0;
+}
+html .register .check button:hover, html .register .check button:active, html .register .check button.active {
+  background: #ffffff;
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+html .loginBox {
+  width: 1100px;
+  height: auto;
+  background: #1f1f1f;
+  border-radius: 5px;
+  padding: 20px 0;
+  margin: 40px auto;
+}
+html .loginBox p {
+  width: 100%;
+  color: #f3c01a;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+html .loginBox button {
+  width: 130px;
+  height: 30px;
+  background: #f3c01a;
+  border-radius: 30px;
+  -webkit-box-shadow: 0 3px 0 1px #ec992c;
+          box-shadow: 0 3px 0 1px #ec992c;
+  color: #b61d21;
+  font-size: 15px;
+  font-weight: bold;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  display: block;
+  background: #ffffff;
+  margin: 0 auto;
+}
+html .loginBox button:hover, html .loginBox button:active, html .loginBox button.active {
+  background: #ffffff;
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
 html .center {
   width: 1200px;
   height: auto;
