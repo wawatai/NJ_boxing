@@ -1,14 +1,38 @@
 .center {
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
     height: auto;
     display: flex;
     margin: 0 auto;
+    position: relative;
 
     //左
     .left {
         width: 250px;
         height: auto;
         flex-shrink: 0;
+        overflow: hidden;
+        transition: all 0.3s;
+
+        &.active {
+            width: 100%;
+            background: $filter;
+            overflow: hidden;
+            position: absolute;
+            top: -10px;
+            left: 0;
+            z-index: 90;
+
+            .navTitle {
+                width: 250px;
+                background: $mainBG_2;
+                padding-left: 10px;
+            }
+
+            ul {
+                width: 250px;
+            }
+        }
 
         .navTitle {
             color: $subColor;
@@ -91,7 +115,7 @@
 
         .swiper {
             width: 100%;
-            height: 215px;
+            height: auto;
             margin-bottom: 10px;
             overflow: hidden;
             position: relative;
@@ -111,6 +135,7 @@
             .swiper-button-next {
                 position: absolute;
                 top: 45px;
+                left: unset;
                 &::before,
                 &::after {
                     content: " ";
@@ -123,6 +148,7 @@
                 cursor: pointer;
                 
                 &::before {
+                    content: "";
                     width: 30px;
                     height: 30px;
                     border-radius: 50px;
@@ -137,6 +163,7 @@
                     color: $mainColor_3;
                     position: absolute;
                     top: 5px;
+                    left: unset;
                     right: -474px;
                     z-index: 50;
                 }
@@ -205,7 +232,7 @@
                         color: $mainColor_2;
                         font-size: 0.9rem;
                         font-weight: bold;
-                        white-space: nowrap;
+                        @include textHide;
                     }
                 }
             }
@@ -648,7 +675,7 @@
                             width: 100%;
                             height: auto;
                             display: flex;
-                            align-items: cevter;
+                            align-items: center;
                             justify-content: space-between;
                             background: $mainColor_4;
                             padding: 20px 20px 10px;
@@ -662,12 +689,17 @@
                                 align-items: center;
                                 justify-content: center;
 
+                                &:first-child {
+                                    svg {
+                                        fill: $mainColor;
+                                    }
+                                }
+                               
                                 svg {
                                     width: 48.5px;
                                     height: 48.5px;
-                                    fill: $mainColor_4;
+                                    fill: $mainColor_5;
                                     margin: 10px 10px 40px 10px;
-                                    // transform: scale(1.2);
                                 }
 
                                 .teamName {
@@ -720,7 +752,7 @@
                 display: flex;
 
                 .swiper-slide {
-                    width: 275px !important;
+                    width: auto !important;
 
                     .gBlock {
                         width: 285px;
@@ -885,12 +917,17 @@
                                     align-items: center;
                                     justify-content: center;
 
+                                    &:first-child {
+                                        svg {
+                                            fill: $mainColor;
+                                        }
+                                    }
+                                   
                                     svg {
                                         width: 48.5px;
                                         height: 48.5px;
-                                        fill: $mainColor_4;
+                                        fill: $mainColor_5;
                                         margin: 10px 10px 40px 10px;
-                                        // transform: scale(1.2);
                                     }
 
                                     .teamName {
@@ -999,6 +1036,7 @@
         width: 300px;
         height: auto;
         flex-shrink: 0;
+        overflow: hidden;
 
         .betBlock {
             width: 100%;
@@ -1134,4 +1172,130 @@
             }
         }
     }
+
+    //aside
+    aside {
+        width: auto;
+        height: auto;
+
+        &.betRecordBtn {
+            display: none;
+            width: 75px;
+            height: 75px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: $mainColor;
+            box-shadow: 4px 2px 0.5px $mainColor_5;
+            border-radius: 50px;
+            position: fixed;
+            top: 670px;
+            right: 30px;
+            cursor: pointer;
+
+            .betCount {
+                width: 25px;
+                height: 25px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: $subColor;
+                border-radius: 50px;
+                position: absolute;
+                right: -8px;
+
+                &:nth-of-type(1) {
+                    top: 5px;
+                }
+
+                &:nth-of-type(2) {
+                    background: $mainColor_5;
+                    bottom: 5px;
+                }
+
+                p {
+                    color: $mainColor_3;
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 1091px) {
+        .mainArea {
+            .gameContent {
+                
+                .content {
+
+                    .gBlock {
+
+                        .down {
+                            .pkTeam {
+                                padding: 1.5rem 0.8rem;
+
+                                .team {
+
+                                    svg {
+                                        width: 39.5px;
+                                        margin: 8px 10px 20px 10px;
+                                    }
+
+                                    .teamName {
+                                        font-size: 0.8rem;
+                                    }
+                                }
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 1052px) {
+        .mainArea {
+            .gameContent {
+                    .content {
+
+                        .gBlock {
+
+                            .down {
+                                .pkTeam {
+
+                                    .team {
+
+                                        svg {
+                                            width: 35.5px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 1024px) {
+        
+        .left {
+            width: 0;
+        }
+        
+    }
+
+    @media only screen and (max-width: 767px) {
+        
+        .right {
+            width: 0;
+        }
+        
+        aside {
+            &.betRecordBtn {
+                display: flex;
+            }
+        }
+    }
 }
+
+    

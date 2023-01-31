@@ -191,7 +191,6 @@ header {
             top: 0;
             right: 0;
 
-
             .itemBox {
                 width: auto;
                 height: auto;
@@ -199,14 +198,6 @@ header {
                 flex-direction: column;
                 align-items: center;
                 padding: 8px;
-
-                &.active {
-                    background: $subColor;
-
-                    svg {
-                        fill: $mainColor_3;
-                    }
-                }
 
                 &:first-child {
                     svg {
@@ -224,10 +215,31 @@ header {
                     }
                 }
 
+                &.nav {
+                    width: 65px;
+                    background: $subColor;
+                    padding: 8px 0;
+
+                    svg {
+                        fill: $mainColor_3;
+
+                    }
+                }
+
+                &.active {
+                    .hamIC {
+                        display: none;
+                    }
+                }
+
                 svg {
                     width: 21px;
                     height: 21px;
                     fill: $subColor;
+
+                    &.injected-svg {
+                        display: none;
+                    }
                 }
 
                 p {
@@ -382,6 +394,15 @@ header {
                     pointer-events: auto !important;
                     cursor: pointer;
                 }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 1210px) {
+        .bottom {
+
+            .mid {
+                margin: 0 10px;
             }
         }
     }

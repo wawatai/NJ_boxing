@@ -365,12 +365,6 @@ html header .top .rwd_TOPNav .itemBox {
           align-items: center;
   padding: 8px;
 }
-html header .top .rwd_TOPNav .itemBox.active {
-  background: #f3c01a;
-}
-html header .top .rwd_TOPNav .itemBox.active svg {
-  fill: #ffffff;
-}
 html header .top .rwd_TOPNav .itemBox:first-child svg {
   margin-left: 5.5px;
 }
@@ -382,10 +376,24 @@ html header .top .rwd_TOPNav .itemBox:nth-of-type(2) svg {
 html header .top .rwd_TOPNav .itemBox:nth-of-type(2) p {
   margin-top: 4px;
 }
+html header .top .rwd_TOPNav .itemBox.nav {
+  width: 65px;
+  background: #f3c01a;
+  padding: 8px 0;
+}
+html header .top .rwd_TOPNav .itemBox.nav svg {
+  fill: #ffffff;
+}
+html header .top .rwd_TOPNav .itemBox.active .hamIC {
+  display: none;
+}
 html header .top .rwd_TOPNav .itemBox svg {
   width: 21px;
   height: 21px;
   fill: #f3c01a;
+}
+html header .top .rwd_TOPNav .itemBox svg.injected-svg {
+  display: none;
 }
 html header .top .rwd_TOPNav .itemBox p {
   color: #ffffff;
@@ -586,6 +594,11 @@ html header .bottom .mid .time {
     opacity: 1;
     pointer-events: auto !important;
     cursor: pointer;
+  }
+}
+@media only screen and (max-width: 1210px) {
+  html header .bottom .mid {
+    margin: 0 10px;
   }
 }
 @media only screen and (max-width: 1188px) {
@@ -1282,18 +1295,40 @@ html .loginBox button:hover, html .loginBox button:active, html .loginBox button
           box-shadow: none;
 }
 html .center {
-  width: 1200px;
+  max-width: 1200px;
+  width: 100%;
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 0 auto;
+  position: relative;
 }
 html .center .left {
   width: 250px;
   height: auto;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+  overflow: hidden;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+html .center .left.active {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5019607843);
+  overflow: hidden;
+  position: absolute;
+  top: -10px;
+  left: 0;
+  z-index: 90;
+}
+html .center .left.active .navTitle {
+  width: 250px;
+  background: #292929;
+  padding-left: 10px;
+}
+html .center .left.active ul {
+  width: 250px;
 }
 html .center .left .navTitle {
   color: #f3c01a;
@@ -1366,7 +1401,7 @@ html .center .mainArea {
 }
 html .center .mainArea .swiper {
   width: 100%;
-  height: 215px;
+  height: auto;
   margin-bottom: 10px;
   overflow: hidden;
   position: relative;
@@ -1382,6 +1417,7 @@ html .center .mainArea .swiper .swiper-button-prev,
 html .center .mainArea .swiper .swiper-button-next {
   position: absolute;
   top: 45px;
+  left: unset;
 }
 html .center .mainArea .swiper .swiper-button-prev::before, html .center .mainArea .swiper .swiper-button-prev::after,
 html .center .mainArea .swiper .swiper-button-next::before,
@@ -1395,6 +1431,7 @@ html .center .mainArea .swiper .swiper-button-prev {
   cursor: pointer;
 }
 html .center .mainArea .swiper .swiper-button-prev::before {
+  content: "";
   width: 30px;
   height: 30px;
   border-radius: 50px;
@@ -1408,6 +1445,7 @@ html .center .mainArea .swiper .swiper-button-prev i {
   color: #ffffff;
   position: absolute;
   top: 5px;
+  left: unset;
   right: -474px;
   z-index: 50;
 }
@@ -1484,6 +1522,8 @@ html .center .mainArea .middleNav .topnav li p {
   color: #000000;
   font-size: 0.9rem;
   font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
   white-space: nowrap;
 }
 html .center .mainArea .typselect.swiper02 {
@@ -1931,9 +1971,9 @@ html .center .mainArea .gameContent .content .gBlock .down .pkTeam {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: cevter;
-      -ms-flex-align: cevter;
-          align-items: cevter;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1958,10 +1998,13 @@ html .center .mainArea .gameContent .content .gBlock .down .pkTeam .team {
       -ms-flex-pack: center;
           justify-content: center;
 }
+html .center .mainArea .gameContent .content .gBlock .down .pkTeam .team:first-child svg {
+  fill: #b61d21;
+}
 html .center .mainArea .gameContent .content .gBlock .down .pkTeam .team svg {
   width: 48.5px;
   height: 48.5px;
-  fill: #b1b1b1;
+  fill: #851316;
   margin: 10px 10px 40px 10px;
 }
 html .center .mainArea .gameContent .content .gBlock .down .pkTeam .team .teamName {
@@ -2029,7 +2072,7 @@ html .center .mainArea .swiper03 .swiper-wrapper {
   display: flex;
 }
 html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide {
-  width: 275px !important;
+  width: auto !important;
 }
 html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock {
   width: 285px;
@@ -2215,10 +2258,13 @@ html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .pk
       -ms-flex-pack: center;
           justify-content: center;
 }
+html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .pkTeam .team:first-child svg {
+  fill: #b61d21;
+}
 html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .pkTeam .team svg {
   width: 48.5px;
   height: 48.5px;
-  fill: #b1b1b1;
+  fill: #851316;
   margin: 10px 10px 40px 10px;
 }
 html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .pkTeam .team .teamName {
@@ -2332,6 +2378,7 @@ html .center .right {
   height: auto;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+  overflow: hidden;
 }
 html .center .right .betBlock {
   width: 100%;
@@ -2477,6 +2524,91 @@ html .center .right .betBlock .smallFilter button:hover, html .center .right .be
           transform: translateY(2px);
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+html .center aside {
+  width: auto;
+  height: auto;
+}
+html .center aside.betRecordBtn {
+  display: none;
+  width: 75px;
+  height: 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #b61d21;
+  -webkit-box-shadow: 4px 2px 0.5px #851316;
+          box-shadow: 4px 2px 0.5px #851316;
+  border-radius: 50px;
+  position: fixed;
+  top: 670px;
+  right: 30px;
+  cursor: pointer;
+}
+html .center aside.betRecordBtn .betCount {
+  width: 25px;
+  height: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #f3c01a;
+  border-radius: 50px;
+  position: absolute;
+  right: -8px;
+}
+html .center aside.betRecordBtn .betCount:nth-of-type(1) {
+  top: 5px;
+}
+html .center aside.betRecordBtn .betCount:nth-of-type(2) {
+  background: #851316;
+  bottom: 5px;
+}
+html .center aside.betRecordBtn .betCount p {
+  color: #ffffff;
+}
+@media only screen and (max-width: 1091px) {
+  html .center .mainArea .gameContent .content .gBlock .down .pkTeam {
+    padding: 1.5rem 0.8rem;
+  }
+  html .center .mainArea .gameContent .content .gBlock .down .pkTeam .team svg {
+    width: 39.5px;
+    margin: 8px 10px 20px 10px;
+  }
+  html .center .mainArea .gameContent .content .gBlock .down .pkTeam .team .teamName {
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (max-width: 1052px) {
+  html .center .mainArea .gameContent .content .gBlock .down .pkTeam .team svg {
+    width: 35.5px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  html .center .left {
+    width: 0;
+  }
+}
+@media only screen and (max-width: 767px) {
+  html .center .right {
+    width: 0;
+  }
+  html .center aside.betRecordBtn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 html footer {
   width: 100%;

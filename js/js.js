@@ -28,6 +28,31 @@ $(function(){
         $("header .checkBox ul")
         .removeClass("display");
     })
+
+    $("header .rwd_TOPNav .itemBox:last-child").on("click",function(){
+
+        $("main .center .left")
+        .toggleClass("active");
+    })
+
+    $(document).on("click",".itemBox.nav",function(){
+        $(this)
+        .addClass("active")
+        .find(".injected-svg")
+        .css("display","block")
+        .find("p")
+        .text("閉じる");
+    })
+
+    $(document).on("click",".itemBox.nav.active",function(){
+        $(this)
+        .find(".hamIC")
+        .css("display","block")
+        .next()
+        .css("display","none")
+        .find("p")
+        .text("メニュー");
+    })
 })
 
 //time
@@ -121,6 +146,7 @@ $(function(){
             prevEl: '.swiper-button-prev02',
           },
     });
+
     var swiper03 = new Swiper('.swiper03', {
         autoHeight: true,
         // autoplay: {
@@ -129,7 +155,7 @@ $(function(){
         //     pauseOnMouseEnter: true,
         // },
         // slidesPerView: 3,
-        spaceBetween: 30,
+        spaceBetween: 20,
         // breakpoints: {
             // 1600: {
             //     slidesPerView: 1,
