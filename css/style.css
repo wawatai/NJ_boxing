@@ -301,6 +301,9 @@ html header .top .loginArea .checkBox ul li {
   cursor: pointer;
   margin-bottom: 10px;
 }
+html header .top .loginArea .checkBox ul li:first-child {
+  display: none;
+}
 html header .top .loginArea .checkBox ul li:last-child {
   margin: 0;
 }
@@ -350,18 +353,45 @@ html header .top .rwd_TOPNav {
 html header .top .rwd_TOPNav .itemBox {
   width: auto;
   height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 8px;
 }
 html header .top .rwd_TOPNav .itemBox.active {
   background: #f3c01a;
 }
-html header .top .rwd_TOPNav .itemBox i {
+html header .top .rwd_TOPNav .itemBox.active svg {
+  fill: #ffffff;
+}
+html header .top .rwd_TOPNav .itemBox:first-child svg {
+  margin-left: 5.5px;
+}
+html header .top .rwd_TOPNav .itemBox:nth-of-type(2) svg {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  margin: 2px 0 0 3px;
+}
+html header .top .rwd_TOPNav .itemBox:nth-of-type(2) p {
+  margin-top: 4px;
+}
+html header .top .rwd_TOPNav .itemBox svg {
   width: 21px;
   height: 21px;
+  fill: #f3c01a;
 }
 html header .top .rwd_TOPNav .itemBox p {
   color: #ffffff;
   font-size: 0.9rem;
+  margin-top: 5px;
+  cursor: default;
 }
 html header .bottom {
   width: 100%;
@@ -562,6 +592,9 @@ html header .bottom .mid .time {
   html header .top ul li:nth-of-type(3) {
     display: none;
   }
+  html header .top .loginArea .checkBox ul li:first-child {
+    display: block;
+  }
 }
 @media only screen and (max-width: 1020px) {
   html header .top {
@@ -580,7 +613,9 @@ html header .bottom .mid .time {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    left: 21%;
+    left: 10px;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
     top: 60px;
   }
   html header .top ul li:nth-of-type(3), html header .top ul li:nth-of-type(4) {

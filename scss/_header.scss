@@ -147,6 +147,10 @@ header {
                         cursor: pointer;
                         margin-bottom: 10px;
 
+                        &:first-child {
+                            display: none;
+                        }
+
                         &:last-child {
                             margin: 0;
                         }
@@ -191,20 +195,46 @@ header {
             .itemBox {
                 width: auto;
                 height: auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
                 padding: 8px;
 
                 &.active {
                     background: $subColor;
+
+                    svg {
+                        fill: $mainColor_3;
+                    }
                 }
 
-                i {
+                &:first-child {
+                    svg {
+                        margin-left: 5.5px;
+                    }
+                }
+
+                &:nth-of-type(2) {
+                    svg {
+                        transform: scale(1.05);
+                        margin: 2px 0 0 3px;
+                    }
+                    p {
+                        margin-top: 4px;
+                    }
+                }
+
+                svg {
                     width: 21px;
                     height: 21px;
+                    fill: $subColor;
                 }
 
                 p {
                     color: $mainColor_3;
                     font-size: 0.9rem;
+                    margin-top: 5px;
+                    cursor: default;
                 }
             }
         }
@@ -365,6 +395,18 @@ header {
                     }
                 }
             }
+            .loginArea {
+
+                .checkBox {
+                    ul {
+                        li {
+                            &:first-child {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 
@@ -385,7 +427,8 @@ header {
             }
             ul {
                 display: flex;
-                left: 21%;
+                left: 10px;
+                transform: translateX(0);
                 top: 60px;
                 
                 li {
