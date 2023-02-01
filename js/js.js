@@ -209,17 +209,19 @@ $(function(){
         .toggleClass("active");
     })
  
- 
     $(document).on("click",".fa-regular.fa-star",function(){
         $(this)
         .attr("class","fa-solid fa-star");
-
     })
 
     $(document).on("click",".fa-solid.fa-star",function(){
         $(this)
         .attr("class","fa-regular fa-star");
+    })
 
+    $(document).on("click",".betRecordBtn",function(){
+        $("main .center .right")
+        .toggleClass("active");
     })
 })
 
@@ -228,7 +230,7 @@ $(function(){
 $(function(){
     $("footer .lang>.flag").click(function(){
         $("footer .checkBox")
-        .addClass("display");
+        .toggleClass("display");
     })
 
     $("footer .checkBox label").on("change",function(){
@@ -246,6 +248,24 @@ $(function(){
 
         $("footer .checkBox")
         .removeClass("display");
+    })
+
+    //rwd pageBlock
+    $("footer .top .pageBlock .Bigtitle").click(function(){
+        $(this).parent()
+        .toggleClass("active");
+    })
+
+    $(document).on("click","ul .Bigtitle",function(){
+        $(this)
+        .find("i")
+        .attr("class","fa-solid fa-plus");
+    })
+
+    $(document).on("click","ul.active .Bigtitle",function(){
+        $(this)
+        .find("i")
+        .attr("class","fa-solid fa-minus");
     })
 })
 

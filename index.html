@@ -17,7 +17,7 @@
         <!-- 上 -->
         <div class="top">
             <a href="./index.html" class="logo">
-                <img src="./image/xmas_logo.png">
+                <img src="./image/logo.png">
             </a>
             <ul>
               <li class="active">
@@ -64,13 +64,13 @@
                         </li>
                     </ul>
                 </div>
-              <button type="button" class="signIN" onclick="window.location.href='./html/register.html'">登録</button>
-              <button type="button" class="signUP" onclick="window.location.href='./html/login.html'">ログイン</button>
+              <button type="button" class="signUP" onclick="window.location.href='./html/register.html'">登録</button>
+              <button type="button" class="signIN" onclick="window.location.href='./html/login.html'">ログイン</button>
             </div>
             <div class="rwd_TOPNav">
                 <div class="itemBox" onclick="window.location.href='./html/register.html'">
                     <svg viewBox="0 0 512 512"><path d="M478.179 161.787c-10.956-10.964-28.373-11.653-40.151-2.056-1.703 1.388-.384.165-26.317 26.098l67.316 67.317 24.193-23.891c11.697-11.697 11.697-30.729 0-42.427zM273.667 325.148l-39.598 84.854a15 15 0 0019.936 19.936l84.854-39.599c3.357-1.567-6.806 7.945 118.822-116.114l-67.183-67.184C265.94 331.6 275.265 321.725 273.667 325.148z"></path><path d="M364.13 408.771a44.89 44.89 0 01-12.585 8.755l-84.854 39.599c-16.686 7.787-37.071 4.822-50.848-8.958-13.331-13.33-16.932-33.765-8.96-50.851l39.599-84.856a44.884 44.884 0 018.957-12.787l127.567-127.567V45c0-24.813-20.187-45-45-45h-293c-24.813 0-45 20.187-45 45v422c0 24.813 20.187 45 45 45h293c24.813 0 45-20.187 45-45v-76.871zM80.007 97h224c8.284 0 15 6.716 15 15s-6.716 15-15 15h-224c-8.284 0-15-6.716-15-15s6.716-15 15-15zm0 80h176c8.284 0 15 6.716 15 15s-6.716 15-15 15h-176c-8.284 0-15-6.716-15-15s6.716-15 15-15zm-15 95c0-8.284 6.716-15 15-15h128c8.284 0 15 6.716 15 15s-6.716 15-15 15h-128c-8.284 0-15-6.716-15-15z"></path></svg>
-                    <p>登陸</p>
+                    <p>登錄</p>
                 </div>
                 <div class="itemBox" onclick="window.location.href='./html/login.html'">
                     <svg><g transform="translate(-251.676 -144)"><circle cx="4.717" cy="4.717" r="4.717" transform="translate(254.281 144)"></circle><path d="M260.67 155.007h-3.341a5.669 5.669 0 00-5.653 5.653v1.961h14.645v-1.961a5.668 5.668 0 00-5.651-5.653z"></path></g></svg>
@@ -518,266 +518,33 @@
                             </div>
                         </div>
                         <div class="down">
-                            <p class="timeZone">UFC 283</p>
-                            <p class="date">2023/01/22</p>
-                            <div class="time">
-                                <svg width="19" height="19" viewBox="0 0 19 19"><defs><style>.prefix__b{fill:none;stroke:#b1b1b1;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px}</style></defs><path fill="none" d="M0 0h19v19H0z"></path><circle class="prefix__b" cx="7.5" cy="7.5" r="7.5" transform="translate(2 2)"></circle><path d="M9.62 6.321v3.3l1.6 1.6"></path></svg>
-                                <p>07:00</p>
+                            <!-- 時間資訊 -->
+                            <div class="infoDetail">
+                                <p class="timeZone">UFC 283</p>
+                                <p class="date">2023/01/22</p>
+                                <div class="time">
+                                    <svg width="19" height="19" viewBox="0 0 19 19"><defs><style>.prefix__b{fill:none;stroke:#b1b1b1;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px}</style></defs><path fill="none" d="M0 0h19v19H0z"></path><circle class="prefix__b" cx="7.5" cy="7.5" r="7.5" transform="translate(2 2)"></circle><path d="M9.62 6.321v3.3l1.6 1.6"></path></svg>
+                                    <p>07:00</p>
+                                </div>
+                                <button class="more">詳細</button>
                             </div>
                             <div class="pkTeam">
-                                <div class="team">
-                                    <svg class="cjchqkvecsag151-sportIcon-1 cjchqkvecsag151-sportIconHome-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M21.208,2.209a5.088,5.088,0,0,0-3.3-2.127A5.151,5.151,0,0,0,16.994,0H9.163a5.286,5.286,0,0,0-4.24,2.017,5.186,5.186,0,0,0-.962,4.025l.853,4.692L2.523,7.227,1.882,8a3.733,3.733,0,0,0-.092,4.718L5,17.314V21a3,3,0,0,0,3,3H18a3,3,0,0,0,3-3V16.052L22.036,6.043A5.092,5.092,0,0,0,21.208,2.209ZM18,20H8V18H18Z"></path></g></svg>
-                                    <p class="teamName">Oliveira, Saimon</p>
-                                    <button class="priceBtn">1.59</button>
+                                <div class="outbox">
+                                    <div class="team">
+                                        <svg class="cjchqkvecsag151-sportIcon-1 cjchqkvecsag151-sportIconHome-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M21.208,2.209a5.088,5.088,0,0,0-3.3-2.127A5.151,5.151,0,0,0,16.994,0H9.163a5.286,5.286,0,0,0-4.24,2.017,5.186,5.186,0,0,0-.962,4.025l.853,4.692L2.523,7.227,1.882,8a3.733,3.733,0,0,0-.092,4.718L5,17.314V21a3,3,0,0,0,3,3H18a3,3,0,0,0,3-3V16.052L22.036,6.043A5.092,5.092,0,0,0,21.208,2.209ZM18,20H8V18H18Z"></path></g></svg>
+                                        <p class="teamName">Oliveira, Saimon</p>
+                                        <button class="priceBtn">1.59</button>
+                                    </div>
+                                    <p class="VS">VS</p>
+                                    <div class="team">
+                                        <svg class="cjchqkvecsag151-sportIcon-1 cjchqkvecsag151-sportIconHome-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M21.208,2.209a5.088,5.088,0,0,0-3.3-2.127A5.151,5.151,0,0,0,16.994,0H9.163a5.286,5.286,0,0,0-4.24,2.017,5.186,5.186,0,0,0-.962,4.025l.853,4.692L2.523,7.227,1.882,8a3.733,3.733,0,0,0-.092,4.718L5,17.314V21a3,3,0,0,0,3,3H18a3,3,0,0,0,3-3V16.052L22.036,6.043A5.092,5.092,0,0,0,21.208,2.209ZM18,20H8V18H18Z"></path></g></svg>
+                                        <p class="teamName">Marcos, Daniel</p>
+                                        <button class="priceBtn">2.22</button>
+                                    </div>
                                 </div>
-                                <p class="VS">VS</p>
-                                <div class="team">
-                                    <svg class="cjchqkvecsag151-sportIcon-1 cjchqkvecsag151-sportIconHome-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M21.208,2.209a5.088,5.088,0,0,0-3.3-2.127A5.151,5.151,0,0,0,16.994,0H9.163a5.286,5.286,0,0,0-4.24,2.017,5.186,5.186,0,0,0-.962,4.025l.853,4.692L2.523,7.227,1.882,8a3.733,3.733,0,0,0-.092,4.718L5,17.314V21a3,3,0,0,0,3,3H18a3,3,0,0,0,3-3V16.052L22.036,6.043A5.092,5.092,0,0,0,21.208,2.209ZM18,20H8V18H18Z"></path></g></svg>
-                                    <p class="teamName">Marcos, Daniel</p>
-                                    <button class="priceBtn">2.22</button>
-                                </div>
+                                <p class="winRWD">勝者 ドローなし</p>
                             </div>
-                            <!-- 贏家不抽獎 -->
                             <p class="winner">勝者 ドローなし</p>
-                            <button class="more">詳細</button>
-                        </div>
-                    </div>
-                    <div class="gBlock">
-                        <div class="up">
-                            <!-- 賽前 -->
-                            <span>プレマッチ</span>
-                            <div class="iconBox">
-                                <svg><path d="M20.844 0H2.156A2.156 2.156 0 000 2.156v18.688A2.156 2.156 0 002.156 23h18.688A2.156 2.156 0 0023 20.844V2.156A2.156 2.156 0 0020.844 0zm-.869 1.572a.854.854 0 11-.854.854.854.854 0 01.854-.854zm-3.167 0a.854.854 0 11-.854.854.854.854 0 01.854-.854zm-3.167 0a.854.854 0 11-.854.854.854.854 0 01.854-.854zM21.2 20.844a.36.36 0 01-.359.359H2.156a.36.36 0 01-.359-.359V4.672H21.2z"></path></svg>
-                                <svg><path d="M4.811 18.5h3.622a.444.444 0 00.46-.427v-6.456a.444.444 0 00-.46-.427H4.811a.444.444 0 00-.46.427v6.456a.444.444 0 00.46.427zM11.415 18.499h3.622a.444.444 0 00.46-.427V7.079a.444.444 0 00-.46-.427h-3.622a.444.444 0 00-.46.427v10.989a.444.444 0 00.46.431zM18.019 18.499h3.622a.445.445 0 00.46-.427V1.906a.445.445 0 00-.46-.427h-3.622a.444.444 0 00-.46.427v16.167a.444.444 0 00.46.426z"></path><path d="M22.255 20.444H2.556V0H0v23h23v-2.556z"></path></svg>
-                            </div>
-                        </div>
-                        <div class="down">
-                            <p class="timeZone">UFC 283</p>
-                            <p class="date">2023/01/22</p>
-                            <div class="time">
-                                <svg width="19" height="19" viewBox="0 0 19 19"><defs><style>.prefix__b{fill:none;stroke:#b1b1b1;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px}</style></defs><path fill="none" d="M0 0h19v19H0z"></path><circle class="prefix__b" cx="7.5" cy="7.5" r="7.5" transform="translate(2 2)"></circle><path d="M9.62 6.321v3.3l1.6 1.6"></path></svg>
-                                <p>07:00</p>
-                            </div>
-                            <div class="pkTeam">
-                                <div class="team">
-                                    <svg class="cjchqkvecsag151-sportIcon-1 cjchqkvecsag151-sportIconHome-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M21.208,2.209a5.088,5.088,0,0,0-3.3-2.127A5.151,5.151,0,0,0,16.994,0H9.163a5.286,5.286,0,0,0-4.24,2.017,5.186,5.186,0,0,0-.962,4.025l.853,4.692L2.523,7.227,1.882,8a3.733,3.733,0,0,0-.092,4.718L5,17.314V21a3,3,0,0,0,3,3H18a3,3,0,0,0,3-3V16.052L22.036,6.043A5.092,5.092,0,0,0,21.208,2.209ZM18,20H8V18H18Z"></path></g></svg>
-                                    <p class="teamName">Oliveira, Saimon</p>
-                                    <button class="priceBtn">1.59</button>
-                                </div>
-                                <p class="VS">VS</p>
-                                <div class="team">
-                                    <svg class="cjchqkvecsag151-sportIcon-1 cjchqkvecsag151-sportIconHome-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M21.208,2.209a5.088,5.088,0,0,0-3.3-2.127A5.151,5.151,0,0,0,16.994,0H9.163a5.286,5.286,0,0,0-4.24,2.017,5.186,5.186,0,0,0-.962,4.025l.853,4.692L2.523,7.227,1.882,8a3.733,3.733,0,0,0-.092,4.718L5,17.314V21a3,3,0,0,0,3,3H18a3,3,0,0,0,3-3V16.052L22.036,6.043A5.092,5.092,0,0,0,21.208,2.209ZM18,20H8V18H18Z"></path></g></svg>
-                                    <p class="teamName">Marcos, Daniel</p>
-                                    <button class="priceBtn">2.22</button>
-                                </div>
-                            </div>
-                            <!-- 贏家不抽獎 -->
-                            <p class="winner">勝者 ドローなし</p>
-                            <button class="more">詳細</button>
-                        </div>
-                    </div>
-                    <div class="gBlock">
-                        <div class="up">
-                            <!-- 賽前 -->
-                            <span>プレマッチ</span>
-                            <div class="iconBox">
-                                <svg><path d="M20.844 0H2.156A2.156 2.156 0 000 2.156v18.688A2.156 2.156 0 002.156 23h18.688A2.156 2.156 0 0023 20.844V2.156A2.156 2.156 0 0020.844 0zm-.869 1.572a.854.854 0 11-.854.854.854.854 0 01.854-.854zm-3.167 0a.854.854 0 11-.854.854.854.854 0 01.854-.854zm-3.167 0a.854.854 0 11-.854.854.854.854 0 01.854-.854zM21.2 20.844a.36.36 0 01-.359.359H2.156a.36.36 0 01-.359-.359V4.672H21.2z"></path></svg>
-                                <svg><path d="M4.811 18.5h3.622a.444.444 0 00.46-.427v-6.456a.444.444 0 00-.46-.427H4.811a.444.444 0 00-.46.427v6.456a.444.444 0 00.46.427zM11.415 18.499h3.622a.444.444 0 00.46-.427V7.079a.444.444 0 00-.46-.427h-3.622a.444.444 0 00-.46.427v10.989a.444.444 0 00.46.431zM18.019 18.499h3.622a.445.445 0 00.46-.427V1.906a.445.445 0 00-.46-.427h-3.622a.444.444 0 00-.46.427v16.167a.444.444 0 00.46.426z"></path><path d="M22.255 20.444H2.556V0H0v23h23v-2.556z"></path></svg>
-                            </div>
-                        </div>
-                        <div class="down">
-                            <p class="timeZone">UFC 283</p>
-                            <p class="date">2023/01/22</p>
-                            <div class="time">
-                                <svg width="19" height="19" viewBox="0 0 19 19"><defs><style>.prefix__b{fill:none;stroke:#b1b1b1;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px}</style></defs><path fill="none" d="M0 0h19v19H0z"></path><circle class="prefix__b" cx="7.5" cy="7.5" r="7.5" transform="translate(2 2)"></circle><path d="M9.62 6.321v3.3l1.6 1.6"></path></svg>
-                                <p>07:00</p>
-                            </div>
-                            <div class="pkTeam">
-                                <div class="team">
-                                    <svg class="cjchqkvecsag151-sportIcon-1 cjchqkvecsag151-sportIconHome-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M21.208,2.209a5.088,5.088,0,0,0-3.3-2.127A5.151,5.151,0,0,0,16.994,0H9.163a5.286,5.286,0,0,0-4.24,2.017,5.186,5.186,0,0,0-.962,4.025l.853,4.692L2.523,7.227,1.882,8a3.733,3.733,0,0,0-.092,4.718L5,17.314V21a3,3,0,0,0,3,3H18a3,3,0,0,0,3-3V16.052L22.036,6.043A5.092,5.092,0,0,0,21.208,2.209ZM18,20H8V18H18Z"></path></g></svg>
-                                    <p class="teamName">Oliveira, Saimon</p>
-                                    <button class="priceBtn">1.59</button>
-                                </div>
-                                <p class="VS">VS</p>
-                                <div class="team">
-                                    <svg class="cjchqkvecsag151-sportIcon-1 cjchqkvecsag151-sportIconHome-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M21.208,2.209a5.088,5.088,0,0,0-3.3-2.127A5.151,5.151,0,0,0,16.994,0H9.163a5.286,5.286,0,0,0-4.24,2.017,5.186,5.186,0,0,0-.962,4.025l.853,4.692L2.523,7.227,1.882,8a3.733,3.733,0,0,0-.092,4.718L5,17.314V21a3,3,0,0,0,3,3H18a3,3,0,0,0,3-3V16.052L22.036,6.043A5.092,5.092,0,0,0,21.208,2.209ZM18,20H8V18H18Z"></path></g></svg>
-                                    <p class="teamName">Marcos, Daniel</p>
-                                    <button class="priceBtn">2.22</button>
-                                </div>
-                            </div>
-                            <!-- 贏家不抽獎 -->
-                            <p class="winner">勝者 ドローなし</p>
-                            <button class="more">詳細</button>
-                        </div>
-                    </div>
-                    <div class="gBlock">
-                        <div class="up">
-                            <!-- 賽前 -->
-                            <span>プレマッチ</span>
-                            <div class="iconBox">
-                                <svg><path d="M20.844 0H2.156A2.156 2.156 0 000 2.156v18.688A2.156 2.156 0 002.156 23h18.688A2.156 2.156 0 0023 20.844V2.156A2.156 2.156 0 0020.844 0zm-.869 1.572a.854.854 0 11-.854.854.854.854 0 01.854-.854zm-3.167 0a.854.854 0 11-.854.854.854.854 0 01.854-.854zm-3.167 0a.854.854 0 11-.854.854.854.854 0 01.854-.854zM21.2 20.844a.36.36 0 01-.359.359H2.156a.36.36 0 01-.359-.359V4.672H21.2z"></path></svg>
-                                <svg><path d="M4.811 18.5h3.622a.444.444 0 00.46-.427v-6.456a.444.444 0 00-.46-.427H4.811a.444.444 0 00-.46.427v6.456a.444.444 0 00.46.427zM11.415 18.499h3.622a.444.444 0 00.46-.427V7.079a.444.444 0 00-.46-.427h-3.622a.444.444 0 00-.46.427v10.989a.444.444 0 00.46.431zM18.019 18.499h3.622a.445.445 0 00.46-.427V1.906a.445.445 0 00-.46-.427h-3.622a.444.444 0 00-.46.427v16.167a.444.444 0 00.46.426z"></path><path d="M22.255 20.444H2.556V0H0v23h23v-2.556z"></path></svg>
-                            </div>
-                        </div>
-                        <div class="down">
-                            <p class="timeZone">UFC 283</p>
-                            <p class="date">2023/01/22</p>
-                            <div class="time">
-                                <svg width="19" height="19" viewBox="0 0 19 19"><defs><style>.prefix__b{fill:none;stroke:#b1b1b1;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px}</style></defs><path fill="none" d="M0 0h19v19H0z"></path><circle class="prefix__b" cx="7.5" cy="7.5" r="7.5" transform="translate(2 2)"></circle><path d="M9.62 6.321v3.3l1.6 1.6"></path></svg>
-                                <p>07:00</p>
-                            </div>
-                            <div class="pkTeam">
-                                <div class="team">
-                                    <svg class="cjchqkvecsag151-sportIcon-1 cjchqkvecsag151-sportIconHome-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M21.208,2.209a5.088,5.088,0,0,0-3.3-2.127A5.151,5.151,0,0,0,16.994,0H9.163a5.286,5.286,0,0,0-4.24,2.017,5.186,5.186,0,0,0-.962,4.025l.853,4.692L2.523,7.227,1.882,8a3.733,3.733,0,0,0-.092,4.718L5,17.314V21a3,3,0,0,0,3,3H18a3,3,0,0,0,3-3V16.052L22.036,6.043A5.092,5.092,0,0,0,21.208,2.209ZM18,20H8V18H18Z"></path></g></svg>
-                                    <p class="teamName">Oliveira, Saimon</p>
-                                    <button class="priceBtn">1.59</button>
-                                </div>
-                                <p class="VS">VS</p>
-                                <div class="team">
-                                    <svg class="cjchqkvecsag151-sportIcon-1 cjchqkvecsag151-sportIconHome-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M21.208,2.209a5.088,5.088,0,0,0-3.3-2.127A5.151,5.151,0,0,0,16.994,0H9.163a5.286,5.286,0,0,0-4.24,2.017,5.186,5.186,0,0,0-.962,4.025l.853,4.692L2.523,7.227,1.882,8a3.733,3.733,0,0,0-.092,4.718L5,17.314V21a3,3,0,0,0,3,3H18a3,3,0,0,0,3-3V16.052L22.036,6.043A5.092,5.092,0,0,0,21.208,2.209ZM18,20H8V18H18Z"></path></g></svg>
-                                    <p class="teamName">Marcos, Daniel</p>
-                                    <button class="priceBtn">2.22</button>
-                                </div>
-                            </div>
-                            <!-- 贏家不抽獎 -->
-                            <p class="winner">勝者 ドローなし</p>
-                            <button class="more">詳細</button>
-                        </div>
-                    </div>
-                    <div class="gBlock">
-                        <div class="up">
-                            <!-- 賽前 -->
-                            <span>プレマッチ</span>
-                            <div class="iconBox">
-                                <svg><path d="M20.844 0H2.156A2.156 2.156 0 000 2.156v18.688A2.156 2.156 0 002.156 23h18.688A2.156 2.156 0 0023 20.844V2.156A2.156 2.156 0 0020.844 0zm-.869 1.572a.854.854 0 11-.854.854.854.854 0 01.854-.854zm-3.167 0a.854.854 0 11-.854.854.854.854 0 01.854-.854zm-3.167 0a.854.854 0 11-.854.854.854.854 0 01.854-.854zM21.2 20.844a.36.36 0 01-.359.359H2.156a.36.36 0 01-.359-.359V4.672H21.2z"></path></svg>
-                                <svg><path d="M4.811 18.5h3.622a.444.444 0 00.46-.427v-6.456a.444.444 0 00-.46-.427H4.811a.444.444 0 00-.46.427v6.456a.444.444 0 00.46.427zM11.415 18.499h3.622a.444.444 0 00.46-.427V7.079a.444.444 0 00-.46-.427h-3.622a.444.444 0 00-.46.427v10.989a.444.444 0 00.46.431zM18.019 18.499h3.622a.445.445 0 00.46-.427V1.906a.445.445 0 00-.46-.427h-3.622a.444.444 0 00-.46.427v16.167a.444.444 0 00.46.426z"></path><path d="M22.255 20.444H2.556V0H0v23h23v-2.556z"></path></svg>
-                            </div>
-                        </div>
-                        <div class="down">
-                            <p class="timeZone">UFC 283</p>
-                            <p class="date">2023/01/22</p>
-                            <div class="time">
-                                <svg width="19" height="19" viewBox="0 0 19 19"><defs><style>.prefix__b{fill:none;stroke:#b1b1b1;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px}</style></defs><path fill="none" d="M0 0h19v19H0z"></path><circle class="prefix__b" cx="7.5" cy="7.5" r="7.5" transform="translate(2 2)"></circle><path d="M9.62 6.321v3.3l1.6 1.6"></path></svg>
-                                <p>07:00</p>
-                            </div>
-                            <div class="pkTeam">
-                                <div class="team">
-                                    <svg class="cjchqkvecsag151-sportIcon-1 cjchqkvecsag151-sportIconHome-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M21.208,2.209a5.088,5.088,0,0,0-3.3-2.127A5.151,5.151,0,0,0,16.994,0H9.163a5.286,5.286,0,0,0-4.24,2.017,5.186,5.186,0,0,0-.962,4.025l.853,4.692L2.523,7.227,1.882,8a3.733,3.733,0,0,0-.092,4.718L5,17.314V21a3,3,0,0,0,3,3H18a3,3,0,0,0,3-3V16.052L22.036,6.043A5.092,5.092,0,0,0,21.208,2.209ZM18,20H8V18H18Z"></path></g></svg>
-                                    <p class="teamName">Oliveira, Saimon</p>
-                                    <button class="priceBtn">1.59</button>
-                                </div>
-                                <p class="VS">VS</p>
-                                <div class="team">
-                                    <svg class="cjchqkvecsag151-sportIcon-1 cjchqkvecsag151-sportIconHome-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M21.208,2.209a5.088,5.088,0,0,0-3.3-2.127A5.151,5.151,0,0,0,16.994,0H9.163a5.286,5.286,0,0,0-4.24,2.017,5.186,5.186,0,0,0-.962,4.025l.853,4.692L2.523,7.227,1.882,8a3.733,3.733,0,0,0-.092,4.718L5,17.314V21a3,3,0,0,0,3,3H18a3,3,0,0,0,3-3V16.052L22.036,6.043A5.092,5.092,0,0,0,21.208,2.209ZM18,20H8V18H18Z"></path></g></svg>
-                                    <p class="teamName">Marcos, Daniel</p>
-                                    <button class="priceBtn">2.22</button>
-                                </div>
-                            </div>
-                            <!-- 贏家不抽獎 -->
-                            <p class="winner">勝者 ドローなし</p>
-                            <button class="more">詳細</button>
-                        </div>
-                    </div>
-                    <div class="gBlock">
-                        <div class="up">
-                            <!-- 賽前 -->
-                            <span>プレマッチ</span>
-                            <div class="iconBox">
-                                <svg><path d="M20.844 0H2.156A2.156 2.156 0 000 2.156v18.688A2.156 2.156 0 002.156 23h18.688A2.156 2.156 0 0023 20.844V2.156A2.156 2.156 0 0020.844 0zm-.869 1.572a.854.854 0 11-.854.854.854.854 0 01.854-.854zm-3.167 0a.854.854 0 11-.854.854.854.854 0 01.854-.854zm-3.167 0a.854.854 0 11-.854.854.854.854 0 01.854-.854zM21.2 20.844a.36.36 0 01-.359.359H2.156a.36.36 0 01-.359-.359V4.672H21.2z"></path></svg>
-                                <svg><path d="M4.811 18.5h3.622a.444.444 0 00.46-.427v-6.456a.444.444 0 00-.46-.427H4.811a.444.444 0 00-.46.427v6.456a.444.444 0 00.46.427zM11.415 18.499h3.622a.444.444 0 00.46-.427V7.079a.444.444 0 00-.46-.427h-3.622a.444.444 0 00-.46.427v10.989a.444.444 0 00.46.431zM18.019 18.499h3.622a.445.445 0 00.46-.427V1.906a.445.445 0 00-.46-.427h-3.622a.444.444 0 00-.46.427v16.167a.444.444 0 00.46.426z"></path><path d="M22.255 20.444H2.556V0H0v23h23v-2.556z"></path></svg>
-                            </div>
-                        </div>
-                        <div class="down">
-                            <p class="timeZone">UFC 283</p>
-                            <p class="date">2023/01/22</p>
-                            <div class="time">
-                                <svg width="19" height="19" viewBox="0 0 19 19"><defs><style>.prefix__b{fill:none;stroke:#b1b1b1;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px}</style></defs><path fill="none" d="M0 0h19v19H0z"></path><circle class="prefix__b" cx="7.5" cy="7.5" r="7.5" transform="translate(2 2)"></circle><path d="M9.62 6.321v3.3l1.6 1.6"></path></svg>
-                                <p>07:00</p>
-                            </div>
-                            <div class="pkTeam">
-                                <div class="team">
-                                    <svg class="cjchqkvecsag151-sportIcon-1 cjchqkvecsag151-sportIconHome-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M21.208,2.209a5.088,5.088,0,0,0-3.3-2.127A5.151,5.151,0,0,0,16.994,0H9.163a5.286,5.286,0,0,0-4.24,2.017,5.186,5.186,0,0,0-.962,4.025l.853,4.692L2.523,7.227,1.882,8a3.733,3.733,0,0,0-.092,4.718L5,17.314V21a3,3,0,0,0,3,3H18a3,3,0,0,0,3-3V16.052L22.036,6.043A5.092,5.092,0,0,0,21.208,2.209ZM18,20H8V18H18Z"></path></g></svg>
-                                    <p class="teamName">Oliveira, Saimon</p>
-                                    <button class="priceBtn">1.59</button>
-                                </div>
-                                <p class="VS">VS</p>
-                                <div class="team">
-                                    <svg class="cjchqkvecsag151-sportIcon-1 cjchqkvecsag151-sportIconHome-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M21.208,2.209a5.088,5.088,0,0,0-3.3-2.127A5.151,5.151,0,0,0,16.994,0H9.163a5.286,5.286,0,0,0-4.24,2.017,5.186,5.186,0,0,0-.962,4.025l.853,4.692L2.523,7.227,1.882,8a3.733,3.733,0,0,0-.092,4.718L5,17.314V21a3,3,0,0,0,3,3H18a3,3,0,0,0,3-3V16.052L22.036,6.043A5.092,5.092,0,0,0,21.208,2.209ZM18,20H8V18H18Z"></path></g></svg>
-                                    <p class="teamName">Marcos, Daniel</p>
-                                    <button class="priceBtn">2.22</button>
-                                </div>
-                            </div>
-                            <!-- 贏家不抽獎 -->
-                            <p class="winner">勝者 ドローなし</p>
-                            <button class="more">詳細</button>
-                        </div>
-                    </div>
-                    <div class="gBlock">
-                        <div class="up">
-                            <!-- 賽前 -->
-                            <span>プレマッチ</span>
-                            <div class="iconBox">
-                                <svg><path d="M20.844 0H2.156A2.156 2.156 0 000 2.156v18.688A2.156 2.156 0 002.156 23h18.688A2.156 2.156 0 0023 20.844V2.156A2.156 2.156 0 0020.844 0zm-.869 1.572a.854.854 0 11-.854.854.854.854 0 01.854-.854zm-3.167 0a.854.854 0 11-.854.854.854.854 0 01.854-.854zm-3.167 0a.854.854 0 11-.854.854.854.854 0 01.854-.854zM21.2 20.844a.36.36 0 01-.359.359H2.156a.36.36 0 01-.359-.359V4.672H21.2z"></path></svg>
-                                <svg><path d="M4.811 18.5h3.622a.444.444 0 00.46-.427v-6.456a.444.444 0 00-.46-.427H4.811a.444.444 0 00-.46.427v6.456a.444.444 0 00.46.427zM11.415 18.499h3.622a.444.444 0 00.46-.427V7.079a.444.444 0 00-.46-.427h-3.622a.444.444 0 00-.46.427v10.989a.444.444 0 00.46.431zM18.019 18.499h3.622a.445.445 0 00.46-.427V1.906a.445.445 0 00-.46-.427h-3.622a.444.444 0 00-.46.427v16.167a.444.444 0 00.46.426z"></path><path d="M22.255 20.444H2.556V0H0v23h23v-2.556z"></path></svg>
-                            </div>
-                        </div>
-                        <div class="down">
-                            <p class="timeZone">UFC 283</p>
-                            <p class="date">2023/01/22</p>
-                            <div class="time">
-                                <svg width="19" height="19" viewBox="0 0 19 19"><defs><style>.prefix__b{fill:none;stroke:#b1b1b1;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px}</style></defs><path fill="none" d="M0 0h19v19H0z"></path><circle class="prefix__b" cx="7.5" cy="7.5" r="7.5" transform="translate(2 2)"></circle><path d="M9.62 6.321v3.3l1.6 1.6"></path></svg>
-                                <p>07:00</p>
-                            </div>
-                            <div class="pkTeam">
-                                <div class="team">
-                                    <svg class="cjchqkvecsag151-sportIcon-1 cjchqkvecsag151-sportIconHome-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M21.208,2.209a5.088,5.088,0,0,0-3.3-2.127A5.151,5.151,0,0,0,16.994,0H9.163a5.286,5.286,0,0,0-4.24,2.017,5.186,5.186,0,0,0-.962,4.025l.853,4.692L2.523,7.227,1.882,8a3.733,3.733,0,0,0-.092,4.718L5,17.314V21a3,3,0,0,0,3,3H18a3,3,0,0,0,3-3V16.052L22.036,6.043A5.092,5.092,0,0,0,21.208,2.209ZM18,20H8V18H18Z"></path></g></svg>
-                                    <p class="teamName">Oliveira, Saimon</p>
-                                    <button class="priceBtn">1.59</button>
-                                </div>
-                                <p class="VS">VS</p>
-                                <div class="team">
-                                    <svg class="cjchqkvecsag151-sportIcon-1 cjchqkvecsag151-sportIconHome-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M21.208,2.209a5.088,5.088,0,0,0-3.3-2.127A5.151,5.151,0,0,0,16.994,0H9.163a5.286,5.286,0,0,0-4.24,2.017,5.186,5.186,0,0,0-.962,4.025l.853,4.692L2.523,7.227,1.882,8a3.733,3.733,0,0,0-.092,4.718L5,17.314V21a3,3,0,0,0,3,3H18a3,3,0,0,0,3-3V16.052L22.036,6.043A5.092,5.092,0,0,0,21.208,2.209ZM18,20H8V18H18Z"></path></g></svg>
-                                    <p class="teamName">Marcos, Daniel</p>
-                                    <button class="priceBtn">2.22</button>
-                                </div>
-                            </div>
-                            <!-- 贏家不抽獎 -->
-                            <p class="winner">勝者 ドローなし</p>
-                            <button class="more">詳細</button>
-                        </div>
-                    </div>
-                    <div class="gBlock">
-                        <div class="up">
-                            <!-- 賽前 -->
-                            <span>プレマッチ</span>
-                            <div class="iconBox">
-                                <svg><path d="M20.844 0H2.156A2.156 2.156 0 000 2.156v18.688A2.156 2.156 0 002.156 23h18.688A2.156 2.156 0 0023 20.844V2.156A2.156 2.156 0 0020.844 0zm-.869 1.572a.854.854 0 11-.854.854.854.854 0 01.854-.854zm-3.167 0a.854.854 0 11-.854.854.854.854 0 01.854-.854zm-3.167 0a.854.854 0 11-.854.854.854.854 0 01.854-.854zM21.2 20.844a.36.36 0 01-.359.359H2.156a.36.36 0 01-.359-.359V4.672H21.2z"></path></svg>
-                                <svg><path d="M4.811 18.5h3.622a.444.444 0 00.46-.427v-6.456a.444.444 0 00-.46-.427H4.811a.444.444 0 00-.46.427v6.456a.444.444 0 00.46.427zM11.415 18.499h3.622a.444.444 0 00.46-.427V7.079a.444.444 0 00-.46-.427h-3.622a.444.444 0 00-.46.427v10.989a.444.444 0 00.46.431zM18.019 18.499h3.622a.445.445 0 00.46-.427V1.906a.445.445 0 00-.46-.427h-3.622a.444.444 0 00-.46.427v16.167a.444.444 0 00.46.426z"></path><path d="M22.255 20.444H2.556V0H0v23h23v-2.556z"></path></svg>
-                            </div>
-                        </div>
-                        <div class="down">
-                            <p class="timeZone">UFC 283</p>
-                            <p class="date">2023/01/22</p>
-                            <div class="time">
-                                <svg width="19" height="19" viewBox="0 0 19 19"><defs><style>.prefix__b{fill:none;stroke:#b1b1b1;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px}</style></defs><path fill="none" d="M0 0h19v19H0z"></path><circle class="prefix__b" cx="7.5" cy="7.5" r="7.5" transform="translate(2 2)"></circle><path d="M9.62 6.321v3.3l1.6 1.6"></path></svg>
-                                <p>07:00</p>
-                            </div>
-                            <div class="pkTeam">
-                                <div class="team">
-                                    <svg class="cjchqkvecsag151-sportIcon-1 cjchqkvecsag151-sportIconHome-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M21.208,2.209a5.088,5.088,0,0,0-3.3-2.127A5.151,5.151,0,0,0,16.994,0H9.163a5.286,5.286,0,0,0-4.24,2.017,5.186,5.186,0,0,0-.962,4.025l.853,4.692L2.523,7.227,1.882,8a3.733,3.733,0,0,0-.092,4.718L5,17.314V21a3,3,0,0,0,3,3H18a3,3,0,0,0,3-3V16.052L22.036,6.043A5.092,5.092,0,0,0,21.208,2.209ZM18,20H8V18H18Z"></path></g></svg>
-                                    <p class="teamName">Oliveira, Saimon</p>
-                                    <button class="priceBtn">1.59</button>
-                                </div>
-                                <p class="VS">VS</p>
-                                <div class="team">
-                                    <svg class="cjchqkvecsag151-sportIcon-1 cjchqkvecsag151-sportIconHome-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M21.208,2.209a5.088,5.088,0,0,0-3.3-2.127A5.151,5.151,0,0,0,16.994,0H9.163a5.286,5.286,0,0,0-4.24,2.017,5.186,5.186,0,0,0-.962,4.025l.853,4.692L2.523,7.227,1.882,8a3.733,3.733,0,0,0-.092,4.718L5,17.314V21a3,3,0,0,0,3,3H18a3,3,0,0,0,3-3V16.052L22.036,6.043A5.092,5.092,0,0,0,21.208,2.209ZM18,20H8V18H18Z"></path></g></svg>
-                                    <p class="teamName">Marcos, Daniel</p>
-                                    <button class="priceBtn">2.22</button>
-                                </div>
-                            </div>
-                            <!-- 贏家不抽獎 -->
-                            <p class="winner">勝者 ドローなし</p>
-                            <button class="more">詳細</button>
                         </div>
                     </div>
                 </div>
@@ -795,28 +562,33 @@
                                     </div>
                                 </div>
                                 <div class="down">
-                                    <p class="timeZone">UFC 283</p>
-                                    <p class="date">2023/01/22</p>
-                                    <div class="time">
-                                        <svg width="19" height="19" viewBox="0 0 19 19"><defs><style>.prefix__b{fill:none;stroke:#b1b1b1;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px}</style></defs><path fill="none" d="M0 0h19v19H0z"></path><circle class="prefix__b" cx="7.5" cy="7.5" r="7.5" transform="translate(2 2)"></circle><path d="M9.62 6.321v3.3l1.6 1.6"></path></svg>
-                                        <p>07:00</p>
+                                    <!-- 時間資訊 -->
+                                    <div class="infoDetail">
+                                        <p class="timeZone">UFC 283</p>
+                                        <p class="date">2023/01/22</p>
+                                        <div class="time">
+                                            <svg width="19" height="19" viewBox="0 0 19 19"><defs><style>.prefix__b{fill:none;stroke:#b1b1b1;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px}</style></defs><path fill="none" d="M0 0h19v19H0z"></path><circle class="prefix__b" cx="7.5" cy="7.5" r="7.5" transform="translate(2 2)"></circle><path d="M9.62 6.321v3.3l1.6 1.6"></path></svg>
+                                            <p>07:00</p>
+                                        </div>
+                                        <button class="more">詳細</button>
                                     </div>
                                     <div class="pkTeam">
-                                        <div class="team">
-                                            <svg class="cjchqkvecsag151-sportIcon-1 cjchqkvecsag151-sportIconHome-1"viewBox="0 0 24 24" width="24" height="24"><path d="M21.208,2.209a5.088,5.088,0,0,0-3.3-2.127A5.151,5.151,0,0,0,16.994,0H9.163a5.286,5.286,0,0,0-4.24,2.017,5.186,5.186,0,0,0-.962,4.025l.853,4.692L2.523,7.227,1.882,8a3.733,3.733,0,0,0-.092,4.718L5,17.314V21a3,3,0,0,0,3,3H18a3,3,0,0,0,3-3V16.052L22.036,6.043A5.092,5.092,0,0,0,21.208,2.209ZM18,20H8V18H18Z"></path></g></svg>
-                                            <p class="teamName">Oliveira, Saimon</p>
-                                            <button class="priceBtn">1.59</button>
+                                        <div class="outbox">
+                                            <div class="team">
+                                                <svg class="cjchqkvecsag151-sportIcon-1 cjchqkvecsag151-sportIconHome-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M21.208,2.209a5.088,5.088,0,0,0-3.3-2.127A5.151,5.151,0,0,0,16.994,0H9.163a5.286,5.286,0,0,0-4.24,2.017,5.186,5.186,0,0,0-.962,4.025l.853,4.692L2.523,7.227,1.882,8a3.733,3.733,0,0,0-.092,4.718L5,17.314V21a3,3,0,0,0,3,3H18a3,3,0,0,0,3-3V16.052L22.036,6.043A5.092,5.092,0,0,0,21.208,2.209ZM18,20H8V18H18Z"></path></g></svg>
+                                                <p class="teamName">Oliveira, Saimon</p>
+                                                <button class="priceBtn">1.59</button>
+                                            </div>
+                                            <p class="VS">VS</p>
+                                            <div class="team">
+                                                <svg class="cjchqkvecsag151-sportIcon-1 cjchqkvecsag151-sportIconHome-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M21.208,2.209a5.088,5.088,0,0,0-3.3-2.127A5.151,5.151,0,0,0,16.994,0H9.163a5.286,5.286,0,0,0-4.24,2.017,5.186,5.186,0,0,0-.962,4.025l.853,4.692L2.523,7.227,1.882,8a3.733,3.733,0,0,0-.092,4.718L5,17.314V21a3,3,0,0,0,3,3H18a3,3,0,0,0,3-3V16.052L22.036,6.043A5.092,5.092,0,0,0,21.208,2.209ZM18,20H8V18H18Z"></path></g></svg>
+                                                <p class="teamName">Marcos, Daniel</p>
+                                                <button class="priceBtn">2.22</button>
+                                            </div>
                                         </div>
-                                        <p class="VS">VS</p>
-                                        <div class="team">
-                                            <svg class="cjchqkvecsag151-sportIcon-1 cjchqkvecsag151-sportIconHome-1"viewBox="0 0 24 24" width="24" height="24"><path d="M21.208,2.209a5.088,5.088,0,0,0-3.3-2.127A5.151,5.151,0,0,0,16.994,0H9.163a5.286,5.286,0,0,0-4.24,2.017,5.186,5.186,0,0,0-.962,4.025l.853,4.692L2.523,7.227,1.882,8a3.733,3.733,0,0,0-.092,4.718L5,17.314V21a3,3,0,0,0,3,3H18a3,3,0,0,0,3-3V16.052L22.036,6.043A5.092,5.092,0,0,0,21.208,2.209ZM18,20H8V18H18Z"></path></g></svg>
-                                            <p class="teamName">Marcos, Daniel</p>
-                                            <button class="priceBtn">2.22</button>
-                                        </div>
+                                        <p class="winRWD">勝者 ドローなし</p>
                                     </div>
-                                    <!-- 贏家不抽獎 -->
                                     <p class="winner">勝者 ドローなし</p>
-                                    <button class="more">詳細</button>
                                 </div>
                             </div>
                         </div>
@@ -831,28 +603,33 @@
                                     </div>
                                 </div>
                                 <div class="down">
-                                    <p class="timeZone">UFC 283</p>
-                                    <p class="date">2023/01/22</p>
-                                    <div class="time">
-                                        <svg width="19" height="19" viewBox="0 0 19 19"><defs><style>.prefix__b{fill:none;stroke:#b1b1b1;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px}</style></defs><path fill="none" d="M0 0h19v19H0z"></path><circle class="prefix__b" cx="7.5" cy="7.5" r="7.5" transform="translate(2 2)"></circle><path d="M9.62 6.321v3.3l1.6 1.6"></path></svg>
-                                        <p>07:00</p>
+                                    <!-- 時間資訊 -->
+                                    <div class="infoDetail">
+                                        <p class="timeZone">UFC 283</p>
+                                        <p class="date">2023/01/22</p>
+                                        <div class="time">
+                                            <svg width="19" height="19" viewBox="0 0 19 19"><defs><style>.prefix__b{fill:none;stroke:#b1b1b1;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px}</style></defs><path fill="none" d="M0 0h19v19H0z"></path><circle class="prefix__b" cx="7.5" cy="7.5" r="7.5" transform="translate(2 2)"></circle><path d="M9.62 6.321v3.3l1.6 1.6"></path></svg>
+                                            <p>07:00</p>
+                                        </div>
+                                        <button class="more">詳細</button>
                                     </div>
                                     <div class="pkTeam">
-                                        <div class="team">
-                                            <svg class="cjchqkvecsag151-sportIcon-1 cjchqkvecsag151-sportIconHome-1"viewBox="0 0 24 24" width="24" height="24"><path d="M21.208,2.209a5.088,5.088,0,0,0-3.3-2.127A5.151,5.151,0,0,0,16.994,0H9.163a5.286,5.286,0,0,0-4.24,2.017,5.186,5.186,0,0,0-.962,4.025l.853,4.692L2.523,7.227,1.882,8a3.733,3.733,0,0,0-.092,4.718L5,17.314V21a3,3,0,0,0,3,3H18a3,3,0,0,0,3-3V16.052L22.036,6.043A5.092,5.092,0,0,0,21.208,2.209ZM18,20H8V18H18Z"></path></g></svg>
-                                            <p class="teamName">Oliveira, Saimon</p>
-                                            <button class="priceBtn">1.59</button>
+                                        <div class="outbox">
+                                            <div class="team">
+                                                <svg class="cjchqkvecsag151-sportIcon-1 cjchqkvecsag151-sportIconHome-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M21.208,2.209a5.088,5.088,0,0,0-3.3-2.127A5.151,5.151,0,0,0,16.994,0H9.163a5.286,5.286,0,0,0-4.24,2.017,5.186,5.186,0,0,0-.962,4.025l.853,4.692L2.523,7.227,1.882,8a3.733,3.733,0,0,0-.092,4.718L5,17.314V21a3,3,0,0,0,3,3H18a3,3,0,0,0,3-3V16.052L22.036,6.043A5.092,5.092,0,0,0,21.208,2.209ZM18,20H8V18H18Z"></path></g></svg>
+                                                <p class="teamName">Oliveira, Saimon</p>
+                                                <button class="priceBtn">1.59</button>
+                                            </div>
+                                            <p class="VS">VS</p>
+                                            <div class="team">
+                                                <svg class="cjchqkvecsag151-sportIcon-1 cjchqkvecsag151-sportIconHome-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M21.208,2.209a5.088,5.088,0,0,0-3.3-2.127A5.151,5.151,0,0,0,16.994,0H9.163a5.286,5.286,0,0,0-4.24,2.017,5.186,5.186,0,0,0-.962,4.025l.853,4.692L2.523,7.227,1.882,8a3.733,3.733,0,0,0-.092,4.718L5,17.314V21a3,3,0,0,0,3,3H18a3,3,0,0,0,3-3V16.052L22.036,6.043A5.092,5.092,0,0,0,21.208,2.209ZM18,20H8V18H18Z"></path></g></svg>
+                                                <p class="teamName">Marcos, Daniel</p>
+                                                <button class="priceBtn">2.22</button>
+                                            </div>
                                         </div>
-                                        <p class="VS">VS</p>
-                                        <div class="team">
-                                            <svg class="cjchqkvecsag151-sportIcon-1 cjchqkvecsag151-sportIconHome-1"viewBox="0 0 24 24" width="24" height="24"><path d="M21.208,2.209a5.088,5.088,0,0,0-3.3-2.127A5.151,5.151,0,0,0,16.994,0H9.163a5.286,5.286,0,0,0-4.24,2.017,5.186,5.186,0,0,0-.962,4.025l.853,4.692L2.523,7.227,1.882,8a3.733,3.733,0,0,0-.092,4.718L5,17.314V21a3,3,0,0,0,3,3H18a3,3,0,0,0,3-3V16.052L22.036,6.043A5.092,5.092,0,0,0,21.208,2.209ZM18,20H8V18H18Z"></path></g></svg>
-                                            <p class="teamName">Marcos, Daniel</p>
-                                            <button class="priceBtn">2.22</button>
-                                        </div>
+                                        <p class="winRWD">勝者 ドローなし</p>
                                     </div>
-                                    <!-- 贏家不抽獎 -->
                                     <p class="winner">勝者 ドローなし</p>
-                                    <button class="more">詳細</button>
                                 </div>
                             </div>
                         </div>
@@ -867,28 +644,33 @@
                                     </div>
                                 </div>
                                 <div class="down">
-                                    <p class="timeZone">UFC 283</p>
-                                    <p class="date">2023/01/22</p>
-                                    <div class="time">
-                                        <svg width="19" height="19" viewBox="0 0 19 19"><defs><style>.prefix__b{fill:none;stroke:#b1b1b1;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px}</style></defs><path fill="none" d="M0 0h19v19H0z"></path><circle class="prefix__b" cx="7.5" cy="7.5" r="7.5" transform="translate(2 2)"></circle><path d="M9.62 6.321v3.3l1.6 1.6"></path></svg>
-                                        <p>07:00</p>
+                                    <!-- 時間資訊 -->
+                                    <div class="infoDetail">
+                                        <p class="timeZone">UFC 283</p>
+                                        <p class="date">2023/01/22</p>
+                                        <div class="time">
+                                            <svg width="19" height="19" viewBox="0 0 19 19"><defs><style>.prefix__b{fill:none;stroke:#b1b1b1;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px}</style></defs><path fill="none" d="M0 0h19v19H0z"></path><circle class="prefix__b" cx="7.5" cy="7.5" r="7.5" transform="translate(2 2)"></circle><path d="M9.62 6.321v3.3l1.6 1.6"></path></svg>
+                                            <p>07:00</p>
+                                        </div>
+                                        <button class="more">詳細</button>
                                     </div>
                                     <div class="pkTeam">
-                                        <div class="team">
-                                            <svg class="cjchqkvecsag151-sportIcon-1 cjchqkvecsag151-sportIconHome-1"viewBox="0 0 24 24" width="24" height="24"><path d="M21.208,2.209a5.088,5.088,0,0,0-3.3-2.127A5.151,5.151,0,0,0,16.994,0H9.163a5.286,5.286,0,0,0-4.24,2.017,5.186,5.186,0,0,0-.962,4.025l.853,4.692L2.523,7.227,1.882,8a3.733,3.733,0,0,0-.092,4.718L5,17.314V21a3,3,0,0,0,3,3H18a3,3,0,0,0,3-3V16.052L22.036,6.043A5.092,5.092,0,0,0,21.208,2.209ZM18,20H8V18H18Z"></path></g></svg>
-                                            <p class="teamName">Oliveira, Saimon</p>
-                                            <button class="priceBtn">1.59</button>
+                                        <div class="outbox">
+                                            <div class="team">
+                                                <svg class="cjchqkvecsag151-sportIcon-1 cjchqkvecsag151-sportIconHome-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M21.208,2.209a5.088,5.088,0,0,0-3.3-2.127A5.151,5.151,0,0,0,16.994,0H9.163a5.286,5.286,0,0,0-4.24,2.017,5.186,5.186,0,0,0-.962,4.025l.853,4.692L2.523,7.227,1.882,8a3.733,3.733,0,0,0-.092,4.718L5,17.314V21a3,3,0,0,0,3,3H18a3,3,0,0,0,3-3V16.052L22.036,6.043A5.092,5.092,0,0,0,21.208,2.209ZM18,20H8V18H18Z"></path></g></svg>
+                                                <p class="teamName">Oliveira, Saimon</p>
+                                                <button class="priceBtn">1.59</button>
+                                            </div>
+                                            <p class="VS">VS</p>
+                                            <div class="team">
+                                                <svg class="cjchqkvecsag151-sportIcon-1 cjchqkvecsag151-sportIconHome-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M21.208,2.209a5.088,5.088,0,0,0-3.3-2.127A5.151,5.151,0,0,0,16.994,0H9.163a5.286,5.286,0,0,0-4.24,2.017,5.186,5.186,0,0,0-.962,4.025l.853,4.692L2.523,7.227,1.882,8a3.733,3.733,0,0,0-.092,4.718L5,17.314V21a3,3,0,0,0,3,3H18a3,3,0,0,0,3-3V16.052L22.036,6.043A5.092,5.092,0,0,0,21.208,2.209ZM18,20H8V18H18Z"></path></g></svg>
+                                                <p class="teamName">Marcos, Daniel</p>
+                                                <button class="priceBtn">2.22</button>
+                                            </div>
                                         </div>
-                                        <p class="VS">VS</p>
-                                        <div class="team">
-                                            <svg class="cjchqkvecsag151-sportIcon-1 cjchqkvecsag151-sportIconHome-1"viewBox="0 0 24 24" width="24" height="24"><path d="M21.208,2.209a5.088,5.088,0,0,0-3.3-2.127A5.151,5.151,0,0,0,16.994,0H9.163a5.286,5.286,0,0,0-4.24,2.017,5.186,5.186,0,0,0-.962,4.025l.853,4.692L2.523,7.227,1.882,8a3.733,3.733,0,0,0-.092,4.718L5,17.314V21a3,3,0,0,0,3,3H18a3,3,0,0,0,3-3V16.052L22.036,6.043A5.092,5.092,0,0,0,21.208,2.209ZM18,20H8V18H18Z"></path></g></svg>
-                                            <p class="teamName">Marcos, Daniel</p>
-                                            <button class="priceBtn">2.22</button>
-                                        </div>
+                                        <p class="winRWD">勝者 ドローなし</p>
                                     </div>
-                                    <!-- 贏家不抽獎 -->
                                     <p class="winner">勝者 ドローなし</p>
-                                    <button class="more">詳細</button>
                                 </div>
                             </div>
                         </div>
@@ -903,28 +685,33 @@
                                     </div>
                                 </div>
                                 <div class="down">
-                                    <p class="timeZone">UFC 283</p>
-                                    <p class="date">2023/01/22</p>
-                                    <div class="time">
-                                        <svg width="19" height="19" viewBox="0 0 19 19"><defs><style>.prefix__b{fill:none;stroke:#b1b1b1;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px}</style></defs><path fill="none" d="M0 0h19v19H0z"></path><circle class="prefix__b" cx="7.5" cy="7.5" r="7.5" transform="translate(2 2)"></circle><path d="M9.62 6.321v3.3l1.6 1.6"></path></svg>
-                                        <p>07:00</p>
+                                    <!-- 時間資訊 -->
+                                    <div class="infoDetail">
+                                        <p class="timeZone">UFC 283</p>
+                                        <p class="date">2023/01/22</p>
+                                        <div class="time">
+                                            <svg width="19" height="19" viewBox="0 0 19 19"><defs><style>.prefix__b{fill:none;stroke:#b1b1b1;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px}</style></defs><path fill="none" d="M0 0h19v19H0z"></path><circle class="prefix__b" cx="7.5" cy="7.5" r="7.5" transform="translate(2 2)"></circle><path d="M9.62 6.321v3.3l1.6 1.6"></path></svg>
+                                            <p>07:00</p>
+                                        </div>
+                                        <button class="more">詳細</button>
                                     </div>
                                     <div class="pkTeam">
-                                        <div class="team">
-                                            <svg class="cjchqkvecsag151-sportIcon-1 cjchqkvecsag151-sportIconHome-1"viewBox="0 0 24 24" width="24" height="24"><path d="M21.208,2.209a5.088,5.088,0,0,0-3.3-2.127A5.151,5.151,0,0,0,16.994,0H9.163a5.286,5.286,0,0,0-4.24,2.017,5.186,5.186,0,0,0-.962,4.025l.853,4.692L2.523,7.227,1.882,8a3.733,3.733,0,0,0-.092,4.718L5,17.314V21a3,3,0,0,0,3,3H18a3,3,0,0,0,3-3V16.052L22.036,6.043A5.092,5.092,0,0,0,21.208,2.209ZM18,20H8V18H18Z"></path></g></svg>
-                                            <p class="teamName">Oliveira, Saimon</p>
-                                            <button class="priceBtn">1.59</button>
+                                        <div class="outbox">
+                                            <div class="team">
+                                                <svg class="cjchqkvecsag151-sportIcon-1 cjchqkvecsag151-sportIconHome-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M21.208,2.209a5.088,5.088,0,0,0-3.3-2.127A5.151,5.151,0,0,0,16.994,0H9.163a5.286,5.286,0,0,0-4.24,2.017,5.186,5.186,0,0,0-.962,4.025l.853,4.692L2.523,7.227,1.882,8a3.733,3.733,0,0,0-.092,4.718L5,17.314V21a3,3,0,0,0,3,3H18a3,3,0,0,0,3-3V16.052L22.036,6.043A5.092,5.092,0,0,0,21.208,2.209ZM18,20H8V18H18Z"></path></g></svg>
+                                                <p class="teamName">Oliveira, Saimon</p>
+                                                <button class="priceBtn">1.59</button>
+                                            </div>
+                                            <p class="VS">VS</p>
+                                            <div class="team">
+                                                <svg class="cjchqkvecsag151-sportIcon-1 cjchqkvecsag151-sportIconHome-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M21.208,2.209a5.088,5.088,0,0,0-3.3-2.127A5.151,5.151,0,0,0,16.994,0H9.163a5.286,5.286,0,0,0-4.24,2.017,5.186,5.186,0,0,0-.962,4.025l.853,4.692L2.523,7.227,1.882,8a3.733,3.733,0,0,0-.092,4.718L5,17.314V21a3,3,0,0,0,3,3H18a3,3,0,0,0,3-3V16.052L22.036,6.043A5.092,5.092,0,0,0,21.208,2.209ZM18,20H8V18H18Z"></path></g></svg>
+                                                <p class="teamName">Marcos, Daniel</p>
+                                                <button class="priceBtn">2.22</button>
+                                            </div>
                                         </div>
-                                        <p class="VS">VS</p>
-                                        <div class="team">
-                                            <svg class="cjchqkvecsag151-sportIcon-1 cjchqkvecsag151-sportIconHome-1"viewBox="0 0 24 24" width="24" height="24"><path d="M21.208,2.209a5.088,5.088,0,0,0-3.3-2.127A5.151,5.151,0,0,0,16.994,0H9.163a5.286,5.286,0,0,0-4.24,2.017,5.186,5.186,0,0,0-.962,4.025l.853,4.692L2.523,7.227,1.882,8a3.733,3.733,0,0,0-.092,4.718L5,17.314V21a3,3,0,0,0,3,3H18a3,3,0,0,0,3-3V16.052L22.036,6.043A5.092,5.092,0,0,0,21.208,2.209ZM18,20H8V18H18Z"></path></g></svg>
-                                            <p class="teamName">Marcos, Daniel</p>
-                                            <button class="priceBtn">2.22</button>
-                                        </div>
+                                        <p class="winRWD">勝者 ドローなし</p>
                                     </div>
-                                    <!-- 贏家不抽獎 -->
                                     <p class="winner">勝者 ドローなし</p>
-                                    <button class="more">詳細</button>
                                 </div>
                             </div>
                         </div>
@@ -939,28 +726,33 @@
                                     </div>
                                 </div>
                                 <div class="down">
-                                    <p class="timeZone">UFC 283</p>
-                                    <p class="date">2023/01/22</p>
-                                    <div class="time">
-                                        <svg width="19" height="19" viewBox="0 0 19 19"><defs><style>.prefix__b{fill:none;stroke:#b1b1b1;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px}</style></defs><path fill="none" d="M0 0h19v19H0z"></path><circle class="prefix__b" cx="7.5" cy="7.5" r="7.5" transform="translate(2 2)"></circle><path d="M9.62 6.321v3.3l1.6 1.6"></path></svg>
-                                        <p>07:00</p>
+                                    <!-- 時間資訊 -->
+                                    <div class="infoDetail">
+                                        <p class="timeZone">UFC 283</p>
+                                        <p class="date">2023/01/22</p>
+                                        <div class="time">
+                                            <svg width="19" height="19" viewBox="0 0 19 19"><defs><style>.prefix__b{fill:none;stroke:#b1b1b1;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px}</style></defs><path fill="none" d="M0 0h19v19H0z"></path><circle class="prefix__b" cx="7.5" cy="7.5" r="7.5" transform="translate(2 2)"></circle><path d="M9.62 6.321v3.3l1.6 1.6"></path></svg>
+                                            <p>07:00</p>
+                                        </div>
+                                        <button class="more">詳細</button>
                                     </div>
                                     <div class="pkTeam">
-                                        <div class="team">
-                                            <svg class="cjchqkvecsag151-sportIcon-1 cjchqkvecsag151-sportIconHome-1"viewBox="0 0 24 24" width="24" height="24"><path d="M21.208,2.209a5.088,5.088,0,0,0-3.3-2.127A5.151,5.151,0,0,0,16.994,0H9.163a5.286,5.286,0,0,0-4.24,2.017,5.186,5.186,0,0,0-.962,4.025l.853,4.692L2.523,7.227,1.882,8a3.733,3.733,0,0,0-.092,4.718L5,17.314V21a3,3,0,0,0,3,3H18a3,3,0,0,0,3-3V16.052L22.036,6.043A5.092,5.092,0,0,0,21.208,2.209ZM18,20H8V18H18Z"></path></g></svg>
-                                            <p class="teamName">Oliveira, Saimon</p>
-                                            <button class="priceBtn">1.59</button>
+                                        <div class="outbox">
+                                            <div class="team">
+                                                <svg class="cjchqkvecsag151-sportIcon-1 cjchqkvecsag151-sportIconHome-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M21.208,2.209a5.088,5.088,0,0,0-3.3-2.127A5.151,5.151,0,0,0,16.994,0H9.163a5.286,5.286,0,0,0-4.24,2.017,5.186,5.186,0,0,0-.962,4.025l.853,4.692L2.523,7.227,1.882,8a3.733,3.733,0,0,0-.092,4.718L5,17.314V21a3,3,0,0,0,3,3H18a3,3,0,0,0,3-3V16.052L22.036,6.043A5.092,5.092,0,0,0,21.208,2.209ZM18,20H8V18H18Z"></path></g></svg>
+                                                <p class="teamName">Oliveira, Saimon</p>
+                                                <button class="priceBtn">1.59</button>
+                                            </div>
+                                            <p class="VS">VS</p>
+                                            <div class="team">
+                                                <svg class="cjchqkvecsag151-sportIcon-1 cjchqkvecsag151-sportIconHome-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M21.208,2.209a5.088,5.088,0,0,0-3.3-2.127A5.151,5.151,0,0,0,16.994,0H9.163a5.286,5.286,0,0,0-4.24,2.017,5.186,5.186,0,0,0-.962,4.025l.853,4.692L2.523,7.227,1.882,8a3.733,3.733,0,0,0-.092,4.718L5,17.314V21a3,3,0,0,0,3,3H18a3,3,0,0,0,3-3V16.052L22.036,6.043A5.092,5.092,0,0,0,21.208,2.209ZM18,20H8V18H18Z"></path></g></svg>
+                                                <p class="teamName">Marcos, Daniel</p>
+                                                <button class="priceBtn">2.22</button>
+                                            </div>
                                         </div>
-                                        <p class="VS">VS</p>
-                                        <div class="team">
-                                            <svg class="cjchqkvecsag151-sportIcon-1 cjchqkvecsag151-sportIconHome-1"viewBox="0 0 24 24" width="24" height="24"><path d="M21.208,2.209a5.088,5.088,0,0,0-3.3-2.127A5.151,5.151,0,0,0,16.994,0H9.163a5.286,5.286,0,0,0-4.24,2.017,5.186,5.186,0,0,0-.962,4.025l.853,4.692L2.523,7.227,1.882,8a3.733,3.733,0,0,0-.092,4.718L5,17.314V21a3,3,0,0,0,3,3H18a3,3,0,0,0,3-3V16.052L22.036,6.043A5.092,5.092,0,0,0,21.208,2.209ZM18,20H8V18H18Z"></path></g></svg>
-                                            <p class="teamName">Marcos, Daniel</p>
-                                            <button class="priceBtn">2.22</button>
-                                        </div>
+                                        <p class="winRWD">勝者 ドローなし</p>
                                     </div>
-                                    <!-- 贏家不抽獎 -->
                                     <p class="winner">勝者 ドローなし</p>
-                                    <button class="more">詳細</button>
                                 </div>
                             </div>
                         </div>
@@ -1013,7 +805,10 @@
                         </div>
                     </div>
                     <div class="smallFilter">
-                        <button>ログイン</button>
+                        <button onclick="window.location.href='./html/login.html'">ログイン</button>
+                    </div>
+                    <div class="closeLeft">
+                        <p>閉じる</p>
                     </div>
                 </div>
             </section>
@@ -1033,7 +828,9 @@
         <div class="top">
             <div class="pageBlock">
                 <ul>
-                    <p class="Bigtitle">スポーツ</p>
+                    <p class="Bigtitle">スポーツ
+                        <i class="fa-solid fa-plus"></i>
+                    </p>
                     <li>
                         <a href="javascript:;">
                             <p>ライブ中</p>
@@ -1051,7 +848,9 @@
                     </li>
                 </ul>
                 <ul>
-                    <p class="Bigtitle">カジノ</p>
+                    <p class="Bigtitle">カジノ
+                        <i class="fa-solid fa-plus"></i>
+                    </p>
                     <li>
                         <a href="javascript:;">
                             <p>スロット</p>
@@ -1069,7 +868,9 @@
                     </li>
                 </ul>
                 <ul>
-                    <p class="Bigtitle">インフォメーション</p>
+                    <p class="Bigtitle">インフォメーション
+                        <i class="fa-solid fa-plus"></i>
+                    </p>
                     <li>
                         <a href="javascript:;">
                             <p>注目のスポーツ</p>
@@ -1107,7 +908,9 @@
                     </li>
                 </ul>
                 <ul>
-                    <p class="Bigtitle">ルール</p>
+                    <p class="Bigtitle">ルール
+                        <i class="fa-solid fa-plus"></i>
+                    </p>
                     <li>
                         <a href="javascript:;">
                             <p>スポーツルール</p>
@@ -1150,7 +953,9 @@
                     </li>
                 </ul>
                 <ul>
-                    <p class="Bigtitle">ヘルプ</p>
+                    <p class="Bigtitle">ヘルプ
+                        <i class="fa-solid fa-plus"></i>
+                    </p>
                     <li>
                         <a href="javascript:;">
                             <p>スポーツ利用ガイド</p>
@@ -1198,7 +1003,9 @@
                     </li>
                 </ul>
                 <ul>
-                    <p class="Bigtitle">セキュリティ</p>
+                    <p class="Bigtitle">セキュリティ
+                        <i class="fa-solid fa-plus"></i>
+                    </p>
                     <li>
                         <a href="javascript:;">
                             <p>マネーロンダリング防止方針</p>
@@ -1250,7 +1057,7 @@
                 </p>
             </div>
             <div class="company">
-                <img class="logo" src="./image/xmas_logo.png">
+                <img class="logo" src="./image/logo.png">
                 <div class="line"></div>
                 <p class="coDetail">
                     MANEKIの運営とサービスはキュラソー政府に登録されている1ban Ventures B.V. (ライセンス番号 No. 8048/JAZ)が提供しており、キュラソー政府の法令に則り行っています。

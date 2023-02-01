@@ -450,7 +450,7 @@ header {
                 display: flex;
                 left: 10px;
                 transform: translateX(0);
-                top: 60px;
+                top: 70px;
                 
                 li {
                     &:nth-of-type(3),
@@ -460,6 +460,9 @@ header {
                     a {
                         i {
                             display: none;
+                        }
+                        p {
+                            font-size: 0.8rem;
                         }
                     }
                 }

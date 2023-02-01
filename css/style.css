@@ -629,7 +629,7 @@ html header .bottom .mid .time {
     left: 10px;
     -webkit-transform: translateX(0);
             transform: translateX(0);
-    top: 60px;
+    top: 70px;
   }
   html header .top ul li:nth-of-type(3), html header .top ul li:nth-of-type(4) {
     display: -webkit-box;
@@ -638,6 +638,9 @@ html header .bottom .mid .time {
   }
   html header .top ul li a i {
     display: none;
+  }
+  html header .top ul li a p {
+    font-size: 0.8rem;
   }
   html header .top .loginArea {
     display: none;
@@ -1941,9 +1944,14 @@ html .center .mainArea .gameContent .content .gBlock .down p.date::after {
 html .center .mainArea .gameContent .content .gBlock .down p.winner {
   color: #f3c01a;
   text-align: center;
-  margin: 0 0 30px;
+  margin: 0 0 70px;
 }
-html .center .mainArea .gameContent .content .gBlock .down .time {
+html .center .mainArea .gameContent .content .gBlock .down .infoDetail {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+html .center .mainArea .gameContent .content .gBlock .down .infoDetail .time {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1953,7 +1961,7 @@ html .center .mainArea .gameContent .content .gBlock .down .time {
           align-items: center;
   margin: 10px 0 0;
 }
-html .center .mainArea .gameContent .content .gBlock .down .time svg {
+html .center .mainArea .gameContent .content .gBlock .down .infoDetail .time svg {
   width: 24.5px;
   height: 24.5px;
   fill: #b1b1b1;
@@ -1961,75 +1969,11 @@ html .center .mainArea .gameContent .content .gBlock .down .time svg {
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
 }
-html .center .mainArea .gameContent .content .gBlock .down .time p {
+html .center .mainArea .gameContent .content .gBlock .down .infoDetail .time p {
   color: #b1b1b1;
   font-size: 0.9rem;
 }
-html .center .mainArea .gameContent .content .gBlock .down .pkTeam {
-  width: 100%;
-  height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  background: #b1b1b1;
-  padding: 20px 20px 10px;
-  margin: 30px 0;
-}
-html .center .mainArea .gameContent .content .gBlock .down .pkTeam .team {
-  width: auto;
-  height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-html .center .mainArea .gameContent .content .gBlock .down .pkTeam .team:first-child svg {
-  fill: #b61d21;
-}
-html .center .mainArea .gameContent .content .gBlock .down .pkTeam .team svg {
-  width: 48.5px;
-  height: 48.5px;
-  fill: #851316;
-  margin: 10px 10px 40px 10px;
-}
-html .center .mainArea .gameContent .content .gBlock .down .pkTeam .team .teamName {
-  color: #000000;
-  font-size: 0.9rem;
-  text-align: center;
-  margin-bottom: 30px;
-}
-html .center .mainArea .gameContent .content .gBlock .down .pkTeam .team button {
-  width: 100%;
-  background: #b61d21;
-  color: #ffffff;
-  font-weight: bold;
-  border-radius: 3px;
-  padding: 5px;
-}
-html .center .mainArea .gameContent .content .gBlock .down .pkTeam p {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-html .center .mainArea .gameContent .content .gBlock .down .more {
+html .center .mainArea .gameContent .content .gBlock .down .infoDetail .more {
   width: 130px;
   height: 30px;
   display: -webkit-box;
@@ -2051,16 +1995,102 @@ html .center .mainArea .gameContent .content .gBlock .down .more {
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
   margin: 0 auto;
+  position: absolute;
+  top: 405px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
-html .center .mainArea .gameContent .content .gBlock .down .more:hover, html .center .mainArea .gameContent .content .gBlock .down .more:active, html .center .mainArea .gameContent .content .gBlock .down .more.active {
+html .center .mainArea .gameContent .content .gBlock .down .infoDetail .more:hover, html .center .mainArea .gameContent .content .gBlock .down .infoDetail .more:active, html .center .mainArea .gameContent .content .gBlock .down .infoDetail .more.active {
   -webkit-transform: translateY(2px);
           transform: translateY(2px);
   -webkit-box-shadow: none;
           box-shadow: none;
 }
+html .center .mainArea .gameContent .content .gBlock .down .pkTeam {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #b1b1b1;
+  padding: 20px 20px 10px;
+  margin: 30px 0;
+}
+html .center .mainArea .gameContent .content .gBlock .down .pkTeam .outbox {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+html .center .mainArea .gameContent .content .gBlock .down .pkTeam .outbox .team {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+html .center .mainArea .gameContent .content .gBlock .down .pkTeam .outbox .team:first-child svg {
+  fill: #b61d21;
+}
+html .center .mainArea .gameContent .content .gBlock .down .pkTeam .outbox .team svg {
+  width: 48.5px;
+  height: 48.5px;
+  fill: #851316;
+  margin: 10px 10px 40px 10px;
+}
+html .center .mainArea .gameContent .content .gBlock .down .pkTeam .outbox .team .teamName {
+  color: #000000;
+  font-size: 0.9rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+html .center .mainArea .gameContent .content .gBlock .down .pkTeam .outbox .team button {
+  width: 100%;
+  background: #b61d21;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 3px;
+  padding: 5px;
+}
+html .center .mainArea .gameContent .content .gBlock .down .pkTeam .outbox p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html .center .mainArea .gameContent .content .gBlock .down .pkTeam .winRWD {
+  display: none;
+  color: #f3c01a;
+  text-align: center;
+  margin: 20px 0 0;
+}
 html .center .mainArea .swiper03 {
   width: 100%;
-  height: 529px;
+  height: auto;
   overflow: hidden;
   position: relative;
 }
@@ -2075,7 +2105,7 @@ html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide {
   width: auto !important;
 }
 html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock {
-  width: 285px;
+  width: 100%;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2201,9 +2231,14 @@ html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down p.d
 html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down p.winner {
   color: #f3c01a;
   text-align: center;
-  margin: 0 0 30px;
+  margin: 0 0 70px;
 }
-html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .time {
+html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .infoDetail {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .infoDetail .time {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2213,7 +2248,7 @@ html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .ti
           align-items: center;
   margin: 10px 0 0;
 }
-html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .time svg {
+html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .infoDetail .time svg {
   width: 24.5px;
   height: 24.5px;
   fill: #b1b1b1;
@@ -2221,75 +2256,11 @@ html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .ti
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
 }
-html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .time p {
+html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .infoDetail .time p {
   color: #b1b1b1;
   font-size: 0.9rem;
 }
-html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .pkTeam {
-  width: 100%;
-  height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: cevter;
-      -ms-flex-align: cevter;
-          align-items: cevter;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  background: #b1b1b1;
-  padding: 20px 20px 10px;
-  margin: 30px 0;
-}
-html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .pkTeam .team {
-  width: auto;
-  height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .pkTeam .team:first-child svg {
-  fill: #b61d21;
-}
-html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .pkTeam .team svg {
-  width: 48.5px;
-  height: 48.5px;
-  fill: #851316;
-  margin: 10px 10px 40px 10px;
-}
-html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .pkTeam .team .teamName {
-  color: #000000;
-  font-size: 0.9rem;
-  text-align: center;
-  margin-bottom: 30px;
-}
-html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .pkTeam .team button {
-  width: 100%;
-  background: #b61d21;
-  color: #ffffff;
-  font-weight: bold;
-  border-radius: 3px;
-  padding: 5px;
-}
-html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .pkTeam p {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .more {
+html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .infoDetail .more {
   width: 130px;
   height: 30px;
   display: -webkit-box;
@@ -2311,12 +2282,98 @@ html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .mo
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
   margin: 0 auto;
+  position: absolute;
+  top: 405px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
-html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .more:hover, html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .more:active, html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .more.active {
+html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .infoDetail .more:hover, html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .infoDetail .more:active, html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .infoDetail .more.active {
   -webkit-transform: translateY(2px);
           transform: translateY(2px);
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .pkTeam {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #b1b1b1;
+  padding: 20px 20px 10px;
+  margin: 30px 0;
+}
+html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .pkTeam .outbox {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .pkTeam .outbox .team {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .pkTeam .outbox .team:first-child svg {
+  fill: #b61d21;
+}
+html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .pkTeam .outbox .team svg {
+  width: 48.5px;
+  height: 48.5px;
+  fill: #851316;
+  margin: 10px 10px 40px 10px;
+}
+html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .pkTeam .outbox .team .teamName {
+  color: #000000;
+  font-size: 0.9rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .pkTeam .outbox .team button {
+  width: 100%;
+  background: #b61d21;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 3px;
+  padding: 5px;
+}
+html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .pkTeam .outbox p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .pkTeam .winRWD {
+  display: none;
+  color: #f3c01a;
+  text-align: center;
+  margin: 20px 0 0;
 }
 html .center .mainArea .swiper03 .swiper-button-prev03,
 html .center .mainArea .swiper03 .swiper-button-next03 {
@@ -2379,6 +2436,28 @@ html .center .right {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   overflow: hidden;
+}
+html .center .right.active {
+  width: 100%;
+  height: auto;
+  background: transparent;
+  position: absolute;
+  top: -10px;
+  left: 0;
+  z-index: 90;
+}
+html .center .right.active .betBlock {
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+}
+html .center .right.active .betBlock .smallFilter {
+  height: calc(100% - 47px);
+}
+html .center .right.active .betBlock .closeLeft {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 html .center .right .betBlock {
   width: 100%;
@@ -2525,17 +2604,28 @@ html .center .right .betBlock .smallFilter button:hover, html .center .right .be
   -webkit-box-shadow: none;
           box-shadow: none;
 }
-html .center aside {
-  width: auto;
-  height: auto;
+html .center .right .betBlock .closeLeft {
+  display: none;
+  width: 100%;
+  height: 47px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #b61d21;
+  cursor: pointer;
+}
+html .center .right .betBlock .closeLeft p {
+  color: #ffffff;
+  font-size: 0.8rem;
+  cursor: pointer;
 }
 html .center aside.betRecordBtn {
   display: none;
   width: 75px;
   height: 75px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -2547,8 +2637,9 @@ html .center aside.betRecordBtn {
           box-shadow: 4px 2px 0.5px #851316;
   border-radius: 50px;
   position: fixed;
-  top: 670px;
+  bottom: 30px;
   right: 30px;
+  z-index: 99;
   cursor: pointer;
 }
 html .center aside.betRecordBtn .betCount {
@@ -2601,6 +2692,96 @@ html .center aside.betRecordBtn .betCount p {
   }
 }
 @media only screen and (max-width: 767px) {
+  html .center .mainArea .gameContent .content {
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+  }
+  html .center .mainArea .gameContent .content .gBlock .down {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 1rem;
+  }
+  html .center .mainArea .gameContent .content .gBlock .down .infoDetail {
+    width: 49%;
+    height: 100%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  html .center .mainArea .gameContent .content .gBlock .down .infoDetail .more {
+    margin: 20px auto 0;
+    position: relative;
+    top: 0;
+    left: 0;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  html .center .mainArea .gameContent .content .gBlock .down .pkTeam {
+    width: 50%;
+    height: 100%;
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+    margin: 0 25px 0 0;
+  }
+  html .center .mainArea .gameContent .content .gBlock .down .pkTeam .team svg {
+    width: 49.5px;
+  }
+  html .center .mainArea .gameContent .content .gBlock .down .pkTeam .winRWD {
+    display: block;
+  }
+  html .center .mainArea .gameContent .content .gBlock .down .winner {
+    display: none;
+  }
+  html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide {
+    width: 100% !important;
+  }
+  html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 1rem;
+  }
+  html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .infoDetail {
+    width: 49%;
+    height: 100%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .infoDetail .more {
+    margin: 20px auto 0;
+    position: relative;
+    top: 0;
+    left: 0;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .pkTeam {
+    width: 50%;
+    height: 100%;
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+    margin: 0 25px 0 0;
+  }
+  html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .pkTeam .winRWD {
+    display: block;
+  }
+  html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .winner {
+    display: none;
+  }
+  html .center .mainArea .swiper03 .swiper-button-prev03::before,
+html .center .mainArea .swiper03 .swiper-button-next03::before {
+    top: -170px;
+  }
+  html .center .mainArea .swiper03 .swiper-button-prev03 i,
+html .center .mainArea .swiper03 .swiper-button-next03 i {
+    top: -160px;
+  }
   html .center .right {
     width: 0;
   }
@@ -2618,6 +2799,13 @@ html footer {
 html footer .top {
   width: 100%;
   height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 html footer .top .pageBlock {
   width: 90%;
@@ -2637,10 +2825,22 @@ html footer .top .pageBlock ul {
   height: auto;
 }
 html footer .top .pageBlock ul .Bigtitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   color: #ffffff;
   font-size: 1rem;
   font-weight: bold;
   margin-bottom: 20px;
+}
+html footer .top .pageBlock ul .Bigtitle i {
+  display: none;
 }
 html footer .top .pageBlock ul li {
   width: 100%;
@@ -2663,7 +2863,8 @@ html footer .top .pageBlock ul li a p {
 }
 html footer .top .infoLine {
   width: 100%;
-  height: 90px;
+  height: auto;
+  min-height: 90px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2677,7 +2878,6 @@ html footer .top .infoLine {
 }
 html footer .top .infoLine .lang {
   width: auto;
-  height: 100%;
   position: absolute;
   left: 20%;
   display: -webkit-box;
@@ -2805,7 +3005,8 @@ html footer .top .infoLine .payway span {
 }
 html footer .top .company {
   width: 100%;
-  height: 60px;
+  height: auto;
+  min-height: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2859,4 +3060,106 @@ html footer .bottom p {
 }
 html footer .bottom p:last-child {
   margin-top: 10px;
+}
+@media only screen and (max-width: 1010px) {
+  html footer .top .infoLine {
+    height: 105px;
+    margin-top: 20px;
+  }
+  html footer .top .infoLine .lang {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  html footer .top .infoLine .lang ul {
+    top: 30px;
+    left: -125px;
+  }
+  html footer .top .infoLine .payway {
+    font-size: 0.8rem;
+  }
+  html footer .top .company {
+    width: 60%;
+    min-width: 540px;
+  }
+  html footer .top .company .coDetail {
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (max-width: 990px) {
+  html footer .top .pageBlock {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    padding: 0;
+  }
+  html footer .top .pageBlock ul {
+    height: 46px;
+    border-bottom: 1px solid #b1b1b1;
+    overflow: hidden;
+  }
+  html footer .top .pageBlock ul.active {
+    height: auto;
+  }
+  html footer .top .pageBlock ul .Bigtitle {
+    font-size: 0.8rem;
+    border-bottom: 2px solid #b1b1b1;
+    padding: 15px 20px;
+    margin: 0;
+    cursor: pointer;
+  }
+  html footer .top .pageBlock ul .Bigtitle i {
+    display: inline-block;
+    color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: bold;
+  }
+  html footer .top .pageBlock ul li {
+    margin: 0;
+  }
+  html footer .top .pageBlock ul li a p {
+    padding: 10px 25px;
+  }
+  html footer .top .infoLine {
+    height: 60px;
+    background: #b61d21;
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+    margin: 0;
+    padding: 0 20%;
+  }
+  html footer .top .infoLine .lang {
+    position: relative;
+  }
+  html footer .top .infoLine .payway {
+    display: none;
+  }
+  html footer .top .company {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-top: 30px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  html footer .top .company {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  html footer .top .company .logo {
+    margin-bottom: 10px;
+  }
 }
