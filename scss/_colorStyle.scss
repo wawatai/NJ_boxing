@@ -14,6 +14,7 @@ $subColor_2: #ffe17e;
 $subColor_3: #313131ce;
 $subColor_4: #27a7f0;
 $subColor_5: #b1b1b1;
+$subColor_6: #66e123;
 
 //主背景色
 $mainBG_1: #b61d21;
@@ -141,6 +142,13 @@ $filter: #00000080;
     white-space: nowrap;
 }
 
+@mixin betRecordBtn {
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #ae2b2b 0%, #cd3535 100%);
+    border: 3px solid #ffffff;
+    border-radius: 50px;
+}
 
 @mixin scrollbarStyle_1 {
     

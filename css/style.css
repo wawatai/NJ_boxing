@@ -2650,9 +2650,9 @@ html .center aside.betRecordBtn {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: #b8151b;
-  -webkit-box-shadow: 4px 2px 0.5px #851316;
-          box-shadow: 4px 2px 0.5px #851316;
+  background: -webkit-gradient(linear, left top, right top, from(#ae2b2b), to(#cd3535));
+  background: linear-gradient(90deg, #ae2b2b 0%, #cd3535 100%);
+  border: 3px solid #ffffff;
   border-radius: 50px;
   position: fixed;
   bottom: 30px;
@@ -2672,13 +2672,16 @@ html .center aside.betRecordBtn .betCount {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: #f3c01a;
+  background: #66e123;
   border-radius: 50px;
   position: absolute;
   right: -8px;
 }
 html .center aside.betRecordBtn .betCount:nth-of-type(1) {
   top: 5px;
+}
+html .center aside.betRecordBtn .betCount:nth-of-type(1) p {
+  color: #000000;
 }
 html .center aside.betRecordBtn .betCount:nth-of-type(2) {
   background: #851316;
