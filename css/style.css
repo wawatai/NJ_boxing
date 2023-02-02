@@ -3024,6 +3024,26 @@ html footer .top .infoLine .payway {
 html footer .top .infoLine .payway span {
   margin: 0 5px;
 }
+html footer .top .infoLine .betRate {
+  display: none;
+  width: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html footer .top .infoLine .betRate p {
+  color: #ffffff;
+  font-size: 1rem;
+  margin-right: 10px;
+}
+html footer .top .infoLine .betRate select {
+  width: auto;
+  background: none;
+  color: #ffffff;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+}
 html footer .top .company {
   width: 100%;
   height: auto;
@@ -3085,6 +3105,9 @@ html footer .bottom p:last-child {
 @media only screen and (max-width: 1010px) {
   html footer .top .infoLine {
     height: 105px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin-top: 20px;
   }
   html footer .top .infoLine .lang {
@@ -3161,10 +3184,24 @@ html footer .bottom p:last-child {
     padding: 0 20%;
   }
   html footer .top .infoLine .lang {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
     position: relative;
+    left: 0;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
   html footer .top .infoLine .payway {
     display: none;
+  }
+  html footer .top .infoLine .betRate {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
   }
   html footer .top .company {
     -webkit-box-ordinal-group: 3;

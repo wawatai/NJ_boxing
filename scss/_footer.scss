@@ -160,6 +160,27 @@ footer {
                     margin: 0 5px;
                 }
             }
+
+            .betRate {
+                display: none;
+                width: auto;
+                align-items: center;
+
+                p {
+                    color: $mainColor_3;
+                    font-size: 1rem;
+                    margin-right: 10px;
+                }
+
+                select {
+                    width: auto;
+                    background: none;
+                    color: $mainColor_3;
+                    font-size: 1rem;
+                    border: none;
+                    cursor: pointer;
+                }
+            }
         }
 
         .company {
@@ -219,6 +240,7 @@ footer {
 
             .infoLine {
                 height: 105px;
+                justify-content: space-between;
                 margin-top: 20px;
 
                 .lang {
@@ -303,11 +325,19 @@ footer {
                 padding: 0 20%;
 
                 .lang {
+                    order: 1;
                     position: relative;
+                    left: 0;
+                    transform: translateX(0);
                 }
 
                 .payway {
                     display: none;
+                }
+
+                .betRate {
+                    display: flex;
+                    order: 0;
                 }
             }
 
