@@ -9,6 +9,11 @@ footer .flag.jp {
   background-size: contain;
 }
 
+footer .flag.uk {
+  background: url("../image/icon/flag/UK.svg") no-repeat center;
+  background-size: contain;
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -312,7 +317,7 @@ html header .top .loginArea .checkBox ul li a {
   height: auto;
 }
 html header .top .loginArea .checkBox ul li a p {
-  color: #b61d21;
+  color: #b8151b;
   font-size: 0.75rem;
   font-weight: bold;
   margin-bottom: 2px;
@@ -435,7 +440,7 @@ html header .bottom .mid .searchBox input {
   padding-left: 10px;
 }
 html header .bottom .mid .searchBox i {
-  color: #b61d21;
+  color: #b8151b;
   font-size: 16px;
   position: absolute;
   top: 50%;
@@ -456,7 +461,7 @@ html header .bottom .mid .checkBox {
   margin-left: 10px;
 }
 html header .bottom .mid .checkBox .title {
-  color: #b61d21;
+  color: #b8151b;
   font-size: 0.85rem;
   font-weight: bold;
   display: -webkit-box;
@@ -476,7 +481,7 @@ html header .bottom .mid .checkBox .title i {
   height: 0;
   border-style: solid;
   border-width: 6px 4px 0 4px;
-  border-color: #b61d21 transparent;
+  border-color: #b8151b transparent;
   margin-left: 5px;
 }
 html header .bottom .mid .checkBox ul {
@@ -569,13 +574,13 @@ html header .bottom .mid .checkBox ul li label input {
   margin: 0;
 }
 html header .bottom .mid .checkBox ul li p {
-  color: #b61d21;
+  color: #b8151b;
   font-size: 0.75rem;
   font-weight: bold;
   margin-bottom: 2px;
 }
 html header .bottom .mid .time {
-  color: #b61d21;
+  color: #b8151b;
   font-size: 0.75rem;
   font-weight: bold;
   margin: 0 0 2px 15px;
@@ -692,7 +697,7 @@ html .login .inputArea > li .typeName {
           align-items: center;
 }
 html .login .inputArea > li .typeName p {
-  color: #b61d21;
+  color: #b8151b;
   font-size: 1rem;
   font-weight: bold;
 }
@@ -859,7 +864,7 @@ html .register .bigTitle {
   margin-bottom: 40px;
 }
 html .register .bigTitle p {
-  color: #b61d21;
+  color: #b8151b;
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 10px;
@@ -899,11 +904,11 @@ html .register .inputArea > li .typeName {
           align-items: center;
 }
 html .register .inputArea > li .typeName svg {
-  fill: #b61d21;
+  fill: #b8151b;
   margin-right: 20px;
 }
 html .register .inputArea > li .typeName p {
-  color: #b61d21;
+  color: #b8151b;
   font-size: 1rem;
   font-weight: bold;
 }
@@ -961,7 +966,7 @@ html .register .inputArea > li .rightBox .inputBox div {
   margin-right: 10px;
 }
 html .register .inputArea > li .rightBox .inputBox div span {
-  color: #b1b1b1;
+  color: #414141;
   font-size: 1rem;
   font-weight: bold;
   -ms-flex-negative: 0;
@@ -970,7 +975,7 @@ html .register .inputArea > li .rightBox .inputBox div span {
 }
 html .register .inputArea > li .rightBox .inputBox .remind {
   width: 100%;
-  color: #b1b1b1;
+  color: #414141;
   font-size: 0.85rem;
   line-height: 1rem;
   margin-top: 10px;
@@ -1130,7 +1135,7 @@ html .register .inputArea > li .rightBox .inputBox .chooseCountry ul ol li label
   margin: 0;
 }
 html .register .inputArea > li .rightBox .inputBox .chooseCountry ul ol li p {
-  color: #b61d21;
+  color: #b8151b;
   font-size: 0.75rem;
   font-weight: bold;
   margin-bottom: 2px;
@@ -1494,7 +1499,7 @@ html .center .mainArea .middleNav .topnav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-bottom: 4px solid #b61d21;
+  border-bottom: 4px solid #b8151b;
 }
 html .center .mainArea .middleNav .topnav li {
   width: 20%;
@@ -1510,19 +1515,20 @@ html .center .mainArea .middleNav .topnav li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: #b1b1b1;
+  background: #414141;
   border-radius: 5px 5px 0 0;
+  padding: 0 5px;
   margin-right: 5px;
   cursor: pointer;
 }
 html .center .mainArea .middleNav .topnav li:hover, html .center .mainArea .middleNav .topnav li:active, html .center .mainArea .middleNav .topnav li.active {
-  background: #b61d21;
+  background: #b8151b;
 }
 html .center .mainArea .middleNav .topnav li:hover p, html .center .mainArea .middleNav .topnav li:active p, html .center .mainArea .middleNav .topnav li.active p {
   color: #ffffff;
 }
 html .center .mainArea .middleNav .topnav li p {
-  color: #000000;
+  color: #ffffff;
   font-size: 0.9rem;
   font-weight: bold;
   overflow: hidden;
@@ -1553,18 +1559,24 @@ html .center .mainArea .typselect.swiper02 .swiper-wrapper .swiper-slide .gameTy
   width: auto;
   max-width: 105px;
   height: auto;
+  border: 3px solid #cf0505;
+  border-radius: 6px;
+  padding: 0px 10px 10px;
   margin: 0 10px 0 0;
   cursor: pointer;
 }
-html .center .mainArea .typselect.swiper02 .swiper-wrapper .swiper-slide .gameTypeBox:hover .picBox, html .center .mainArea .typselect.swiper02 .swiper-wrapper .swiper-slide .gameTypeBox:active .picBox, html .center .mainArea .typselect.swiper02 .swiper-wrapper .swiper-slide .gameTypeBox.active .picBox {
-  border-color: #b61d21;
+html .center .mainArea .typselect.swiper02 .swiper-wrapper .swiper-slide .gameTypeBox:hover, html .center .mainArea .typselect.swiper02 .swiper-wrapper .swiper-slide .gameTypeBox:active, html .center .mainArea .typselect.swiper02 .swiper-wrapper .swiper-slide .gameTypeBox.active {
+  background: #cf0505;
 }
 html .center .mainArea .typselect.swiper02 .swiper-wrapper .swiper-slide .gameTypeBox:hover p, html .center .mainArea .typselect.swiper02 .swiper-wrapper .swiper-slide .gameTypeBox:active p, html .center .mainArea .typselect.swiper02 .swiper-wrapper .swiper-slide .gameTypeBox.active p {
-  color: #b61d21;
+  color: #ffffff;
+}
+html .center .mainArea .typselect.swiper02 .swiper-wrapper .swiper-slide .gameTypeBox:hover .picBox svg, html .center .mainArea .typselect.swiper02 .swiper-wrapper .swiper-slide .gameTypeBox:active .picBox svg, html .center .mainArea .typselect.swiper02 .swiper-wrapper .swiper-slide .gameTypeBox.active .picBox svg {
+  fill: #ffffff;
 }
 html .center .mainArea .typselect.swiper02 .swiper-wrapper .swiper-slide .gameTypeBox .picBox {
   width: 105px;
-  height: 105px;
+  height: 85px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1574,21 +1586,17 @@ html .center .mainArea .typselect.swiper02 .swiper-wrapper .swiper-slide .gameTy
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border-width: 3px 3px 10px 3px;
-  border-style: solid;
-  border-color: #b1b1b1;
-  border-radius: 6px;
   margin: 0 0 5px;
 }
 html .center .mainArea .typselect.swiper02 .swiper-wrapper .swiper-slide .gameTypeBox .picBox svg {
-  width: 24.5px;
+  width: 32.5px;
   height: 24.5px;
-  fill: #b1b1b1;
+  fill: #cf0505;
   -webkit-transform: scale(2.5);
           transform: scale(2.5);
 }
 html .center .mainArea .typselect.swiper02 .swiper-wrapper .swiper-slide .gameTypeBox p {
-  color: #b1b1b1;
+  color: #cf0505;
   font-size: 1rem;
   font-weight: bold;
   text-align: center;
@@ -1722,6 +1730,7 @@ html .center .mainArea .countryList ul .smallTitle {
   font-size: 0.9rem;
   font-weight: bold;
   padding: 10px 20px;
+  margin-bottom: 5px;
   cursor: pointer;
 }
 html .center .mainArea .countryList ul .smallTitle i {
@@ -1733,14 +1742,17 @@ html .center .mainArea .countryList ul .smallTitle i {
 html .center .mainArea .countryList ul li {
   width: 100%;
   height: 35px;
-  border-left: 1px solid #851316;
-  border-right: 1px solid #851316;
+  border-left: 1px solid #cf0505;
+  border-right: 1px solid #cf0505;
+}
+html .center .mainArea .countryList ul li:nth-of-type(1) {
+  border-top: 1px solid #cf0505;
 }
 html .center .mainArea .countryList ul li:not(:last-child) {
-  border-bottom: 1px dotted #851316;
+  border-bottom: 1px dotted #cf0505;
 }
 html .center .mainArea .countryList ul li:last-child {
-  border-bottom: 1px solid #851316;
+  border-bottom: 1px solid #cf0505;
 }
 html .center .mainArea .countryList ul li a {
   width: 100%;
@@ -1757,12 +1769,12 @@ html .center .mainArea .countryList ul li a {
   padding: 0 20px;
 }
 html .center .mainArea .countryList ul li a p {
-  color: #b1b1b1;
+  color: #b8151b;
   font-size: 0.9rem;
   font-weight: bold;
 }
 html .center .mainArea .countryList ul li a i {
-  color: #851316;
+  color: #b8151b;
   cursor: pointer;
 }
 html .center .mainArea .countryList ul li a i.fa-solid {
@@ -1782,7 +1794,7 @@ html .center .mainArea .gameContent {
 }
 html .center .mainArea .gameContent .gtypeTitle {
   width: 100%;
-  color: #b61d21;
+  color: #cf0505;
   font-size: 1.5rem;
   font-weight: bold;
   padding: 0 0 20px;
@@ -1802,7 +1814,7 @@ html .center .mainArea .gameContent .gtypeTitle::after {
   content: "";
   width: 100%;
   height: 5px;
-  background: #b61d21;
+  background: #b8151b;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -1841,7 +1853,7 @@ html .center .mainArea .gameContent .content .gBlock .up {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background: #b61d21;
+  background: #b8151b;
   border-radius: 8px 8px 0 0;
   padding: 3px 10px 0;
   position: relative;
@@ -1850,7 +1862,7 @@ html .center .mainArea .gameContent .content .gBlock .up::before {
   content: "";
   width: 10px;
   height: 10px;
-  background: #b61d21;
+  background: #b8151b;
   position: absolute;
   bottom: -8px;
   left: 0;
@@ -1860,7 +1872,7 @@ html .center .mainArea .gameContent .content .gBlock .up::after {
   content: "";
   width: 10px;
   height: 10px;
-  background: #b61d21;
+  background: #b8151b;
   position: absolute;
   bottom: -8px;
   left: unset;
@@ -1902,7 +1914,7 @@ html .center .mainArea .gameContent .content .gBlock .down {
           flex-direction: column;
   background: #292929;
   border-radius: 8px;
-  border: 3px solid #b61d21;
+  border: 3px solid #b8151b;
   padding: 20px;
 }
 html .center .mainArea .gameContent .content .gBlock .down p {
@@ -1936,13 +1948,16 @@ html .center .mainArea .gameContent .content .gBlock .down p.date::after {
   content: "";
   width: 100%;
   height: 5px;
-  background: #b61d21;
+  background: #b8151b;
   position: absolute;
   left: 0;
   bottom: 0;
 }
+html .center .mainArea .gameContent .content .gBlock .down p.VS {
+  color: #ffffff;
+}
 html .center .mainArea .gameContent .content .gBlock .down p.winner {
-  color: #f3c01a;
+  color: #cf0505;
   text-align: center;
   margin: 0 0 70px;
 }
@@ -1985,7 +2000,7 @@ html .center .mainArea .gameContent .content .gBlock .down .infoDetail .more {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: #cb3539;
+  background: #cf0505;
   border-radius: 30px;
   -webkit-box-shadow: 0 3px 0 1px #b61d21;
           box-shadow: 0 3px 0 1px #b61d21;
@@ -2017,7 +2032,7 @@ html .center .mainArea .gameContent .content .gBlock .down .pkTeam {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: #b1b1b1;
+  background: #414141;
   padding: 20px 20px 10px;
   margin: 30px 0;
 }
@@ -2052,23 +2067,23 @@ html .center .mainArea .gameContent .content .gBlock .down .pkTeam .outbox .team
           justify-content: center;
 }
 html .center .mainArea .gameContent .content .gBlock .down .pkTeam .outbox .team:first-child svg {
-  fill: #b61d21;
+  fill: #27a7f0;
 }
 html .center .mainArea .gameContent .content .gBlock .down .pkTeam .outbox .team svg {
   width: 48.5px;
   height: 48.5px;
-  fill: #851316;
+  fill: #cf0505;
   margin: 10px 10px 40px 10px;
 }
 html .center .mainArea .gameContent .content .gBlock .down .pkTeam .outbox .team .teamName {
-  color: #000000;
+  color: #ffffff;
   font-size: 0.9rem;
   text-align: center;
   margin-bottom: 30px;
 }
 html .center .mainArea .gameContent .content .gBlock .down .pkTeam .outbox .team button {
   width: 100%;
-  background: #b61d21;
+  background: #cf0505;
   color: #ffffff;
   font-weight: bold;
   border-radius: 3px;
@@ -2084,7 +2099,7 @@ html .center .mainArea .gameContent .content .gBlock .down .pkTeam .outbox p {
 }
 html .center .mainArea .gameContent .content .gBlock .down .pkTeam .winRWD {
   display: none;
-  color: #f3c01a;
+  color: #cf0505;
   text-align: center;
   margin: 20px 0 0;
 }
@@ -2128,7 +2143,7 @@ html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .up {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background: #b61d21;
+  background: #b8151b;
   border-radius: 8px 8px 0 0;
   padding: 3px 10px 0;
   position: relative;
@@ -2137,7 +2152,7 @@ html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .up::befo
   content: "";
   width: 10px;
   height: 10px;
-  background: #b61d21;
+  background: #b8151b;
   position: absolute;
   bottom: -8px;
   left: 0;
@@ -2147,7 +2162,7 @@ html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .up::afte
   content: "";
   width: 10px;
   height: 10px;
-  background: #b61d21;
+  background: #b8151b;
   position: absolute;
   bottom: -8px;
   left: unset;
@@ -2189,7 +2204,7 @@ html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down {
           flex-direction: column;
   background: #292929;
   border-radius: 8px;
-  border: 3px solid #b61d21;
+  border: 3px solid #b8151b;
   padding: 20px;
 }
 html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down p {
@@ -2223,13 +2238,16 @@ html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down p.d
   content: "";
   width: 100%;
   height: 5px;
-  background: #b61d21;
+  background: #b8151b;
   position: absolute;
   left: 0;
   bottom: 0;
 }
+html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down p.VS {
+  color: #ffffff;
+}
 html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down p.winner {
-  color: #f3c01a;
+  color: #cf0505;
   text-align: center;
   margin: 0 0 70px;
 }
@@ -2272,7 +2290,7 @@ html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .in
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: #cb3539;
+  background: #cf0505;
   border-radius: 30px;
   -webkit-box-shadow: 0 3px 0 1px #b61d21;
           box-shadow: 0 3px 0 1px #b61d21;
@@ -2304,7 +2322,7 @@ html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .pk
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: #b1b1b1;
+  background: #414141;
   padding: 20px 20px 10px;
   margin: 30px 0;
 }
@@ -2339,23 +2357,23 @@ html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .pk
           justify-content: center;
 }
 html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .pkTeam .outbox .team:first-child svg {
-  fill: #b61d21;
+  fill: #27a7f0;
 }
 html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .pkTeam .outbox .team svg {
   width: 48.5px;
   height: 48.5px;
-  fill: #851316;
+  fill: #cf0505;
   margin: 10px 10px 40px 10px;
 }
 html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .pkTeam .outbox .team .teamName {
-  color: #000000;
+  color: #ffffff;
   font-size: 0.9rem;
   text-align: center;
   margin-bottom: 30px;
 }
 html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .pkTeam .outbox .team button {
   width: 100%;
-  background: #b61d21;
+  background: #cf0505;
   color: #ffffff;
   font-weight: bold;
   border-radius: 3px;
@@ -2371,7 +2389,7 @@ html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .pk
 }
 html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .pkTeam .winRWD {
   display: none;
-  color: #f3c01a;
+  color: #cf0505;
   text-align: center;
   margin: 20px 0 0;
 }
@@ -2507,7 +2525,7 @@ html .center .right .betBlock .topList li:hover p, html .center .right .betBlock
   color: #ffe17e;
 }
 html .center .right .betBlock .topList li p {
-  color: #b1b1b1;
+  color: #414141;
   font-size: 0.875rem;
   font-weight: bold;
 }
@@ -2588,7 +2606,7 @@ html .center .right .betBlock .smallFilter {
 html .center .right .betBlock .smallFilter button {
   width: 150px;
   height: 40px;
-  background: #cb3539;
+  background: #cf0505;
   border-radius: 30px;
   -webkit-box-shadow: 0 3px 0 1px #b61d21;
           box-shadow: 0 3px 0 1px #b61d21;
@@ -2614,7 +2632,7 @@ html .center .right .betBlock .closeLeft {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: #b61d21;
+  background: #b8151b;
   cursor: pointer;
 }
 html .center .right .betBlock .closeLeft p {
@@ -2632,7 +2650,7 @@ html .center aside.betRecordBtn {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: #b61d21;
+  background: #b8151b;
   -webkit-box-shadow: 4px 2px 0.5px #851316;
           box-shadow: 4px 2px 0.5px #851316;
   border-radius: 50px;
@@ -2990,7 +3008,7 @@ html footer .top .infoLine .lang ul li label input {
   margin: 0;
 }
 html footer .top .infoLine .lang ul li p {
-  color: #b61d21;
+  color: #b8151b;
   font-size: 0.75rem;
   font-weight: bold;
   margin-bottom: 2px;
@@ -3026,7 +3044,7 @@ html footer .top .company .logo {
 html footer .top .company .line {
   width: 1px;
   height: 100%;
-  background: #b1b1b1;
+  background: #414141;
   margin: 0 10px;
 }
 html footer .top .company .coDetail {
@@ -3105,7 +3123,7 @@ html footer .bottom p:last-child {
   }
   html footer .top .pageBlock ul {
     height: 46px;
-    border-bottom: 1px solid #b1b1b1;
+    border-bottom: 1px solid #414141;
     overflow: hidden;
   }
   html footer .top .pageBlock ul.active {
@@ -3113,7 +3131,7 @@ html footer .bottom p:last-child {
   }
   html footer .top .pageBlock ul .Bigtitle {
     font-size: 0.8rem;
-    border-bottom: 2px solid #b1b1b1;
+    border-bottom: 2px solid #414141;
     padding: 15px 20px;
     margin: 0;
     cursor: pointer;
@@ -3132,7 +3150,7 @@ html footer .bottom p:last-child {
   }
   html footer .top .infoLine {
     height: 60px;
-    background: #b61d21;
+    background: #b8151b;
     -webkit-box-ordinal-group: 1;
         -ms-flex-order: 0;
             order: 0;

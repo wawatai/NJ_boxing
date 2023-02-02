@@ -90,12 +90,12 @@
                     svg {
                         width: 24px;
                         height: 24px;
-                        fill: $mainColor_4;
+                        fill: $subColor_5;
                         margin-right: 10px;
                     }
 
                     p {
-                        color: $mainColor_4;
+                        color: $subColor_5;
                         font-size: 1rem;
                         font-weight: bold;
                     }
@@ -217,6 +217,7 @@
                     justify-content: center;
                     background: $mainColor_4;
                     border-radius: 5px 5px 0 0;
+                    padding: 0 5px;
                     margin-right: 5px;
                     cursor: pointer;
 
@@ -229,7 +230,7 @@
                     }
 
                     p {
-                        color: $mainColor_2;
+                        color: $mainColor_3;
                         font-size: 0.9rem;
                         font-weight: bold;
                         @include textHide;
@@ -260,41 +261,44 @@
                             width: auto;
                             max-width: 105px;
                             height: auto;
+                            border: 3px solid $mainColor_6;
+                            border-radius: 6px;
+                            padding: 0px 10px 10px;
                             margin: 0 10px 0 0;
                             cursor: pointer;
             
                             &:hover,&:active,&.active {
-                                .picBox {
-                                    border-color: $mainColor;
-                                }
-            
+                                background: $mainColor_6;
+
                                 p {
-                                    color: $mainColor;
+                                    color: $mainColor_3;
+                                }
+
+                                .picBox {
+                                    svg {
+                                        fill: $mainColor_3;
+                                    }
                                 }
                             }
             
                             .picBox {
                                 width: 105px;
-                                height: 105px;
+                                height: 85px;
                                 display: flex;
                                 align-items: center;
                                 justify-content: center;
-                                border-width: 3px 3px 10px 3px;
-                                border-style: solid;
-                                border-color: $mainColor_4;
-                                border-radius: 6px;
                                 margin: 0 0 5px;
             
                                 svg {
-                                    width: 24.5px;
+                                    width: 32.5px;
                                     height: 24.5px;
-                                    fill: $mainColor_4;
+                                    fill: $mainColor_6;
                                     transform: scale(2.5);
                                 }
                             }
             
                             p {
-                                color: $mainColor_4;
+                                color: $mainColor_6;
                                 font-size: 1rem;
                                 font-weight: bold;
                                 text-align: center;
@@ -433,6 +437,7 @@
                     font-size: 0.9rem;
                     font-weight: bold;
                     padding: 10px 20px;
+                    margin-bottom: 5px;
                     cursor: pointer;
 
                     i {
@@ -444,15 +449,19 @@
                 li {
                     width: 100%;
                     height: 35px;
-                    border-left: 1px solid $mainColor_5;
-                    border-right: 1px solid $mainColor_5;
+                    border-left: 1px solid $mainColor_6;
+                    border-right: 1px solid $mainColor_6;
+
+                    &:nth-of-type(1) {
+                        border-top: 1px solid $mainColor_6;
+                    }
 
                     &:not(:last-child) {
-                        border-bottom: 1px dotted $mainColor_5;
+                        border-bottom: 1px dotted $mainColor_6;
                     }
 
                     &:last-child {
-                        border-bottom: 1px solid $mainColor_5;
+                        border-bottom: 1px solid $mainColor_6;
                     }
 
                     a {
@@ -464,13 +473,13 @@
                         padding: 0 20px;
 
                         p {
-                            color: $mainColor_4;
+                            color: $mainColor;
                             font-size: 0.9rem;
                             font-weight: bold;
                         }
 
                         i {
-                            color: $mainColor_5;
+                            color: $mainColor;
                             cursor: pointer;
 
                             &.fa-solid {
@@ -491,7 +500,7 @@
 
             .gtypeTitle {
                 width: 100%;
-                color: $mainColor;
+                color: $mainColor_6;
                 font-size: 1.5rem;
                 font-weight: bold;
                 padding: 0 0 20px;
@@ -645,8 +654,12 @@
                                 }
                             }
 
+                            &.VS {
+                                color: $mainColor_3;
+                            }
+
                             &.winner {
-                                color: $subColor;
+                                color: $mainColor_6;
                                 text-align: center;
                                 margin: 0 0 70px;
                             }
@@ -667,13 +680,13 @@
                                 svg {
                                     width: 24.5px;
                                     height: 24.5px;
-                                    fill: $mainColor_4;
+                                    fill: $subColor_5;
                                     margin-right: 5px;
                                     transform: scale(0.9);
                                 }
 
                                 p {
-                                    color: $mainColor_4;
+                                    color: $subColor_5;
                                     font-size: 0.9rem;
                                 }
                             }
@@ -719,19 +732,19 @@
     
                                     &:first-child {
                                         svg {
-                                            fill: $mainColor;
+                                            fill: $subColor_4;
                                         }
                                     }
                                    
                                     svg {
                                         width: 48.5px;
                                         height: 48.5px;
-                                        fill: $mainColor_5;
+                                        fill: $mainColor_6;
                                         margin: 10px 10px 40px 10px;
                                     }
     
                                     .teamName {
-                                        color: $mainColor_2;
+                                        color: $mainColor_3;
                                         font-size: 0.9rem;
                                         text-align: center;
                                         margin-bottom: 30px;
@@ -739,7 +752,7 @@
     
                                     button {
                                         width: 100%;
-                                        background: $mainColor;
+                                        background: $mainColor_6;
                                         color: $mainColor_3;
                                         font-weight: bold;
                                         border-radius: 3px;
@@ -755,7 +768,7 @@
 
                             .winRWD {
                                 display: none;
-                                color: $subColor;
+                                color: $mainColor_6;
                                 text-align: center;
                                 margin: 20px 0 0;
                             }
@@ -785,7 +798,7 @@
                         display: flex;
                         flex-direction: column;
                         border-radius: 5px;
-
+    
                         .up {
                             width: 100%;
                             height: 40px;
@@ -796,7 +809,7 @@
                             border-radius: 8px 8px 0 0;
                             padding: 3px 10px 0;
                             position: relative;
-
+    
                             &::before {
                                 content: "";
                                 width: 10px;
@@ -807,7 +820,7 @@
                                 left: 0;
                                 z-index: -1;
                             }
-
+    
                             &::after {
                                 content: "";
                                 width: 10px;
@@ -819,7 +832,7 @@
                                 right: 0;
                                 z-index: -1;
                             }
-
+    
                             span {
                                 flex-shrink: 0;
                                 background: $mainColor_5;
@@ -830,7 +843,7 @@
                                 border-radius: 3px;
                                 cursor: default;
                             }
-
+    
                             .iconBox {
                                 width: auto;
                                 height: auto;
@@ -839,14 +852,14 @@
                                     width: 24.5px;
                                     height: 24.5px;
                                     fill: $mainColor_3;
-
+    
                                     &:first-child {
                                         margin-right: 5px;
                                     }
                                 }
                             }
                         }
-
+    
                         .down {
                             width: 100%;
                             height: auto;
@@ -856,17 +869,17 @@
                             border-radius: 8px;
                             border: 3px solid $mainColor;
                             padding: 20px;
-
+    
                             p {
                                 font-weight: bold;
-
+    
                                 &.timeZone {
                                     color: $mainColor_3;
                                     font-size: 0.8rem;
                                     white-space: nowrap;
                                     margin-bottom: 10px;
                                 }
-
+    
                                 &.date {
                                     color: $subColor;
                                     font-size: 1.3rem;
@@ -885,7 +898,7 @@
                                         bottom: 0;
                                         z-index: 10;
                                     }
-
+    
                                     &::after {
                                         content: "";
                                         width: 100%;
@@ -896,20 +909,24 @@
                                         bottom: 0;
                                     }
                                 }
-
+    
+                                &.VS {
+                                    color: $mainColor_3;
+                                }
+    
                                 &.winner {
-                                    color: $subColor;
+                                    color: $mainColor_6;
                                     text-align: center;
                                     margin: 0 0 70px;
                                 }
                             }
-
+    
                             // 時間資訊
                             .infoDetail {
                                 width: 100%;
                                 height: auto;
                                 position: relative;
-
+    
                                 .time {
                                     width: 100%;
                                     display: flex;
@@ -919,17 +936,17 @@
                                     svg {
                                         width: 24.5px;
                                         height: 24.5px;
-                                        fill: $mainColor_4;
+                                        fill: $subColor_5;
                                         margin-right: 5px;
                                         transform: scale(0.9);
                                     }
-
+    
                                     p {
-                                        color: $mainColor_4;
+                                        color: $subColor_5;
                                         font-size: 0.9rem;
                                     }
                                 }
-
+    
                                 .more {
                                     width: 130px;
                                     height: 30px;
@@ -944,7 +961,7 @@
                                     transform: translateX(-50%);
                                 }
                             }
-
+    
                             .pkTeam {
                                 width: 100%;
                                 height: auto;
@@ -953,14 +970,14 @@
                                 background: $mainColor_4;
                                 padding: 20px 20px 10px;
                                 margin: 30px 0;
-
+    
                                 .outbox {
                                     width: 100%;
                                     height: auto;
                                     display: flex;
                                     align-items: center;
                                     justify-content: space-between;
-
+    
                                     .team {
                                         width: auto;
                                         height: auto;
@@ -971,19 +988,19 @@
         
                                         &:first-child {
                                             svg {
-                                                fill: $mainColor;
+                                                fill: $subColor_4;
                                             }
                                         }
-                                    
+                                       
                                         svg {
                                             width: 48.5px;
                                             height: 48.5px;
-                                            fill: $mainColor_5;
+                                            fill: $mainColor_6;
                                             margin: 10px 10px 40px 10px;
                                         }
         
                                         .teamName {
-                                            color: $mainColor_2;
+                                            color: $mainColor_3;
                                             font-size: 0.9rem;
                                             text-align: center;
                                             margin-bottom: 30px;
@@ -991,7 +1008,7 @@
         
                                         button {
                                             width: 100%;
-                                            background: $mainColor;
+                                            background: $mainColor_6;
                                             color: $mainColor_3;
                                             font-weight: bold;
                                             border-radius: 3px;
@@ -1004,10 +1021,10 @@
                                         align-items: center;
                                     }
                                 }
-
+    
                                 .winRWD {
                                     display: none;
-                                    color: $subColor;
+                                    color: $mainColor_6;
                                     text-align: center;
                                     margin: 20px 0 0;
                                 }

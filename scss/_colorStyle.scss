@@ -2,15 +2,18 @@
 $BG: #000000;
 
 //主色
-$mainColor: #b61d21;
+$mainColor: #b8151b;
 $mainColor_2: #000000;
 $mainColor_3: #ffffff;
-$mainColor_4: #b1b1b1;
+$mainColor_4: #414141;
 $mainColor_5: #851316;
+$mainColor_6: #cf0505;
 
 $subColor: #f3c01a;
 $subColor_2: #ffe17e;
 $subColor_3: #313131ce;
+$subColor_4: #27a7f0;
+$subColor_5: #b1b1b1;
 
 //主背景色
 $mainBG_1: #b61d21;
@@ -40,7 +43,7 @@ $rightNav_bottom_BG: #cb3539;
 $rightNav_bottom_Color: #eca3a6;
 $rightNav_bottom_ActiveColor: #851316;
 @mixin rightNavBtn {
-    background: #cb3539;
+    background: #cf0505;
     border-radius: 30px;
     box-shadow: 0 3px 0 1px #b61d21;
     color: #ffffff;
