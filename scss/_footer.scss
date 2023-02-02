@@ -86,6 +86,7 @@ footer {
                     color: $mainColor_3;
                     font-size: 1rem;
                     margin-right: 20px;
+                    white-space: nowrap;
                 }
 
                 .flag {
@@ -170,6 +171,7 @@ footer {
                     color: $mainColor_3;
                     font-size: 1rem;
                     margin-right: 10px;
+                    white-space: nowrap;
                 }
 
                 select {
@@ -233,6 +235,79 @@ footer {
             }
         }
     }
+
+    // 手機版
+    .mobileFooter {
+        width: 100%;
+        height: 70px;
+        display: flex;
+        align-items: center;
+
+        li {
+            width: calc(100% / 4);
+            height: 100%;
+
+            a {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding: 2vw;
+                
+                i {
+                    width: 6vw;
+                    height: 8vw;
+
+                    &.home {
+                        background-position-y: 0%;
+                    }
+
+                    &.winlose {
+                        width: 10vw;
+                        height: 9vw;
+                        background-position-y: 0%;
+                    }
+
+                    &.bet {
+                        width: 7vw;
+                        height: 8.5vw;
+                        background-position-y: 0%;
+                    }
+
+                    &.member {
+                        width: 7.5vw;
+                        height: 9vw;
+                        background-position-y: 0%;
+                    }
+                    
+                }
+
+                p {
+                    color: $subColor_7;
+                    font-size: 1vw;
+                    margin-top: 5px;
+                }
+            }
+
+            &:active,
+            &.active {
+                a {
+                    background: $mainColor_6;
+                    
+                    i {
+                        background-position-y: 100%;
+                    }
+
+                    p {
+                        color: $mainColor_3;
+                    }
+                }
+            }
+        }
+    }
+
 
     @media only screen and (max-width: 1010px) {
         
@@ -357,6 +432,19 @@ footer {
                     margin-bottom: 10px;
                 }
             }
+        }
+    }
+
+    @media only screen and (max-width: 450px) {
+        background: $mainColor_5;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        z-index: 120;
+
+        .top,
+        .bottom {
+            display: none;
         }
     }
 }

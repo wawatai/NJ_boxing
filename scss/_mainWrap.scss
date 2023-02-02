@@ -113,6 +113,34 @@
         padding: 20px 30px;
         overflow: hidden;
 
+        .searchBox {
+            display: none;
+            width: 100%;
+            height: 40px;
+            margin-bottom: 20px;
+            position: relative;
+
+            input {
+                width: 100%;
+                height: 100%;
+                background: $subColor_8;
+                border: 2px solid $mainColor_6;
+                border-radius: 30px;
+                color: $mainColor_3;
+                font-size: 0.9rem;
+                padding: 0 10px;
+            }
+
+            i {
+                width: 5vw;
+                height: 5vw;
+                position: absolute;
+                top: 50%;
+                right: 10px;
+                transform: translateY(-50%);
+            }
+        }
+
         .swiper {
             width: 100%;
             height: auto;
@@ -1512,6 +1540,71 @@
         aside {
             &.betRecordBtn {
                 display: flex;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 450px) {
+        .mainArea {
+            padding: 20px;
+
+            .searchBox {
+                display: flex;
+            }
+
+            .swiper {
+                display: none;
+            }
+
+            .middleNav {
+
+                .topnav {
+
+                    li {
+                        width: calc(95.7% / 4);
+                    }
+                }
+            }
+
+            .gameContent {
+                .content {
+                    .gBlock {
+    
+                        .down {
+                            justify-content: space-between;
+        
+                            .infoDetail {
+                                width: 44%;
+                            }
+        
+                            .pkTeam {
+                                width: 52%;
+                                margin-right: 0;
+
+                                .outbox {
+
+                                    .team {
+
+                                        svg {
+                                            margin: 0 0 40px;
+                                        }
+                                    }
+
+                                    .VS {
+                                        margin: 0 3px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        aside {
+            &.betRecordBtn {
+                bottom: 85px;
+                right: 20px;
             }
         }
     }

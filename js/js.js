@@ -219,9 +219,15 @@ $(function(){
         .attr("class","fa-regular fa-star");
     })
 
-    $(document).on("click",".betRecordBtn",function(){
+    $(".betRecordBtn").click(function(){
         $("main .center .right")
-        .toggleClass("active");
+        .addClass("active");
+    })
+
+    //aside betRecordBtn
+    $(".center .right.active .betBlock .closeLeft").click(function(){
+        $(this)
+        .addClass("abc");
     })
 })
 
@@ -266,6 +272,14 @@ $(function(){
         $(this)
         .find("i")
         .attr("class","fa-solid fa-minus");
+    })
+
+    //rwd 手機版
+    $("footer .mobileFooter li a").click(function(){
+        $(this).parent()
+        .toggleClass("active")
+        .siblings()
+        .removeClass("active");
     })
 })
 

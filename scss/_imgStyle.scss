@@ -4,12 +4,39 @@ header .top li i {
     background-size: 500%;
 }
 
+//mainArea
+.mainArea .searchBox i{
+    background: url('../image/icon/searchIC.png') no-repeat center;
+    background-size: 100%;
+}
+
 //footer
 footer .flag.jp {
     background: url("../image/icon/flag/JP.svg") no-repeat center;
     background-size: contain;
 }
+
 footer .flag.uk {
     background: url("../image/icon/flag/UK.svg") no-repeat center;
     background-size: contain;
+}
+
+footer .mobileFooter li a i.home {
+    background: url("../image/icon/footer_home.png") no-repeat center;
+    background-size: 100%;
+}
+
+footer .mobileFooter li a i.winlose {
+    background: url("../image/icon/footer_winlose.png") no-repeat center;
+    background-size: 100%;
+}
+
+footer .mobileFooter li a i.bet {
+    background: url("../image/icon/footer_bet.png") no-repeat center;
+    background-size: 100%;
+}
+
+footer .mobileFooter li a i.member {
+    background: url("../image/icon/footer_member.png") no-repeat center;
+    background-size: 100%;
 }

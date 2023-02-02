@@ -89,6 +89,8 @@ header {
             height: auto;
             display: flex;
             align-items: center;
+            position: absolute;
+            right: 24px;
 
             .checkBox {
                 width: auto;
@@ -249,6 +251,54 @@ header {
                     cursor: default;
                 }
             }
+        }
+
+        .langBox {
+            display: none;
+            width: auto;
+            height: auto;
+            order: 0;
+            align-items: center;
+            justify-content: space-between;
+            border: 1px solid $mainColor_3;
+            border-radius: 30px;
+           
+            p {
+                color: $mainColor_3;
+                font-size: 4vw;
+                margin: 7px 10px;
+                white-space: nowrap;
+                
+                span {
+                    margin-left: 25px;
+                    position: relative;
+
+                    &::before {
+                        content: "";
+                        width: 0;
+                        height: 0;
+                        border-style: solid;
+                        border-width: 6px 4px 0 4px;
+                        border-color: $mainColor_3 transparent;
+                        position: absolute;
+                        top: 50%;
+                        left: -13px;
+                        transform: translateY(-50%);
+                    }
+                }
+            }
+        }
+
+        .mobile_Login {
+            width: auto;
+            order: 2;
+            background: $subColor_6;
+            border-radius: 30px;
+            color: $mainColor_2;
+            font-size: 4vw;
+            font-weight: bold;
+            white-space: nowrap;
+            padding: 5px 15px;
         }
     }
 
@@ -416,6 +466,7 @@ header {
                     }
                 }
             }
+
             .loginArea {
 
                 .checkBox {
@@ -437,13 +488,13 @@ header {
             position: relative;
 
             .logo {
-    
+                position: absolute;
+                top: 15px;
+                left: 15px;
+
                 img {
                     height: 40px;
                     object-fit: contain;
-                    position: absolute;
-                    top: 5px;
-                    left: 5px;
                 }
             }
             ul {
@@ -477,6 +528,46 @@ header {
         }
         .bottom {
             display: none;
+        }
+    }
+
+    @media only screen and (max-width: 450px) {
+
+        .top {
+            height: 60px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+
+            a {
+                &.logo {
+                    width: auto;
+                    height: auto;
+                    order: 1;
+                    margin-top: 3px;
+                    position: relative;
+                    top: 0;
+                    left: 0;
+
+                    img {
+                        height: 30px;
+                    }
+                }
+            }
+            
+            ul {
+                display: none;
+            }
+
+            .rwd_TOPNav {
+                display: none;
+            }
+
+            .langBox {
+                display: flex;
+            }
         }
     }
 }

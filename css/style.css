@@ -4,6 +4,11 @@ header .top li i {
   background-size: 500%;
 }
 
+.mainArea .searchBox i {
+  background: url("../image/icon/searchIC.png") no-repeat center;
+  background-size: 100%;
+}
+
 footer .flag.jp {
   background: url("../image/icon/flag/JP.svg") no-repeat center;
   background-size: contain;
@@ -12,6 +17,26 @@ footer .flag.jp {
 footer .flag.uk {
   background: url("../image/icon/flag/UK.svg") no-repeat center;
   background-size: contain;
+}
+
+footer .mobileFooter li a i.home {
+  background: url("../image/icon/footer_home.png") no-repeat center;
+  background-size: 100%;
+}
+
+footer .mobileFooter li a i.winlose {
+  background: url("../image/icon/footer_winlose.png") no-repeat center;
+  background-size: 100%;
+}
+
+footer .mobileFooter li a i.bet {
+  background: url("../image/icon/footer_bet.png") no-repeat center;
+  background-size: 100%;
+}
+
+footer .mobileFooter li a i.member {
+  background: url("../image/icon/footer_member.png") no-repeat center;
+  background-size: 100%;
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -123,6 +148,11 @@ html body main {
     padding-top: 100px;
   }
 }
+@media only screen and (max-width: 450px) {
+  html body main {
+    padding-top: 0px;
+  }
+}
 html header {
   width: 100%;
   height: auto;
@@ -220,6 +250,8 @@ html header .top .loginArea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: absolute;
+  right: 24px;
 }
 html header .top .loginArea .checkBox {
   width: auto;
@@ -405,6 +437,58 @@ html header .top .rwd_TOPNav .itemBox p {
   font-size: 0.9rem;
   margin-top: 5px;
   cursor: default;
+}
+html header .top .langBox {
+  display: none;
+  width: auto;
+  height: auto;
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 1px solid #ffffff;
+  border-radius: 30px;
+}
+html header .top .langBox p {
+  color: #ffffff;
+  font-size: 4vw;
+  margin: 7px 10px;
+  white-space: nowrap;
+}
+html header .top .langBox p span {
+  margin-left: 25px;
+  position: relative;
+}
+html header .top .langBox p span::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 6px 4px 0 4px;
+  border-color: #ffffff transparent;
+  position: absolute;
+  top: 50%;
+  left: -13px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+html header .top .mobile_Login {
+  width: auto;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  background: #66e123;
+  border-radius: 30px;
+  color: #000000;
+  font-size: 4vw;
+  font-weight: bold;
+  white-space: nowrap;
+  padding: 5px 15px;
 }
 html header .bottom {
   width: 100%;
@@ -619,13 +703,15 @@ html header .bottom .mid .time {
     padding: 0;
     position: relative;
   }
+  html header .top .logo {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+  }
   html header .top .logo img {
     height: 40px;
     -o-object-fit: contain;
        object-fit: contain;
-    position: absolute;
-    top: 5px;
-    left: 5px;
   }
   html header .top ul {
     display: -webkit-box;
@@ -657,6 +743,47 @@ html header .bottom .mid .time {
   }
   html header .bottom {
     display: none;
+  }
+}
+@media only screen and (max-width: 450px) {
+  html header .top {
+    height: 60px;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0 20px;
+  }
+  html header .top a.logo {
+    width: auto;
+    height: auto;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-top: 3px;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  html header .top a.logo img {
+    height: 30px;
+  }
+  html header .top ul {
+    display: none;
+  }
+  html header .top .rwd_TOPNav {
+    display: none;
+  }
+  html header .top .langBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 html .login {
@@ -1406,6 +1533,32 @@ html .center .mainArea {
           flex-direction: column;
   padding: 20px 30px;
   overflow: hidden;
+}
+html .center .mainArea .searchBox {
+  display: none;
+  width: 100%;
+  height: 40px;
+  margin-bottom: 20px;
+  position: relative;
+}
+html .center .mainArea .searchBox input {
+  width: 100%;
+  height: 100%;
+  background: #280606;
+  border: 2px solid #cf0505;
+  border-radius: 30px;
+  color: #ffffff;
+  font-size: 0.9rem;
+  padding: 0 10px;
+}
+html .center .mainArea .searchBox i {
+  width: 5vw;
+  height: 5vw;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 html .center .mainArea .swiper {
   width: 100%;
@@ -2812,6 +2965,44 @@ html .center .mainArea .swiper03 .swiper-button-next03 i {
     display: flex;
   }
 }
+@media only screen and (max-width: 450px) {
+  html .center .mainArea {
+    padding: 20px;
+  }
+  html .center .mainArea .searchBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  html .center .mainArea .swiper {
+    display: none;
+  }
+  html .center .mainArea .middleNav .topnav li {
+    width: 23.925%;
+  }
+  html .center .mainArea .gameContent .content .gBlock .down {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  html .center .mainArea .gameContent .content .gBlock .down .infoDetail {
+    width: 44%;
+  }
+  html .center .mainArea .gameContent .content .gBlock .down .pkTeam {
+    width: 52%;
+    margin-right: 0;
+  }
+  html .center .mainArea .gameContent .content .gBlock .down .pkTeam .outbox .team svg {
+    margin: 0 0 40px;
+  }
+  html .center .mainArea .gameContent .content .gBlock .down .pkTeam .outbox .VS {
+    margin: 0 3px;
+  }
+  html .center aside.betRecordBtn {
+    bottom: 85px;
+    right: 20px;
+  }
+}
 html footer {
   width: 100%;
   height: auto;
@@ -2912,6 +3103,7 @@ html footer .top .infoLine .lang .langTitle {
   color: #ffffff;
   font-size: 1rem;
   margin-right: 20px;
+  white-space: nowrap;
 }
 html footer .top .infoLine .lang .flag {
   width: 24px;
@@ -3035,6 +3227,7 @@ html footer .top .infoLine .betRate p {
   color: #ffffff;
   font-size: 1rem;
   margin-right: 10px;
+  white-space: nowrap;
 }
 html footer .top .infoLine .betRate select {
   width: auto;
@@ -3101,6 +3294,74 @@ html footer .bottom p {
 }
 html footer .bottom p:last-child {
   margin-top: 10px;
+}
+html footer .mobileFooter {
+  width: 100%;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html footer .mobileFooter li {
+  width: 25%;
+  height: 100%;
+}
+html footer .mobileFooter li a {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2vw;
+}
+html footer .mobileFooter li a i {
+  width: 6vw;
+  height: 8vw;
+}
+html footer .mobileFooter li a i.home {
+  background-position-y: 0%;
+}
+html footer .mobileFooter li a i.winlose {
+  width: 10vw;
+  height: 9vw;
+  background-position-y: 0%;
+}
+html footer .mobileFooter li a i.bet {
+  width: 7vw;
+  height: 8.5vw;
+  background-position-y: 0%;
+}
+html footer .mobileFooter li a i.member {
+  width: 7.5vw;
+  height: 9vw;
+  background-position-y: 0%;
+}
+html footer .mobileFooter li a p {
+  color: #ff9b9f;
+  font-size: 1vw;
+  margin-top: 5px;
+}
+html footer .mobileFooter li:active a, html footer .mobileFooter li.active a {
+  background: #cf0505;
+}
+html footer .mobileFooter li:active a i, html footer .mobileFooter li.active a i {
+  background-position-y: 100%;
+}
+html footer .mobileFooter li:active a p, html footer .mobileFooter li.active a p {
+  color: #ffffff;
 }
 @media only screen and (max-width: 1010px) {
   html footer .top .infoLine {
@@ -3219,5 +3480,18 @@ html footer .bottom p:last-child {
   }
   html footer .top .company .logo {
     margin-bottom: 10px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  html footer {
+    background: #851316;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 120;
+  }
+  html footer .top,
+html footer .bottom {
+    display: none;
   }
 }
