@@ -379,6 +379,148 @@ html header .top .loginArea button:last-child {
   background: #ffffff;
   margin: 0;
 }
+html header .top .mem_Area {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html header .top .mem_Area .checkBox {
+  width: auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  margin-right: 10px;
+  opacity: 0;
+}
+html header .top .mem_Area .checkBox .title {
+  color: #f3c01a;
+  font-size: 0.85rem;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+html header .top .mem_Area .checkBox .title i {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 6px 4px 0 4px;
+  border-color: #f3c01a transparent;
+  margin-left: 5px;
+}
+html header .top .mem_Area .checkBox ul {
+  display: none;
+  width: 220px;
+  height: auto;
+  display: none;
+  background: #ffffff;
+  border-radius: 3px;
+  padding: 10px;
+  padding: 20px;
+  position: absolute;
+  top: 25px;
+  left: -20px;
+  z-index: 100;
+}
+html header .top .mem_Area .checkBox ul:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0px 4px 6px 4px;
+  border-color: #ffffff transparent;
+  position: absolute;
+  top: -6px;
+  right: 10px;
+}
+html header .top .mem_Area .checkBox ul.display {
+  display: block;
+}
+html header .top .mem_Area .checkBox ul.display {
+  display: block;
+}
+html header .top .mem_Area .checkBox ul .innerTitle {
+  color: #000000;
+  font-size: 0.875rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+html header .top .mem_Area .checkBox ul li {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+html header .top .mem_Area .checkBox ul li:first-child {
+  display: none;
+}
+html header .top .mem_Area .checkBox ul li:last-child {
+  margin: 0;
+}
+html header .top .mem_Area .checkBox ul li a {
+  width: 100%;
+  height: auto;
+}
+html header .top .mem_Area .checkBox ul li a p {
+  color: #b8151b;
+  font-size: 0.75rem;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+html header .top .mem_Area div {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 5px;
+}
+html header .top .mem_Area div.account i {
+  color: #ffffff;
+  font-size: 1rem;
+  margin-right: 5px;
+}
+html header .top .mem_Area div button:not(:last-child) {
+  background: #f3c01a;
+  padding: 0 3px;
+  margin-right: 5px;
+}
+html header .top .mem_Area div p {
+  color: #ffffff;
+}
+html header .top .mem_Area .message {
+  background: none;
+}
+html header .top .mem_Area .message i {
+  color: #f3c01a;
+  font-size: 1.5rem;
+}
 html header .top .rwd_TOPNav {
   display: none;
   width: auto;
@@ -386,6 +528,9 @@ html header .top .rwd_TOPNav {
   position: absolute;
   top: 0;
   right: 0;
+}
+html header .top .rwd_TOPNav.logInner .itemBox:not(:last-child) {
+  display: none;
 }
 html header .top .rwd_TOPNav .itemBox {
   width: auto;
@@ -478,6 +623,7 @@ html header .top .langBox p span::before {
           transform: translateY(-50%);
 }
 html header .top .mobile_Login {
+  display: none;
   width: auto;
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
@@ -676,10 +822,10 @@ html header .bottom .mid .time {
   html header .top ul li:last-child {
     display: none;
   }
-  html header .top .loginArea {
+  html header .top .mem_Area {
     margin-left: 15px;
   }
-  html header .top .loginArea .checkBox {
+  html header .top .mem_Area .checkBox {
     opacity: 1;
     pointer-events: auto !important;
     cursor: pointer;
@@ -694,7 +840,7 @@ html header .bottom .mid .time {
   html header .top ul li:nth-of-type(3) {
     display: none;
   }
-  html header .top .loginArea .checkBox ul li:first-child {
+  html header .top .mem_Area .checkBox ul li:first-child {
     display: block;
   }
 }
@@ -741,6 +887,37 @@ html header .bottom .mid .time {
     display: -ms-flexbox;
     display: flex;
   }
+  html header .top .mem_Area {
+    position: absolute;
+    top: 20px;
+    right: 65px;
+  }
+  html header .top .mem_Area .checkBox,
+html header .top .mem_Area .money,
+html header .top .mem_Area .message {
+    display: none;
+  }
+  html header .top .mem_Area .account {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  html header .top .mem_Area .account i {
+    font-size: 3rem;
+    cursor: pointer;
+  }
+  html header .top .mem_Area .account p {
+    display: none;
+  }
+  html header .top .mem_Area .wallet {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+    margin-right: 10px;
+  }
+  html header .top .mem_Area .wallet button {
+    display: none;
+  }
   html header .bottom {
     display: none;
   }
@@ -784,6 +961,9 @@ html header .bottom .mid .time {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  html header .top .mobile_Login {
+    display: block;
   }
 }
 html .login {
@@ -2678,7 +2858,7 @@ html .center .right .betBlock .topList li:hover p, html .center .right .betBlock
   color: #ffe17e;
 }
 html .center .right .betBlock .topList li p {
-  color: #414141;
+  color: #ffffff;
   font-size: 0.875rem;
   font-weight: bold;
 }
@@ -3296,11 +3476,9 @@ html footer .bottom p:last-child {
   margin-top: 10px;
 }
 html footer .mobileFooter {
+  display: none;
   width: 100%;
   height: 70px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -3493,5 +3671,10 @@ html footer .mobileFooter li:active a p, html footer .mobileFooter li.active a p
   html footer .top,
 html footer .bottom {
     display: none;
+  }
+  html footer .mobileFooter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }

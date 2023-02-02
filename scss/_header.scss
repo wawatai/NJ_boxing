@@ -185,6 +185,134 @@ header {
             }
         }
 
+        .mem_Area {
+            width: auto;
+            height: auto;
+            display: flex;
+            align-items: center;
+
+            .checkBox {
+                width: auto;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                position: relative;
+                margin-right: 10px;
+                opacity: 0;
+
+                .title {
+                    color: $subColor;
+                    font-size: 0.85rem;
+                    font-weight: bold;
+                    display: flex;
+                    align-items: center;
+                    user-select: none;
+
+                    i {
+                        width: 0;
+                        height: 0;
+                        border-style: solid;
+                        border-width: 6px 4px 0 4px;
+                        border-color: $subColor transparent;
+                        margin-left: 5px;
+                    }
+                }
+
+                ul {
+                    display: none;
+                    width: 220px;
+                    height: auto;
+                    @include bottomList;
+                    padding: 20px;
+                    position: absolute;
+                    top: 25px;
+                    left: -20px;
+                    z-index: 100;
+
+                    &.display {
+                        display: block;
+                    }
+
+                    .innerTitle {
+                        color: $mainColor_2;
+                        font-size: 0.875rem;
+                        font-weight: bold;
+                        margin-bottom: 20px;
+                    }
+
+                    li {
+                        width: 100%;
+                        height: auto;
+                        display: flex;
+                        align-items: center;
+                        cursor: pointer;
+                        margin-bottom: 10px;
+
+                        &:first-child {
+                            display: none;
+                        }
+
+                        &:last-child {
+                            margin: 0;
+                        }
+
+                        a {
+                            width: 100%;
+                            height: auto;
+
+                            p {
+                                color: $mainColor;
+                                font-size: 0.75rem;
+                                font-weight: bold;
+                                margin-bottom: 2px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            div {
+                width: auto;
+                height: auto;
+                display: flex;
+                align-items: center;
+                margin-right: 5px;
+
+                &.account {
+
+                    i { 
+                        color: $mainColor_3;
+                        font-size: 1rem;
+                        margin-right: 5px;
+                    }
+                }
+
+                button {
+                  
+                    &:not(:last-child) {
+                        background: $subColor;
+                        padding: 0 3px;
+                        margin-right: 5px;
+                    }
+
+                
+                }
+
+                p {
+                    color: $mainColor_3;
+                }
+            }
+
+            .message {
+                background: none;
+
+                i {
+                    color: $subColor;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+
         .rwd_TOPNav {
             display: none;
             width: auto;
@@ -192,6 +320,16 @@ header {
             position: absolute;
             top: 0;
             right: 0;
+
+            &.logInner {
+
+                .itemBox {
+
+                    &:not(:last-child) {
+                        display: none;
+                    }
+                }
+            }
 
             .itemBox {
                 width: auto;
@@ -290,6 +428,7 @@ header {
         }
 
         .mobile_Login {
+            display: none;
             width: auto;
             order: 2;
             background: $subColor_6;
@@ -436,7 +575,7 @@ header {
                     }
                 }
             }
-            .loginArea {
+            .mem_Area {
                 margin-left: 15px;
 
                 .checkBox {
@@ -467,7 +606,7 @@ header {
                 }
             }
 
-            .loginArea {
+            .mem_Area {
 
                 .checkBox {
                     ul {
@@ -525,6 +664,39 @@ header {
             .rwd_TOPNav {
                 display: flex;
             }
+
+            .mem_Area {
+                position: absolute;
+                top: 20px;
+                right: 65px;
+                
+                .checkBox,
+                .money,
+                .message {
+                    display: none;
+                }
+                .account {
+                    order: 1;
+
+                    i {
+                        font-size: 3rem;
+                        cursor: pointer;
+                    }
+
+                    p {
+                        display: none;
+                    }
+                }
+                .wallet {
+                    order: 0;
+                    margin-right: 10px;
+
+                    button {
+                        display: none;
+                    }
+                }
+
+            }
         }
         .bottom {
             display: none;
@@ -567,6 +739,10 @@ header {
 
             .langBox {
                 display: flex;
+            }
+
+            .mobile_Login {
+                display: block;
             }
         }
     }
