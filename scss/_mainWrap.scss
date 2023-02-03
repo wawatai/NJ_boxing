@@ -653,33 +653,7 @@
                             }
 
                             &.date {
-                                color: $subColor;
-                                font-size: 1.3rem;
-                                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                                letter-spacing: 1px;
-                                padding: 0 0 15px;
-                                position: relative;
-                                
-                                &::before {
-                                    content: "";
-                                    width: 30%;
-                                    height: 5px;
-                                    background: $mainColor_5;
-                                    position: absolute;
-                                    left: 0;
-                                    bottom: 0;
-                                    z-index: 10;
-                                }
-
-                                &::after {
-                                    content: "";
-                                    width: 100%;
-                                    height: 5px;
-                                    background: $mainColor;
-                                    position: absolute;
-                                    left: 0;
-                                    bottom: 0;
-                                }
+                                @include bigtitle_Line;
                             }
 
                             &.VS {

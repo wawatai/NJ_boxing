@@ -231,6 +231,23 @@ $(function(){
     })
 })
 
+//memberPage
+$(function(){
+    $(".myPage .rewrad_btn button").click(function(){
+        $(this)
+        .addClass("active")
+        .siblings()
+        .removeClass("active");
+
+        if ($(this).index() == 0) {
+            $(".reward_stauts span").text('使用中');
+        }
+        else {
+            $(".reward_stauts span").text('未使用');
+        }
+        
+    })
+})
 
 //footer
 $(function(){

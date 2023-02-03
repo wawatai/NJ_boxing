@@ -84,6 +84,7 @@ header {
             }
         }
 
+        // 未登入登入區
         .loginArea {
             width: auto;
             height: auto;
@@ -185,12 +186,14 @@ header {
             }
         }
 
+        // 已登入會員區
         .mem_Area {
             width: auto;
             height: auto;
             display: flex;
             align-items: center;
 
+            // rwd縮排物件
             .checkBox {
                 width: auto;
                 height: 100%;
@@ -279,6 +282,7 @@ header {
                 margin-right: 5px;
 
                 &.account {
+                    cursor: pointer;
 
                     i { 
                         color: $mainColor_3;
@@ -294,8 +298,6 @@ header {
                         padding: 0 3px;
                         margin-right: 5px;
                     }
-
-                
                 }
 
                 p {
@@ -313,6 +315,7 @@ header {
             }
         }
 
+        // 平板nav
         .rwd_TOPNav {
             display: none;
             width: auto;
@@ -391,6 +394,7 @@ header {
             }
         }
 
+        // 手機版語言列
         .langBox {
             display: none;
             width: auto;
@@ -427,6 +431,7 @@ header {
             }
         }
 
+        // 手機版登入
         .mobile_Login {
             display: none;
             width: auto;
@@ -567,6 +572,7 @@ header {
 
     @media only screen and (max-width: 1315px) {
         .top {
+
             ul {
                 left: 40%;
                 li {
@@ -575,6 +581,17 @@ header {
                     }
                 }
             }
+
+            .login_Area {
+                margin-left: 15px;
+
+                .checkBox {
+                    opacity: 1;
+                    pointer-events: auto !important;
+                    cursor: pointer;
+                }
+            }
+
             .mem_Area {
                 margin-left: 15px;
 
@@ -705,18 +722,10 @@ header {
     }
 
     @media only screen and (max-width: 450px) {
+          // 已登入手機版header
+          &.logINN {
 
-        .top {
-            height: 60px;
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 0 20px;
-
-            // 已登入手機版header
-            &.logINN {
-
+            .top {
                 .mem_Area {
                     order: 2;
                     position: relative;
@@ -744,9 +753,20 @@ header {
                             display: none;
                         }
                     }
-    
                 }
             }
+        }
+
+
+        .top {
+            height: 60px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+
+          
 
             a {
                 &.logo {

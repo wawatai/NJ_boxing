@@ -11,6 +11,10 @@ html {
             width: 100%;
             height: auto;
             padding-top: 125px;
+
+            &.memberPage {
+                padding-top: 90px;
+            }
         }
 
         @media only screen and (max-width: 1020px) {
@@ -35,5 +39,6 @@ html {
     @import "./login";
     @import "./register";
     @import "./mainWrap";
+    @import "./memberPage";
     @import "./footer";
 }
