@@ -657,6 +657,7 @@ header {
                     }
                 }
             }
+
             .loginArea {
                 display: none;
             }
@@ -712,6 +713,40 @@ header {
             align-items: center;
             justify-content: space-between;
             padding: 0 20px;
+
+            // 已登入手機版header
+            &.logINN {
+
+                .mem_Area {
+                    order: 2;
+                    position: relative;
+                    top: 0;
+                    right: 0;
+                    
+                    .account {
+                        order: 1;
+                        margin: 0;
+    
+                        i {
+                            font-size: 5vw;
+                            cursor: pointer;
+                        }
+    
+                        p {
+                            display: none;
+                        }
+                    }
+                    .wallet {
+                        order: 0;
+                        margin-right: 10px;
+    
+                        button {
+                            display: none;
+                        }
+                    }
+    
+                }
+            }
 
             a {
                 &.logo {

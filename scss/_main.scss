@@ -21,6 +21,11 @@ html {
 
         @media only screen and (max-width: 450px) {
             main {
+
+                &.inMain {
+                    padding-top: 60px;
+                }
+
                 padding-top: 0px;
             }
         }
