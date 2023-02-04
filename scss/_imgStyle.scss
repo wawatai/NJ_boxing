@@ -5,18 +5,28 @@ header .top li i {
 }
 
 //mainArea
-.mainArea .searchBox i{
+.mainArea .searchBox i {
     background: url('../image/icon/searchIC.png') no-repeat center;
     background-size: 100%;
 }
 
 //memberPage
-.memberPage .mobile_content .userBox .userPic {
+.memberPage .mobile_content .userPic {
     background: url(../image/user.png) no-repeat center;
     background-size: 100%;
 }
 
-.memberPage .mobile_content .topBox ul li a .userNav_IC{
+.memberPage .mobile_content .picEdit i {
+    background: url(../image/icon/editpic_IC.png) no-repeat center;
+    background-size: 100%;
+}
+
+.memberPage .mobile_content .datebox i {
+    background: url(../image/icon/date.png) no-repeat center;
+    background-size: 100%;
+}
+
+.memberPage .mobile_content .topBox ul li a .userNav_IC {
     background: url(../image/icon/mybigNav_IC.png) no-repeat center;
     background-size: 100%;
 }

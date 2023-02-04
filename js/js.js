@@ -231,6 +231,15 @@ $(function(){
     })
 })
 
+//betPage
+$(function(){
+    $(".betPage table th").click(function(){
+        $(this)
+        .closest("table")
+        .toggleClass("active");
+    })
+})
+
 //memberPage
 $(function(){
     $(".myPage .rewrad_btn button").click(function(){
@@ -245,7 +254,32 @@ $(function(){
         else {
             $(".reward_stauts span").text('未使用');
         }
-        
+    })
+
+    $(".myPage .mainArea .mobile_content .innerBox .userBox").click(function(){
+        $(this)
+        .closest(".innerBox")
+        .removeClass("active");
+
+        $(".myPage .mainArea .mobile_content .innerBox.userDetail")
+        .addClass("active");
+    })
+
+    $(".myPage .mobile_content .userOther .submitBtn").click(function(){
+        $(this)
+        .closest(".userOther")
+        .addClass("edit")
+        .find(".submitBtn")
+        .text("変更を確認する");
+    })
+
+    $(".myPage .mobile_content .innerBox.userDetail .backBtn").click(function(){
+        if ($(this).closest(".userDetail").has(".active")) {
+            $(".myPage .mobile_content .innerBox.userDetail")
+            .removeClass("edit")
+            .find(".submitBtn")
+            .text("個人情報変更");
+        }
     })
 })
 
@@ -294,7 +328,7 @@ $(function(){
     //rwd 手機版
     $("footer .mobileFooter li a").click(function(){
         $(this).parent()
-        .toggleClass("active")
+        .addClass("active")
         .siblings()
         .removeClass("active");
     })

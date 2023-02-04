@@ -27,7 +27,7 @@ html {
             main {
 
                 &.inMain {
-                    padding-top: 60px;
+                    padding-top: 50px;
                 }
 
                 padding-top: 0px;
@@ -40,5 +40,6 @@ html {
     @import "./register";
     @import "./mainWrap";
     @import "./memberPage";
+    @import "./betPage";
     @import "./footer";
 }

@@ -7,7 +7,7 @@ $mainColor_2: #000000;
 $mainColor_3: #ffffff;
 $mainColor_4: #414141;
 $mainColor_5: #851316;
-$mainColor_6: #cf0505;
+$mainColor_6: #dd2830;
 
 $subColor: #f3c01a;
 $subColor_2: #ffe17e;
@@ -17,6 +17,7 @@ $subColor_5: #b1b1b1;
 $subColor_6: #66e123;
 $subColor_7: #ff9b9f;
 $subColor_8: #280606;
+$subColor_9: #848484;
 
 //主背景色
 $mainBG_1: #b61d21;
@@ -66,6 +67,13 @@ $register_BG: #1f1f1f;
 //jumpWindow
 $filter: #00000080;
 
+//button
+@mixin buttonStyle_1 {
+    background: $mainColor_6;
+    color: $mainColor_3;
+    border-radius: 50px;
+}
+
 //input
 @mixin inputStyle_1 {
     background: #ffffff;
@@ -75,6 +83,18 @@ $filter: #00000080;
     font-size: 14px;
     font-weight: bold;
     padding-left: 10px;
+}
+
+@mixin inputStyle_2 {
+    background: $subColor_8;
+    border: 1px solid $mainColor_6;
+    border-radius: 30px;
+    color: $mainColor_3;
+    padding: 0 10px;
+
+    &::placeholder {
+        color: $mainColor_6;
+    }
 }
 
 //共用
@@ -173,6 +193,7 @@ $filter: #00000080;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
+
 
 @mixin betRecordBtn {
     align-items: center;

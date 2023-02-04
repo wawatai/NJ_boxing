@@ -72,7 +72,7 @@
                     <button class="deposit">入金</button>
                     <p>$<span class="dpAmount">0.00</span></p>
                 </div>
-                <div class="wallet" onclick="window.location.href='./html/betRecord.html'">
+                <div class="wallet">
                     <button class="walletBtn">マイベット</button>
                     <p>$<span class="walletNum">0.00</span></p>
                 </div>
@@ -111,7 +111,7 @@
     </header>
     <main class="inMain memberPage">
         <div class="center">
-            <div class="myPage">
+            <div class="betPage">
                 <!-- 左主NAV -->
                 <section class="left">
                     <p class="navTitle">スポーツ</p>
@@ -271,7 +271,7 @@
                 <section class="leftSide">
                     <div class="navoutter">
                         <ul>
-                            <li class="active">
+                            <li>
                                 <a href="./memberPage.html">
                                     <p>口座残高</p>
                                     <i class="fa-solid fa-chevron-right"></i>
@@ -316,7 +316,7 @@
                         </ul>
                         <p class="navTitle">マイベット</p>
                         <ul>
-                            <li>
+                            <li class="active">
                                 <a href="./betRecord.html">
                                     <p>ベット中</p>
                                     <i class="fa-solid fa-chevron-right"></i>
@@ -393,65 +393,93 @@
                 <!-- 中 -->
                 <section class="mainArea">
                     <div class="contentBox">
-                        <p class="pageTitle">口座残高</p>
+                        <p class="pageTitle">ベット中</p>
                         <div class="overview">
                             <table>
                                 <tr>
-                                    <td colspan="2">
-                                        <p>キャッシュ</p>
-                                    </td>
-                                    <td>
-                                        <p>USD</p>
-                                    </td>
-                                    <td>
-                                        <p>0.00</p>
+                                    <th>
+                                        <p>格鬪技</p>
+                                    </th>
+                                    <th colspan="2">
+                                        <p>|&emsp;当たり</p>
+                                    </th>
+                                    <th>
+                                        <p>M11513352<span></span></p>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td colspan="4">
+                                        <div class="teamBox">
+                                            <p>UFC 283</p>
+                                            <p>Marcos, Daniel<span>VS</span>Oliveira, Saimon</p>
+                                        </div>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2">
-                                        <p>カジノボーナス</p>
+                                    <td>
+                                        <p>賭け時間</p>
                                     </td>
                                     <td>
-                                        <p>USD</p>
+                                        <p>09/07 18:00</p>
                                     </td>
                                     <td>
-                                        <p>0.00</p>
+                                        <p>競技時間</p>
+                                    </td>
+                                    <td>
+                                        <p>09/08 18:00</p>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2">
-                                        <p>スポーツボーナス</p>
+                                    <td>
+                                        <p>有効な賭け</p>
                                     </td>
                                     <td>
-                                        <p>USD</p>
+                                        <p>0</p>
                                     </td>
                                     <td>
-                                        <p>0.00</p>
+                                        <p>オッズ</p>
+                                    </td>
+                                    <td>
+                                        <p>0.88</p>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2">
-                                        <p>合計</p>
+                                    <td>
+                                        <p>賭けのオプション</p>
+                                    </td>
+                                    <td colspan="3">
+                                        <p>Marcos, Daniel</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>結果</p>
+                                    </td>
+                                    <td colspan="3">
+                                        <div>
+                                            <p>起動しませんでした</p>
+                                            <div class="cancleBtn">キャンセル</div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>賭け</p>
                                     </td>
                                     <td>
-                                        <p>USD</p>
+                                        <p>100</p>
                                     </td>
                                     <td>
-                                        <p>0.00</p>
+                                        <p>払い戻し(予想)</p>
+                                    </td>
+                                    <td>
+                                        <p>88</p>
                                     </td>
                                 </tr>
                             </table>
                         </div>
                         <div class="myRewrad">
                             <p class="title">My Rewards</p>
-                            <div class="rewrad_btn">
-                                <button class="active">取得済</button>
-                                <button>
-                                    <i class="fa-solid fa-lock"></i>
-                                    未取得
-                                </button>
-                            </div>
-                            <p class="reward_stauts"><span>使用中</span>のプロモーション</p>
                         </div>
                     </div>
                     <div class="mobile_content">
@@ -880,7 +908,7 @@
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="./betRecord.html">
                     <i class="bet"></i>
                     <p>ベット履歷</p>
                 </a>

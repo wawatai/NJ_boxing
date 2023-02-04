@@ -1,4 +1,4 @@
-.myPage {
+.betPage {
     width: 100%;
     height: auto;
     display: flex;
@@ -148,69 +148,169 @@
             .pageTitle {
                 @include bigtitle_Line;
                 width: 100%;
-                margin-bottom: 50px;
+                margin-bottom: 30px;
             }
             
             .overview {
-                width: 90%;
+                width: 100%;
                 height: auto;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                background: $mainColor_4;
-                padding: 50px;
                 
                 table {
                     width: 100%;
-                    height: auto;
+                    height: 40px;
+                    border-radius: 10px;
+                    overflow: hidden;
 
-                    tr {
-                        &:last-child {
-                            border-top: 1px solid $subColor_5;
+                    &.active {
+                        height: auto;
 
-                            td {
+                        tr {
+                            th {
 
-                                &:first-child {
-
+                                &:last-child {
                                     p {
-                                        text-align: right;
+                                        span {
+                                            transform: rotate(-180deg);
+                                            transition: all 0.3s;
+                                        }
                                     }
                                 }
+                            }
+                        }
+
+                    }
+
+                    tr {
+
+                        th {
+                            background: $mainColor;
+                            border-spacing: 0;
+                            cursor: pointer;
+
+                            &:first-child {
+                                border-radius: 10px 0 0 0;
+                                box-shadow: inset 2px 0 0 0 $mainColor_6,
+                                            inset 0 2px 0 0 $mainColor_6;
+                            }
+
+                            &:last-child {
+                                padding: 0 20px 0 0;
+                                border-radius: 0 10px 0 0 ;
+                                box-shadow: inset -2px 0 0 0 $mainColor_6,
+                                            inset 0 2px 0 0 $mainColor_6;
+                                p {
+                                    width: 100%;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: right;
+                                    text-align: right;
+
+                                    span {
+                                        width: 0;
+                                        height: 0;
+                                        border-style: solid;
+                                        border-width: 6px 4px 0 4px;
+                                        border-color: $mainColor_3 transparent;
+                                        line-height: normal;
+                                        margin-left: 10px;
+                                    }
+                                }
+                            }
+
+                            &:nth-of-type(2){
+                                box-shadow: inset 0 2px 0 0 $mainColor_6;
 
                                 p {
-                                    line-height: 40px;
+                                    text-align: left;
                                 }
+                            }
+                            
+                            
+                            p {
+                                color: $mainColor_3;
+                                line-height: 40px;
                             }
                         }
                     
                         td {
                             width: 15%;
-
-                            &:not(:first-child) {
-                                p {
-                                    text-align: right;
-                                }
-                            }
-
-                            &:first-child {
-                                width: 70%;
-                                p {
-                                    padding: 0 10px;
-                                }
-                            }
-
+                            padding: 0 10px;
+                            box-shadow: inset 2px 0 0 0 $mainColor_6,
+                                        inset 0 -2px 0 0 $mainColor_6;
+                            
                             &:last-child {
-                                
+                                box-shadow: inset 2px 0 0 0 $mainColor_6,
+                                inset -2px 0 0 0 $mainColor_6,
+                                inset 0 -2px 0 0 $mainColor_6;
+                            }
+
+                            &:nth-of-type(odd) {
+                                width: 10%;
+
                                 p {
-                                    padding: 0 10px;
+                                    text-align: center;
                                 }
+                            }
+
+                            &:nth-of-type(even) {
+
+                                width: 20%;
+
+                                p {
+                                    color: $mainColor_3;
+                                }
+                            }
+
+
+                            div {
+                                width: 100%;
+                                display: flex;
+                                justify-content: space-between;
+
+                                &.teamBox {
+                                    flex-direction: column;
+                                    align-items: left;
+                                    padding: 10px 0;
+    
+                                    p {
+                                        text-align: left;
+                                        line-height: normal;
+    
+                                        &:last-child {
+                                            color: $mainColor_3;
+    
+                                            span {
+                                                color: $subColor_6;
+                                                margin: 0 10px;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .cancleBtn {
+                                    width: 90px;
+                                    height: 30px;
+                                    align-items: center;
+                                    justify-content: center;
+                                    background: $subColor_6;
+                                    color: $mainColor_2;
+                                    font-size: 0.9rem;
+                                    font-weight: bold;
+                                    border-radius: 50px;
+                                    margin-top: 3.5px;
+                                    cursor: pointer;
+
+                                    &:hover,&:active,&.active {
+                                        background: $subColor;
+                                    }
+                                }
+
                             }
 
                             p {
-                                color: $subColor_5;
-                                font-size: 0.9rem;
+                                color: $mainColor_6;
+                                font-size: 1rem;
                                 line-height: 40px;
-                                padding: 0 5px;
                                 @include textHide;
                             }
                         }
