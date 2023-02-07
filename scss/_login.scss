@@ -122,3 +122,56 @@
         margin: 0 auto;
     }
 }
+
+@media only screen and (max-width: 1200px) {
+    .login {
+        width: calc(100% - 100px);
+    }
+
+    .registerBox {
+        width: calc(100% - 100px);
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .login {
+
+        .inputArea {
+
+            &>li {
+                display: block;
+
+                .typeName {
+                    margin-bottom: 1rem;
+                }
+
+                .rightBox {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .login {
+        width: calc(100% - 32px);
+        padding: 24px;
+        margin: 70px auto 0;
+
+        .check {
+            padding: 1rem 0;
+
+            .checkBox {
+
+                p {
+                    font-size: 0.75rem;
+                }
+            }
+        }
+    }
+
+    .registerBox {
+        width: calc(100% - 32px);
+    }
+}

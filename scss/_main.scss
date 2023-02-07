@@ -2,6 +2,7 @@ html {
     width: 100%;
     height: auto;
     background: $BG;
+    -webkit-tap-highlight-color: rgba(0,0,0,0); 
 
     body {
         width: 100%;
@@ -12,25 +13,12 @@ html {
             height: auto;
             padding-top: 125px;
 
-            &.memberPage {
-                padding-top: 90px;
-            }
-        }
+            &.innerPage {
+                padding-top: 120px;
 
-        @media only screen and (max-width: 1020px) {
-            main {
-                padding-top: 100px;
-            }
-        }
-
-        @media only screen and (max-width: 450px) {
-            main {
-
-                &.inMain {
-                    padding-top: 50px;
+                .left {
+                    display: none;
                 }
-
-                padding-top: 0px;
             }
         }
     }
@@ -38,8 +26,51 @@ html {
     @import "./header";
     @import "./login";
     @import "./register";
-    @import "./mainWrap";
     @import "./memberPage";
     @import "./betPage";
+    @import "./servicePage";
+    @import "./mainWrap";
     @import "./footer";
+
+    @media only screen and (max-width: 1024px) {
+
+        body {
+
+            main {
+                padding-top: 100px;
+
+                &.innerPage {
+
+                    .left {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 450px) {
+        font-size: 4vw;
+        
+        body {
+
+            main {
+                //手機版未登入
+                padding-top: 0px;
+    
+                //手機版已登入
+                &.inMain {
+                    padding-top: 50px;
+    
+                    .mainArea {
+    
+                        .searchBox {
+                            margin-top: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
+

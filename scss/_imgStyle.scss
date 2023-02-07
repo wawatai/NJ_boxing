@@ -11,27 +11,27 @@ header .top li i {
 }
 
 //memberPage
-.memberPage .mobile_content .userPic {
+.myPage .mobile_content .userPic {
     background: url(../image/user.png) no-repeat center;
     background-size: 100%;
 }
 
-.memberPage .mobile_content .picEdit i {
+.myPage .mobile_content .picEdit i {
     background: url(../image/icon/editpic_IC.png) no-repeat center;
     background-size: 100%;
 }
 
-.memberPage .mobile_content .datebox i {
+.myPage .mobile_content .datebox i {
     background: url(../image/icon/date.png) no-repeat center;
     background-size: 100%;
 }
 
-.memberPage .mobile_content .topBox ul li a .userNav_IC {
+.myPage .mobile_content .topBox ul li a .userNav_IC {
     background: url(../image/icon/mybigNav_IC.png) no-repeat center;
     background-size: 100%;
 }
 
-.memberPage .mobile_content .pageList i {
+.myPage .mobile_content .pageList i {
     background: url(../image/icon/mysmallNav_IC.png) no-repeat center;
     background-size: 100%;
 }
@@ -47,22 +47,13 @@ footer .flag.uk {
     background-size: contain;
 }
 
-footer .mobileFooter li a i.home {
-    background: url("../image/icon/footer_home.png") no-repeat center;
-    background-size: 100%;
+footer .mobileFooter li a i {
+    background: url('../image/icon/footer_ic.png') no-repeat;
+    background-size: 500%;
 }
 
-footer .mobileFooter li a i.winlose {
-    background: url("../image/icon/footer_winlose.png") no-repeat center;
-    background-size: 100%;
-}
-
-footer .mobileFooter li a i.bet {
-    background: url("../image/icon/footer_bet.png") no-repeat center;
-    background-size: 100%;
-}
-
-footer .mobileFooter li a i.member {
-    background: url("../image/icon/footer_member.png") no-repeat center;
-    background-size: 100%;
+//register
+.register .chooseCountry .flagBox .flag.jp {
+    background: url("../image/icon/flag/JP.svg") no-repeat center;
+    background-size: contain;
 }

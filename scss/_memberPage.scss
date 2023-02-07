@@ -1,138 +1,4 @@
 .myPage {
-    width: 100%;
-    height: auto;
-    display: flex;
-    padding: 30px 0;
-    position: relative;
-
-    // 左主NAV
-    .left {
-        display: none;
-
-        &.active {
-            display: block;
-            width: 100%;
-            background: $filter;
-            overflow: hidden;
-            position: absolute;
-            top: 0px;
-            left: 0;
-            z-index: 90;
-
-            .navTitle {
-                width: 250px;
-                background: $mainBG_2;
-                padding-left: 10px;
-            }
-
-            ul {
-                width: 250px;
-            }
-        }
-    }
-
-    //左
-    .leftSide {
-        width: 250px;
-        height: 640px;
-        flex-shrink: 0;
-        overflow-y: auto;
-        transition: all 0.3s;
-
-        //rwd
-        &.active {
-            width: 100%;
-            background: $filter;
-            overflow: hidden;
-            position: absolute;
-            top: -10px;
-            left: 0;
-            z-index: 90;
-
-            .navTitle {
-                width: 250px;
-                background: $mainBG_2;
-                padding-left: 10px;
-            }
-
-            ul {
-                width: 250px;
-            }
-        }
-
-        .navoutter {
-            width: 100%;
-            height: auto;
-
-            .navTitle {
-                color: $subColor;
-                font-size: 1.2rem;
-                font-weight: bold;
-                padding: 10px 0;
-                margin: 10px 0;
-            }
-    
-            ul {
-                width: 100%;
-                height: auto;
-                background: $mainBG_2;
-                border-radius: 10px;
-                margin-bottom: 30px;
-
-                &:last-child {
-                    margin: 20px 0 0;
-                }
-    
-                li {
-                    width: 100%;
-                    height: 50px;
-                    overflow: hidden;
-    
-                    &:hover,&:active {
-                            
-                        a {
-                            transform: translateX(20px);
-    
-                            p {
-                                color: $subColor;
-                            }
-                        }
-                    }
-                    &.active {
-    
-                        a {
-                            transform: translateX(20px);
-    
-                            p {
-                                color: $subColor;
-                            }
-                        }
-                    }
-    
-                    a {
-                        width: 100%;
-                        height: 100%;
-                        display: flex;
-                        align-items: center;
-                        justify-content: space-between;
-                        transition: 0.3s all;
-                        padding: 0 10px;
-    
-                        p {
-                            color: $subColor_5;
-                            font-size: 1rem;
-                            font-weight: bold;
-                        }
-
-                        i {
-                            color: $subColor_5;
-                            font-size: 0.8rem;
-                        }
-                    }
-                }
-            }
-        }
-    }
 
     //中
     .mainArea {
@@ -267,17 +133,10 @@
             display: none;
             width: 100%;
             height: auto;
-            flex-direction: column;
-            overflow: auto;
 
             .innerBox {
-                display: none;
                 width: 100%;
-                padding: 0 20px 20px;
-
-                &.active {
-                    display: block;
-                }
+                padding: 0 4vw 4vw;
 
                 // 個人頁主頁
                 &.userHome {
@@ -285,53 +144,46 @@
                     .topBox {
                         width: 100%;
                         height: auto;
+                        border: 1px solid $mainColor_6;
+                        border-radius: 5px;
                         display: flex;
                         flex-direction: column;
                         align-items: center;
-                        background: transparent;
-                        border: 1.5px solid $mainColor_6;
-                        border-radius: 5px;
-                        margin-top: 15px;
+                        margin-top: 4vw;
 
                         .userBox {
                             width: 100%;
                             height: auto;
+                            border-bottom: 1px solid $mainColor_6;
                             display: flex;
                             align-items: center;
-                            border-bottom: 1px solid $mainColor_6 ;
-                            padding: 3px 10px 5px;
                             position: relative;
+                            padding: 1vw 3vw 2vw;
 
                             &::before {
                                 content: "";
-                                width: 0;
-                                height: 0;
-                                border-style: solid;
-                                border-width: 5px 0px 5px 9px;
-                                border-color:  transparent transparent  transparent $mainColor_6;
-                                position: absolute;
+                                @include arrow_2;
                                 right: 15px;
                             }
 
                             .userPic {
                                 width: 15vw;
                                 height: 15vw;
-                                border-radius: 100px;
+                                border-radius: 50%;
                                 overflow: hidden;
-                                margin: 5px 20px 5px 0;
+                                margin: 1vw 4.5vw 1vw 0;
                             }
 
                             p {
-                                display: flex;
-                                flex-direction: column;
                                 color: $mainColor_6;
-                                font-size: 3.8vw;
+                                font-size: 0.95rem;
                                 font-weight: bold;
 
                                 span {
+                                    display: block;
                                     color: $mainColor_3;
-                                    font-size: 4vw;
-                                    margin-top: 10px;
+                                    font-size: 1rem;
+                                    margin-top: 2vw;
                                 }
                             }
                         }
@@ -343,10 +195,11 @@
                             align-items: center;
 
                             li {
-                                width: calc(100% / 4);
+                                width: 25%;
                                 height: auto;
 
                                 &:not(:first-child) {
+
                                     .userNav_IC {
                                         margin: 10px auto 15px;
                                     }
@@ -393,7 +246,7 @@
 
                                     p { 
                                         color: $mainColor_6;
-                                        font-size: 3.8vw;
+                                        font-size: 0.95rem;
                                         text-align: center;
                                         margin: 10px 0;
                                     }
@@ -405,7 +258,7 @@
                     .pageList {
                         width: 100%;
                         height: auto;
-                        margin-top: 15px;
+                        margin-top: 4vw;
 
                         li {
                             width: 100%;
@@ -418,17 +271,13 @@
                                 height: auto;
                                 display: flex;
                                 align-items: center;
-                                padding: 0 10px;
                                 position: relative;
+                                padding: 0 2vw;
 
                                 &::before {
                                     content: "";
-                                    width: 0;
-                                    height: 0;
-                                    border-style: solid;
-                                    border-width: 4.5px 0px 4.5px 5px;
-                                    border-color:  transparent transparent  transparent$mainColor_3;
-                                    position: absolute;
+                                    @include arrow_1;
+                                    transform: translateY(-50%) rotate(-90deg);
                                     right: 15px;
                                 }
 
@@ -474,7 +323,7 @@
 
                                 p {
                                     color: $mainColor_3;
-                                    font-size: 3.8vw;
+                                    font-size: 0.95rem;
                                     line-height: 40px;
                                     margin-left: 15px;
                                 }
@@ -485,120 +334,103 @@
                 
                 // 會員資料
                 &.userDetail {
-                    padding: 20px 0 58px;
+                    padding: 0 0 22vw;
 
                     .topLine {
-                        padding: 0 20px 20px;
-                        border: none;
-                        position: relative;
-
-                        &::before {
-                            content: "";
-                            width: 90%;
-                            height: 1px;
-                            background: $subColor_5;
-                            position: absolute;
-                            bottom: 0;
-                            left: 50%;
-                            transform: translateX(-50%);
-                        }
-
-                        .backBtn {
-                            left: 20px;
-                        }
+                        width: calc(100% - 8vw);
+                        height: auto;
+                        @include mobile_Title;
+                        margin: 0 auto;
                     }
 
                     .userBasic {
                         width: 100%;
                         height: auto;
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
                         border-bottom: 1px solid $mainColor_6;
-                        margin-top: 10px;
-                        position: relative;
+                        margin-top: 2vw;
 
                         .userBox {
                             width: 90%;
                             height: auto;
-                            border: 1.5px solid $mainColor_6;
+                            border: 1px solid $mainColor_6;
                             border-radius: 10px;
                             padding: 10px;
-                            margin-bottom: 65px;
-                            position: relative;
+                            margin: 0 auto;
 
-                                .picblock {
-                                    width: 31%;
-                                    height: auto;
-                                    position: relative;
+                            p {
+                                color: $mainColor_6;
+                                font-size: 1.2rem;
+                                font-weight: bold;
+                            }
 
-                                    .userPic {
-                                        width: 25vw;
-                                        height: 25vw;
-                                        border-radius: 100px;
-                                        overflow: hidden;
-                                        margin: 10px 0;
-                                    }
+                            .picblock {
+                                width: 31%;
+                                height: auto;
+                                position: relative;
 
+                                .userPic {
+                                    width: 25vw;
+                                    height: 25vw;
+                                    border-radius: 50%;
+                                    overflow: hidden;
+                                    margin: 2vw 0;
+                                }
 
-                                    .picEdit {
-                                        width: 35px;
-                                        height: 35px;
-                                        display: flex;
-                                        align-items: center;
-                                        justify-content: center;
-                                        background: azure;
-                                        border-radius: 50px;
-                                        border: 3px solid $subColor_5;
-                                        position: absolute;
-                                        bottom: 7px;
-                                        right: -10px;
+                                .picEdit {
+                                    width: 35px;
+                                    height: 35px;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    background: azure;
+                                    border-radius: 50px;
+                                    border: 3px solid $subColor_5;
+                                    position: absolute;
+                                    bottom: 7px;
+                                    right: -10px;
 
-                                        i {
-                                            width: 15px;
-                                            height: 15px;
-                                        }
+                                    i {
+                                        width: 15px;
+                                        height: 15px;
                                     }
                                 }
                             }
+                        }
 
-                        p {
+                        .acName {
+                            width: 90%;
                             color: $mainColor_6;
-                            font-size: 4.5vw;
+                            font-size: 1.2rem;
                             font-weight: bold;
-                            display: flex;
-                            flex-direction: column;
-
-                            &.acName {
-                                position: absolute;
-                                bottom: 12px;
-                                left: 20px;
-                            }
+                            padding: 4vw 0;
+                            margin: 0 auto;
 
                             span {
+                                display: block;
                                 color: $mainColor_3;
-                                font-size: 4vw;
-                                margin: 10px 0 0;
+                                font-size: 1rem;
+                                margin-top: 1vw;
                             }
                         }
                     }
 
                     .userOther {
+                        width: 100%;
+                        height: auto;
 
                         &.edit {
 
                             input {
-                                @include inputStyle_2;
                                 width: 87%;
-                                font-size: 4.5vw;
-                                padding: 8px 15px;
-                                margin-bottom: 10px;
+                                height: auto;
+                                @include inputStyle_2;
                                 display: block;
+                                margin-bottom: 10px;
                             }
 
                             .datebox {
                                 width: 100%;
-                                display: flex;
+                                height: auto;
                                 position: relative;
                                 margin-bottom: 10px;
 
@@ -616,32 +448,26 @@
                                 }
                             }
 
-                            .sex {
-                                width: 100%;
-                                margin-bottom: 10px;
+                            .selectBox {
+                                display: inline-block;
+                                width: auto;
+                                height: auto;
                                 position: relative;
+                                margin-bottom: 10px;
 
                                 &::before {
                                     content: "";
-                                    width: 0;
-                                    height: 0;
-                                    border-style: solid;
-                                    border-width: 6px 4px 0 4px;
-                                    border-color: $mainColor_6 transparent;
-                                    position: absolute;
-                                    top: 50%;
-                                    right: 63%;
-                                    transform: translateY(-50%);
+                                    @include arrow_2;
+                                    transform: translateY(-50%) rotate(90deg);
+                                    right: 10%;
                                 }
-                            }
-                            select {
-                                display: block;
-                                @include inputStyle_2;
-                                width: 43%;
-                                color: $mainColor_6;
-                                font-size: 4.5vw;
-                                appearance: none;
-                                padding: 9px 25px 9px 15px;
+
+                                select {
+                                    width: auto;
+                                    height: auto;
+                                    @include selectStyle_2;
+                                    display: block;
+                                }
                             }
 
                             .editing {
@@ -659,12 +485,11 @@
                             height: auto;
 
                             label {
+                                display: block;
                                 width: 100%;
                                 height: auto;
-                                display: flex;
-                                flex-direction: column;
                                 border-bottom: 1px solid $mainColor_6;
-                                padding: 15px 20px;
+                                padding: 4vw 5vw;
 
                                 &:last-child {
                                     border: none;
@@ -672,9 +497,9 @@
 
                                 .inputTitle {
                                     color: $mainColor_6;
-                                    font-size: 4.5vw;
+                                    font-size: 1.2rem;
                                     font-weight: bold;
-                                    margin-bottom: 10px;
+                                    margin-bottom: 2vw;
                                 }
 
                                 input {
@@ -686,43 +511,43 @@
                                 }
 
                                 .submitBtn {
-                                    @include buttonStyle_1;
                                     width: 46%;
                                     height: 45px;
-                                    display: flex;
-                                    align-items: center;
-                                    justify-content: center;
-                                    border: none;
-                                    font-size: 3.8vw;
-                                    margin: 0 auto 15px;
+                                    @include subBtn_2;
+                                    display: none;
+                                    margin: 0 auto 4vw;
+
+                                    &.display {
+                                        display: flex;
+                                    }
                                 }
 
                                 .userCurrent {
-                                    display: flex;
-                                    flex-direction: column;
                                     color: $mainColor_3;
-                                    font-size: 4vw;
+                                    font-size: 1rem;
 
                                     span {
                                         color: $subColor_9;
-                                        font-size: 3.8vw;
-                                        line-height: 20px;
+                                        font-size: 0.9rem;
+                                        line-height: 1.5rem;
                                     }
                                 }
 
                                 .remind {
+                                    width: 100%;
+                                    height: auto;
                                     background: $mainBG_2;
-                                    padding: 20px;
-                                    margin-bottom: 20px;
+                                    padding: 5vw;
+                                    margin-bottom: 5vw;
 
                                     p {
                                         color: $mainColor;
-                                        font-size: 3.8vw;
+                                        font-size: 0.9rem;
                                         text-align: center;
-                                        line-height: 25px;
+                                        line-height: 1.5rem;
 
                                         &:first-child {
-                                            margin-bottom: 10px;
+                                            margin-bottom: 2vw;
                                         }
 
                                         span {
@@ -734,81 +559,15 @@
                             }
                         }
                     }
-                   
                 }
 
                 .topLine {
                     width: 100%;
                     height: auto;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    padding: 20px 0;
-                    border-bottom: 1px solid $subColor_5;
-                    position: relative;
-    
-                    .backBtn {
-                        background: transparent;
-                        border: 1px solid $mainColor_6;
-                        border-radius: 30px;
-                        color: $mainColor_6;
-                        font-size: 4vw;
-                        font-weight: bold;
-                        padding: 5px 20px 6px 30px;
-                        position: absolute;
-                        left: 0;
-
-                        &:before {
-                            content: "";
-                            width: 0;
-                            height: 0;
-                            border-style: solid;
-                            border-width: 4.5px 5px 4.5px 0;
-                            border-color: transparent $mainColor_6 transparent transparent;
-                            margin-right: 10px;
-                            position: absolute;
-                            top: 50%;
-                            left: 15px;
-                            transform: translateY(-50%);
-                        }
-                    }
-    
-                    .pageName {
-                        color: $mainColor_3;
-                        font-size: 5vw;
-                    }
+                    @include mobile_Title;
                 }
-
             }
         }
-    }
-
-    @media only screen and (max-width: 1230px) {
-       padding-left: 30px;
-    }
-
-    @media only screen and (max-width: 450px) {
-        overflow: auto;
-        padding: 0;
-
-        .mainArea {
-            padding: 0;
-
-            .contentBox {
-                display: none !important;
-            }
-
-            .mobile_content {
-                display: flex !important;;
-            }
-        }
-
-
-        .leftSide {
-            display: none;
-        }
-
-
     }
 }
 

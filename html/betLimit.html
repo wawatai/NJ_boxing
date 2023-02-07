@@ -70,7 +70,7 @@
                     <button class="deposit">入金</button>
                     <p>$<span class="dpAmount">0.00</span></p>
                 </div>
-                <div class="wallet" onclick="window.location.href='./html/betRecord.html'">
+                <div class="wallet">
                     <button class="walletBtn">マイベット</button>
                     <p>$<span class="walletNum">0.00</span></p>
                 </div>
@@ -108,7 +108,7 @@
         </div>
     </header>
     <main class="inMain innerPage">
-        <div class="center myPage">
+        <div class="center betPage">
             <!-- 左主NAV -->
             <section class="left">
                 <p class="navTitle">スポーツ</p>
@@ -268,7 +268,7 @@
             <section class="leftSide">
                 <div class="navoutter">
                     <ul>
-                        <li class="active">
+                        <li>
                             <a href="./memberPage.html">
                                 <p>口座残高</p>
                                 <i class="fa-solid fa-chevron-right"></i>
@@ -313,7 +313,7 @@
                     </ul>
                     <p class="navTitle">マイベット</p>
                     <ul>
-                        <li>
+                        <li class="active">
                             <a href="./betRecord.html">
                                 <p>ベット中</p>
                                 <i class="fa-solid fa-chevron-right"></i>
@@ -390,140 +390,365 @@
             <!-- 中 -->
             <section class="mainArea">
                 <div class="contentBox">
-                    <p class="pageTitle">口座残高</p>
+                    <p class="pageTitle">ベット中</p>
                     <div class="overview">
                         <table>
                             <tr>
-                                <td colspan="2">
-                                    <p>キャッシュ</p>
-                                </td>
-                                <td>
-                                    <p>USD</p>
-                                </td>
-                                <td>
-                                    <p>0.00</p>
+                                <th>
+                                    <p>格鬪技</p>
+                                </th>
+                                <th colspan="2">
+                                    <p>|&emsp;当たり</p>
+                                </th>
+                                <th>
+                                    <p>M11513352<span></span></p>
+                                </th>
+                            </tr>
+                            <tr>
+                                <td colspan="4">
+                                    <div class="teamBox">
+                                        <p>UFC 283</p>
+                                        <p>Marcos, Daniel<span>VS</span>Oliveira, Saimon</p>
+                                    </div>
                                 </td>
                             </tr>
                             <tr>
-                                <td colspan="2">
-                                    <p>カジノボーナス</p>
+                                <td>
+                                    <p>賭け時間</p>
                                 </td>
                                 <td>
-                                    <p>USD</p>
+                                    <p>09/07 18:00</p>
                                 </td>
                                 <td>
-                                    <p>0.00</p>
+                                    <p>競技時間</p>
+                                </td>
+                                <td>
+                                    <p>09/08 18:00</p>
                                 </td>
                             </tr>
                             <tr>
-                                <td colspan="2">
-                                    <p>スポーツボーナス</p>
+                                <td>
+                                    <p>有効な賭け</p>
                                 </td>
                                 <td>
-                                    <p>USD</p>
+                                    <p>0</p>
                                 </td>
                                 <td>
-                                    <p>0.00</p>
+                                    <p>オッズ</p>
+                                </td>
+                                <td>
+                                    <p>0.88</p>
                                 </td>
                             </tr>
                             <tr>
-                                <td colspan="2">
-                                    <p>合計</p>
+                                <td>
+                                    <p>賭けのオプション</p>
+                                </td>
+                                <td colspan="3">
+                                    <p>Marcos, Daniel</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>結果</p>
+                                </td>
+                                <td colspan="3">
+                                    <div>
+                                        <p>起動しませんでした</p>
+                                        <div class="cancleBtn">キャンセル</div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>賭け</p>
                                 </td>
                                 <td>
-                                    <p>USD</p>
+                                    <p>100</p>
                                 </td>
                                 <td>
-                                    <p>0.00</p>
+                                    <p>払い戻し(予想)</p>
+                                </td>
+                                <td>
+                                    <p>88</p>
+                                </td>
+                            </tr>
+                        </table>
+                        <table>
+                            <tr>
+                                <th>
+                                    <p>格鬪技</p>
+                                </th>
+                                <th colspan="2">
+                                    <p>|&emsp;当たり</p>
+                                </th>
+                                <th>
+                                    <p>M11513352<span></span></p>
+                                </th>
+                            </tr>
+                            <tr>
+                                <td colspan="4">
+                                    <div class="teamBox">
+                                        <p>UFC 283</p>
+                                        <p>Marcos, Daniel<span>VS</span>Oliveira, Saimon</p>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>賭け時間</p>
+                                </td>
+                                <td>
+                                    <p>09/07 18:00</p>
+                                </td>
+                                <td>
+                                    <p>競技時間</p>
+                                </td>
+                                <td>
+                                    <p>09/08 18:00</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>有効な賭け</p>
+                                </td>
+                                <td>
+                                    <p>0</p>
+                                </td>
+                                <td>
+                                    <p>オッズ</p>
+                                </td>
+                                <td>
+                                    <p>0.88</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>賭けのオプション</p>
+                                </td>
+                                <td colspan="3">
+                                    <p>Marcos, Daniel</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>結果</p>
+                                </td>
+                                <td colspan="3">
+                                    <div>
+                                        <p>起動しませんでした</p>
+                                        <div class="cancleBtn">キャンセル</div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>賭け</p>
+                                </td>
+                                <td>
+                                    <p>100</p>
+                                </td>
+                                <td>
+                                    <p>払い戻し(予想)</p>
+                                </td>
+                                <td>
+                                    <p>88</p>
                                 </td>
                             </tr>
                         </table>
                     </div>
-                    <div class="myRewrad">
-                        <p class="title">My Rewards</p>
-                        <div class="rewrad_btn">
-                            <button class="active">取得済</button>
-                            <button>
-                                <i class="fa-solid fa-lock"></i>
-                                未取得
-                            </button>
+                    <div class="myResult">
+                        <div class="betAmount">
+                            <p>賭け
+                                <span>1000</span>
+                            </p>
                         </div>
-                        <p class="reward_stauts"><span>使用中</span>のプロモーション</p>
+                        <div class="result">
+                            <p>結果
+                                <span>0</span>
+                            </p>
+                        </div>
                     </div>
                 </div>
+                <!-- 手機版內容 -->
                 <div class="mobile_content">
-                    <!-- 個人頁主頁 -->
-                    <div class="innerBox userHome">
+                    <div class="innerBox">
                         <div class="topLine">
                             <button class="backBtn" onclick="window.location.href='../html/login_index.html'">戻る</button>
-                            <p class="pageName">マイページ</p>
+                            <p class="pageName">ベット リミット</p>
                         </div>
-                        <div class="topBox">
-                            <div class="userBox" onclick="window.location.href='./memberInfo.html'">
-                                <div class="userPic"></div>
-                                <p>qa8
-                                    <span>50,000</span>
-                                </p>
-                            </div>
-                            <ul>
-                                <li class="betLimit">
-                                    <a href="./betLimit.html">
-                                        <i class="userNav_IC"></i>
-                                        <p>ベット<br>リミット</p>
-                                    </a>
-                                </li>
-                                <li class="rule">
-                                    <a href="javascript:;">
-                                        <i class="userNav_IC"></i>
-                                        <p>関連規則</p>
-                                    </a>
-                                </li>
-                                <li class="setting">
-                                    <a href="javascript:;">
-                                        <i class="userNav_IC"></i>
-                                        <p>設定</p>
-                                    </a>
-                                </li>
-                                <li class="goWeb">
-                                    <a href="javascript:;">
-                                        <i class="userNav_IC"></i>
-                                        <p>PC版</p>
-                                    </a>
-                                </li>
-                            </ul>
+                        <!-- 投注結果 -->
+                        <div class="limitBox">
+                            <table class="active">
+                                <tr>
+                                    <th colspan="3">
+                                        <p>ボクシングの戦い賭けの制限</p>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>ベットタイプ</p>
+                                    </td>
+                                    <td>
+                                        <p>-試合</p>
+                                    </td>
+                                    <td>
+                                        <p>マックスベット</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>点差 2点以上</p>
+                                    </td>
+                                    <td>
+                                        <p>0</p>
+                                    </td>
+                                    <td>
+                                        <p>0</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>
+                                            包括的
+                                            <br>
+                                            なクリアランス
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>3万</p>
+                                    </td>
+                                    <td>
+                                        <p>1万</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>奇数と偶数</p>
+                                    </td>
+                                    <td>
+                                        <p>3万</p>
+                                    </td>
+                                    <td>
+                                        <p>1万</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>ハーフタイム</p>
+                                    </td>
+                                    <td>
+                                        <p>0</p>
+                                    </td>
+                                    <td>
+                                        <p>0</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>
+                                            最初にスコアを
+                                            <br>
+                                            付ける
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>3万</p>
+                                    </td>
+                                    <td>
+                                        <p>1万</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>一人で勝つ</p>
+                                    </td>
+                                    <td>
+                                        <p>0</p>
+                                    </td>
+                                    <td>
+                                        <p>0</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>ハンディキャップ</p>
+                                    </td>
+                                    <td>
+                                        <p>3万</p>
+                                    </td>
+                                    <td>
+                                        <p>1万</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>ハンディキャップ</p>
+                                    </td>
+                                    <td>
+                                        <p>3万</p>
+                                    </td>
+                                    <td>
+                                        <p>1万</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>ハンディキャップ</p>
+                                    </td>
+                                    <td>
+                                        <p>3万</p>
+                                    </td>
+                                    <td>
+                                        <p>1万</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>奇数と偶数</p>
+                                    </td>
+                                    <td>
+                                        <p>3万</p>
+                                    </td>
+                                    <td>
+                                        <p>1万</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>インプレイ大小</p>
+                                    </td>
+                                    <td>
+                                        <p>3万</p>
+                                    </td>
+                                    <td>
+                                        <p>1万</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>総ゴール</p>
+                                    </td>
+                                    <td>
+                                        <p>0</p>
+                                    </td>
+                                    <td>
+                                        <p>0</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>目標</p>
+                                    </td>
+                                    <td>
+                                        <p>&ensp;</p>
+                                    </td>
+                                    <td>
+                                        <p>&ensp;</p>
+                                    </td>
+                                </tr>
+                            </table>
                         </div>
-                        <ul class="pageList">
-                            <li>
-                                <a href="javascript:;" class="qa">
-                                    <i class="pageList_ic"></i>
-                                    <p>お問い合わせ</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:;" class="message_center">
-                                    <i class="pageList_ic"></i>
-                                    <p>メッセージセンター</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="./service.html" class="cs_service">
-                                    <i class="pageList_ic"></i>
-                                    <p>顧客サービス</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:;" class="feedback">
-                                    <i class="pageList_ic"></i>
-                                    <p>フィードバック</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="../index.html" class="logout">
-                                    <i class="pageList_ic"></i>
-                                    <p>ログアウト</p>
-                                </a>
-                            </li>
-                        </ul>
                     </div>
                 </div>
             </section>
@@ -788,10 +1013,10 @@
             <li>
                 <a href="./login_index.html">
                     <i class="home"></i>
-                    <p>ホーム</p>
+                    <p>ベット中</p>
                 </a>
             </li>
-            <li>
+            <li class="active">
                 <a href="./betResult.html">
                     <i class="winlose"></i>
                     <p>レース結果</p>
@@ -803,7 +1028,7 @@
                     <p>ベット履歷</p>
                 </a>
             </li>
-            <li class="active">
+            <li>
                 <a href="./memberPage.html">
                     <i class="member"></i>
                     <p>マイページ</p>

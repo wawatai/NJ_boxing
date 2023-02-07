@@ -9,27 +9,27 @@ header .top li i {
   background-size: 100%;
 }
 
-.memberPage .mobile_content .userPic {
+.myPage .mobile_content .userPic {
   background: url(../image/user.png) no-repeat center;
   background-size: 100%;
 }
 
-.memberPage .mobile_content .picEdit i {
+.myPage .mobile_content .picEdit i {
   background: url(../image/icon/editpic_IC.png) no-repeat center;
   background-size: 100%;
 }
 
-.memberPage .mobile_content .datebox i {
+.myPage .mobile_content .datebox i {
   background: url(../image/icon/date.png) no-repeat center;
   background-size: 100%;
 }
 
-.memberPage .mobile_content .topBox ul li a .userNav_IC {
+.myPage .mobile_content .topBox ul li a .userNav_IC {
   background: url(../image/icon/mybigNav_IC.png) no-repeat center;
   background-size: 100%;
 }
 
-.memberPage .mobile_content .pageList i {
+.myPage .mobile_content .pageList i {
   background: url(../image/icon/mysmallNav_IC.png) no-repeat center;
   background-size: 100%;
 }
@@ -44,24 +44,14 @@ footer .flag.uk {
   background-size: contain;
 }
 
-footer .mobileFooter li a i.home {
-  background: url("../image/icon/footer_home.png") no-repeat center;
-  background-size: 100%;
+footer .mobileFooter li a i {
+  background: url("../image/icon/footer_ic.png") no-repeat;
+  background-size: 500%;
 }
 
-footer .mobileFooter li a i.winlose {
-  background: url("../image/icon/footer_winlose.png") no-repeat center;
-  background-size: 100%;
-}
-
-footer .mobileFooter li a i.bet {
-  background: url("../image/icon/footer_bet.png") no-repeat center;
-  background-size: 100%;
-}
-
-footer .mobileFooter li a i.member {
-  background: url("../image/icon/footer_member.png") no-repeat center;
-  background-size: 100%;
+.register .chooseCountry .flagBox .flag.jp {
+  background: url("../image/icon/flag/JP.svg") no-repeat center;
+  background-size: contain;
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -139,6 +129,9 @@ select, input {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: "微軟正黑體";
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 
 main {
@@ -158,6 +151,7 @@ html {
   width: 100%;
   height: auto;
   background: #000000;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 html body {
   width: 100%;
@@ -168,21 +162,11 @@ html body main {
   height: auto;
   padding-top: 125px;
 }
-html body main.memberPage {
-  padding-top: 90px;
+html body main.innerPage {
+  padding-top: 120px;
 }
-@media only screen and (max-width: 1020px) {
-  html body main {
-    padding-top: 100px;
-  }
-}
-@media only screen and (max-width: 450px) {
-  html body main {
-    padding-top: 0px;
-  }
-  html body main.inMain {
-    padding-top: 50px;
-  }
+html body main.innerPage .left {
+  display: none;
 }
 html header {
   width: 100%;
@@ -1229,6 +1213,41 @@ html .registerBox button:hover, html .registerBox button:active, html .registerB
   -webkit-box-shadow: none;
           box-shadow: none;
 }
+@media only screen and (max-width: 1200px) {
+  html .login {
+    width: calc(100% - 100px);
+  }
+  html .registerBox {
+    width: calc(100% - 100px);
+  }
+}
+@media only screen and (max-width: 767px) {
+  html .login .inputArea > li {
+    display: block;
+  }
+  html .login .inputArea > li .typeName {
+    margin-bottom: 1rem;
+  }
+  html .login .inputArea > li .rightBox {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 450px) {
+  html .login {
+    width: calc(100% - 32px);
+    padding: 24px;
+    margin: 70px auto 0;
+  }
+  html .login .check {
+    padding: 1rem 0;
+  }
+  html .login .check .checkBox p {
+    font-size: 0.75rem;
+  }
+  html .registerBox {
+    width: calc(100% - 32px);
+  }
+}
 html .register {
   width: 1100px;
   height: auto;
@@ -1345,7 +1364,7 @@ html .register .inputArea > li .rightBox .inputBox div {
   margin-right: 10px;
 }
 html .register .inputArea > li .rightBox .inputBox div span {
-  color: #414141;
+  color: #ffffff;
   font-size: 1rem;
   font-weight: bold;
   -ms-flex-negative: 0;
@@ -1354,7 +1373,7 @@ html .register .inputArea > li .rightBox .inputBox div span {
 }
 html .register .inputArea > li .rightBox .inputBox .remind {
   width: 100%;
-  color: #414141;
+  color: #ffffff;
   font-size: 0.85rem;
   line-height: 1rem;
   margin-top: 10px;
@@ -1575,6 +1594,8 @@ html .register .check .checkBox label {
   position: relative;
   cursor: pointer;
   margin-right: 30px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 html .register .check .checkBox label::before {
   content: "";
@@ -1681,6 +1702,1764 @@ html .loginBox button:hover, html .loginBox button:active, html .loginBox button
   -webkit-box-shadow: none;
           box-shadow: none;
 }
+@media only screen and (max-width: 1200px) {
+  html .register {
+    width: calc(100% - 100px);
+  }
+  html .loginBox {
+    width: calc(100% - 100px);
+  }
+}
+@media only screen and (max-width: 840px) {
+  html .register .bigTitle {
+    text-align: center;
+  }
+  html .register .inputArea > li {
+    display: block;
+  }
+  html .register .inputArea > li .typeName {
+    margin-bottom: 1rem;
+  }
+  html .register .inputArea > li .rightBox {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 670px) {
+  html .register .inputArea > li .rightBox .inputBox .remind {
+    font-size: 0.75rem;
+  }
+}
+@media only screen and (max-width: 450px) {
+  html .register {
+    width: calc(100% - 32px);
+    margin: 70px auto 0;
+  }
+  html .register .inputArea > li:nth-of-type(3) .rightBox {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  html .register .inputArea > li:nth-of-type(3) .rightBox .inputBox {
+    width: calc(50% - 5px);
+  }
+  html .register .inputArea > li:nth-of-type(3) .rightBox .inputBox:nth-of-type(1) {
+    width: 100%;
+    margin: 0 0 10px 0;
+  }
+  html .register .check {
+    padding: 1rem 0;
+  }
+  html .register .check .checkBox p {
+    font-size: 0.75rem;
+  }
+  html .loginBox {
+    width: calc(100% - 32px);
+  }
+}
+html .myPage .mainArea .contentBox {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+html .myPage .mainArea .contentBox .pageTitle {
+  color: #f3c01a;
+  font-size: 1.3rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 1px;
+  padding: 0 0 15px;
+  position: relative;
+  width: 100%;
+  margin-bottom: 50px;
+}
+html .myPage .mainArea .contentBox .pageTitle::before {
+  content: "";
+  width: 30%;
+  height: 5px;
+  background: #851316;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+}
+html .myPage .mainArea .contentBox .pageTitle::after {
+  content: "";
+  width: 100%;
+  height: 5px;
+  background: #b8151b;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+html .myPage .mainArea .contentBox .overview {
+  width: 90%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #414141;
+  padding: 50px;
+}
+html .myPage .mainArea .contentBox .overview table {
+  width: 100%;
+  height: auto;
+}
+html .myPage .mainArea .contentBox .overview table tr:last-child {
+  border-top: 1px solid #b1b1b1;
+}
+html .myPage .mainArea .contentBox .overview table tr:last-child td:first-child p {
+  text-align: right;
+}
+html .myPage .mainArea .contentBox .overview table tr:last-child td p {
+  line-height: 40px;
+}
+html .myPage .mainArea .contentBox .overview table tr td {
+  width: 15%;
+}
+html .myPage .mainArea .contentBox .overview table tr td:not(:first-child) p {
+  text-align: right;
+}
+html .myPage .mainArea .contentBox .overview table tr td:first-child {
+  width: 70%;
+}
+html .myPage .mainArea .contentBox .overview table tr td:first-child p {
+  padding: 0 10px;
+}
+html .myPage .mainArea .contentBox .overview table tr td:last-child p {
+  padding: 0 10px;
+}
+html .myPage .mainArea .contentBox .overview table tr td p {
+  color: #b1b1b1;
+  font-size: 0.9rem;
+  line-height: 40px;
+  padding: 0 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+html .myPage .mainArea .contentBox .myRewrad {
+  width: 100%;
+  height: auto;
+  margin-top: 30px;
+}
+html .myPage .mainArea .contentBox .myRewrad .title {
+  background: #292929;
+  color: #f3c01a;
+  padding: 20px 5%;
+  margin-bottom: 20px;
+}
+html .myPage .mainArea .contentBox .myRewrad .rewrad_btn {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 20px;
+}
+html .myPage .mainArea .contentBox .myRewrad .rewrad_btn button {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  background: #292929;
+  color: #b1b1b1;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+html .myPage .mainArea .contentBox .myRewrad .rewrad_btn button:hover, html .myPage .mainArea .contentBox .myRewrad .rewrad_btn button:active, html .myPage .mainArea .contentBox .myRewrad .rewrad_btn button.active {
+  background: #dd2830;
+  color: #ffffff;
+}
+html .myPage .mainArea .contentBox .myRewrad .rewrad_btn button:first-child {
+  margin-right: 10px;
+}
+html .myPage .mainArea .contentBox .myRewrad .reward_stauts {
+  color: #ffffff;
+  font-size: 0.8rem;
+  text-align: center;
+}
+html .myPage .mainArea .mobile_content {
+  display: none;
+  width: 100%;
+  height: auto;
+}
+html .myPage .mainArea .mobile_content .innerBox {
+  width: 100%;
+  padding: 0 4vw 4vw;
+}
+html .myPage .mainArea .mobile_content .innerBox.userHome .topBox {
+  width: 100%;
+  height: auto;
+  border: 1px solid #dd2830;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 4vw;
+}
+html .myPage .mainArea .mobile_content .innerBox.userHome .topBox .userBox {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #dd2830;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  padding: 1vw 3vw 2vw;
+}
+html .myPage .mainArea .mobile_content .innerBox.userHome .topBox .userBox::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 0px 5px 9px;
+  border-color: transparent transparent transparent #dd2830;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  pointer-events: none;
+  right: 15px;
+}
+html .myPage .mainArea .mobile_content .innerBox.userHome .topBox .userBox .userPic {
+  width: 15vw;
+  height: 15vw;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 1vw 4.5vw 1vw 0;
+}
+html .myPage .mainArea .mobile_content .innerBox.userHome .topBox .userBox p {
+  color: #dd2830;
+  font-size: 0.95rem;
+  font-weight: bold;
+}
+html .myPage .mainArea .mobile_content .innerBox.userHome .topBox .userBox p span {
+  display: block;
+  color: #ffffff;
+  font-size: 1rem;
+  margin-top: 2vw;
+}
+html .myPage .mainArea .mobile_content .innerBox.userHome .topBox ul {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html .myPage .mainArea .mobile_content .innerBox.userHome .topBox ul li {
+  width: 25%;
+  height: auto;
+}
+html .myPage .mainArea .mobile_content .innerBox.userHome .topBox ul li:not(:first-child) .userNav_IC {
+  margin: 10px auto 15px;
+}
+html .myPage .mainArea .mobile_content .innerBox.userHome .topBox ul li.betLimit .userNav_IC {
+  background-position-y: 0%;
+  margin-top: 15px;
+}
+html .myPage .mainArea .mobile_content .innerBox.userHome .topBox ul li.rule .userNav_IC {
+  background-position-y: 34%;
+}
+html .myPage .mainArea .mobile_content .innerBox.userHome .topBox ul li.setting .userNav_IC {
+  background-position-y: 68%;
+}
+html .myPage .mainArea .mobile_content .innerBox.userHome .topBox ul li.goWeb .userNav_IC {
+  background-position-y: 100%;
+}
+html .myPage .mainArea .mobile_content .innerBox.userHome .topBox ul li a {
+  width: 100%;
+  height: auto;
+}
+html .myPage .mainArea .mobile_content .innerBox.userHome .topBox ul li a .userNav_IC {
+  width: 10vw;
+  height: 10vw;
+  margin: auto;
+}
+html .myPage .mainArea .mobile_content .innerBox.userHome .topBox ul li a p {
+  color: #dd2830;
+  font-size: 0.95rem;
+  text-align: center;
+  margin: 10px 0;
+}
+html .myPage .mainArea .mobile_content .innerBox.userHome .pageList {
+  width: 100%;
+  height: auto;
+  margin-top: 4vw;
+}
+html .myPage .mainArea .mobile_content .innerBox.userHome .pageList li {
+  width: 100%;
+  height: auto;
+  background: #b8151b;
+  margin-bottom: 2vw;
+}
+html .myPage .mainArea .mobile_content .innerBox.userHome .pageList li a {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  padding: 0 2vw;
+}
+html .myPage .mainArea .mobile_content .innerBox.userHome .pageList li a::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 6px 4px 0 4px;
+  border-color: #ffffff transparent;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  pointer-events: none;
+  -webkit-transform: translateY(-50%) rotate(-90deg);
+          transform: translateY(-50%) rotate(-90deg);
+  right: 15px;
+}
+html .myPage .mainArea .mobile_content .innerBox.userHome .pageList li a.qa i {
+  background-position-y: 0%;
+}
+html .myPage .mainArea .mobile_content .innerBox.userHome .pageList li a.message_center i {
+  background-position-y: 25%;
+}
+html .myPage .mainArea .mobile_content .innerBox.userHome .pageList li a.cs_service i {
+  background-position-y: 50%;
+}
+html .myPage .mainArea .mobile_content .innerBox.userHome .pageList li a.feedback i {
+  background-position-y: 75%;
+}
+html .myPage .mainArea .mobile_content .innerBox.userHome .pageList li a.logout i {
+  background-position-y: 100%;
+}
+html .myPage .mainArea .mobile_content .innerBox.userHome .pageList li a i {
+  width: 5vw;
+  height: 5vw;
+}
+html .myPage .mainArea .mobile_content .innerBox.userHome .pageList li a p {
+  color: #ffffff;
+  font-size: 0.95rem;
+  line-height: 40px;
+  margin-left: 15px;
+}
+html .myPage .mainArea .mobile_content .innerBox.userDetail {
+  padding: 0 0 22vw;
+}
+html .myPage .mainArea .mobile_content .innerBox.userDetail .topLine {
+  width: calc(100% - 8vw);
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 1px solid #b1b1b1;
+  position: relative;
+  padding: 4vw 0;
+  margin: 0 auto;
+}
+html .myPage .mainArea .mobile_content .innerBox.userDetail .topLine button {
+  background: transparent;
+  border: 1px solid #dd2830;
+  border-radius: 30px;
+  color: #dd2830;
+  font-size: 1rem;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  padding: 5px 20px 6px 30px;
+}
+html .myPage .mainArea .mobile_content .innerBox.userDetail .topLine button:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 4px 5px 4px 0;
+  border-color: transparent #dd2830 transparent transparent;
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  margin-right: 10px;
+}
+html .myPage .mainArea .mobile_content .innerBox.userDetail .topLine p {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+html .myPage .mainArea .mobile_content .innerBox.userDetail .userBasic {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #dd2830;
+  margin-top: 2vw;
+}
+html .myPage .mainArea .mobile_content .innerBox.userDetail .userBasic .userBox {
+  width: 90%;
+  height: auto;
+  border: 1px solid #dd2830;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 0 auto;
+}
+html .myPage .mainArea .mobile_content .innerBox.userDetail .userBasic .userBox p {
+  color: #dd2830;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+html .myPage .mainArea .mobile_content .innerBox.userDetail .userBasic .userBox .picblock {
+  width: 31%;
+  height: auto;
+  position: relative;
+}
+html .myPage .mainArea .mobile_content .innerBox.userDetail .userBasic .userBox .picblock .userPic {
+  width: 25vw;
+  height: 25vw;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 2vw 0;
+}
+html .myPage .mainArea .mobile_content .innerBox.userDetail .userBasic .userBox .picblock .picEdit {
+  width: 35px;
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: azure;
+  border-radius: 50px;
+  border: 3px solid #b1b1b1;
+  position: absolute;
+  bottom: 7px;
+  right: -10px;
+}
+html .myPage .mainArea .mobile_content .innerBox.userDetail .userBasic .userBox .picblock .picEdit i {
+  width: 15px;
+  height: 15px;
+}
+html .myPage .mainArea .mobile_content .innerBox.userDetail .userBasic .acName {
+  width: 90%;
+  color: #dd2830;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 4vw 0;
+  margin: 0 auto;
+}
+html .myPage .mainArea .mobile_content .innerBox.userDetail .userBasic .acName span {
+  display: block;
+  color: #ffffff;
+  font-size: 1rem;
+  margin-top: 1vw;
+}
+html .myPage .mainArea .mobile_content .innerBox.userDetail .userOther {
+  width: 100%;
+  height: auto;
+}
+html .myPage .mainArea .mobile_content .innerBox.userDetail .userOther.edit input {
+  width: 87%;
+  height: auto;
+  background: #280606;
+  border: 1px solid #dd2830;
+  border-radius: 30px;
+  color: #ffffff;
+  font-size: 1rem;
+  padding: 8px 15px;
+  display: block;
+  margin-bottom: 10px;
+}
+html .myPage .mainArea .mobile_content .innerBox.userDetail .userOther.edit input::-webkit-input-placeholder {
+  color: #dd2830;
+}
+html .myPage .mainArea .mobile_content .innerBox.userDetail .userOther.edit input::-moz-placeholder {
+  color: #dd2830;
+}
+html .myPage .mainArea .mobile_content .innerBox.userDetail .userOther.edit input:-ms-input-placeholder {
+  color: #dd2830;
+}
+html .myPage .mainArea .mobile_content .innerBox.userDetail .userOther.edit input::-ms-input-placeholder {
+  color: #dd2830;
+}
+html .myPage .mainArea .mobile_content .innerBox.userDetail .userOther.edit input::placeholder {
+  color: #dd2830;
+}
+html .myPage .mainArea .mobile_content .innerBox.userDetail .userOther.edit .datebox {
+  width: 100%;
+  height: auto;
+  position: relative;
+  margin-bottom: 10px;
+}
+html .myPage .mainArea .mobile_content .innerBox.userDetail .userOther.edit .datebox input {
+  margin: 0;
+}
+html .myPage .mainArea .mobile_content .innerBox.userDetail .userOther.edit .datebox i {
+  width: 5vw;
+  height: 5vw;
+  position: absolute;
+  top: 50%;
+  right: 18%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+html .myPage .mainArea .mobile_content .innerBox.userDetail .userOther.edit .selectBox {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  position: relative;
+  margin-bottom: 10px;
+}
+html .myPage .mainArea .mobile_content .innerBox.userDetail .userOther.edit .selectBox::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 0px 5px 9px;
+  border-color: transparent transparent transparent #dd2830;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  pointer-events: none;
+  -webkit-transform: translateY(-50%) rotate(90deg);
+          transform: translateY(-50%) rotate(90deg);
+  right: 10%;
+}
+html .myPage .mainArea .mobile_content .innerBox.userDetail .userOther.edit .selectBox select {
+  width: auto;
+  height: auto;
+  background: #280606;
+  border: 1px solid #dd2830;
+  border-radius: 30px;
+  color: #dd2830;
+  font-size: 1rem;
+  padding: 8px 30px 10px 12px;
+  display: block;
+}
+html .myPage .mainArea .mobile_content .innerBox.userDetail .userOther.edit .editing {
+  color: #66e123;
+}
+html .myPage .mainArea .mobile_content .innerBox.userDetail .userOther.edit .remind {
+  display: none;
+}
+html .myPage .mainArea .mobile_content .innerBox.userDetail .userOther form {
+  width: 100%;
+  height: auto;
+}
+html .myPage .mainArea .mobile_content .innerBox.userDetail .userOther form label {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #dd2830;
+  padding: 4vw 5vw;
+}
+html .myPage .mainArea .mobile_content .innerBox.userDetail .userOther form label:last-child {
+  border: none;
+}
+html .myPage .mainArea .mobile_content .innerBox.userDetail .userOther form label .inputTitle {
+  color: #dd2830;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 2vw;
+}
+html .myPage .mainArea .mobile_content .innerBox.userDetail .userOther form label input {
+  display: none;
+}
+html .myPage .mainArea .mobile_content .innerBox.userDetail .userOther form label select {
+  display: none;
+}
+html .myPage .mainArea .mobile_content .innerBox.userDetail .userOther form label .submitBtn {
+  width: 46%;
+  height: 45px;
+  background: #dd2830;
+  border-radius: 50px;
+  border: none;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: none;
+  margin: 0 auto 4vw;
+}
+html .myPage .mainArea .mobile_content .innerBox.userDetail .userOther form label .submitBtn.display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+html .myPage .mainArea .mobile_content .innerBox.userDetail .userOther form label .userCurrent {
+  color: #ffffff;
+  font-size: 1rem;
+}
+html .myPage .mainArea .mobile_content .innerBox.userDetail .userOther form label .userCurrent span {
+  color: #848484;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+}
+html .myPage .mainArea .mobile_content .innerBox.userDetail .userOther form label .remind {
+  width: 100%;
+  height: auto;
+  background: #292929;
+  padding: 5vw;
+  margin-bottom: 5vw;
+}
+html .myPage .mainArea .mobile_content .innerBox.userDetail .userOther form label .remind p {
+  color: #b8151b;
+  font-size: 0.9rem;
+  text-align: center;
+  line-height: 1.5rem;
+}
+html .myPage .mainArea .mobile_content .innerBox.userDetail .userOther form label .remind p:first-child {
+  margin-bottom: 2vw;
+}
+html .myPage .mainArea .mobile_content .innerBox.userDetail .userOther form label .remind p span {
+  color: #66e123;
+  text-decoration: underline;
+}
+html .myPage .mainArea .mobile_content .innerBox .topLine {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 1px solid #b1b1b1;
+  position: relative;
+  padding: 4vw 0;
+}
+html .myPage .mainArea .mobile_content .innerBox .topLine button {
+  background: transparent;
+  border: 1px solid #dd2830;
+  border-radius: 30px;
+  color: #dd2830;
+  font-size: 1rem;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  padding: 5px 20px 6px 30px;
+}
+html .myPage .mainArea .mobile_content .innerBox .topLine button:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 4px 5px 4px 0;
+  border-color: transparent #dd2830 transparent transparent;
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  margin-right: 10px;
+}
+html .myPage .mainArea .mobile_content .innerBox .topLine p {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+html .betPage .mainArea .contentBox {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+html .betPage .mainArea .contentBox .pageTitle {
+  color: #f3c01a;
+  font-size: 1.3rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 1px;
+  padding: 0 0 15px;
+  position: relative;
+  width: 100%;
+  margin-bottom: 30px;
+}
+html .betPage .mainArea .contentBox .pageTitle::before {
+  content: "";
+  width: 30%;
+  height: 5px;
+  background: #851316;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+}
+html .betPage .mainArea .contentBox .pageTitle::after {
+  content: "";
+  width: 100%;
+  height: 5px;
+  background: #b8151b;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+html .betPage .mainArea .contentBox .overview {
+  width: 100%;
+  height: auto;
+}
+html .betPage .mainArea .contentBox .overview table {
+  width: 100%;
+  height: 40px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+html .betPage .mainArea .contentBox .overview table.active {
+  height: auto;
+}
+html .betPage .mainArea .contentBox .overview table.active tr th:last-child p span {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+html .betPage .mainArea .contentBox .overview table tr th {
+  background: #b8151b;
+  border-spacing: 0;
+  cursor: pointer;
+}
+html .betPage .mainArea .contentBox .overview table tr th:first-child {
+  border-radius: 10px 0 0 0;
+  -webkit-box-shadow: inset 2px 0 0 0 #dd2830, inset 0 2px 0 0 #dd2830;
+          box-shadow: inset 2px 0 0 0 #dd2830, inset 0 2px 0 0 #dd2830;
+}
+html .betPage .mainArea .contentBox .overview table tr th:last-child {
+  padding: 0 20px 0 0;
+  border-radius: 0 10px 0 0;
+  -webkit-box-shadow: inset -2px 0 0 0 #dd2830, inset 0 2px 0 0 #dd2830;
+          box-shadow: inset -2px 0 0 0 #dd2830, inset 0 2px 0 0 #dd2830;
+}
+html .betPage .mainArea .contentBox .overview table tr th:last-child p {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  text-align: right;
+}
+html .betPage .mainArea .contentBox .overview table tr th:last-child p span {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 6px 4px 0 4px;
+  border-color: #ffffff transparent;
+  line-height: normal;
+  margin-left: 10px;
+}
+html .betPage .mainArea .contentBox .overview table tr th:nth-of-type(2) {
+  -webkit-box-shadow: inset 0 2px 0 0 #dd2830;
+          box-shadow: inset 0 2px 0 0 #dd2830;
+}
+html .betPage .mainArea .contentBox .overview table tr th:nth-of-type(2) p {
+  text-align: left;
+}
+html .betPage .mainArea .contentBox .overview table tr th p {
+  color: #ffffff;
+  line-height: 40px;
+}
+html .betPage .mainArea .contentBox .overview table tr td {
+  width: 15%;
+  padding: 0 10px;
+  -webkit-box-shadow: inset 2px 0 0 0 #dd2830, inset 0 -2px 0 0 #dd2830;
+          box-shadow: inset 2px 0 0 0 #dd2830, inset 0 -2px 0 0 #dd2830;
+}
+html .betPage .mainArea .contentBox .overview table tr td:last-child {
+  -webkit-box-shadow: inset 2px 0 0 0 #dd2830, inset -2px 0 0 0 #dd2830, inset 0 -2px 0 0 #dd2830;
+          box-shadow: inset 2px 0 0 0 #dd2830, inset -2px 0 0 0 #dd2830, inset 0 -2px 0 0 #dd2830;
+}
+html .betPage .mainArea .contentBox .overview table tr td:nth-of-type(odd) {
+  width: 10%;
+}
+html .betPage .mainArea .contentBox .overview table tr td:nth-of-type(odd) p {
+  text-align: center;
+}
+html .betPage .mainArea .contentBox .overview table tr td:nth-of-type(even) {
+  width: 20%;
+}
+html .betPage .mainArea .contentBox .overview table tr td:nth-of-type(even) p {
+  color: #ffffff;
+}
+html .betPage .mainArea .contentBox .overview table tr td div {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+html .betPage .mainArea .contentBox .overview table tr td div.teamBox {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  padding: 10px 0;
+}
+html .betPage .mainArea .contentBox .overview table tr td div.teamBox p {
+  text-align: left;
+  line-height: normal;
+}
+html .betPage .mainArea .contentBox .overview table tr td div.teamBox p:last-child {
+  color: #ffffff;
+}
+html .betPage .mainArea .contentBox .overview table tr td div.teamBox p:last-child span {
+  color: #66e123;
+  margin: 0 10px;
+}
+html .betPage .mainArea .contentBox .overview table tr td div .cancleBtn {
+  width: 90px;
+  height: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #66e123;
+  color: #000000;
+  font-size: 0.9rem;
+  font-weight: bold;
+  border-radius: 50px;
+  margin-top: 3.5px;
+  cursor: pointer;
+}
+html .betPage .mainArea .contentBox .overview table tr td div .cancleBtn:hover, html .betPage .mainArea .contentBox .overview table tr td div .cancleBtn:active, html .betPage .mainArea .contentBox .overview table tr td div .cancleBtn.active {
+  background: #f3c01a;
+}
+html .betPage .mainArea .contentBox .overview table tr td p {
+  color: #dd2830;
+  font-size: 1rem;
+  line-height: 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+html .betPage .mainArea .contentBox .myResult {
+  width: 100%;
+  height: auto;
+}
+html .betPage .mainArea .contentBox .myResult .title {
+  background: #292929;
+  color: #f3c01a;
+  padding: 20px 5%;
+  margin-bottom: 20px;
+}
+html .betPage .mainArea .contentBox .myResult .rewrad_btn {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 20px;
+}
+html .betPage .mainArea .contentBox .myResult .rewrad_btn button {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  background: #292929;
+  color: #b1b1b1;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+html .betPage .mainArea .contentBox .myResult .rewrad_btn button:hover, html .betPage .mainArea .contentBox .myResult .rewrad_btn button:active, html .betPage .mainArea .contentBox .myResult .rewrad_btn button.active {
+  background: #dd2830;
+  color: #ffffff;
+}
+html .betPage .mainArea .contentBox .myResult .rewrad_btn button:first-child {
+  margin-right: 10px;
+}
+html .betPage .mainArea .contentBox .myResult .reward_stauts {
+  color: #ffffff;
+  font-size: 0.8rem;
+  text-align: center;
+}
+html .betPage .mainArea .mobile_content {
+  display: none;
+  width: 100%;
+  height: auto;
+}
+html .betPage .mainArea .mobile_content .innerBox {
+  width: 100%;
+  height: auto;
+  padding: 0 4vw 45vw;
+}
+html .betPage .mainArea .mobile_content .innerBox .topLine {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 1px solid #b1b1b1;
+  position: relative;
+  padding: 4vw 0;
+}
+html .betPage .mainArea .mobile_content .innerBox .topLine button {
+  background: transparent;
+  border: 1px solid #dd2830;
+  border-radius: 30px;
+  color: #dd2830;
+  font-size: 1rem;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  padding: 5px 20px 6px 30px;
+}
+html .betPage .mainArea .mobile_content .innerBox .topLine button:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 4px 5px 4px 0;
+  border-color: transparent #dd2830 transparent transparent;
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  margin-right: 10px;
+}
+html .betPage .mainArea .mobile_content .innerBox .topLine p {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+html .betPage .mainArea .mobile_content .innerBox .selectNav {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 15px 0;
+}
+html .betPage .mainArea .mobile_content .innerBox .selectNav .selectBox {
+  width: auto;
+  height: auto;
+  position: relative;
+  margin-right: 10px;
+}
+html .betPage .mainArea .mobile_content .innerBox .selectNav .selectBox select {
+  width: auto;
+  height: auto;
+  background: none;
+  border: 2px solid #ffffff;
+  border-radius: 30px;
+  color: #ffffff;
+  padding: 8px 30px 10px 12px;
+}
+html .betPage .mainArea .mobile_content .innerBox .selectNav .selectBox i {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 6px 4px 0 4px;
+  border-color: #ffffff transparent;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  pointer-events: none;
+  right: 15px;
+}
+html .betPage .mainArea .mobile_content .innerBox .betBox {
+  display: none;
+  width: 100%;
+  height: auto;
+}
+html .betPage .mainArea .mobile_content .innerBox .betBox.display {
+  display: block;
+}
+html .betPage .mainArea .mobile_content .innerBox .betBox table {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 0 2px #dd2830;
+          box-shadow: 0 0 0 2px #dd2830;
+  margin-bottom: 20px;
+}
+html .betPage .mainArea .mobile_content .innerBox .betBox table:last-child {
+  margin: 0;
+}
+html .betPage .mainArea .mobile_content .innerBox .betBox table.active tr:not(:first-child) {
+  display: table-row;
+}
+html .betPage .mainArea .mobile_content .innerBox .betBox table.active tr th:last-child p span {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+html .betPage .mainArea .mobile_content .innerBox .betBox table tr:not(:first-child) {
+  display: none;
+}
+html .betPage .mainArea .mobile_content .innerBox .betBox table tr:last-child td {
+  border-bottom: none;
+}
+html .betPage .mainArea .mobile_content .innerBox .betBox table tr th {
+  height: 40px;
+  background: #b8151b;
+  vertical-align: middle;
+  cursor: pointer;
+}
+html .betPage .mainArea .mobile_content .innerBox .betBox table tr th:last-child {
+  padding: 0 20px 0 0;
+}
+html .betPage .mainArea .mobile_content .innerBox .betBox table tr th:last-child p {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+html .betPage .mainArea .mobile_content .innerBox .betBox table tr th:last-child p span {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 6px 4px 0 4px;
+  border-color: #ffffff transparent;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  pointer-events: none;
+  position: static;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  margin-left: 10px;
+}
+html .betPage .mainArea .mobile_content .innerBox .betBox table tr th:nth-of-type(2) p {
+  text-align: left;
+}
+html .betPage .mainArea .mobile_content .innerBox .betBox table tr th p {
+  color: #ffffff;
+  text-align: center;
+}
+html .betPage .mainArea .mobile_content .innerBox .betBox table tr td {
+  width: 25%;
+  max-width: 0;
+  height: 40px;
+  border: 2px solid #dd2830;
+  border-width: 0 1px 1px 0;
+  vertical-align: middle;
+  padding: 0 10px;
+}
+html .betPage .mainArea .mobile_content .innerBox .betBox table tr td:last-child {
+  border-right: none;
+}
+html .betPage .mainArea .mobile_content .innerBox .betBox table tr td:nth-of-type(odd) p {
+  text-align: center;
+}
+html .betPage .mainArea .mobile_content .innerBox .betBox table tr td:nth-of-type(even) p {
+  color: #ffffff;
+}
+html .betPage .mainArea .mobile_content .innerBox .betBox table tr td div {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+html .betPage .mainArea .mobile_content .innerBox .betBox table tr td div.teamBox {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 2vw 0;
+}
+html .betPage .mainArea .mobile_content .innerBox .betBox table tr td div.teamBox p {
+  text-align: left;
+}
+html .betPage .mainArea .mobile_content .innerBox .betBox table tr td div.teamBox p:last-child {
+  color: #ffffff;
+}
+html .betPage .mainArea .mobile_content .innerBox .betBox table tr td div.teamBox p:last-child span {
+  color: #66e123;
+  margin: 0 2vw;
+}
+html .betPage .mainArea .mobile_content .innerBox .betBox table tr td div .cancleBtn {
+  width: auto;
+  height: auto;
+  background: #66e123;
+  border-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #000000;
+  font-size: 0.85rem;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 2vw 4vw;
+}
+html .betPage .mainArea .mobile_content .innerBox .betBox table tr td div .cancleBtn:active, html .betPage .mainArea .mobile_content .innerBox .betBox table tr td div .cancleBtn.active {
+  background: #f3c01a;
+}
+html .betPage .mainArea .mobile_content .innerBox .betBox table tr td p {
+  color: #dd2830;
+  font-size: 0.85rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+html .betPage .mainArea .mobile_content .innerBox .betBox .betData {
+  width: 100%;
+}
+html .betPage .mainArea .mobile_content .innerBox .betBox .betData .dataName {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #b8151b;
+  margin: 10px 0;
+  padding: 0 10px;
+}
+html .betPage .mainArea .mobile_content .innerBox .betBox .betData .dataName p {
+  width: 30%;
+  color: #ffffff;
+  font-size: 0.875rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 10px;
+  white-space: nowrap;
+}
+html .betPage .mainArea .mobile_content .innerBox .betBox .betData li {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+html .betPage .mainArea .mobile_content .innerBox .betBox .betData li.active .dataNum {
+  background: transparent;
+  border-color: #b8151b;
+}
+html .betPage .mainArea .mobile_content .innerBox .betBox .betData li.active .dataNum::before {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+html .betPage .mainArea .mobile_content .innerBox .betBox .betData li.active table {
+  display: table;
+}
+html .betPage .mainArea .mobile_content .innerBox .betBox .betData li .dataNum {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #cf0505;
+  opacity: 0.8;
+  border: 2px solid transparent;
+  padding: 0 10px;
+  position: relative;
+}
+html .betPage .mainArea .mobile_content .innerBox .betBox .betData li .dataNum::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 6px 4px 0 4px;
+  border-color: #ffffff transparent;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  position: absolute;
+  right: 3%;
+}
+html .betPage .mainArea .mobile_content .innerBox .betBox .betData li .dataNum span {
+  background: #66e123;
+  border-radius: 5px;
+  color: #000000;
+  font-size: 0.875rem;
+  font-weight: bold;
+  padding: 5px;
+  position: absolute;
+  top: 50%;
+  left: 1.8%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+html .betPage .mainArea .mobile_content .innerBox .betBox .betData li .dataNum p {
+  width: 30%;
+  color: #ffffff;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 10px;
+}
+html .betPage .mainArea .mobile_content .innerBox .betBox .betData li table {
+  display: none;
+  width: 94%;
+  margin: 4vw 0;
+}
+html .betPage .mainArea .mobile_content .innerBox .resultBox {
+  width: 100%;
+  height: auto;
+}
+html .betPage .mainArea .mobile_content .innerBox .resultBox table {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 0 2px #dd2830;
+          box-shadow: 0 0 0 2px #dd2830;
+  margin-bottom: 20px;
+}
+html .betPage .mainArea .mobile_content .innerBox .resultBox table:last-child {
+  margin: 0;
+}
+html .betPage .mainArea .mobile_content .innerBox .resultBox table.active tr:not(:first-child) {
+  display: table-row;
+}
+html .betPage .mainArea .mobile_content .innerBox .resultBox table tr:not(:first-child) {
+  display: none;
+}
+html .betPage .mainArea .mobile_content .innerBox .resultBox table tr:nth-of-type(2) td {
+  background: #202020;
+}
+html .betPage .mainArea .mobile_content .innerBox .resultBox table tr:nth-of-type(2) td p {
+  color: #b8151b;
+  font-size: 1rem;
+  text-align: center;
+}
+html .betPage .mainArea .mobile_content .innerBox .resultBox table tr:last-child td {
+  border-bottom: none;
+}
+html .betPage .mainArea .mobile_content .innerBox .resultBox table tr.row td:nth-of-type(1) {
+  width: 20%;
+}
+html .betPage .mainArea .mobile_content .innerBox .resultBox table tr.row td:nth-of-type(2) {
+  width: 50%;
+}
+html .betPage .mainArea .mobile_content .innerBox .resultBox table tr.row td:nth-of-type(2) svg {
+  fill: #27a7f0;
+}
+html .betPage .mainArea .mobile_content .innerBox .resultBox table tr.row td:nth-of-type(3), html .betPage .mainArea .mobile_content .innerBox .resultBox table tr.row td:nth-of-type(4) {
+  width: 15%;
+}
+html .betPage .mainArea .mobile_content .innerBox .resultBox table tr th {
+  height: 40px;
+  background: #b8151b;
+  vertical-align: middle;
+  cursor: pointer;
+}
+html .betPage .mainArea .mobile_content .innerBox .resultBox table tr th p {
+  color: #ffffff;
+  font-size: 1rem;
+  text-align: left;
+  padding: 0 2vw;
+}
+html .betPage .mainArea .mobile_content .innerBox .resultBox table tr td {
+  max-width: 0;
+  height: 40px;
+  border: 1px solid #dd2830;
+  border-width: 0 1px 1px 0;
+  vertical-align: middle;
+  padding: 0 10px;
+}
+html .betPage .mainArea .mobile_content .innerBox .resultBox table tr td.date p {
+  color: #848484;
+  line-height: 1.2rem;
+}
+html .betPage .mainArea .mobile_content .innerBox .resultBox table tr td.name p {
+  color: #ffffff;
+}
+html .betPage .mainArea .mobile_content .innerBox .resultBox table tr td:last-child {
+  border-right: none;
+}
+html .betPage .mainArea .mobile_content .innerBox .resultBox table tr td div {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html .betPage .mainArea .mobile_content .innerBox .resultBox table tr td div svg {
+  width: 24px;
+  height: 24px;
+  margin-right: 2vw;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  fill: #b8151b;
+}
+html .betPage .mainArea .mobile_content .innerBox .resultBox table tr td p {
+  color: #66e123;
+  font-size: 0.85rem;
+  font-weight: bold;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+html .betPage .mainArea .mobile_content .innerBox .limitBox {
+  width: 100%;
+  height: auto;
+}
+html .betPage .mainArea .mobile_content .innerBox .limitBox table {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 0 2px #dd2830;
+          box-shadow: 0 0 0 2px #dd2830;
+  margin-top: 20px;
+}
+html .betPage .mainArea .mobile_content .innerBox .limitBox table.active tr:not(:first-child) {
+  display: table-row;
+}
+html .betPage .mainArea .mobile_content .innerBox .limitBox table tr:not(:first-child) {
+  display: none;
+}
+html .betPage .mainArea .mobile_content .innerBox .limitBox table tr:nth-of-type(2) td {
+  background: #202020;
+}
+html .betPage .mainArea .mobile_content .innerBox .limitBox table tr:nth-of-type(2) td p {
+  color: #b8151b;
+  font-size: 1rem;
+  text-align: center;
+}
+html .betPage .mainArea .mobile_content .innerBox .limitBox table tr:last-child td {
+  border-bottom: none;
+}
+html .betPage .mainArea .mobile_content .innerBox .limitBox table tr th {
+  height: 40px;
+  background: #b8151b;
+  vertical-align: middle;
+  cursor: pointer;
+}
+html .betPage .mainArea .mobile_content .innerBox .limitBox table tr th p {
+  color: #ffffff;
+  font-size: 1rem;
+  text-align: left;
+  padding: 0 2vw;
+}
+html .betPage .mainArea .mobile_content .innerBox .limitBox table tr td {
+  max-width: 0;
+  height: 40px;
+  border: 1px solid #dd2830;
+  border-width: 0 1px 1px 0;
+  vertical-align: middle;
+  padding: 0 10px;
+}
+html .betPage .mainArea .mobile_content .innerBox .limitBox table tr td:last-child {
+  border-right: none;
+}
+html .betPage .mainArea .mobile_content .innerBox .limitBox table tr td p {
+  color: #ffffff;
+  font-size: 0.85rem;
+  font-weight: bold;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+html .betPage .mainArea .mobile_content .innerBox .topnav {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 4px solid #b8151b;
+  margin-bottom: 4vw;
+}
+html .betPage .mainArea .mobile_content .innerBox .topnav li {
+  width: 20%;
+  height: 35px;
+  background: #414141;
+  border-radius: 5px 5px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  padding: 0 1vw;
+  margin-right: 1vw;
+}
+html .betPage .mainArea .mobile_content .innerBox .topnav li.active {
+  background: #b8151b;
+}
+html .betPage .mainArea .mobile_content .innerBox .topnav li:last-child {
+  margin: 0;
+}
+html .betPage .mainArea .mobile_content .innerBox .topnav li p {
+  color: #ffffff;
+  font-size: 0.85rem;
+  font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+html .betPage .mainArea .mobile_content .myResult {
+  width: 100%;
+  height: auto;
+  background: #292929;
+  border-top: 1px solid #dd2830;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  bottom: calc(14vw + 5px);
+}
+html .betPage .mainArea .mobile_content .myResult div {
+  width: 50%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 3vw 0;
+}
+html .betPage .mainArea .mobile_content .myResult div:first-child {
+  border-right: 1px solid #dd2830;
+}
+html .betPage .mainArea .mobile_content .myResult div p {
+  color: #dd2830;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+html .betPage .mainArea .mobile_content .myResult div p span {
+  display: block;
+  color: #ffffff;
+  font-size: 1.2rem;
+  margin-top: 2vw;
+}
+html .servicePage .mainArea .contentBox {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+html .servicePage .mainArea .contentBox .pageTitle {
+  color: #f3c01a;
+  font-size: 1.3rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 1px;
+  padding: 0 0 15px;
+  position: relative;
+  width: 100%;
+  margin-bottom: 50px;
+}
+html .servicePage .mainArea .contentBox .pageTitle::before {
+  content: "";
+  width: 30%;
+  height: 5px;
+  background: #851316;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+}
+html .servicePage .mainArea .contentBox .pageTitle::after {
+  content: "";
+  width: 100%;
+  height: 5px;
+  background: #b8151b;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+html .servicePage .mainArea .contentBox .overview {
+  width: 90%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #414141;
+  padding: 50px;
+}
+html .servicePage .mainArea .contentBox .overview table {
+  width: 100%;
+  height: auto;
+}
+html .servicePage .mainArea .contentBox .overview table tr:last-child {
+  border-top: 1px solid #b1b1b1;
+}
+html .servicePage .mainArea .contentBox .overview table tr:last-child td:first-child p {
+  text-align: right;
+}
+html .servicePage .mainArea .contentBox .overview table tr:last-child td p {
+  line-height: 40px;
+}
+html .servicePage .mainArea .contentBox .overview table tr td {
+  width: 15%;
+}
+html .servicePage .mainArea .contentBox .overview table tr td:not(:first-child) p {
+  text-align: right;
+}
+html .servicePage .mainArea .contentBox .overview table tr td:first-child {
+  width: 70%;
+}
+html .servicePage .mainArea .contentBox .overview table tr td:first-child p {
+  padding: 0 10px;
+}
+html .servicePage .mainArea .contentBox .overview table tr td:last-child p {
+  padding: 0 10px;
+}
+html .servicePage .mainArea .contentBox .overview table tr td p {
+  color: #b1b1b1;
+  font-size: 0.9rem;
+  line-height: 40px;
+  padding: 0 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+html .servicePage .mainArea .contentBox .myRewrad {
+  width: 100%;
+  height: auto;
+  margin-top: 30px;
+}
+html .servicePage .mainArea .contentBox .myRewrad .title {
+  background: #292929;
+  color: #f3c01a;
+  padding: 20px 5%;
+  margin-bottom: 20px;
+}
+html .servicePage .mainArea .contentBox .myRewrad .rewrad_btn {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 20px;
+}
+html .servicePage .mainArea .contentBox .myRewrad .rewrad_btn button {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  background: #292929;
+  color: #b1b1b1;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+html .servicePage .mainArea .contentBox .myRewrad .rewrad_btn button:hover, html .servicePage .mainArea .contentBox .myRewrad .rewrad_btn button:active, html .servicePage .mainArea .contentBox .myRewrad .rewrad_btn button.active {
+  background: #dd2830;
+  color: #ffffff;
+}
+html .servicePage .mainArea .contentBox .myRewrad .rewrad_btn button:first-child {
+  margin-right: 10px;
+}
+html .servicePage .mainArea .contentBox .myRewrad .reward_stauts {
+  color: #ffffff;
+  font-size: 0.8rem;
+  text-align: center;
+}
+html .servicePage .mainArea .mobile_content {
+  display: none;
+  width: 100%;
+  height: auto;
+}
+html .servicePage .mainArea .mobile_content .innerBox {
+  width: 100%;
+  height: auto;
+  padding: 0 4vw 4vw;
+}
+html .servicePage .mainArea .mobile_content .innerBox .topLine {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 1px solid #b1b1b1;
+  position: relative;
+  padding: 4vw 0;
+}
+html .servicePage .mainArea .mobile_content .innerBox .topLine button {
+  background: transparent;
+  border: 1px solid #dd2830;
+  border-radius: 30px;
+  color: #dd2830;
+  font-size: 1rem;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  padding: 5px 20px 6px 30px;
+}
+html .servicePage .mainArea .mobile_content .innerBox .topLine button:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 4px 5px 4px 0;
+  border-color: transparent #dd2830 transparent transparent;
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  margin-right: 10px;
+}
+html .servicePage .mainArea .mobile_content .innerBox .topLine p {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
 html .center {
   max-width: 1200px;
   width: 100%;
@@ -1699,23 +3478,6 @@ html .center .left {
   overflow: hidden;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-}
-html .center .left.active {
-  width: 100%;
-  background: rgba(0, 0, 0, 0.5019607843);
-  overflow: hidden;
-  position: absolute;
-  top: -10px;
-  left: 0;
-  z-index: 90;
-}
-html .center .left.active .navTitle {
-  width: 250px;
-  background: #292929;
-  padding-left: 10px;
-}
-html .center .left.active ul {
-  width: 250px;
 }
 html .center .left .navTitle {
   color: #f3c01a;
@@ -1773,6 +3535,109 @@ html .center .left ul li a p {
   font-size: 1rem;
   font-weight: bold;
 }
+html .center .leftSide {
+  width: 250px;
+  height: 640px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  overflow-y: auto;
+  padding-right: 5px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+html .center .leftSide::-webkit-scrollbar {
+  width: 5px;
+}
+html .center .leftSide::-webkit-scrollbar-thumb {
+  background: #b61d21;
+  border-radius: 30px;
+}
+html .center .leftSide::-webkit-scrollbar-track {
+  background: #b1b1b1;
+  border-radius: 30px;
+}
+html .center .leftSide.active {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5019607843);
+  overflow: hidden;
+  position: absolute;
+  top: -10px;
+  left: 0;
+  z-index: 90;
+}
+html .center .leftSide.active .navTitle {
+  width: 250px;
+  background: #292929;
+  padding-left: 10px;
+}
+html .center .leftSide.active ul {
+  width: 250px;
+}
+html .center .leftSide .navoutter {
+  width: 100%;
+  height: auto;
+}
+html .center .leftSide .navoutter .navTitle {
+  color: #f3c01a;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 10px 0;
+  margin: 10px 0;
+}
+html .center .leftSide .navoutter ul {
+  width: 100%;
+  height: auto;
+  background: #292929;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+html .center .leftSide .navoutter ul:last-child {
+  margin: 20px 0 0;
+}
+html .center .leftSide .navoutter ul li {
+  width: 100%;
+  height: 50px;
+  overflow: hidden;
+}
+html .center .leftSide .navoutter ul li:hover a, html .center .leftSide .navoutter ul li:active a {
+  -webkit-transform: translateX(20px);
+          transform: translateX(20px);
+}
+html .center .leftSide .navoutter ul li:hover a p, html .center .leftSide .navoutter ul li:active a p {
+  color: #f3c01a;
+}
+html .center .leftSide .navoutter ul li.active a {
+  -webkit-transform: translateX(20px);
+          transform: translateX(20px);
+}
+html .center .leftSide .navoutter ul li.active a p {
+  color: #f3c01a;
+}
+html .center .leftSide .navoutter ul li a {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  padding: 0 10px;
+}
+html .center .leftSide .navoutter ul li a p {
+  color: #b1b1b1;
+  font-size: 1rem;
+  font-weight: bold;
+}
+html .center .leftSide .navoutter ul li a i {
+  color: #b1b1b1;
+  font-size: 0.8rem;
+}
 html .center .mainArea {
   width: 100%;
   height: auto;
@@ -1790,7 +3655,7 @@ html .center .mainArea .searchBox {
   display: none;
   width: 100%;
   height: 40px;
-  margin-bottom: 20px;
+  margin: 50px 0 20px;
   position: relative;
 }
 html .center .mainArea .searchBox input {
@@ -1798,7 +3663,8 @@ html .center .mainArea .searchBox input {
   border: 1px solid #dd2830;
   border-radius: 30px;
   color: #ffffff;
-  padding: 0 10px;
+  font-size: 1rem;
+  padding: 8px 15px;
   width: 100%;
   height: 100%;
   font-size: 0.9rem;
@@ -1828,6 +3694,23 @@ html .center .mainArea .searchBox i {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
+html .center .mainArea .featured {
+  width: 100;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #292929;
+  padding: 0 10px;
+}
+html .center .mainArea .featured p {
+  color: #dd2830;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
 html .center .mainArea .swiper {
   width: 100%;
   height: auto;
@@ -1844,61 +3727,43 @@ html .center .mainArea .swiper .swiper-wrapper .swiper-slide .banner {
 }
 html .center .mainArea .swiper .swiper-button-prev,
 html .center .mainArea .swiper .swiper-button-next {
+  width: 30px;
+  height: 30px;
   position: absolute;
-  top: 45px;
+  top: 20px;
   left: unset;
+  right: unset;
+  margin: 0;
 }
 html .center .mainArea .swiper .swiper-button-prev::before, html .center .mainArea .swiper .swiper-button-prev::after,
 html .center .mainArea .swiper .swiper-button-next::before,
 html .center .mainArea .swiper .swiper-button-next::after {
-  content: " ";
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  border: 2px solid #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+html .center .mainArea .swiper .swiper-button-prev i,
+html .center .mainArea .swiper .swiper-button-next i {
+  color: #ffffff;
+  font-size: 20px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 html .center .mainArea .swiper .swiper-button-prev {
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  cursor: pointer;
-}
-html .center .mainArea .swiper .swiper-button-prev::before {
-  content: "";
-  width: 30px;
-  height: 30px;
-  border-radius: 50px;
-  border: 2px solid #ffffff;
-  position: absolute;
-  right: -485px;
-  z-index: 50;
-}
-html .center .mainArea .swiper .swiper-button-prev i {
-  font-size: 20px;
-  color: #ffffff;
-  position: absolute;
-  top: 5px;
-  left: unset;
-  right: -474px;
-  z-index: 50;
+  right: 80px;
 }
 html .center .mainArea .swiper .swiper-button-next {
-  position: absolute;
-  cursor: pointer;
-}
-html .center .mainArea .swiper .swiper-button-next::before {
-  width: 30px;
-  height: 30px;
-  border-radius: 50px;
-  border: 2px solid #ffffff;
-  position: absolute;
-  top: -2px;
-  right: 13px;
-  z-index: 50;
-}
-html .center .mainArea .swiper .swiper-button-next i {
-  font-size: 20px;
-  color: #ffffff;
-  position: absolute;
-  top: 6px;
-  right: 25px;
-  z-index: 50;
+  right: 30px;
 }
 html .center .mainArea .middleNav {
   width: 100%;
@@ -1928,8 +3793,6 @@ html .center .mainArea .middleNav .topnav li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1941,6 +3804,9 @@ html .center .mainArea .middleNav .topnav li {
   padding: 0 5px;
   margin-right: 5px;
   cursor: pointer;
+}
+html .center .mainArea .middleNav .topnav li:last-child {
+  margin: 0;
 }
 html .center .mainArea .middleNav .topnav li:hover, html .center .mainArea .middleNav .topnav li:active, html .center .mainArea .middleNav .topnav li.active {
   background: #b8151b;
@@ -1996,7 +3862,7 @@ html .center .mainArea .typselect.swiper02 .swiper-wrapper .swiper-slide .gameTy
   fill: #ffffff;
 }
 html .center .mainArea .typselect.swiper02 .swiper-wrapper .swiper-slide .gameTypeBox .picBox {
-  width: 105px;
+  width: 100%;
   height: 85px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2010,8 +3876,8 @@ html .center .mainArea .typselect.swiper02 .swiper-wrapper .swiper-slide .gameTy
   margin: 0 0 5px;
 }
 html .center .mainArea .typselect.swiper02 .swiper-wrapper .swiper-slide .gameTypeBox .picBox svg {
-  width: 32.5px;
-  height: 24.5px;
+  width: 24px;
+  height: 24px;
   fill: #dd2830;
   -webkit-transform: scale(2.5);
           transform: scale(2.5);
@@ -2252,19 +4118,13 @@ html .center .mainArea .gameContent .content {
 }
 html .center .mainArea .gameContent .content .gBlock {
   width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  border-radius: 5px;
+  height: auto;
 }
 html .center .mainArea .gameContent .content .gBlock .up {
   width: 100%;
   height: 40px;
+  background: #b8151b;
+  border-radius: 8px 8px 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2274,50 +4134,35 @@ html .center .mainArea .gameContent .content .gBlock .up {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background: #b8151b;
-  border-radius: 8px 8px 0 0;
   padding: 3px 10px 0;
   position: relative;
 }
 html .center .mainArea .gameContent .content .gBlock .up::before {
   content: "";
-  width: 10px;
+  width: 100%;
   height: 10px;
   background: #b8151b;
   position: absolute;
-  bottom: -8px;
+  bottom: -10px;
   left: 0;
   z-index: -1;
 }
-html .center .mainArea .gameContent .content .gBlock .up::after {
-  content: "";
-  width: 10px;
-  height: 10px;
-  background: #b8151b;
-  position: absolute;
-  bottom: -8px;
-  left: unset;
-  right: 0;
-  z-index: -1;
-}
 html .center .mainArea .gameContent .content .gBlock .up span {
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
   background: #851316;
+  border-radius: 3px;
   color: #ffffff;
   font-size: 0.9rem;
   font-weight: bold;
-  padding: 7px 5px;
-  border-radius: 3px;
   cursor: default;
+  padding: 7px 5px;
 }
 html .center .mainArea .gameContent .content .gBlock .up .iconBox {
   width: auto;
   height: auto;
 }
 html .center .mainArea .gameContent .content .gBlock .up .iconBox svg {
-  width: 24.5px;
-  height: 24.5px;
+  width: 24px;
+  height: 24px;
   fill: #ffffff;
 }
 html .center .mainArea .gameContent .content .gBlock .up .iconBox svg:first-child {
@@ -2326,28 +4171,19 @@ html .center .mainArea .gameContent .content .gBlock .up .iconBox svg:first-chil
 html .center .mainArea .gameContent .content .gBlock .down {
   width: 100%;
   height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   background: #292929;
   border-radius: 8px;
   border: 3px solid #b8151b;
+  position: relative;
   padding: 20px;
 }
-html .center .mainArea .gameContent .content .gBlock .down p {
-  font-weight: bold;
-}
-html .center .mainArea .gameContent .content .gBlock .down p.timeZone {
+html .center .mainArea .gameContent .content .gBlock .down .timeZone {
   color: #ffffff;
   font-size: 0.8rem;
-  white-space: nowrap;
+  font-weight: bold;
   margin-bottom: 10px;
 }
-html .center .mainArea .gameContent .content .gBlock .down p.date {
+html .center .mainArea .gameContent .content .gBlock .down .date {
   color: #f3c01a;
   font-size: 1.3rem;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -2355,7 +4191,7 @@ html .center .mainArea .gameContent .content .gBlock .down p.date {
   padding: 0 0 15px;
   position: relative;
 }
-html .center .mainArea .gameContent .content .gBlock .down p.date::before {
+html .center .mainArea .gameContent .content .gBlock .down .date::before {
   content: "";
   width: 30%;
   height: 5px;
@@ -2365,7 +4201,7 @@ html .center .mainArea .gameContent .content .gBlock .down p.date::before {
   bottom: 0;
   z-index: 10;
 }
-html .center .mainArea .gameContent .content .gBlock .down p.date::after {
+html .center .mainArea .gameContent .content .gBlock .down .date::after {
   content: "";
   width: 100%;
   height: 5px;
@@ -2374,18 +4210,9 @@ html .center .mainArea .gameContent .content .gBlock .down p.date::after {
   left: 0;
   bottom: 0;
 }
-html .center .mainArea .gameContent .content .gBlock .down p.VS {
-  color: #ffffff;
-}
-html .center .mainArea .gameContent .content .gBlock .down p.winner {
-  color: #dd2830;
-  text-align: center;
-  margin: 0 0 70px;
-}
 html .center .mainArea .gameContent .content .gBlock .down .infoDetail {
   width: 100%;
   height: auto;
-  position: relative;
 }
 html .center .mainArea .gameContent .content .gBlock .down .infoDetail .time {
   width: 100%;
@@ -2398,8 +4225,8 @@ html .center .mainArea .gameContent .content .gBlock .down .infoDetail .time {
   margin: 10px 0 0;
 }
 html .center .mainArea .gameContent .content .gBlock .down .infoDetail .time svg {
-  width: 24.5px;
-  height: 24.5px;
+  width: 24px;
+  height: 24px;
   fill: #b1b1b1;
   margin-right: 5px;
   -webkit-transform: scale(0.9);
@@ -2412,15 +4239,6 @@ html .center .mainArea .gameContent .content .gBlock .down .infoDetail .time p {
 html .center .mainArea .gameContent .content .gBlock .down .infoDetail .more {
   width: 130px;
   height: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   background: #cf0505;
   border-radius: 30px;
   -webkit-box-shadow: 0 3px 0 1px #b61d21;
@@ -2430,9 +4248,8 @@ html .center .mainArea .gameContent .content .gBlock .down .infoDetail .more {
   font-weight: bold;
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
-  margin: 0 auto;
   position: absolute;
-  top: 405px;
+  bottom: 35px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -2443,16 +4260,13 @@ html .center .mainArea .gameContent .content .gBlock .down .infoDetail .more:hov
   -webkit-box-shadow: none;
           box-shadow: none;
 }
+html .center .mainArea .gameContent .content .gBlock .down .infoDetail .more:hover, html .center .mainArea .gameContent .content .gBlock .down .infoDetail .more:active, html .center .mainArea .gameContent .content .gBlock .down .infoDetail .more.active {
+  -webkit-transform: translateX(-50%) translateY(2px);
+          transform: translateX(-50%) translateY(2px);
+}
 html .center .mainArea .gameContent .content .gBlock .down .pkTeam {
   width: 100%;
   height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   background: #414141;
   padding: 20px 20px 10px;
   margin: 30px 0;
@@ -2466,12 +4280,9 @@ html .center .mainArea .gameContent .content .gBlock .down .pkTeam .outbox {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 html .center .mainArea .gameContent .content .gBlock .down .pkTeam .outbox .team {
-  width: auto;
+  width: 100%;
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2491,14 +4302,17 @@ html .center .mainArea .gameContent .content .gBlock .down .pkTeam .outbox .team
   fill: #27a7f0;
 }
 html .center .mainArea .gameContent .content .gBlock .down .pkTeam .outbox .team svg {
-  width: 48.5px;
-  height: 48.5px;
+  width: 24px;
+  height: 24px;
   fill: #dd2830;
-  margin: 10px 10px 40px 10px;
+  -webkit-transform: scale(1.8);
+          transform: scale(1.8);
+  margin: 10px 0 40px;
 }
 html .center .mainArea .gameContent .content .gBlock .down .pkTeam .outbox .team .teamName {
   color: #ffffff;
   font-size: 0.9rem;
+  font-weight: bold;
   text-align: center;
   margin-bottom: 30px;
 }
@@ -2508,21 +4322,30 @@ html .center .mainArea .gameContent .content .gBlock .down .pkTeam .outbox .team
   color: #ffffff;
   font-weight: bold;
   border-radius: 3px;
-  padding: 5px;
+  padding: 5px 0 6px;
 }
-html .center .mainArea .gameContent .content .gBlock .down .pkTeam .outbox p {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+html .center .mainArea .gameContent .content .gBlock .down .pkTeam .outbox .team button:hover, html .center .mainArea .gameContent .content .gBlock .down .pkTeam .outbox .team button:active, html .center .mainArea .gameContent .content .gBlock .down .pkTeam .outbox .team button.active {
+  background: #851316;
+}
+html .center .mainArea .gameContent .content .gBlock .down .pkTeam .outbox .VS {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0 10px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 html .center .mainArea .gameContent .content .gBlock .down .pkTeam .winRWD {
   display: none;
   color: #dd2830;
   text-align: center;
   margin: 20px 0 0;
+}
+html .center .mainArea .gameContent .content .gBlock .down .winner {
+  color: #dd2830;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 0 70px;
 }
 html .center .mainArea .swiper03 {
   width: 100%;
@@ -2542,19 +4365,13 @@ html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide {
 }
 html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock {
   width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  border-radius: 5px;
+  height: auto;
 }
 html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .up {
   width: 100%;
   height: 40px;
+  background: #b8151b;
+  border-radius: 8px 8px 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2564,50 +4381,35 @@ html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .up {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background: #b8151b;
-  border-radius: 8px 8px 0 0;
   padding: 3px 10px 0;
   position: relative;
 }
 html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .up::before {
   content: "";
-  width: 10px;
+  width: 100%;
   height: 10px;
   background: #b8151b;
   position: absolute;
-  bottom: -8px;
+  bottom: -10px;
   left: 0;
   z-index: -1;
 }
-html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .up::after {
-  content: "";
-  width: 10px;
-  height: 10px;
-  background: #b8151b;
-  position: absolute;
-  bottom: -8px;
-  left: unset;
-  right: 0;
-  z-index: -1;
-}
 html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .up span {
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
   background: #851316;
+  border-radius: 3px;
   color: #ffffff;
   font-size: 0.9rem;
   font-weight: bold;
-  padding: 7px 5px;
-  border-radius: 3px;
   cursor: default;
+  padding: 7px 5px;
 }
 html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .up .iconBox {
   width: auto;
   height: auto;
 }
 html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .up .iconBox svg {
-  width: 24.5px;
-  height: 24.5px;
+  width: 24px;
+  height: 24px;
   fill: #ffffff;
 }
 html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .up .iconBox svg:first-child {
@@ -2616,28 +4418,19 @@ html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .up .icon
 html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down {
   width: 100%;
   height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   background: #292929;
   border-radius: 8px;
   border: 3px solid #b8151b;
+  position: relative;
   padding: 20px;
 }
-html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down p {
-  font-weight: bold;
-}
-html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down p.timeZone {
+html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .timeZone {
   color: #ffffff;
   font-size: 0.8rem;
-  white-space: nowrap;
+  font-weight: bold;
   margin-bottom: 10px;
 }
-html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down p.date {
+html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .date {
   color: #f3c01a;
   font-size: 1.3rem;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -2645,7 +4438,7 @@ html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down p.d
   padding: 0 0 15px;
   position: relative;
 }
-html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down p.date::before {
+html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .date::before {
   content: "";
   width: 30%;
   height: 5px;
@@ -2655,7 +4448,7 @@ html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down p.d
   bottom: 0;
   z-index: 10;
 }
-html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down p.date::after {
+html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .date::after {
   content: "";
   width: 100%;
   height: 5px;
@@ -2664,18 +4457,9 @@ html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down p.d
   left: 0;
   bottom: 0;
 }
-html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down p.VS {
-  color: #ffffff;
-}
-html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down p.winner {
-  color: #dd2830;
-  text-align: center;
-  margin: 0 0 70px;
-}
 html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .infoDetail {
   width: 100%;
   height: auto;
-  position: relative;
 }
 html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .infoDetail .time {
   width: 100%;
@@ -2688,8 +4472,8 @@ html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .in
   margin: 10px 0 0;
 }
 html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .infoDetail .time svg {
-  width: 24.5px;
-  height: 24.5px;
+  width: 24px;
+  height: 24px;
   fill: #b1b1b1;
   margin-right: 5px;
   -webkit-transform: scale(0.9);
@@ -2702,15 +4486,6 @@ html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .in
 html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .infoDetail .more {
   width: 130px;
   height: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   background: #cf0505;
   border-radius: 30px;
   -webkit-box-shadow: 0 3px 0 1px #b61d21;
@@ -2720,9 +4495,8 @@ html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .in
   font-weight: bold;
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
-  margin: 0 auto;
   position: absolute;
-  top: 405px;
+  bottom: 35px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -2733,16 +4507,13 @@ html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .in
   -webkit-box-shadow: none;
           box-shadow: none;
 }
+html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .infoDetail .more:hover, html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .infoDetail .more:active, html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .infoDetail .more.active {
+  -webkit-transform: translateX(-50%) translateY(2px);
+          transform: translateX(-50%) translateY(2px);
+}
 html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .pkTeam {
   width: 100%;
   height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   background: #414141;
   padding: 20px 20px 10px;
   margin: 30px 0;
@@ -2756,12 +4527,9 @@ html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .pk
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .pkTeam .outbox .team {
-  width: auto;
+  width: 100%;
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2781,14 +4549,17 @@ html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .pk
   fill: #27a7f0;
 }
 html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .pkTeam .outbox .team svg {
-  width: 48.5px;
-  height: 48.5px;
+  width: 24px;
+  height: 24px;
   fill: #dd2830;
-  margin: 10px 10px 40px 10px;
+  -webkit-transform: scale(1.8);
+          transform: scale(1.8);
+  margin: 10px 0 40px;
 }
 html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .pkTeam .outbox .team .teamName {
   color: #ffffff;
   font-size: 0.9rem;
+  font-weight: bold;
   text-align: center;
   margin-bottom: 30px;
 }
@@ -2798,15 +4569,18 @@ html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .pk
   color: #ffffff;
   font-weight: bold;
   border-radius: 3px;
-  padding: 5px;
+  padding: 5px 0 6px;
 }
-html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .pkTeam .outbox p {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .pkTeam .outbox .team button:hover, html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .pkTeam .outbox .team button:active, html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .pkTeam .outbox .team button.active {
+  background: #851316;
+}
+html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .pkTeam .outbox .VS {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0 10px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .pkTeam .winRWD {
   display: none;
@@ -2814,89 +4588,57 @@ html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .pk
   text-align: center;
   margin: 20px 0 0;
 }
+html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .winner {
+  color: #dd2830;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 0 70px;
+}
 html .center .mainArea .swiper03 .swiper-button-prev03,
 html .center .mainArea .swiper03 .swiper-button-next03 {
-  position: absolute;
-}
-html .center .mainArea .swiper03 .swiper-button-prev03::before, html .center .mainArea .swiper03 .swiper-button-prev03::after,
-html .center .mainArea .swiper03 .swiper-button-next03::before,
-html .center .mainArea .swiper03 .swiper-button-next03::after {
-  content: " ";
-}
-html .center .mainArea .swiper03 .swiper-button-prev03 {
-  position: absolute;
-  left: -20px;
-  cursor: pointer;
-}
-html .center .mainArea .swiper03 .swiper-button-prev03::before {
   width: 40px;
   height: 40px;
-  background: rgba(49, 49, 49, 0.8078431373);
-  border-radius: 5px;
   position: absolute;
-  top: -280px;
-  left: 20px;
-  z-index: 50;
-}
-html .center .mainArea .swiper03 .swiper-button-prev03 i {
-  font-size: 20px;
-  color: #ffffff;
-  position: absolute;
-  top: -270px;
-  left: 33px;
-  z-index: 50;
-}
-html .center .mainArea .swiper03 .swiper-button-next03 {
-  position: absolute;
-  right: 20px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   cursor: pointer;
+  z-index: 10;
 }
+html .center .mainArea .swiper03 .swiper-button-prev03::before,
 html .center .mainArea .swiper03 .swiper-button-next03::before {
-  width: 40px;
-  height: 40px;
+  content: "";
+  width: 100%;
+  height: 100%;
   background: rgba(49, 49, 49, 0.8078431373);
   border-radius: 5px;
   position: absolute;
-  top: -280px;
-  right: -20px;
-  z-index: 50;
+  top: 0;
+  left: 0;
 }
+html .center .mainArea .swiper03 .swiper-button-prev03 i,
 html .center .mainArea .swiper03 .swiper-button-next03 i {
   font-size: 20px;
   color: #ffffff;
   position: absolute;
-  top: -270px;
-  right: -8px;
-  z-index: 50;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+html .center .mainArea .swiper03 .swiper-button-prev03 {
+  left: 0px;
+}
+html .center .mainArea .swiper03 .swiper-button-next03 {
+  right: 0;
 }
 html .center .right {
   width: 300px;
   height: auto;
+  max-height: 2315px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   overflow: hidden;
-}
-html .center .right.active {
-  width: 100%;
-  height: auto;
-  background: transparent;
-  position: absolute;
-  top: -10px;
-  left: 0;
-  z-index: 90;
-}
-html .center .right.active .betBlock {
-  width: 100%;
-  height: 100%;
-  border-radius: 0;
-}
-html .center .right.active .betBlock .smallFilter {
-  height: calc(100% - 47px);
-}
-html .center .right.active .betBlock .closeLeft {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 html .center .right .betBlock {
   width: 100%;
@@ -2949,6 +4691,9 @@ html .center .right .betBlock .topList li p {
   color: #ffffff;
   font-size: 0.875rem;
   font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 html .center .right .betBlock .betTypeList {
   width: 100%;
@@ -2963,17 +4708,19 @@ html .center .right .betBlock .betTypeList {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0 5px;
 }
 html .center .right .betBlock .betTypeList li {
   width: auto;
   height: auto;
 }
-html .center .right .betBlock .betTypeList li:hover a p, html .center .right .betBlock .betTypeList li:active a p, html .center .right .betBlock .betTypeList li.active a p {
-  color: #851316;
+html .center .right .betBlock .betTypeList li:hover a p, html .center .right .betBlock .betTypeList li:active a p {
+  color: #f3c01a;
+}
+html .center .right .betBlock .betTypeList li.active a::before {
+  display: block;
 }
 html .center .right .betBlock .betTypeList li a {
-  width: auto;
+  width: 100%;
   height: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2981,6 +4728,21 @@ html .center .right .betBlock .betTypeList li a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 0 5px;
+}
+html .center .right .betBlock .betTypeList li a::before {
+  display: none;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: #ffe17e;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 html .center .right .betBlock .betTypeList li a p {
   color: #eca3a6;
@@ -3006,6 +4768,326 @@ html .center .right .betBlock .betContent .noData p {
   font-weight: bold;
   text-align: center;
   margin: 30px 0;
+}
+html .center .right .betBlock .betContent .betData {
+  display: none;
+  width: 100%;
+  height: auto;
+}
+html .center .right .betBlock .betContent .betData.display {
+  display: block;
+}
+html .center .right .betBlock .betContent .betData .bdOuter {
+  width: 100%;
+  max-height: 2040px;
+  padding: 10px;
+  overflow: overlay;
+}
+html .center .right .betBlock .betContent .betData .bdOuter::-webkit-scrollbar {
+  width: 5px;
+}
+html .center .right .betBlock .betContent .betData .bdOuter::-webkit-scrollbar-thumb {
+  background: #b61d21;
+  border-radius: 30px;
+}
+html .center .right .betBlock .betContent .betData .bdOuter::-webkit-scrollbar-track {
+  background: #b1b1b1;
+  border-radius: 30px;
+}
+html .center .right .betBlock .betContent .betData .bdOuter .betDetail {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  border: 1px solid #f3c01a;
+  border-radius: 5px;
+}
+html .center .right .betBlock .betContent .betData .bdOuter .betDetail:not(:first-child) {
+  margin-top: 10px;
+}
+html .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdTitle {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background: #851316;
+  border-radius: 5px;
+  padding: 5px;
+  position: relative;
+}
+html .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdTitle svg {
+  width: 24px;
+  height: 24px;
+  fill: #ffffff;
+}
+html .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdTitle p {
+  color: #ffffff;
+  font-size: 0.875rem;
+  position: absolute;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+html .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent {
+  width: 100%;
+}
+html .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-top: 1px solid #f3c01a;
+  padding: 5px 0;
+  margin: 10px 0 0;
+}
+html .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .top span {
+  background: #851316;
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 5px;
+}
+html .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .top i {
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+html .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .pkTeam {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #851316;
+  border-radius: 5px;
+  padding: 10px;
+}
+html .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .pkTeam .team {
+  width: 45%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+html .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .pkTeam .team.win svg {
+  opacity: 1;
+}
+html .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .pkTeam .team:last-child svg {
+  fill: #dd2830;
+}
+html .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .pkTeam .team svg {
+  width: 35px;
+  height: 35px;
+  fill: #27a7f0;
+  opacity: 0.6;
+  margin: 10px 0;
+}
+html .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .pkTeam .team .teamName {
+  min-height: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #ffffff;
+  text-align: center;
+}
+html .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .pkTeam .VS {
+  color: #f3c01a;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0 10px;
+}
+html .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .wintext {
+  color: #f3c01a;
+  font-size: 0.975rem;
+  font-weight: bold;
+  margin: 10px 0;
+}
+html .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .betwin {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px;
+  border: 1px solid #f3c01a;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+html .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .betwin p {
+  color: #ffffff;
+}
+html .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .betamount {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 15px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #f3c01a;
+  position: relative;
+}
+html .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .betamount p {
+  color: #848484;
+  font-size: 0.875rem;
+  position: absolute;
+  top: 50%;
+  left: 3%;
+  -webkit-transform: translateY(-90%);
+          transform: translateY(-90%);
+}
+html .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .betamount input {
+  width: 100%;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: right;
+}
+html .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .return {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+html .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .return span {
+  color: #ffffff;
+  font-size: 0.975rem;
+}
+html .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .return span:first-child {
+  background: #851316;
+  border-radius: 5px;
+  padding: 5px 4px 5px 5px;
+  margin-right: 10px;
+}
+html .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .return span.num {
+  font-weight: bold;
+}
+html .center .right .betBlock .betContent .betData .betTotal {
+  width: 100%;
+}
+html .center .right .betBlock .betContent .betData .betTotal li {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px;
+}
+html .center .right .betBlock .betContent .betData .betTotal li p {
+  color: #f3c01a;
+}
+html .center .right .betBlock .betContent .betData .betTotal li span {
+  color: #ffffff;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+html .center .right .betBlock .betContent .betData .betTotal li .changeBtn {
+  width: 15%;
+  height: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #848484;
+  border-radius: 50px;
+  cursor: pointer;
+}
+html .center .right .betBlock .betContent .betData .betTotal li .changeBtn.active {
+  background: #66e123;
+}
+html .center .right .betBlock .betContent .betData .betTotal li .changeBtn.active i {
+  display: block;
+}
+html .center .right .betBlock .betContent .betData .betTotal li .changeBtn i {
+  display: none;
+  color: #0f7e06;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: auto;
+}
+html .center .right .betBlock .betContent .betData .betTotal li .changeBtn span {
+  width: 25px;
+  height: 25px;
+  background: #ffffff;
+  border-radius: 50px;
+}
+html .center .right .betBlock .betContent .betData .betTotal li .okBtn {
+  background: #ff9b9f;
+  border-radius: 50px;
+  color: #851316;
+  font-size: 0.875rem;
+  font-weight: bold;
+  padding: 10px 15px;
+  margin: auto;
+}
+html .center .right .betBlock .betContent .betData .betTotal li .okBtn:hover, html .center .right .betBlock .betContent .betData .betTotal li .okBtn:active, html .center .right .betBlock .betContent .betData .betTotal li .okBtn.active {
+  background: #f3c01a;
 }
 html .center .right .betBlock .smallFilter {
   width: 100%;
@@ -3043,7 +5125,7 @@ html .center .right .betBlock .smallFilter button:hover, html .center .right .be
   -webkit-box-shadow: none;
           box-shadow: none;
 }
-html .center .right .betBlock .closeLeft {
+html .center .right .betBlock .closeRight {
   display: none;
   width: 100%;
   height: 47px;
@@ -3055,8 +5137,9 @@ html .center .right .betBlock .closeLeft {
           justify-content: center;
   background: #b8151b;
   cursor: pointer;
+  z-index: 1;
 }
-html .center .right .betBlock .closeLeft p {
+html .center .right .betBlock .closeRight p {
   color: #ffffff;
   font-size: 0.8rem;
   cursor: pointer;
@@ -3111,65 +5194,100 @@ html .center aside.betRecordBtn .betCount:nth-of-type(2) {
 html .center aside.betRecordBtn .betCount p {
   color: #ffffff;
 }
-@media only screen and (max-width: 1091px) {
+@media only screen and (max-width: 1100px) {
+  html .center .mainArea .gameContent .content {
+    gap: 20px 10px;
+  }
+  html .center .mainArea .gameContent .content .gBlock .down {
+    padding: 0.8rem;
+  }
   html .center .mainArea .gameContent .content .gBlock .down .pkTeam {
-    padding: 1.5rem 0.8rem;
+    padding: 1rem 0.8rem;
   }
-  html .center .mainArea .gameContent .content .gBlock .down .pkTeam .team svg {
-    width: 39.5px;
-    margin: 8px 10px 20px 10px;
+  html .center .mainArea .gameContent .content .gBlock .down .pkTeam .outbox .team .teamName {
+    font-size: 0.75rem;
   }
-  html .center .mainArea .gameContent .content .gBlock .down .pkTeam .team .teamName {
-    font-size: 0.8rem;
+  html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down {
+    padding: 0.8rem;
   }
-}
-@media only screen and (max-width: 1052px) {
-  html .center .mainArea .gameContent .content .gBlock .down .pkTeam .team svg {
-    width: 35.5px;
+  html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .pkTeam {
+    padding: 1rem 0.8rem;
+  }
+  html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .pkTeam .outbox .team .teamName {
+    font-size: 0.75rem;
   }
 }
 @media only screen and (max-width: 1024px) {
   html .center .left {
     width: 0;
+    height: 100%;
+    position: fixed;
+    top: 90px;
+    left: 0;
+    z-index: 90;
+  }
+  html .center .left.active {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5019607843);
+  }
+  html .center .left .navTitle {
+    width: 250px;
+    background: #292929;
+    padding-left: 10px;
+  }
+  html .center .left ul {
+    width: 250px;
+    height: calc(100% - (1.2rem + 20px));
+    overflow-y: auto;
+    -ms-scroll-chaining: none;
+        overscroll-behavior: none;
+  }
+  html .center .left ul::-webkit-scrollbar {
+    width: 0;
+  }
+  html .center .leftSide {
+    padding-left: 30px;
+  }
+  html .center .leftSide {
+    display: none;
   }
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 840px) {
   html .center .mainArea .gameContent .content {
     -ms-grid-columns: (1fr)[1];
     grid-template-columns: repeat(1, 1fr);
   }
   html .center .mainArea .gameContent .content .gBlock .down {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding: 1rem;
   }
   html .center .mainArea .gameContent .content .gBlock .down .infoDetail {
-    width: 49%;
-    height: 100%;
+    width: 48%;
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
   }
   html .center .mainArea .gameContent .content .gBlock .down .infoDetail .more {
+    display: block;
     margin: 20px auto 0;
-    position: relative;
-    top: 0;
-    left: 0;
+    position: static;
     -webkit-transform: translateX(0);
             transform: translateX(0);
   }
+  html .center .mainArea .gameContent .content .gBlock .down .infoDetail .more:hover, html .center .mainArea .gameContent .content .gBlock .down .infoDetail .more:active, html .center .mainArea .gameContent .content .gBlock .down .infoDetail .more.active {
+    -webkit-transform: translateY(2px);
+            transform: translateY(2px);
+  }
   html .center .mainArea .gameContent .content .gBlock .down .pkTeam {
-    width: 50%;
-    height: 100%;
+    width: 48%;
     -webkit-box-ordinal-group: 1;
         -ms-flex-order: 0;
             order: 0;
-    margin: 0 25px 0 0;
-  }
-  html .center .mainArea .gameContent .content .gBlock .down .pkTeam .team svg {
-    width: 49.5px;
   }
   html .center .mainArea .gameContent .content .gBlock .down .pkTeam .winRWD {
     display: block;
@@ -3181,34 +5299,36 @@ html .center aside.betRecordBtn .betCount p {
     width: 100% !important;
   }
   html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding: 1rem;
   }
   html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .infoDetail {
-    width: 49%;
-    height: 100%;
+    width: 48%;
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
   }
   html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .infoDetail .more {
+    display: block;
     margin: 20px auto 0;
-    position: relative;
-    top: 0;
-    left: 0;
+    position: static;
     -webkit-transform: translateX(0);
             transform: translateX(0);
   }
+  html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .infoDetail .more:hover, html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .infoDetail .more:active, html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .infoDetail .more.active {
+    -webkit-transform: translateY(2px);
+            transform: translateY(2px);
+  }
   html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .pkTeam {
-    width: 50%;
-    height: 100%;
+    width: 48%;
     -webkit-box-ordinal-group: 1;
         -ms-flex-order: 0;
             order: 0;
-    margin: 0 25px 0 0;
   }
   html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .pkTeam .winRWD {
     display: block;
@@ -3216,16 +5336,66 @@ html .center aside.betRecordBtn .betCount p {
   html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .winner {
     display: none;
   }
-  html .center .mainArea .swiper03 .swiper-button-prev03::before,
-html .center .mainArea .swiper03 .swiper-button-next03::before {
-    top: -170px;
-  }
-  html .center .mainArea .swiper03 .swiper-button-prev03 i,
-html .center .mainArea .swiper03 .swiper-button-next03 i {
-    top: -160px;
-  }
   html .center .right {
     width: 0;
+    height: calc(100% - 90px);
+    position: fixed;
+    top: 90px;
+    left: 0;
+    z-index: 110;
+  }
+  html .center .right.active {
+    width: 100%;
+  }
+  html .center .right .betBlock {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  html .center .right .betBlock .topList {
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+  }
+  html .center .right .betBlock .topList li {
+    width: 25%;
+  }
+  html .center .right .betBlock .topList li p {
+    width: 100%;
+    text-align: center;
+  }
+  html .center .right .betBlock .betTypeList {
+    padding: 0;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+  }
+  html .center .right .betBlock .betTypeList li {
+    width: 34%;
+  }
+  html .center .right .betBlock .betTypeList li a {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  html .center .right .betBlock .betContent {
+    height: 100%;
+  }
+  html .center .right .betBlock .smallFilter {
+    height: calc(100% - 47px);
+  }
+  html .center .right .betBlock .closeRight {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
   }
   html .center aside.betRecordBtn {
     display: -webkit-box;
@@ -3234,1757 +5404,206 @@ html .center .mainArea .swiper03 .swiper-button-next03 i {
   }
 }
 @media only screen and (max-width: 450px) {
+  html .center .leftSide {
+    display: none;
+  }
   html .center .mainArea {
-    padding: 20px;
+    padding: 0;
+  }
+  html .center .mainArea.index {
+    padding: 20px 20px 22vw;
   }
   html .center .mainArea .searchBox {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
+  html .center .mainArea .featured {
+    display: none;
+  }
   html .center .mainArea .swiper {
     display: none;
   }
   html .center .mainArea .middleNav .topnav li {
-    width: 23.925%;
-  }
-  html .center .mainArea .gameContent .content .gBlock .down {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    width: 25%;
   }
   html .center .mainArea .gameContent .content .gBlock .down .infoDetail {
-    width: 44%;
+    width: auto;
   }
   html .center .mainArea .gameContent .content .gBlock .down .pkTeam {
-    width: 52%;
-    margin-right: 0;
+    width: 54%;
+    margin: 0 1rem 0 0;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
   }
   html .center .mainArea .gameContent .content .gBlock .down .pkTeam .outbox .team svg {
-    margin: 0 0 40px;
+    margin: 0 0 1.5rem;
+  }
+  html .center .mainArea .gameContent .content .gBlock .down .pkTeam .outbox .team .teamName {
+    margin-bottom: 1.5rem;
   }
   html .center .mainArea .gameContent .content .gBlock .down .pkTeam .outbox .VS {
-    margin: 0 3px;
+    margin: 0 5px;
+  }
+  html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .infoDetail {
+    width: auto;
+  }
+  html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .pkTeam {
+    width: 54%;
+    margin: 0 1rem 0 0;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+  }
+  html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .pkTeam .outbox .team svg {
+    margin: 0 0 1.5rem;
+  }
+  html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .pkTeam .outbox .team .teamName {
+    margin-bottom: 1.5rem;
+  }
+  html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .pkTeam .outbox .VS {
+    margin: 0 5px;
+  }
+  html .center .mainArea .right.active {
+    top: 46px;
+  }
+  html .center .mainArea .right .betBlock {
+    background: #000000;
+  }
+  html .center .mainArea .right .betBlock .topList ul li.active p {
+    color: #b8151b;
+  }
+  html .center .mainArea .right .betBlock .betTypeList {
+    background: rgba(49, 49, 49, 0.8078431373);
+  }
+  html .center .mainArea .right .betBlock .betTypeList li.active a::before {
+    background: #cf0505;
+  }
+  html .center .mainArea .right .betBlock .betTypeList li.active a p {
+    color: #cf0505;
+  }
+  html .center .mainArea .right .betBlock .betTypeList li a p {
+    color: #b1b1b1;
+  }
+  html .center .mainArea .right .betBlock .betContent .betData .bdOuter {
+    max-height: 500px;
+  }
+  html .center .mainArea .right .betBlock .betContent .betData .bdOuter .betDetail {
+    border-color: #dd2830;
+  }
+  html .center .mainArea .right .betBlock .betContent .betData .bdOuter .betDetail .bdTitle {
+    background: #414141;
+  }
+  html .center .mainArea .right .betBlock .betContent .betData .bdOuter .betDetail .bdTitle svg {
+    fill: #848484;
+  }
+  html .center .mainArea .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .top {
+    border-color: #dd2830;
+  }
+  html .center .mainArea .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .top span {
+    background: #e3373f;
+  }
+  html .center .mainArea .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .pkTeam {
+    background: #414141;
+  }
+  html .center .mainArea .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .pkTeam .VS {
+    color: #ffffff;
+  }
+  html .center .mainArea .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .wintext {
+    color: #dd2830;
+  }
+  html .center .mainArea .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .betwin {
+    border-color: #dd2830;
+  }
+  html .center .mainArea .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .betwin p {
+    color: #dd2830;
+  }
+  html .center .mainArea .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .betamount {
+    border-color: #cf0505;
+  }
+  html .center .mainArea .right .betBlock .betContent .betData .betTotal li p {
+    color: #ffffff;
+  }
+  html .center .mainArea .right .betBlock .closeRight {
+    background: #cf0505;
+  }
+  html .center .mainArea .contentBox {
+    display: none;
+  }
+  html .center .mainArea .mobile_content {
+    display: block;
+  }
+  html .center .right {
+    height: calc(100vh - 14vw - 55px);
+  }
+  html .center .right.active {
+    top: 50px;
+  }
+  html .center .right .betBlock {
+    background: #000000;
+  }
+  html .center .right .betBlock .topList li.active::before {
+    background: #b8151b;
+  }
+  html .center .right .betBlock .topList li.active p {
+    color: #b8151b;
+  }
+  html .center .right .betBlock .betTypeList {
+    background: rgba(49, 49, 49, 0.8078431373);
+  }
+  html .center .right .betBlock .betTypeList li.active a::before {
+    background: #cf0505;
+  }
+  html .center .right .betBlock .betTypeList li.active a p {
+    color: #cf0505;
+  }
+  html .center .right .betBlock .betTypeList li a p {
+    color: #b1b1b1;
+  }
+  html .center .right .betBlock .betContent .betData .bdOuter {
+    max-height: 500px;
+  }
+  html .center .right .betBlock .betContent .betData .bdOuter .betDetail {
+    border-color: #dd2830;
+  }
+  html .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdTitle {
+    background: #414141;
+  }
+  html .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdTitle svg {
+    fill: #848484;
+  }
+  html .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .top {
+    border-color: #dd2830;
+  }
+  html .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .top span {
+    background: #e3373f;
+  }
+  html .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .pkTeam {
+    background: #414141;
+  }
+  html .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .pkTeam .VS {
+    color: #ffffff;
+  }
+  html .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .wintext {
+    color: #dd2830;
+  }
+  html .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .betwin {
+    border-color: #dd2830;
+  }
+  html .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .betwin p {
+    color: #dd2830;
+  }
+  html .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .betamount {
+    border-color: #cf0505;
+  }
+  html .center .right .betBlock .betContent .betData .betTotal li p {
+    color: #ffffff;
+  }
+  html .center .right .betBlock .closeRight {
+    background: #cf0505;
   }
   html .center aside.betRecordBtn {
     bottom: 85px;
     right: 20px;
-  }
-}
-html .myPage {
-  width: 100%;
-  height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 30px 0;
-  position: relative;
-}
-html .myPage .left {
-  display: none;
-}
-html .myPage .left.active {
-  display: block;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.5019607843);
-  overflow: hidden;
-  position: absolute;
-  top: 0px;
-  left: 0;
-  z-index: 90;
-}
-html .myPage .left.active .navTitle {
-  width: 250px;
-  background: #292929;
-  padding-left: 10px;
-}
-html .myPage .left.active ul {
-  width: 250px;
-}
-html .myPage .leftSide {
-  width: 250px;
-  height: 640px;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  overflow-y: auto;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-html .myPage .leftSide.active {
-  width: 100%;
-  background: rgba(0, 0, 0, 0.5019607843);
-  overflow: hidden;
-  position: absolute;
-  top: -10px;
-  left: 0;
-  z-index: 90;
-}
-html .myPage .leftSide.active .navTitle {
-  width: 250px;
-  background: #292929;
-  padding-left: 10px;
-}
-html .myPage .leftSide.active ul {
-  width: 250px;
-}
-html .myPage .leftSide .navoutter {
-  width: 100%;
-  height: auto;
-}
-html .myPage .leftSide .navoutter .navTitle {
-  color: #f3c01a;
-  font-size: 1.2rem;
-  font-weight: bold;
-  padding: 10px 0;
-  margin: 10px 0;
-}
-html .myPage .leftSide .navoutter ul {
-  width: 100%;
-  height: auto;
-  background: #292929;
-  border-radius: 10px;
-  margin-bottom: 30px;
-}
-html .myPage .leftSide .navoutter ul:last-child {
-  margin: 20px 0 0;
-}
-html .myPage .leftSide .navoutter ul li {
-  width: 100%;
-  height: 50px;
-  overflow: hidden;
-}
-html .myPage .leftSide .navoutter ul li:hover a, html .myPage .leftSide .navoutter ul li:active a {
-  -webkit-transform: translateX(20px);
-          transform: translateX(20px);
-}
-html .myPage .leftSide .navoutter ul li:hover a p, html .myPage .leftSide .navoutter ul li:active a p {
-  color: #f3c01a;
-}
-html .myPage .leftSide .navoutter ul li.active a {
-  -webkit-transform: translateX(20px);
-          transform: translateX(20px);
-}
-html .myPage .leftSide .navoutter ul li.active a p {
-  color: #f3c01a;
-}
-html .myPage .leftSide .navoutter ul li a {
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-transition: 0.3s all;
-  transition: 0.3s all;
-  padding: 0 10px;
-}
-html .myPage .leftSide .navoutter ul li a p {
-  color: #b1b1b1;
-  font-size: 1rem;
-  font-weight: bold;
-}
-html .myPage .leftSide .navoutter ul li a i {
-  color: #b1b1b1;
-  font-size: 0.8rem;
-}
-html .myPage .mainArea .contentBox {
-  width: 100%;
-  height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-html .myPage .mainArea .contentBox .pageTitle {
-  color: #f3c01a;
-  font-size: 1.3rem;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  letter-spacing: 1px;
-  padding: 0 0 15px;
-  position: relative;
-  width: 100%;
-  margin-bottom: 50px;
-}
-html .myPage .mainArea .contentBox .pageTitle::before {
-  content: "";
-  width: 30%;
-  height: 5px;
-  background: #851316;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  z-index: 10;
-}
-html .myPage .mainArea .contentBox .pageTitle::after {
-  content: "";
-  width: 100%;
-  height: 5px;
-  background: #b8151b;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-}
-html .myPage .mainArea .contentBox .overview {
-  width: 90%;
-  height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background: #414141;
-  padding: 50px;
-}
-html .myPage .mainArea .contentBox .overview table {
-  width: 100%;
-  height: auto;
-}
-html .myPage .mainArea .contentBox .overview table tr:last-child {
-  border-top: 1px solid #b1b1b1;
-}
-html .myPage .mainArea .contentBox .overview table tr:last-child td:first-child p {
-  text-align: right;
-}
-html .myPage .mainArea .contentBox .overview table tr:last-child td p {
-  line-height: 40px;
-}
-html .myPage .mainArea .contentBox .overview table tr td {
-  width: 15%;
-}
-html .myPage .mainArea .contentBox .overview table tr td:not(:first-child) p {
-  text-align: right;
-}
-html .myPage .mainArea .contentBox .overview table tr td:first-child {
-  width: 70%;
-}
-html .myPage .mainArea .contentBox .overview table tr td:first-child p {
-  padding: 0 10px;
-}
-html .myPage .mainArea .contentBox .overview table tr td:last-child p {
-  padding: 0 10px;
-}
-html .myPage .mainArea .contentBox .overview table tr td p {
-  color: #b1b1b1;
-  font-size: 0.9rem;
-  line-height: 40px;
-  padding: 0 5px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-html .myPage .mainArea .contentBox .myRewrad {
-  width: 100%;
-  height: auto;
-  margin-top: 30px;
-}
-html .myPage .mainArea .contentBox .myRewrad .title {
-  background: #292929;
-  color: #f3c01a;
-  padding: 20px 5%;
-  margin-bottom: 20px;
-}
-html .myPage .mainArea .contentBox .myRewrad .rewrad_btn {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 20px;
-}
-html .myPage .mainArea .contentBox .myRewrad .rewrad_btn button {
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  background: #292929;
-  color: #b1b1b1;
-  border-radius: 20px;
-  padding: 10px 20px;
-}
-html .myPage .mainArea .contentBox .myRewrad .rewrad_btn button:hover, html .myPage .mainArea .contentBox .myRewrad .rewrad_btn button:active, html .myPage .mainArea .contentBox .myRewrad .rewrad_btn button.active {
-  background: #dd2830;
-  color: #ffffff;
-}
-html .myPage .mainArea .contentBox .myRewrad .rewrad_btn button:first-child {
-  margin-right: 10px;
-}
-html .myPage .mainArea .contentBox .myRewrad .reward_stauts {
-  color: #ffffff;
-  font-size: 0.8rem;
-  text-align: center;
-}
-html .myPage .mainArea .mobile_content {
-  display: none;
-  width: 100%;
-  height: auto;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  overflow: auto;
-}
-html .myPage .mainArea .mobile_content .innerBox {
-  display: none;
-  width: 100%;
-  padding: 0 20px 20px;
-}
-html .myPage .mainArea .mobile_content .innerBox.active {
-  display: block;
-}
-html .myPage .mainArea .mobile_content .innerBox.userHome .topBox {
-  width: 100%;
-  height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: transparent;
-  border: 1.5px solid #dd2830;
-  border-radius: 5px;
-  margin-top: 15px;
-}
-html .myPage .mainArea .mobile_content .innerBox.userHome .topBox .userBox {
-  width: 100%;
-  height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-bottom: 1px solid #dd2830;
-  padding: 3px 10px 5px;
-  position: relative;
-}
-html .myPage .mainArea .mobile_content .innerBox.userHome .topBox .userBox::before {
-  content: "";
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 5px 0px 5px 9px;
-  border-color: transparent transparent transparent #dd2830;
-  position: absolute;
-  right: 15px;
-}
-html .myPage .mainArea .mobile_content .innerBox.userHome .topBox .userBox .userPic {
-  width: 15vw;
-  height: 15vw;
-  border-radius: 100px;
-  overflow: hidden;
-  margin: 5px 20px 5px 0;
-}
-html .myPage .mainArea .mobile_content .innerBox.userHome .topBox .userBox p {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  color: #dd2830;
-  font-size: 3.8vw;
-  font-weight: bold;
-}
-html .myPage .mainArea .mobile_content .innerBox.userHome .topBox .userBox p span {
-  color: #ffffff;
-  font-size: 4vw;
-  margin-top: 10px;
-}
-html .myPage .mainArea .mobile_content .innerBox.userHome .topBox ul {
-  width: 100%;
-  height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-html .myPage .mainArea .mobile_content .innerBox.userHome .topBox ul li {
-  width: 25%;
-  height: auto;
-}
-html .myPage .mainArea .mobile_content .innerBox.userHome .topBox ul li:not(:first-child) .userNav_IC {
-  margin: 10px auto 15px;
-}
-html .myPage .mainArea .mobile_content .innerBox.userHome .topBox ul li.betLimit .userNav_IC {
-  background-position-y: 0%;
-  margin-top: 15px;
-}
-html .myPage .mainArea .mobile_content .innerBox.userHome .topBox ul li.rule .userNav_IC {
-  background-position-y: 34%;
-}
-html .myPage .mainArea .mobile_content .innerBox.userHome .topBox ul li.setting .userNav_IC {
-  background-position-y: 68%;
-}
-html .myPage .mainArea .mobile_content .innerBox.userHome .topBox ul li.goWeb .userNav_IC {
-  background-position-y: 100%;
-}
-html .myPage .mainArea .mobile_content .innerBox.userHome .topBox ul li a {
-  width: 100%;
-  height: auto;
-}
-html .myPage .mainArea .mobile_content .innerBox.userHome .topBox ul li a .userNav_IC {
-  width: 10vw;
-  height: 10vw;
-  margin: auto;
-}
-html .myPage .mainArea .mobile_content .innerBox.userHome .topBox ul li a p {
-  color: #dd2830;
-  font-size: 3.8vw;
-  text-align: center;
-  margin: 10px 0;
-}
-html .myPage .mainArea .mobile_content .innerBox.userHome .pageList {
-  width: 100%;
-  height: auto;
-  margin-top: 15px;
-}
-html .myPage .mainArea .mobile_content .innerBox.userHome .pageList li {
-  width: 100%;
-  height: auto;
-  background: #b8151b;
-  margin-bottom: 2vw;
-}
-html .myPage .mainArea .mobile_content .innerBox.userHome .pageList li a {
-  width: 100%;
-  height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0 10px;
-  position: relative;
-}
-html .myPage .mainArea .mobile_content .innerBox.userHome .pageList li a::before {
-  content: "";
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 4.5px 0px 4.5px 5px;
-  border-color: transparent transparent transparent #ffffff;
-  position: absolute;
-  right: 15px;
-}
-html .myPage .mainArea .mobile_content .innerBox.userHome .pageList li a.qa i {
-  background-position-y: 0%;
-}
-html .myPage .mainArea .mobile_content .innerBox.userHome .pageList li a.message_center i {
-  background-position-y: 25%;
-}
-html .myPage .mainArea .mobile_content .innerBox.userHome .pageList li a.cs_service i {
-  background-position-y: 50%;
-}
-html .myPage .mainArea .mobile_content .innerBox.userHome .pageList li a.feedback i {
-  background-position-y: 75%;
-}
-html .myPage .mainArea .mobile_content .innerBox.userHome .pageList li a.logout i {
-  background-position-y: 100%;
-}
-html .myPage .mainArea .mobile_content .innerBox.userHome .pageList li a i {
-  width: 5vw;
-  height: 5vw;
-}
-html .myPage .mainArea .mobile_content .innerBox.userHome .pageList li a p {
-  color: #ffffff;
-  font-size: 3.8vw;
-  line-height: 40px;
-  margin-left: 15px;
-}
-html .myPage .mainArea .mobile_content .innerBox.userDetail {
-  padding: 20px 0 58px;
-}
-html .myPage .mainArea .mobile_content .innerBox.userDetail .topLine {
-  padding: 0 20px 20px;
-  border: none;
-  position: relative;
-}
-html .myPage .mainArea .mobile_content .innerBox.userDetail .topLine::before {
-  content: "";
-  width: 90%;
-  height: 1px;
-  background: #b1b1b1;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-}
-html .myPage .mainArea .mobile_content .innerBox.userDetail .topLine .backBtn {
-  left: 20px;
-}
-html .myPage .mainArea .mobile_content .innerBox.userDetail .userBasic {
-  width: 100%;
-  height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-bottom: 1px solid #dd2830;
-  margin-top: 10px;
-  position: relative;
-}
-html .myPage .mainArea .mobile_content .innerBox.userDetail .userBasic .userBox {
-  width: 90%;
-  height: auto;
-  border: 1.5px solid #dd2830;
-  border-radius: 10px;
-  padding: 10px;
-  margin-bottom: 65px;
-  position: relative;
-}
-html .myPage .mainArea .mobile_content .innerBox.userDetail .userBasic .userBox .picblock {
-  width: 31%;
-  height: auto;
-  position: relative;
-}
-html .myPage .mainArea .mobile_content .innerBox.userDetail .userBasic .userBox .picblock .userPic {
-  width: 25vw;
-  height: 25vw;
-  border-radius: 100px;
-  overflow: hidden;
-  margin: 10px 0;
-}
-html .myPage .mainArea .mobile_content .innerBox.userDetail .userBasic .userBox .picblock .picEdit {
-  width: 35px;
-  height: 35px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background: azure;
-  border-radius: 50px;
-  border: 3px solid #b1b1b1;
-  position: absolute;
-  bottom: 7px;
-  right: -10px;
-}
-html .myPage .mainArea .mobile_content .innerBox.userDetail .userBasic .userBox .picblock .picEdit i {
-  width: 15px;
-  height: 15px;
-}
-html .myPage .mainArea .mobile_content .innerBox.userDetail .userBasic p {
-  color: #dd2830;
-  font-size: 4.5vw;
-  font-weight: bold;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-html .myPage .mainArea .mobile_content .innerBox.userDetail .userBasic p.acName {
-  position: absolute;
-  bottom: 12px;
-  left: 20px;
-}
-html .myPage .mainArea .mobile_content .innerBox.userDetail .userBasic p span {
-  color: #ffffff;
-  font-size: 4vw;
-  margin: 10px 0 0;
-}
-html .myPage .mainArea .mobile_content .innerBox.userDetail .userOther.edit input {
-  background: #280606;
-  border: 1px solid #dd2830;
-  border-radius: 30px;
-  color: #ffffff;
-  padding: 0 10px;
-  width: 87%;
-  font-size: 4.5vw;
-  padding: 8px 15px;
-  margin-bottom: 10px;
-  display: block;
-}
-html .myPage .mainArea .mobile_content .innerBox.userDetail .userOther.edit input::-webkit-input-placeholder {
-  color: #dd2830;
-}
-html .myPage .mainArea .mobile_content .innerBox.userDetail .userOther.edit input::-moz-placeholder {
-  color: #dd2830;
-}
-html .myPage .mainArea .mobile_content .innerBox.userDetail .userOther.edit input:-ms-input-placeholder {
-  color: #dd2830;
-}
-html .myPage .mainArea .mobile_content .innerBox.userDetail .userOther.edit input::-ms-input-placeholder {
-  color: #dd2830;
-}
-html .myPage .mainArea .mobile_content .innerBox.userDetail .userOther.edit input::placeholder {
-  color: #dd2830;
-}
-html .myPage .mainArea .mobile_content .innerBox.userDetail .userOther.edit .datebox {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-  margin-bottom: 10px;
-}
-html .myPage .mainArea .mobile_content .innerBox.userDetail .userOther.edit .datebox input {
-  margin: 0;
-}
-html .myPage .mainArea .mobile_content .innerBox.userDetail .userOther.edit .datebox i {
-  width: 5vw;
-  height: 5vw;
-  position: absolute;
-  top: 50%;
-  right: 18%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-html .myPage .mainArea .mobile_content .innerBox.userDetail .userOther.edit .sex {
-  width: 100%;
-  margin-bottom: 10px;
-  position: relative;
-}
-html .myPage .mainArea .mobile_content .innerBox.userDetail .userOther.edit .sex::before {
-  content: "";
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 6px 4px 0 4px;
-  border-color: #dd2830 transparent;
-  position: absolute;
-  top: 50%;
-  right: 63%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-html .myPage .mainArea .mobile_content .innerBox.userDetail .userOther.edit select {
-  display: block;
-  background: #280606;
-  border: 1px solid #dd2830;
-  border-radius: 30px;
-  color: #ffffff;
-  padding: 0 10px;
-  width: 43%;
-  color: #dd2830;
-  font-size: 4.5vw;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  padding: 9px 25px 9px 15px;
-}
-html .myPage .mainArea .mobile_content .innerBox.userDetail .userOther.edit select::-webkit-input-placeholder {
-  color: #dd2830;
-}
-html .myPage .mainArea .mobile_content .innerBox.userDetail .userOther.edit select::-moz-placeholder {
-  color: #dd2830;
-}
-html .myPage .mainArea .mobile_content .innerBox.userDetail .userOther.edit select:-ms-input-placeholder {
-  color: #dd2830;
-}
-html .myPage .mainArea .mobile_content .innerBox.userDetail .userOther.edit select::-ms-input-placeholder {
-  color: #dd2830;
-}
-html .myPage .mainArea .mobile_content .innerBox.userDetail .userOther.edit select::placeholder {
-  color: #dd2830;
-}
-html .myPage .mainArea .mobile_content .innerBox.userDetail .userOther.edit .editing {
-  color: #66e123;
-}
-html .myPage .mainArea .mobile_content .innerBox.userDetail .userOther.edit .remind {
-  display: none;
-}
-html .myPage .mainArea .mobile_content .innerBox.userDetail .userOther form {
-  width: 100%;
-  height: auto;
-}
-html .myPage .mainArea .mobile_content .innerBox.userDetail .userOther form label {
-  width: 100%;
-  height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  border-bottom: 1px solid #dd2830;
-  padding: 15px 20px;
-}
-html .myPage .mainArea .mobile_content .innerBox.userDetail .userOther form label:last-child {
-  border: none;
-}
-html .myPage .mainArea .mobile_content .innerBox.userDetail .userOther form label .inputTitle {
-  color: #dd2830;
-  font-size: 4.5vw;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-html .myPage .mainArea .mobile_content .innerBox.userDetail .userOther form label input {
-  display: none;
-}
-html .myPage .mainArea .mobile_content .innerBox.userDetail .userOther form label select {
-  display: none;
-}
-html .myPage .mainArea .mobile_content .innerBox.userDetail .userOther form label .submitBtn {
-  background: #dd2830;
-  color: #ffffff;
-  border-radius: 50px;
-  width: 46%;
-  height: 45px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  border: none;
-  font-size: 3.8vw;
-  margin: 0 auto 15px;
-}
-html .myPage .mainArea .mobile_content .innerBox.userDetail .userOther form label .userCurrent {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  color: #ffffff;
-  font-size: 4vw;
-}
-html .myPage .mainArea .mobile_content .innerBox.userDetail .userOther form label .userCurrent span {
-  color: #848484;
-  font-size: 3.8vw;
-  line-height: 20px;
-}
-html .myPage .mainArea .mobile_content .innerBox.userDetail .userOther form label .remind {
-  background: #292929;
-  padding: 20px;
-  margin-bottom: 20px;
-}
-html .myPage .mainArea .mobile_content .innerBox.userDetail .userOther form label .remind p {
-  color: #b8151b;
-  font-size: 3.8vw;
-  text-align: center;
-  line-height: 25px;
-}
-html .myPage .mainArea .mobile_content .innerBox.userDetail .userOther form label .remind p:first-child {
-  margin-bottom: 10px;
-}
-html .myPage .mainArea .mobile_content .innerBox.userDetail .userOther form label .remind p span {
-  color: #66e123;
-  text-decoration: underline;
-}
-html .myPage .mainArea .mobile_content .innerBox .topLine {
-  width: 100%;
-  height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 20px 0;
-  border-bottom: 1px solid #b1b1b1;
-  position: relative;
-}
-html .myPage .mainArea .mobile_content .innerBox .topLine .backBtn {
-  background: transparent;
-  border: 1px solid #dd2830;
-  border-radius: 30px;
-  color: #dd2830;
-  font-size: 4vw;
-  font-weight: bold;
-  padding: 5px 20px 6px 30px;
-  position: absolute;
-  left: 0;
-}
-html .myPage .mainArea .mobile_content .innerBox .topLine .backBtn:before {
-  content: "";
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 4.5px 5px 4.5px 0;
-  border-color: transparent #dd2830 transparent transparent;
-  margin-right: 10px;
-  position: absolute;
-  top: 50%;
-  left: 15px;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-html .myPage .mainArea .mobile_content .innerBox .topLine .pageName {
-  color: #ffffff;
-  font-size: 5vw;
-}
-@media only screen and (max-width: 1230px) {
-  html .myPage {
-    padding-left: 30px;
-  }
-}
-@media only screen and (max-width: 450px) {
-  html .myPage {
-    overflow: auto;
-    padding: 0;
-  }
-  html .myPage .mainArea {
-    padding: 0;
-  }
-  html .myPage .mainArea .contentBox {
-    display: none !important;
-  }
-  html .myPage .mainArea .mobile_content {
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
-  }
-  html .myPage .leftSide {
-    display: none;
-  }
-}
-html .betPage {
-  width: 100%;
-  height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 30px 0;
-  position: relative;
-}
-html .betPage .left {
-  display: none;
-}
-html .betPage .left.active {
-  display: block;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.5019607843);
-  overflow: hidden;
-  position: absolute;
-  top: 0px;
-  left: 0;
-  z-index: 90;
-}
-html .betPage .left.active .navTitle {
-  width: 250px;
-  background: #292929;
-  padding-left: 10px;
-}
-html .betPage .left.active ul {
-  width: 250px;
-}
-html .betPage .leftSide {
-  width: 250px;
-  height: 640px;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  overflow-y: auto;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-html .betPage .leftSide.active {
-  width: 100%;
-  background: rgba(0, 0, 0, 0.5019607843);
-  overflow: hidden;
-  position: absolute;
-  top: -10px;
-  left: 0;
-  z-index: 90;
-}
-html .betPage .leftSide.active .navTitle {
-  width: 250px;
-  background: #292929;
-  padding-left: 10px;
-}
-html .betPage .leftSide.active ul {
-  width: 250px;
-}
-html .betPage .leftSide .navoutter {
-  width: 100%;
-  height: auto;
-}
-html .betPage .leftSide .navoutter .navTitle {
-  color: #f3c01a;
-  font-size: 1.2rem;
-  font-weight: bold;
-  padding: 10px 0;
-  margin: 10px 0;
-}
-html .betPage .leftSide .navoutter ul {
-  width: 100%;
-  height: auto;
-  background: #292929;
-  border-radius: 10px;
-  margin-bottom: 30px;
-}
-html .betPage .leftSide .navoutter ul:last-child {
-  margin: 20px 0 0;
-}
-html .betPage .leftSide .navoutter ul li {
-  width: 100%;
-  height: 50px;
-  overflow: hidden;
-}
-html .betPage .leftSide .navoutter ul li:hover a, html .betPage .leftSide .navoutter ul li:active a {
-  -webkit-transform: translateX(20px);
-          transform: translateX(20px);
-}
-html .betPage .leftSide .navoutter ul li:hover a p, html .betPage .leftSide .navoutter ul li:active a p {
-  color: #f3c01a;
-}
-html .betPage .leftSide .navoutter ul li.active a {
-  -webkit-transform: translateX(20px);
-          transform: translateX(20px);
-}
-html .betPage .leftSide .navoutter ul li.active a p {
-  color: #f3c01a;
-}
-html .betPage .leftSide .navoutter ul li a {
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-transition: 0.3s all;
-  transition: 0.3s all;
-  padding: 0 10px;
-}
-html .betPage .leftSide .navoutter ul li a p {
-  color: #b1b1b1;
-  font-size: 1rem;
-  font-weight: bold;
-}
-html .betPage .leftSide .navoutter ul li a i {
-  color: #b1b1b1;
-  font-size: 0.8rem;
-}
-html .betPage .mainArea .contentBox {
-  width: 100%;
-  height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-html .betPage .mainArea .contentBox .pageTitle {
-  color: #f3c01a;
-  font-size: 1.3rem;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  letter-spacing: 1px;
-  padding: 0 0 15px;
-  position: relative;
-  width: 100%;
-  margin-bottom: 30px;
-}
-html .betPage .mainArea .contentBox .pageTitle::before {
-  content: "";
-  width: 30%;
-  height: 5px;
-  background: #851316;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  z-index: 10;
-}
-html .betPage .mainArea .contentBox .pageTitle::after {
-  content: "";
-  width: 100%;
-  height: 5px;
-  background: #b8151b;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-}
-html .betPage .mainArea .contentBox .overview {
-  width: 100%;
-  height: auto;
-}
-html .betPage .mainArea .contentBox .overview table {
-  width: 100%;
-  height: 40px;
-  border-radius: 10px;
-  overflow: hidden;
-}
-html .betPage .mainArea .contentBox .overview table.active {
-  height: auto;
-}
-html .betPage .mainArea .contentBox .overview table.active tr th:last-child p span {
-  -webkit-transform: rotate(-180deg);
-          transform: rotate(-180deg);
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-html .betPage .mainArea .contentBox .overview table tr th {
-  background: #b8151b;
-  border-spacing: 0;
-  cursor: pointer;
-}
-html .betPage .mainArea .contentBox .overview table tr th:first-child {
-  border-radius: 10px 0 0 0;
-  -webkit-box-shadow: inset 2px 0 0 0 #dd2830, inset 0 2px 0 0 #dd2830;
-          box-shadow: inset 2px 0 0 0 #dd2830, inset 0 2px 0 0 #dd2830;
-}
-html .betPage .mainArea .contentBox .overview table tr th:last-child {
-  padding: 0 20px 0 0;
-  border-radius: 0 10px 0 0;
-  -webkit-box-shadow: inset -2px 0 0 0 #dd2830, inset 0 2px 0 0 #dd2830;
-          box-shadow: inset -2px 0 0 0 #dd2830, inset 0 2px 0 0 #dd2830;
-}
-html .betPage .mainArea .contentBox .overview table tr th:last-child p {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
-  text-align: right;
-}
-html .betPage .mainArea .contentBox .overview table tr th:last-child p span {
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 6px 4px 0 4px;
-  border-color: #ffffff transparent;
-  line-height: normal;
-  margin-left: 10px;
-}
-html .betPage .mainArea .contentBox .overview table tr th:nth-of-type(2) {
-  -webkit-box-shadow: inset 0 2px 0 0 #dd2830;
-          box-shadow: inset 0 2px 0 0 #dd2830;
-}
-html .betPage .mainArea .contentBox .overview table tr th:nth-of-type(2) p {
-  text-align: left;
-}
-html .betPage .mainArea .contentBox .overview table tr th p {
-  color: #ffffff;
-  line-height: 40px;
-}
-html .betPage .mainArea .contentBox .overview table tr td {
-  width: 15%;
-  padding: 0 10px;
-  -webkit-box-shadow: inset 2px 0 0 0 #dd2830, inset 0 -2px 0 0 #dd2830;
-          box-shadow: inset 2px 0 0 0 #dd2830, inset 0 -2px 0 0 #dd2830;
-}
-html .betPage .mainArea .contentBox .overview table tr td:last-child {
-  -webkit-box-shadow: inset 2px 0 0 0 #dd2830, inset -2px 0 0 0 #dd2830, inset 0 -2px 0 0 #dd2830;
-          box-shadow: inset 2px 0 0 0 #dd2830, inset -2px 0 0 0 #dd2830, inset 0 -2px 0 0 #dd2830;
-}
-html .betPage .mainArea .contentBox .overview table tr td:nth-of-type(odd) {
-  width: 10%;
-}
-html .betPage .mainArea .contentBox .overview table tr td:nth-of-type(odd) p {
-  text-align: center;
-}
-html .betPage .mainArea .contentBox .overview table tr td:nth-of-type(even) {
-  width: 20%;
-}
-html .betPage .mainArea .contentBox .overview table tr td:nth-of-type(even) p {
-  color: #ffffff;
-}
-html .betPage .mainArea .contentBox .overview table tr td div {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-html .betPage .mainArea .contentBox .overview table tr td div.teamBox {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: left;
-      -ms-flex-align: left;
-          align-items: left;
-  padding: 10px 0;
-}
-html .betPage .mainArea .contentBox .overview table tr td div.teamBox p {
-  text-align: left;
-  line-height: normal;
-}
-html .betPage .mainArea .contentBox .overview table tr td div.teamBox p:last-child {
-  color: #ffffff;
-}
-html .betPage .mainArea .contentBox .overview table tr td div.teamBox p:last-child span {
-  color: #66e123;
-  margin: 0 10px;
-}
-html .betPage .mainArea .contentBox .overview table tr td div .cancleBtn {
-  width: 90px;
-  height: 30px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background: #66e123;
-  color: #000000;
-  font-size: 0.9rem;
-  font-weight: bold;
-  border-radius: 50px;
-  margin-top: 3.5px;
-  cursor: pointer;
-}
-html .betPage .mainArea .contentBox .overview table tr td div .cancleBtn:hover, html .betPage .mainArea .contentBox .overview table tr td div .cancleBtn:active, html .betPage .mainArea .contentBox .overview table tr td div .cancleBtn.active {
-  background: #f3c01a;
-}
-html .betPage .mainArea .contentBox .overview table tr td p {
-  color: #dd2830;
-  font-size: 1rem;
-  line-height: 40px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-html .betPage .mainArea .contentBox .myRewrad {
-  width: 100%;
-  height: auto;
-  margin-top: 30px;
-}
-html .betPage .mainArea .contentBox .myRewrad .title {
-  background: #292929;
-  color: #f3c01a;
-  padding: 20px 5%;
-  margin-bottom: 20px;
-}
-html .betPage .mainArea .contentBox .myRewrad .rewrad_btn {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 20px;
-}
-html .betPage .mainArea .contentBox .myRewrad .rewrad_btn button {
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  background: #292929;
-  color: #b1b1b1;
-  border-radius: 20px;
-  padding: 10px 20px;
-}
-html .betPage .mainArea .contentBox .myRewrad .rewrad_btn button:hover, html .betPage .mainArea .contentBox .myRewrad .rewrad_btn button:active, html .betPage .mainArea .contentBox .myRewrad .rewrad_btn button.active {
-  background: #dd2830;
-  color: #ffffff;
-}
-html .betPage .mainArea .contentBox .myRewrad .rewrad_btn button:first-child {
-  margin-right: 10px;
-}
-html .betPage .mainArea .contentBox .myRewrad .reward_stauts {
-  color: #ffffff;
-  font-size: 0.8rem;
-  text-align: center;
-}
-html .betPage .mainArea .mobile_content {
-  display: none;
-  width: 100%;
-  height: auto;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  overflow: auto;
-}
-html .betPage .mainArea .mobile_content .innerBox {
-  display: none;
-  width: 100%;
-  padding: 0 20px 20px;
-}
-html .betPage .mainArea .mobile_content .innerBox.active {
-  display: block;
-}
-html .betPage .mainArea .mobile_content .innerBox.userHome .topBox {
-  width: 100%;
-  height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: transparent;
-  border: 1.5px solid #dd2830;
-  border-radius: 5px;
-  margin-top: 15px;
-}
-html .betPage .mainArea .mobile_content .innerBox.userHome .topBox .userBox {
-  width: 100%;
-  height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-bottom: 1px solid #dd2830;
-  padding: 3px 10px 5px;
-  position: relative;
-}
-html .betPage .mainArea .mobile_content .innerBox.userHome .topBox .userBox::before {
-  content: "";
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 5px 0px 5px 9px;
-  border-color: transparent transparent transparent #dd2830;
-  position: absolute;
-  right: 15px;
-}
-html .betPage .mainArea .mobile_content .innerBox.userHome .topBox .userBox .userPic {
-  width: 15vw;
-  height: 15vw;
-  border-radius: 100px;
-  overflow: hidden;
-  margin: 5px 20px 5px 0;
-}
-html .betPage .mainArea .mobile_content .innerBox.userHome .topBox .userBox p {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  color: #dd2830;
-  font-size: 3.8vw;
-  font-weight: bold;
-}
-html .betPage .mainArea .mobile_content .innerBox.userHome .topBox .userBox p span {
-  color: #ffffff;
-  font-size: 4vw;
-  margin-top: 10px;
-}
-html .betPage .mainArea .mobile_content .innerBox.userHome .topBox ul {
-  width: 100%;
-  height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-html .betPage .mainArea .mobile_content .innerBox.userHome .topBox ul li {
-  width: 25%;
-  height: auto;
-}
-html .betPage .mainArea .mobile_content .innerBox.userHome .topBox ul li:not(:first-child) .userNav_IC {
-  margin: 10px auto 15px;
-}
-html .betPage .mainArea .mobile_content .innerBox.userHome .topBox ul li.betLimit .userNav_IC {
-  background-position-y: 0%;
-  margin-top: 15px;
-}
-html .betPage .mainArea .mobile_content .innerBox.userHome .topBox ul li.rule .userNav_IC {
-  background-position-y: 34%;
-}
-html .betPage .mainArea .mobile_content .innerBox.userHome .topBox ul li.setting .userNav_IC {
-  background-position-y: 68%;
-}
-html .betPage .mainArea .mobile_content .innerBox.userHome .topBox ul li.goWeb .userNav_IC {
-  background-position-y: 100%;
-}
-html .betPage .mainArea .mobile_content .innerBox.userHome .topBox ul li a {
-  width: 100%;
-  height: auto;
-}
-html .betPage .mainArea .mobile_content .innerBox.userHome .topBox ul li a .userNav_IC {
-  width: 10vw;
-  height: 10vw;
-  margin: auto;
-}
-html .betPage .mainArea .mobile_content .innerBox.userHome .topBox ul li a p {
-  color: #dd2830;
-  font-size: 3.8vw;
-  text-align: center;
-  margin: 10px 0;
-}
-html .betPage .mainArea .mobile_content .innerBox.userHome .pageList {
-  width: 100%;
-  height: auto;
-  margin-top: 15px;
-}
-html .betPage .mainArea .mobile_content .innerBox.userHome .pageList li {
-  width: 100%;
-  height: auto;
-  background: #b8151b;
-  margin-bottom: 2vw;
-}
-html .betPage .mainArea .mobile_content .innerBox.userHome .pageList li a {
-  width: 100%;
-  height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0 10px;
-  position: relative;
-}
-html .betPage .mainArea .mobile_content .innerBox.userHome .pageList li a::before {
-  content: "";
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 4.5px 0px 4.5px 5px;
-  border-color: transparent transparent transparent #ffffff;
-  position: absolute;
-  right: 15px;
-}
-html .betPage .mainArea .mobile_content .innerBox.userHome .pageList li a.qa i {
-  background-position-y: 0%;
-}
-html .betPage .mainArea .mobile_content .innerBox.userHome .pageList li a.message_center i {
-  background-position-y: 25%;
-}
-html .betPage .mainArea .mobile_content .innerBox.userHome .pageList li a.cs_service i {
-  background-position-y: 50%;
-}
-html .betPage .mainArea .mobile_content .innerBox.userHome .pageList li a.feedback i {
-  background-position-y: 75%;
-}
-html .betPage .mainArea .mobile_content .innerBox.userHome .pageList li a.logout i {
-  background-position-y: 100%;
-}
-html .betPage .mainArea .mobile_content .innerBox.userHome .pageList li a i {
-  width: 5vw;
-  height: 5vw;
-}
-html .betPage .mainArea .mobile_content .innerBox.userHome .pageList li a p {
-  color: #ffffff;
-  font-size: 3.8vw;
-  line-height: 40px;
-  margin-left: 15px;
-}
-html .betPage .mainArea .mobile_content .innerBox.userDetail {
-  padding: 20px 0 58px;
-}
-html .betPage .mainArea .mobile_content .innerBox.userDetail .topLine {
-  padding: 0 20px 20px;
-  border: none;
-  position: relative;
-}
-html .betPage .mainArea .mobile_content .innerBox.userDetail .topLine::before {
-  content: "";
-  width: 90%;
-  height: 1px;
-  background: #b1b1b1;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-}
-html .betPage .mainArea .mobile_content .innerBox.userDetail .topLine .backBtn {
-  left: 20px;
-}
-html .betPage .mainArea .mobile_content .innerBox.userDetail .userBasic {
-  width: 100%;
-  height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-bottom: 1px solid #dd2830;
-  margin-top: 10px;
-  position: relative;
-}
-html .betPage .mainArea .mobile_content .innerBox.userDetail .userBasic .userBox {
-  width: 90%;
-  height: auto;
-  border: 1.5px solid #dd2830;
-  border-radius: 10px;
-  padding: 10px;
-  margin-bottom: 65px;
-  position: relative;
-}
-html .betPage .mainArea .mobile_content .innerBox.userDetail .userBasic .userBox .picblock {
-  width: 31%;
-  height: auto;
-  position: relative;
-}
-html .betPage .mainArea .mobile_content .innerBox.userDetail .userBasic .userBox .picblock .userPic {
-  width: 25vw;
-  height: 25vw;
-  border-radius: 100px;
-  overflow: hidden;
-  margin: 10px 0;
-}
-html .betPage .mainArea .mobile_content .innerBox.userDetail .userBasic .userBox .picblock .picEdit {
-  width: 35px;
-  height: 35px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background: azure;
-  border-radius: 50px;
-  border: 3px solid #b1b1b1;
-  position: absolute;
-  bottom: 7px;
-  right: -10px;
-}
-html .betPage .mainArea .mobile_content .innerBox.userDetail .userBasic .userBox .picblock .picEdit i {
-  width: 15px;
-  height: 15px;
-}
-html .betPage .mainArea .mobile_content .innerBox.userDetail .userBasic p {
-  color: #dd2830;
-  font-size: 4.5vw;
-  font-weight: bold;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-html .betPage .mainArea .mobile_content .innerBox.userDetail .userBasic p.acName {
-  position: absolute;
-  bottom: 12px;
-  left: 20px;
-}
-html .betPage .mainArea .mobile_content .innerBox.userDetail .userBasic p span {
-  color: #ffffff;
-  font-size: 4vw;
-  margin: 10px 0 0;
-}
-html .betPage .mainArea .mobile_content .innerBox.userDetail .userOther.edit input {
-  background: #280606;
-  border: 1px solid #dd2830;
-  border-radius: 30px;
-  color: #ffffff;
-  padding: 0 10px;
-  width: 87%;
-  font-size: 4.5vw;
-  padding: 8px 15px;
-  margin-bottom: 10px;
-  display: block;
-}
-html .betPage .mainArea .mobile_content .innerBox.userDetail .userOther.edit input::-webkit-input-placeholder {
-  color: #dd2830;
-}
-html .betPage .mainArea .mobile_content .innerBox.userDetail .userOther.edit input::-moz-placeholder {
-  color: #dd2830;
-}
-html .betPage .mainArea .mobile_content .innerBox.userDetail .userOther.edit input:-ms-input-placeholder {
-  color: #dd2830;
-}
-html .betPage .mainArea .mobile_content .innerBox.userDetail .userOther.edit input::-ms-input-placeholder {
-  color: #dd2830;
-}
-html .betPage .mainArea .mobile_content .innerBox.userDetail .userOther.edit input::placeholder {
-  color: #dd2830;
-}
-html .betPage .mainArea .mobile_content .innerBox.userDetail .userOther.edit .datebox {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-  margin-bottom: 10px;
-}
-html .betPage .mainArea .mobile_content .innerBox.userDetail .userOther.edit .datebox input {
-  margin: 0;
-}
-html .betPage .mainArea .mobile_content .innerBox.userDetail .userOther.edit .datebox i {
-  width: 5vw;
-  height: 5vw;
-  position: absolute;
-  top: 50%;
-  right: 18%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-html .betPage .mainArea .mobile_content .innerBox.userDetail .userOther.edit .sex {
-  width: 100%;
-  margin-bottom: 10px;
-  position: relative;
-}
-html .betPage .mainArea .mobile_content .innerBox.userDetail .userOther.edit .sex::before {
-  content: "";
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 6px 4px 0 4px;
-  border-color: #dd2830 transparent;
-  position: absolute;
-  top: 50%;
-  right: 63%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-html .betPage .mainArea .mobile_content .innerBox.userDetail .userOther.edit select {
-  display: block;
-  background: #280606;
-  border: 1px solid #dd2830;
-  border-radius: 30px;
-  color: #ffffff;
-  padding: 0 10px;
-  width: 43%;
-  color: #dd2830;
-  font-size: 4.5vw;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  padding: 9px 25px 9px 15px;
-}
-html .betPage .mainArea .mobile_content .innerBox.userDetail .userOther.edit select::-webkit-input-placeholder {
-  color: #dd2830;
-}
-html .betPage .mainArea .mobile_content .innerBox.userDetail .userOther.edit select::-moz-placeholder {
-  color: #dd2830;
-}
-html .betPage .mainArea .mobile_content .innerBox.userDetail .userOther.edit select:-ms-input-placeholder {
-  color: #dd2830;
-}
-html .betPage .mainArea .mobile_content .innerBox.userDetail .userOther.edit select::-ms-input-placeholder {
-  color: #dd2830;
-}
-html .betPage .mainArea .mobile_content .innerBox.userDetail .userOther.edit select::placeholder {
-  color: #dd2830;
-}
-html .betPage .mainArea .mobile_content .innerBox.userDetail .userOther.edit .editing {
-  color: #66e123;
-}
-html .betPage .mainArea .mobile_content .innerBox.userDetail .userOther.edit .remind {
-  display: none;
-}
-html .betPage .mainArea .mobile_content .innerBox.userDetail .userOther form {
-  width: 100%;
-  height: auto;
-}
-html .betPage .mainArea .mobile_content .innerBox.userDetail .userOther form label {
-  width: 100%;
-  height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  border-bottom: 1px solid #dd2830;
-  padding: 15px 20px;
-}
-html .betPage .mainArea .mobile_content .innerBox.userDetail .userOther form label:last-child {
-  border: none;
-}
-html .betPage .mainArea .mobile_content .innerBox.userDetail .userOther form label .inputTitle {
-  color: #dd2830;
-  font-size: 4.5vw;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-html .betPage .mainArea .mobile_content .innerBox.userDetail .userOther form label input {
-  display: none;
-}
-html .betPage .mainArea .mobile_content .innerBox.userDetail .userOther form label select {
-  display: none;
-}
-html .betPage .mainArea .mobile_content .innerBox.userDetail .userOther form label .submitBtn {
-  background: #dd2830;
-  color: #ffffff;
-  border-radius: 50px;
-  width: 46%;
-  height: 45px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  border: none;
-  font-size: 3.8vw;
-  margin: 0 auto 15px;
-}
-html .betPage .mainArea .mobile_content .innerBox.userDetail .userOther form label .userCurrent {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  color: #ffffff;
-  font-size: 4vw;
-}
-html .betPage .mainArea .mobile_content .innerBox.userDetail .userOther form label .userCurrent span {
-  color: #848484;
-  font-size: 3.8vw;
-  line-height: 20px;
-}
-html .betPage .mainArea .mobile_content .innerBox.userDetail .userOther form label .remind {
-  background: #292929;
-  padding: 20px;
-  margin-bottom: 20px;
-}
-html .betPage .mainArea .mobile_content .innerBox.userDetail .userOther form label .remind p {
-  color: #b8151b;
-  font-size: 3.8vw;
-  text-align: center;
-  line-height: 25px;
-}
-html .betPage .mainArea .mobile_content .innerBox.userDetail .userOther form label .remind p:first-child {
-  margin-bottom: 10px;
-}
-html .betPage .mainArea .mobile_content .innerBox.userDetail .userOther form label .remind p span {
-  color: #66e123;
-  text-decoration: underline;
-}
-html .betPage .mainArea .mobile_content .innerBox .topLine {
-  width: 100%;
-  height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 20px 0;
-  border-bottom: 1px solid #b1b1b1;
-  position: relative;
-}
-html .betPage .mainArea .mobile_content .innerBox .topLine .backBtn {
-  background: transparent;
-  border: 1px solid #dd2830;
-  border-radius: 30px;
-  color: #dd2830;
-  font-size: 4vw;
-  font-weight: bold;
-  padding: 5px 20px 6px 30px;
-  position: absolute;
-  left: 0;
-}
-html .betPage .mainArea .mobile_content .innerBox .topLine .backBtn:before {
-  content: "";
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 4.5px 5px 4.5px 0;
-  border-color: transparent #dd2830 transparent transparent;
-  margin-right: 10px;
-  position: absolute;
-  top: 50%;
-  left: 15px;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-html .betPage .mainArea .mobile_content .innerBox .topLine .pageName {
-  color: #ffffff;
-  font-size: 5vw;
-}
-@media only screen and (max-width: 1230px) {
-  html .betPage {
-    padding-left: 30px;
-  }
-}
-@media only screen and (max-width: 450px) {
-  html .betPage {
-    overflow: auto;
-    padding: 0;
-  }
-  html .betPage .mainArea {
-    padding: 0;
-  }
-  html .betPage .mainArea .contentBox {
-    display: none !important;
-  }
-  html .betPage .mainArea .mobile_content {
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
-  }
-  html .betPage .leftSide {
-    display: none;
   }
 }
 html footer {
@@ -5283,13 +5902,10 @@ html footer .mobileFooter {
   display: none;
   width: 100%;
   height: auto;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 html footer .mobileFooter li {
   width: 25%;
-  height: 100%;
+  height: auto;
 }
 html footer .mobileFooter li a {
   width: 100%;
@@ -5307,34 +5923,29 @@ html footer .mobileFooter li a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 2vw;
+  padding: 2vw 0;
 }
 html footer .mobileFooter li a i {
-  width: 6vw;
-  height: 8vw;
+  width: 7vw;
+  height: 7vw;
 }
 html footer .mobileFooter li a i.home {
-  background-position-y: 0%;
+  background-position-x: 25%;
 }
 html footer .mobileFooter li a i.winlose {
-  width: 10vw;
-  height: 8vw;
-  background-position-y: 0%;
-  margin-top: -2px;
+  background-position-x: 50%;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
 html footer .mobileFooter li a i.bet {
-  width: 7vw;
-  height: 8.5vw;
-  background-position-y: 0%;
+  background-position-x: 75%;
 }
 html footer .mobileFooter li a i.member {
-  width: 6.5vw;
-  height: 9vw;
-  background-position-y: 0%;
+  background-position-x: 100%;
 }
 html footer .mobileFooter li a p {
   color: #ff9b9f;
-  font-size: 1vw;
+  font-size: 3vw;
   margin-top: 5px;
 }
 html footer .mobileFooter li:active a, html footer .mobileFooter li.active a {
@@ -5481,5 +6092,27 @@ html footer .bottom {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  html body main {
+    padding-top: 100px;
+  }
+  html body main.innerPage .left {
+    display: block;
+  }
+}
+@media only screen and (max-width: 450px) {
+  html {
+    font-size: 4vw;
+  }
+  html body main {
+    padding-top: 0px;
+  }
+  html body main.inMain {
+    padding-top: 50px;
+  }
+  html body main.inMain .mainArea .searchBox {
+    margin-top: 0;
   }
 }

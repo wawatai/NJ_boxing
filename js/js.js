@@ -40,17 +40,20 @@ $(function(){
         .addClass("active")
         .find(".injected-svg")
         .css("display","block")
-        .find("p")
+        .siblings("svg")
+        .css("display","none")
+        .siblings("p")
         .text("閉じる");
     })
 
     $(document).on("click",".itemBox.nav.active",function(){
         $(this)
+        .removeClass("active")
         .find(".hamIC")
         .css("display","block")
-        .next()
+        .siblings("svg")
         .css("display","none")
-        .find("p")
+        .siblings("p")
         .text("メニュー");
     })
 })
@@ -94,16 +97,7 @@ $(function(){
             pauseOnMouseEnter: true,
         },
         slidesPerView: 1,
-        // spaceBetween: 30,
         breakpoints: {
-            // 1600: {
-            //     slidesPerView: 1,
-            //     spaceBetween: 30,
-            // },
-            // 1260: {
-            //     slidesPerView: 1,
-            //     spaceBetween: 30,
-            // },
             1000: {
                 slidesPerView: 1,
                 spaceBetween: 0,
@@ -121,26 +115,9 @@ $(function(){
 
     var swiper02 = new Swiper('.swiper02', {
         autoHeight: true,
-        // autoplay: {
-        //     delay: 1500,
-        //     disableOnInteraction: false,
-        //     pauseOnMouseEnter: true,
-        // },
+        slidesPerView: "auto",
         spaceBetween: 5,
-        // breakpoints: {
-            // 1600: {
-            //     slidesPerView: 1,
-            //     spaceBetween: 30,
-            // },
-            // 1260: {
-            //     slidesPerView: 1,
-            //     spaceBetween: 30,
-            // },
-            // 1000: {
-            //     slidesPerView: 1,
-            //     spaceBetween: 0,
-            // }
-        // },
+        freeMode: true,
         navigation: {
             nextEl: '.swiper-button-next02',
             prevEl: '.swiper-button-prev02',
@@ -149,27 +126,9 @@ $(function(){
 
     var swiper03 = new Swiper('.swiper03', {
         autoHeight: true,
-        // autoplay: {
-        //     delay: 1500,
-        //     disableOnInteraction: false,
-        //     pauseOnMouseEnter: true,
-        // },
-        // slidesPerView: 3,
+        slidesPerView: "auto",
         spaceBetween: 20,
-        // breakpoints: {
-            // 1600: {
-            //     slidesPerView: 1,
-            //     spaceBetween: 30,
-            // },
-            // 1260: {
-            //     slidesPerView: 1,
-            //     spaceBetween: 30,
-            // },
-            // 1000: {
-            //     slidesPerView: 1,
-            //     spaceBetween: 0,
-            // }
-        // },
+        freeMode: true,
         navigation: {
             nextEl: '.swiper-button-next03',
             prevEl: '.swiper-button-prev03',
@@ -224,11 +183,68 @@ $(function(){
         .addClass("active");
     })
 
-    //aside betRecordBtn
-    $(".center .right.active .betBlock .closeLeft").click(function(){
-        $(this)
-        .addClass("abc");
+    $(".mainArea .countryList ul .smallTitle").click(function(){
+        $(this).parent()
+        .toggleClass("active");
     })
+
+    //gBlock 投注
+    $(".center .gBlock .down .pkTeam .team button").click(function(){
+        $(this)
+        .toggleClass("active");
+
+        $(".center .right .betTypeList li:first-child")
+        .addClass("active");
+
+        $(".center .right .betBlock .betContent .noData")
+        .removeClass("display")
+        .next()
+        .addClass("display");
+    })
+
+    //right
+    $(".center .right .closeRight").click(function(){
+        $(this)
+        .closest(".right")
+        .removeClass("active");
+    })
+
+    $(".right .betBlock .betContent .betDetail .bdContent .top i").click(function(){
+        $(this)
+        .closest(".betDetail")
+        .remove();
+
+        if( $(".right .betBlock .betContent .betData .bdOuter").length() == 0 )
+        {
+            $(this)
+            .closest(".betData")
+            .removeClass("active")
+            .next()
+            .addClass("active");
+        }
+    })
+
+    $(".right .betBlock .betContent .changeBtn").click(function(){
+        $(this)
+        .toggleClass("active");
+    })
+
+    var ww = $(window).innerWidth();
+
+    if(ww < 1024)
+    {
+        var wh = $(window).innerHeight();
+
+        $(".left")
+        .css("height",""+ (wh - 90) +"");
+
+        $(window).resize(function(){
+            var wh = $(window).innerHeight();
+
+            $(".left")
+            .css("height",""+ (wh - 90) +"");
+        })
+    }
 })
 
 //betPage
@@ -237,6 +253,16 @@ $(function(){
         $(this)
         .closest("table")
         .toggleClass("active");
+    })
+
+    $(".betPage .mobile_content .history_bet .betData li").click(function(){
+        $(this)
+        .toggleClass("active");
+    })
+
+    $(".betPage .selectNav select").change(function(){
+        $(".betPage .betBox")
+        .toggleClass("display");
     })
 })
 
@@ -256,30 +282,12 @@ $(function(){
         }
     })
 
-    $(".myPage .mainArea .mobile_content .innerBox .userBox").click(function(){
-        $(this)
-        .closest(".innerBox")
-        .removeClass("active");
-
-        $(".myPage .mainArea .mobile_content .innerBox.userDetail")
-        .addClass("active");
-    })
-
     $(".myPage .mobile_content .userOther .submitBtn").click(function(){
         $(this)
         .closest(".userOther")
-        .addClass("edit")
+        .toggleClass("edit")
         .find(".submitBtn")
-        .text("変更を確認する");
-    })
-
-    $(".myPage .mobile_content .innerBox.userDetail .backBtn").click(function(){
-        if ($(this).closest(".userDetail").has(".active")) {
-            $(".myPage .mobile_content .innerBox.userDetail")
-            .removeClass("edit")
-            .find(".submitBtn")
-            .text("個人情報変更");
-        }
+        .toggleClass("display");
     })
 })
 

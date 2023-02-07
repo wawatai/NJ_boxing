@@ -452,78 +452,85 @@
                     </div>
                 </div>
                 <div class="mobile_content">
-                    <!-- 個人頁主頁 -->
-                    <div class="innerBox userHome">
+                    <!-- 會員資料 -->
+                    <div class="innerBox userDetail">
                         <div class="topLine">
-                            <button class="backBtn" onclick="window.location.href='../html/login_index.html'">戻る</button>
-                            <p class="pageName">マイページ</p>
+                            <button class="backBtn" onclick="window.location.href='./memberPage.html'">戻る</button>
+                            <p class="pageName">個人情報</p>
                         </div>
-                        <div class="topBox">
-                            <div class="userBox" onclick="window.location.href='./memberInfo.html'">
-                                <div class="userPic"></div>
-                                <p>qa8
-                                    <span>50,000</span>
-                                </p>
+                        <div class="userBasic">
+                            <div class="userBox">
+                                <p>プロフィールの写真</p>
+                                <div class="picblock">
+                                    <div class="userPic"></div>
+                                    <div class="picEdit">
+                                        <i></i>
+                                    </div>
+                                </div>
                             </div>
-                            <ul>
-                                <li class="betLimit">
-                                    <a href="./betLimit.html">
-                                        <i class="userNav_IC"></i>
-                                        <p>ベット<br>リミット</p>
-                                    </a>
-                                </li>
-                                <li class="rule">
-                                    <a href="javascript:;">
-                                        <i class="userNav_IC"></i>
-                                        <p>関連規則</p>
-                                    </a>
-                                </li>
-                                <li class="setting">
-                                    <a href="javascript:;">
-                                        <i class="userNav_IC"></i>
-                                        <p>設定</p>
-                                    </a>
-                                </li>
-                                <li class="goWeb">
-                                    <a href="javascript:;">
-                                        <i class="userNav_IC"></i>
-                                        <p>PC版</p>
-                                    </a>
-                                </li>
-                            </ul>
+                            <p class="acName">ユーザー名
+                                <span class="acID">qa08</span>
+                            </p>
                         </div>
-                        <ul class="pageList">
-                            <li>
-                                <a href="javascript:;" class="qa">
-                                    <i class="pageList_ic"></i>
-                                    <p>お問い合わせ</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:;" class="message_center">
-                                    <i class="pageList_ic"></i>
-                                    <p>メッセージセンター</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="./service.html" class="cs_service">
-                                    <i class="pageList_ic"></i>
-                                    <p>顧客サービス</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:;" class="feedback">
-                                    <i class="pageList_ic"></i>
-                                    <p>フィードバック</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="../index.html" class="logout">
-                                    <i class="pageList_ic"></i>
-                                    <p>ログアウト</p>
-                                </a>
-                            </li>
-                        </ul>
+                        <div class="userOther">
+                            <form>
+                                <label>
+                                    <p class="inputTitle">本名</p>
+                                    <input type="text" placeholder="小松 xxaa">
+                                    <p class="userCurrent">
+                                        <span class="editing">名義は銀行カードの名義人と同じでなければなりません。 そうでない場合、引き出しはできません。</span>
+                                    </p>
+                                </label>
+                                <label>
+                                    <p class="inputTitle">性別</p>
+                                    <div class="selectBox">
+                                        <select>
+                                            <option>性別を選ぶ</option>
+                                            <option>男</option>
+                                            <option>女</option>
+                                        </select>
+                                    </div>
+                                    <p class="userCurrent">
+                                        男
+                                        <!-- <span class="editing">選択されていない</span> -->
+                                    </p>
+                                </label>
+                                <label>
+                                    <p class="inputTitle">誕生日</p>
+                                    <div class="datebox">
+                                        <input type="text" placeholder="yyyy/mm/dd">
+                                        <i></i>
+                                    </div>
+                                    <p class="userCurrent">
+                                        <span class="editing">選択されていない</span>
+                                    </p>
+                                </label>
+                                <label>
+                                    <p class="inputTitle">携帯電話番号</p>
+                                    <input type="text">
+                                    <p class="userCurrent">
+                                        <span class="editing">アカウントのセキュリティを保護するために携帯電話番号 をバインドする</span>
+                                    </p>
+                                </label>
+                                <label>
+                                    <p class="inputTitle">Eメール</p>
+                                    <input type="text">
+                                    <p class="userCurrent">
+                                        <span class="editing">メールボックスをバインドしてアカウントのセキュリティを 保護する</span>
+                                    </p>
+                                </label>
+                                <label>
+                                    <div class="submitBtn display">個人情報変更</div>
+                                    <div class="submitBtn">変更を確認する</div>
+                                    <div class="remind">
+                                        <p>プライバシーとセキュリティのため、確認後に情報 を変更することはできません</p>
+                                        <p>サポートが必要な場合は、<br>
+                                            <span class="hightLight">カスタマー サービスにお問い合わせください</span>
+                                        </p>
+                                    </div>
+                                </label>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </section>
