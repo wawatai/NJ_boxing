@@ -428,87 +428,46 @@
                 </div>
                 <div class="mobile_content">
                     <!-- 設定 -->
-                    <div class="innerBox userSetting">
+                    <div class="innerBox settingACPW">
                         <div class="topLine">
                             <button class="backBtn" onclick="window.location.href='./memberPage.html'">戻る</button>
-                            <p class="pageName">設定</p>
+                            <p class="pageName">登録フォーム</p>
                         </div>
                         <form>
                             <label>
-                                <p class="inputTitle">オッズ形式</p>
-                                <div class="selectBox">
-                                    <select>
-                                        <option>---</option>
-                                        <option>+++</option>
-                                        <option>***</option>
-                                    </select>
+                                <p class="inputTitle">古いパスワード</p>
+                                <div class="databox">
+                                    <input type="text">
                                 </div>
                             </label>
                             <label>
-                                <p class="inputTitle">言語</p>
-                                <div class="selectBox">
-                                    <select>
-                                        <option>日本語</option>
-                                        <option>English</option>
-                                        <option>中文</option>
-                                    </select>
+                                <p class="inputTitle">新しいパスワード</p>
+                                <div class="databox">
+                                    <input type="text">
+                                    <i></i>
+                                </div>
+                                <div class="safeBlock">
+                                    <div class="textBox">
+                                        <p>パスワードの安全度</p>
+                                        <p>短すぎます</p>
+                                    </div>
+                                    <div class="line"></div>
                                 </div>
                             </label>
-                            <div class="checkBlock">
-                                <p class="inputTitle">お知らせ</p>
-                                <div class="choess">
-                                    <div class="itemName">
-                                        <p>Eメール</p>
-                                    </div>
-                                    <div class="item">
-                                        <div class="check">
-                                            <input type="checkbox">
-                                            <label value="yes">はい</label>
-                                        </div>
-                                        <div class="check">
-                                            <input type="checkbox" checked>
-                                            <label value="no">いいえ</label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="choess">
-                                    <div class="itemName">
-                                        <p>電話</p>
-                                    </div>
-                                    <div class="item">
-                                        <div class="check">
-                                            <input type="checkbox">
-                                            <label value="yes">はい</label>
-                                        </div>
-                                        <div class="check">
-                                            <input type="checkbox" checked>
-                                            <label value="no">いいえ</label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="checkBlock">
-                                <p class="inputTitle">お知らせ</p>
-                                <div class="choess">
-                                    <div class="itemName">
-                                        <p>プライベー<br>
-                                            トプロフィ<br>
-                                            ール</p>
-                                    </div>
-                                    <div class="item">
-                                        <div class="check">
-                                            <input type="checkbox">
-                                            <label value="yes">オン</label>
-                                        </div>
-                                        <div class="check">
-                                            <input type="checkbox" checked>
-                                            <label value="no">オフ</label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                             <label>
-                                <div class="submitBtn display">個人情報変更</div>
+                                <p class="inputTitle">パスワード確認</p>
+                                <div class="databox">
+                                    <input type="text">
+                                    <i></i>
+                                </div>
+                            </label>
+                            <label>
+                                <div class="remind">
+                                    <i></i>
+                                    <p>パスワードは8文字以上20文字以内で、大文字と
+                                        数字が各1文字以上含む形にして下さい。</p>
+                                </div>
+                                <div class="submitBtn display">パスワード変更</div>
                             </label>
                         </form>
                     </div>

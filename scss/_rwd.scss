@@ -1,0 +1,659 @@
+//rwd_1100 網頁用
+@media only screen and (max-width: 1100px) {
+    html {
+
+        body {
+
+            main {
+
+                &.innerPage {
+
+                    .leftSide {
+                        padding-left: 30px;
+                    }
+                }
+    
+                .center {
+    
+                    .mainArea {
+    
+                        .gameContent {
+                            
+                            .content {
+                                gap: 20px 10px;
+                
+                                .gBlock {
+                
+                                    .down {
+                                        padding: 12px;
+                                        
+                                        .pkTeam {
+                                            padding: 16px 12px;
+                
+                                            .outbox {
+                
+                                                .team {
+                
+                                                    .teamName {
+                                                        font-size: 12px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                
+                        .swiper03 {
+                
+                            .swiper-wrapper {
+                
+                                .swiper-slide {
+                
+                                    .gBlock {
+                
+                                        .down {
+                                            padding: 12px;
+                                            
+                                            .pkTeam {
+                                                padding: 16px 12px;
+                
+                                                .outbox {
+                
+                                                    .team {
+                
+                                                        .teamName {
+                                                            font-size: 12px;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//rwd_1024 網頁用
+@media only screen and (max-width: 1024px) {
+    html {
+
+        body {
+
+            main {
+                //上層增加間距 10px
+                padding-top: 100px;
+    
+                &.innerPage {
+    
+                    .center {
+    
+                        //內頁開啟.left
+                        .left {
+                            display: block;
+                        }
+                    }
+                }
+    
+                .center {
+    
+                    //.left滑動效果
+                    .left {
+                        width: 0;
+                        height: 100%;
+                        position: fixed;
+                        top: 90px;
+                        left: 0;
+                        z-index: 90;
+            
+                        &.active {
+                            width: 100%;
+                            background: $filter;
+                        }
+            
+                        .navTitle {
+                            width: 250px;
+                            background: $mainBG_2;
+                            padding-left: 10px;
+                        }
+            
+                        ul {
+                            width: 250px;
+                            height: calc(100% - (1.2rem + 20px));
+                            overflow-y: auto;
+                            overscroll-behavior: none;
+            
+                            &::-webkit-scrollbar {
+                                width: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//rwd_840 網頁用
+@media only screen and (max-width: 840px) {
+    html {
+
+        body {
+
+            main {
+
+                .center {
+
+                    .mainArea {
+
+                        .gameContent {
+                
+                            .content {
+                                grid-template-columns: repeat(1,1fr);
+                
+                                .gBlock {
+                                    
+                                    .down {
+                                        display: flex;
+                                        justify-content: space-between;
+                                        padding: 16px;
+                
+                                        .infoDetail {
+                                            width: 48%;
+                                            order: 1;
+                
+                                            .more {
+                                                display: block;
+                                                margin: 20px auto 0;
+                                                position: static;
+                                                transform: translateX(0);
+                
+                                                &:hover,&:active,&.active {
+                                                    transform: translateY(2px);
+                                                }
+                                            }
+                                        }
+                
+                                        .pkTeam {
+                                            width: 48%;
+                                            order: 0;
+                                            margin: 0;
+                
+                                            .winRWD {
+                                                display: block;
+                                            }
+                                        }
+                
+                                        .winner {
+                                            display: none;
+                                        }
+                                    }
+                                    
+                                }
+                            }
+                        }
+                
+                        .swiper03 {
+                
+                            .swiper-wrapper {
+                
+                                .swiper-slide {
+                                    width: 100% !important;
+                
+                                    .gBlock {
+                                    
+                                        .down {
+                                            display: flex;
+                                            justify-content: space-between;
+                                            padding: 1rem;
+                
+                                            .infoDetail {
+                                                width: 48%;
+                                                order: 1;
+                
+                                                .more {
+                                                    display: block;
+                                                    margin: 20px auto 0;
+                                                    position: static;
+                                                    transform: translateX(0);
+                
+                                                    &:hover,&:active,&.active {
+                                                        transform: translateY(2px);
+                                                    }
+                                                }
+                                            }
+                
+                                            .pkTeam {
+                                                width: 48%;
+                                                order: 0;
+                                                margin: 0;
+                
+                                                .winRWD {
+                                                    display: block;
+                                                }
+                                            }
+                
+                                            .winner {
+                                                display: none;
+                                            }
+                                        }
+                                        
+                                    }
+                                }
+                            }
+                        }
+                    }
+                
+                    .right {
+                        width: 0;
+                        height: calc(100% - 90px);
+                        position: fixed;
+                        top: 90px;
+                        left: 0;
+                        z-index: 110;
+                
+                        &.active {
+                            width: 100%;
+                        }
+                
+                        .betBlock {
+                            width: 100%;
+                            height: 100%;
+                            border-radius: 0;
+                            display: flex;
+                            flex-direction: column;
+                
+                            .topList {
+                                flex-shrink: 0;
+                
+                                li {
+                                    width: 25%;
+                                    
+                                    p {
+                                        width: 100%;
+                                        text-align: center;
+                                    }
+                                }
+                            }
+                
+                            .betTypeList {
+                                padding: 0;
+                                flex-shrink: 0;
+                
+                                li {
+                                    width: 34%;
+                
+                                    a {
+                                        width: 100%;
+                                        justify-content: center;
+                                    }
+                                }
+                            }
+                
+                            .betContent {
+                                height: 100%;
+                            }
+                
+                            .smallFilter {
+                                height: calc(100% - 47px);
+                            }
+                
+                            .closeRight {
+                                display: flex;
+                                flex-shrink: 0;
+                            }
+                        }
+                    }
+                    
+                    aside {
+                
+                        &.betRecordBtn {
+                            display: flex;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+//rwd_500 網頁最小寬 + 手機用
+@media only screen and (max-width: 500px) {
+    html {
+        //rem繼承
+        font-size: 4vw;
+
+        body {
+
+            main {
+                //手機版未登入
+                padding-top: 0px;
+
+                //手機版登入後
+                &.inMain {
+                    padding-top: 50px;
+
+                    .mainArea {
+
+                        .searchBox {
+                            margin-top: 0;
+                        }
+                    }
+                }
+
+                .center {
+
+                    //左移除
+                    .left,
+                    .leftSide {
+                        display: none;
+                    }
+
+                    .mainArea {
+                        //網頁版內縮移除
+                        padding: 0;
+
+                        //首頁內縮
+                        &.index{
+                            padding: 2vw 2vw 22vw;
+
+                            //首頁專用上搜尋列
+                            .searchBox {
+                                display: flex;
+                            }
+
+                            //跑馬燈移除
+                            .swiper {
+                                display: none;
+                            }
+
+                            //調整首頁nav大小
+                            .middleNav {
+
+                                .topnav {
+                
+                                    li {
+                                        width: 25%;
+                                    }
+                                }
+                            }
+
+                            //調整中選項大小
+                            .typselect{
+
+                                &.swiper02 {
+                                    padding: 4vw 3vw;
+
+                                    .swiper-wrapper {
+
+                                        .swiper-slide {
+
+                                            .gameTypeBox {
+                                                padding: 0 3vw 3vw;
+
+                                                .picBox {
+                                                    width: 16vw;
+                                                    height: 16vw;
+
+                                                    svg {
+                                                        transform: scale(1.5);
+                                                    }
+                                                }
+
+                                                p {
+                                                    max-width: 16vw;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            //首頁調整下選單樣式
+                            .gameContent {
+                                padding: 4vw 0 0;
+
+                                .content {
+                                    gap: 4vw 0;
+                                    padding: 4vw 0;
+
+                                    .gBlock {
+
+                                        .down {
+                                            padding: 2vw;
+
+                                            .infoDetail {
+                                                width: 100%;
+                                            }
+
+                                            .pkTeam {
+                                                width: 58%;
+                                                padding: 7vw 4vw 4vw;
+                                                margin-right: 4vw;
+                                                flex-shrink: 0;
+
+                                                .outbox {
+
+                                                    .team {
+
+                                                        svg {
+                                                            transform: scale(1.5);
+                                                            margin: 0 0 5vw;
+                                                        }
+
+                                                        .teamName {
+                                                            font-size: 1rem;
+                                                            line-height: 1.5rem;
+                                                            margin-bottom: 4vw;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .swiper03 {
+
+                                .swiper-wrapper {
+
+                                    .swiper-slide {
+
+                                        .gBlock {
+
+                                            .down {
+                                                padding: 2vw;
+
+                                                .infoDetail {
+                                                    width: 100%;
+                                                }
+        
+                                                .pkTeam {
+                                                    width: 58%;
+                                                    padding: 7vw 4vw 4vw;
+                                                    margin-right: 4vw;
+                                                    flex-shrink: 0;
+        
+                                                    .outbox {
+        
+                                                        .team {
+        
+                                                            svg {
+                                                                transform: scale(1.5);
+                                                                margin: 0 0 5vw;
+                                                            }
+        
+                                                            .teamName {
+                                                                font-size: 1rem;
+                                                                line-height: 1.5rem;
+                                                                margin-bottom: 4vw;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        //手機版切換時內容切換
+                        .contentBox {
+                            display: none;
+                        }
+                        .mobile_content {
+                            display: block;
+                        }
+                    }
+
+                    //右樣式
+                    .right {
+                        display: none;
+                        height: 100%;
+                        top: 0;
+                        z-index: 999;
+
+                        &.active {
+                            display: block;
+                        }
+
+                        .betBlock {
+                            background: $mainColor_2;
+
+                            .topList {
+
+                                li {
+
+                                    &.active {
+
+                                        &::before {
+                                            background: $mainColor;
+                                        }
+
+                                        p {
+                                            color: $mainColor;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .betTypeList {
+                                background: $subColor_3;
+
+                                li {
+
+                                    &:hover,&:active,&.active {
+
+                                        a {
+
+                                            &::before {
+                                                background: $mainColor_7;
+                                            }
+
+                                            p {
+                                                color: $mainColor_7;
+                                            }
+                                        }
+                                    }
+
+                                    a {
+
+                                        p {
+                                            color: $subColor_5;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .betContent {
+
+                                .betData {
+
+                                    .bdOuter {
+                                        max-height: 60vh;
+
+                                        .betDetail {
+                                            border-color: $mainColor_6;
+
+                                            .bdTitle {
+                                                background: $mainColor_4;
+
+                                                svg {
+                                                    fill: $subColor_9;
+                                                }
+                                            }
+
+                                            .bdContent {
+
+                                                .top {
+                                                    border-color: $mainColor_6;
+            
+                                                    span {
+                                                        background: $subColor_11;
+                                                    }
+                                                }
+            
+                                                .pkTeam {
+                                                    background: $mainColor_4;
+            
+                                                    .VS {
+                                                        color: $mainColor_3;
+                                                    }
+                                                }
+                                                
+                                                .wintext {
+                                                    color: $mainColor_6;
+                                                }
+            
+                                                .betwin {
+                                                    border-color: $mainColor_6;
+            
+                                                    p {
+                                                        color: $mainColor_6;
+                                                    }
+                                                }
+            
+                                                .betamount {
+                                                    border-color: $mainColor_7;
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    .betTotal {
+
+                                        li {
+
+                                            p {
+                                                color: $mainColor_3;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .closeRight {
+                                background: $mainColor_7;
+                            }
+                        }
+                    }
+
+                    //右下懸浮
+                    .betRecordBtn {
+                        bottom: 22vw;
+                        right: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

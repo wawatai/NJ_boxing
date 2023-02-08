@@ -64,6 +64,16 @@ header .top li i {
   background-size: contain;
 }
 
+.settingACPW .databox i {
+  background: url("../image/icon/eye_ic.png") no-repeat center;
+  background-size: contain;
+}
+
+.settingACPW .remind i {
+  background: url("../image/icon/remind_green.png") no-repeat center;
+  background-size: contain;
+}
+
 footer .flag.jp {
   background: url("../image/icon/flag/JP.svg") no-repeat center;
   background-size: contain;
@@ -3675,7 +3685,7 @@ html .servicePage .mainArea .mobile_content .innerBox .otherLink::before {
 html .servicePage .mainArea .mobile_content .innerBox .otherLink i {
   width: 7vw;
   height: 7vw;
-  background-position-y: 75%;
+  background-position-y: 50%;
   margin-right: 4vw;
 }
 html .servicePage .mainArea .mobile_content .innerBox .otherLink p {
@@ -3923,6 +3933,1165 @@ html .servicePage .mainArea .mobile_content .innerBox .feebackBox button {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0 auto;
+}
+html .myPage .mainArea .contentBox {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+html .myPage .mainArea .contentBox .pageTitle {
+  color: #f3c01a;
+  font-size: 1.3rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 1px;
+  padding: 0 0 15px;
+  position: relative;
+  width: 100%;
+  margin-bottom: 50px;
+}
+html .myPage .mainArea .contentBox .pageTitle::before {
+  content: "";
+  width: 30%;
+  height: 5px;
+  background: #851316;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+}
+html .myPage .mainArea .contentBox .pageTitle::after {
+  content: "";
+  width: 100%;
+  height: 5px;
+  background: #b8151b;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+html .myPage .mainArea .contentBox .overview {
+  width: 90%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #414141;
+  padding: 50px;
+}
+html .myPage .mainArea .contentBox .overview table {
+  width: 100%;
+  height: auto;
+}
+html .myPage .mainArea .contentBox .overview table tr:last-child {
+  border-top: 1px solid #b1b1b1;
+}
+html .myPage .mainArea .contentBox .overview table tr:last-child td:first-child p {
+  text-align: right;
+}
+html .myPage .mainArea .contentBox .overview table tr:last-child td p {
+  line-height: 40px;
+}
+html .myPage .mainArea .contentBox .overview table tr td {
+  width: 15%;
+}
+html .myPage .mainArea .contentBox .overview table tr td:not(:first-child) p {
+  text-align: right;
+}
+html .myPage .mainArea .contentBox .overview table tr td:first-child {
+  width: 70%;
+}
+html .myPage .mainArea .contentBox .overview table tr td:first-child p {
+  padding: 0 10px;
+}
+html .myPage .mainArea .contentBox .overview table tr td:last-child p {
+  padding: 0 10px;
+}
+html .myPage .mainArea .contentBox .overview table tr td p {
+  color: #b1b1b1;
+  font-size: 0.9rem;
+  line-height: 40px;
+  padding: 0 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+html .myPage .mainArea .contentBox .myRewrad {
+  width: 100%;
+  height: auto;
+  margin-top: 30px;
+}
+html .myPage .mainArea .contentBox .myRewrad .title {
+  background: #292929;
+  color: #f3c01a;
+  padding: 20px 5%;
+  margin-bottom: 20px;
+}
+html .myPage .mainArea .contentBox .myRewrad .rewrad_btn {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 20px;
+}
+html .myPage .mainArea .contentBox .myRewrad .rewrad_btn button {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  background: #292929;
+  color: #b1b1b1;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+html .myPage .mainArea .contentBox .myRewrad .rewrad_btn button:hover, html .myPage .mainArea .contentBox .myRewrad .rewrad_btn button:active, html .myPage .mainArea .contentBox .myRewrad .rewrad_btn button.active {
+  background: #dd2830;
+  color: #ffffff;
+}
+html .myPage .mainArea .contentBox .myRewrad .rewrad_btn button:first-child {
+  margin-right: 10px;
+}
+html .myPage .mainArea .contentBox .myRewrad .reward_stauts {
+  color: #ffffff;
+  font-size: 0.8rem;
+  text-align: center;
+}
+html .myPage .mainArea .mobile_content {
+  display: none;
+  width: 100%;
+  height: auto;
+}
+html .myPage .mainArea .mobile_content .innerBox {
+  width: 100%;
+  padding: 0 4vw 4vw;
+}
+html .myPage .mainArea .mobile_content .innerBox.userSetting {
+  padding: 0 0 22vw;
+}
+html .myPage .mainArea .mobile_content .innerBox.userSetting form {
+  width: 100%;
+  height: auto;
+}
+html .myPage .mainArea .mobile_content .innerBox.userSetting form label {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #dd2830;
+  padding: 4vw 5vw;
+}
+html .myPage .mainArea .mobile_content .innerBox.userSetting form label:last-child {
+  border: none;
+}
+html .myPage .mainArea .mobile_content .innerBox.userSetting form label .inputTitle {
+  color: #dd2830;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 2vw;
+}
+html .myPage .mainArea .mobile_content .innerBox.userSetting form label .selectBox {
+  display: inline-block;
+  width: 80%;
+  height: auto;
+  position: relative;
+  margin-bottom: 10px;
+}
+html .myPage .mainArea .mobile_content .innerBox.userSetting form label .selectBox::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 0px 5px 9px;
+  border-color: transparent transparent transparent #dd2830;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  pointer-events: none;
+  -webkit-transform: translateY(-50%) rotate(90deg);
+          transform: translateY(-50%) rotate(90deg);
+  right: 10%;
+}
+html .myPage .mainArea .mobile_content .innerBox.userSetting form label .selectBox select {
+  width: 100%;
+  height: auto;
+  background: #280606;
+  border: 1px solid #dd2830;
+  border-radius: 30px;
+  color: #dd2830;
+  font-size: 1rem;
+  padding: 8px 30px 10px 12px;
+  display: block;
+  color: #ffffff;
+}
+html .myPage .mainArea .mobile_content .innerBox.userSetting form label input {
+  width: 87%;
+  height: auto;
+  background: #280606;
+  border: 1px solid #dd2830;
+  border-radius: 30px;
+  color: #ffffff;
+  font-size: 1rem;
+  padding: 8px 15px;
+  display: block;
+  margin-bottom: 10px;
+}
+html .myPage .mainArea .mobile_content .innerBox.userSetting form label input::-webkit-input-placeholder {
+  color: #dd2830;
+}
+html .myPage .mainArea .mobile_content .innerBox.userSetting form label input::-moz-placeholder {
+  color: #dd2830;
+}
+html .myPage .mainArea .mobile_content .innerBox.userSetting form label input:-ms-input-placeholder {
+  color: #dd2830;
+}
+html .myPage .mainArea .mobile_content .innerBox.userSetting form label input::-ms-input-placeholder {
+  color: #dd2830;
+}
+html .myPage .mainArea .mobile_content .innerBox.userSetting form label input::placeholder {
+  color: #dd2830;
+}
+html .myPage .mainArea .mobile_content .innerBox.userSetting form label label {
+  width: 100%;
+  color: #ffffff;
+  border: none;
+  padding: 3vw 0;
+}
+html .myPage .mainArea .mobile_content .innerBox.userSetting form label .submitBtn {
+  width: 50%;
+  height: 45px;
+  background: #dd2830;
+  border-radius: 50px;
+  border: none;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #cf0505;
+  display: none;
+  margin: 0 auto 4vw;
+}
+html .myPage .mainArea .mobile_content .innerBox.userSetting form label .submitBtn.display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+html .myPage .mainArea .mobile_content .innerBox.userSetting form .checkBlock {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #dd2830;
+  padding: 4vw 5vw;
+}
+html .myPage .mainArea .mobile_content .innerBox.userSetting form .checkBlock .inputTitle {
+  color: #dd2830;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 5vw;
+}
+html .myPage .mainArea .mobile_content .innerBox.userSetting form .checkBlock .choess {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 5vw;
+}
+html .myPage .mainArea .mobile_content .innerBox.userSetting form .checkBlock .choess:last-of-type {
+  margin: 0;
+}
+html .myPage .mainArea .mobile_content .innerBox.userSetting form .checkBlock .choess .itemName {
+  width: 40%;
+  height: auto;
+}
+html .myPage .mainArea .mobile_content .innerBox.userSetting form .checkBlock .choess .itemName p {
+  color: #ffffff;
+}
+html .myPage .mainArea .mobile_content .innerBox.userSetting form .checkBlock .choess .item {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+html .myPage .mainArea .mobile_content .innerBox.userSetting form .checkBlock .choess .item .check {
+  width: 50%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html .myPage .mainArea .mobile_content .innerBox.userSetting form .checkBlock .choess .item .check input {
+  width: 20px;
+  height: 20px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  border-radius: 50px;
+  border: 1px solid #ffffff;
+  margin-right: 10px;
+}
+html .myPage .mainArea .mobile_content .innerBox.userSetting form .checkBlock .choess .item .check input:checked {
+  background-color: #66e123;
+  -webkit-box-shadow: inset -0.5px -0.5px 1px #000000, inset 0.5px 0.5px 1px #000000;
+          box-shadow: inset -0.5px -0.5px 1px #000000, inset 0.5px 0.5px 1px #000000;
+}
+html .myPage .mainArea .mobile_content .innerBox.userSetting form .checkBlock .choess .item .check label {
+  color: #ffffff;
+  white-space: nowrap;
+  padding: 0;
+}
+html .myPage .mainArea .mobile_content .innerBox.userSetting .topLine {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 1px solid #b1b1b1;
+  position: relative;
+  padding: 4vw 0;
+}
+html .myPage .mainArea .mobile_content .innerBox.userSetting .topLine button {
+  background: transparent;
+  border: 1px solid #dd2830;
+  border-radius: 30px;
+  color: #dd2830;
+  font-size: 1rem;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  padding: 5px 20px 6px 30px;
+}
+html .myPage .mainArea .mobile_content .innerBox.userSetting .topLine button:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 4px 5px 4px 0;
+  border-color: transparent #dd2830 transparent transparent;
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  margin-right: 10px;
+}
+html .myPage .mainArea .mobile_content .innerBox.userSetting .topLine p {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+html .myPage .mainArea .mobile_content .innerBox.userSetting .topLine button {
+  left: 20px;
+}
+html .myPage .mainArea .contentBox {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+html .myPage .mainArea .contentBox .pageTitle {
+  color: #f3c01a;
+  font-size: 1.3rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 1px;
+  padding: 0 0 15px;
+  position: relative;
+  width: 100%;
+  margin-bottom: 50px;
+}
+html .myPage .mainArea .contentBox .pageTitle::before {
+  content: "";
+  width: 30%;
+  height: 5px;
+  background: #851316;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+}
+html .myPage .mainArea .contentBox .pageTitle::after {
+  content: "";
+  width: 100%;
+  height: 5px;
+  background: #b8151b;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+html .myPage .mainArea .contentBox .overview {
+  width: 90%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #414141;
+  padding: 50px;
+}
+html .myPage .mainArea .contentBox .overview table {
+  width: 100%;
+  height: auto;
+}
+html .myPage .mainArea .contentBox .overview table tr:last-child {
+  border-top: 1px solid #b1b1b1;
+}
+html .myPage .mainArea .contentBox .overview table tr:last-child td:first-child p {
+  text-align: right;
+}
+html .myPage .mainArea .contentBox .overview table tr:last-child td p {
+  line-height: 40px;
+}
+html .myPage .mainArea .contentBox .overview table tr td {
+  width: 15%;
+}
+html .myPage .mainArea .contentBox .overview table tr td:not(:first-child) p {
+  text-align: right;
+}
+html .myPage .mainArea .contentBox .overview table tr td:first-child {
+  width: 70%;
+}
+html .myPage .mainArea .contentBox .overview table tr td:first-child p {
+  padding: 0 10px;
+}
+html .myPage .mainArea .contentBox .overview table tr td:last-child p {
+  padding: 0 10px;
+}
+html .myPage .mainArea .contentBox .overview table tr td p {
+  color: #b1b1b1;
+  font-size: 0.9rem;
+  line-height: 40px;
+  padding: 0 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+html .myPage .mainArea .contentBox .myRewrad {
+  width: 100%;
+  height: auto;
+  margin-top: 30px;
+}
+html .myPage .mainArea .contentBox .myRewrad .title {
+  background: #292929;
+  color: #f3c01a;
+  padding: 20px 5%;
+  margin-bottom: 20px;
+}
+html .myPage .mainArea .contentBox .myRewrad .rewrad_btn {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 20px;
+}
+html .myPage .mainArea .contentBox .myRewrad .rewrad_btn button {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  background: #292929;
+  color: #b1b1b1;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+html .myPage .mainArea .contentBox .myRewrad .rewrad_btn button:hover, html .myPage .mainArea .contentBox .myRewrad .rewrad_btn button:active, html .myPage .mainArea .contentBox .myRewrad .rewrad_btn button.active {
+  background: #dd2830;
+  color: #ffffff;
+}
+html .myPage .mainArea .contentBox .myRewrad .rewrad_btn button:first-child {
+  margin-right: 10px;
+}
+html .myPage .mainArea .contentBox .myRewrad .reward_stauts {
+  color: #ffffff;
+  font-size: 0.8rem;
+  text-align: center;
+}
+html .myPage .mainArea .mobile_content {
+  display: none;
+  width: 100%;
+  height: auto;
+}
+html .myPage .mainArea .mobile_content .innerBox {
+  width: 100%;
+  padding: 0 4vw 4vw;
+}
+html .myPage .mainArea .mobile_content .innerBox.overView {
+  padding: 0 0 22vw;
+}
+html .myPage .mainArea .mobile_content .innerBox.overView ul {
+  width: 100%;
+  height: auto;
+  padding: 4vw;
+  border-bottom: 1px solid #cf0505;
+}
+html .myPage .mainArea .mobile_content .innerBox.overView ul li {
+  width: 100%;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+html .myPage .mainArea .mobile_content .innerBox.overView ul li p {
+  color: #ffffff;
+  font-size: 1rem;
+}
+html .myPage .mainArea .mobile_content .innerBox.overView ul li p:last-child {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+html .myPage .mainArea .mobile_content .innerBox.overView .topLine {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 1px solid #b1b1b1;
+  position: relative;
+  padding: 4vw 0;
+}
+html .myPage .mainArea .mobile_content .innerBox.overView .topLine button {
+  background: transparent;
+  border: 1px solid #dd2830;
+  border-radius: 30px;
+  color: #dd2830;
+  font-size: 1rem;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  padding: 5px 20px 6px 30px;
+}
+html .myPage .mainArea .mobile_content .innerBox.overView .topLine button:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 4px 5px 4px 0;
+  border-color: transparent #dd2830 transparent transparent;
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  margin-right: 10px;
+}
+html .myPage .mainArea .mobile_content .innerBox.overView .topLine p {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+html .myPage .mainArea .mobile_content .innerBox.overView .topLine button {
+  left: 20px;
+}
+html .myPage .mainArea .contentBox {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+html .myPage .mainArea .contentBox .pageTitle {
+  color: #f3c01a;
+  font-size: 1.3rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 1px;
+  padding: 0 0 15px;
+  position: relative;
+  width: 100%;
+  margin-bottom: 50px;
+}
+html .myPage .mainArea .contentBox .pageTitle::before {
+  content: "";
+  width: 30%;
+  height: 5px;
+  background: #851316;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+}
+html .myPage .mainArea .contentBox .pageTitle::after {
+  content: "";
+  width: 100%;
+  height: 5px;
+  background: #b8151b;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+html .myPage .mainArea .contentBox .overview {
+  width: 90%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #414141;
+  padding: 50px;
+}
+html .myPage .mainArea .contentBox .overview table {
+  width: 100%;
+  height: auto;
+}
+html .myPage .mainArea .contentBox .overview table tr:last-child {
+  border-top: 1px solid #b1b1b1;
+}
+html .myPage .mainArea .contentBox .overview table tr:last-child td:first-child p {
+  text-align: right;
+}
+html .myPage .mainArea .contentBox .overview table tr:last-child td p {
+  line-height: 40px;
+}
+html .myPage .mainArea .contentBox .overview table tr td {
+  width: 15%;
+}
+html .myPage .mainArea .contentBox .overview table tr td:not(:first-child) p {
+  text-align: right;
+}
+html .myPage .mainArea .contentBox .overview table tr td:first-child {
+  width: 70%;
+}
+html .myPage .mainArea .contentBox .overview table tr td:first-child p {
+  padding: 0 10px;
+}
+html .myPage .mainArea .contentBox .overview table tr td:last-child p {
+  padding: 0 10px;
+}
+html .myPage .mainArea .contentBox .overview table tr td p {
+  color: #b1b1b1;
+  font-size: 0.9rem;
+  line-height: 40px;
+  padding: 0 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+html .myPage .mainArea .contentBox .myRewrad {
+  width: 100%;
+  height: auto;
+  margin-top: 30px;
+}
+html .myPage .mainArea .contentBox .myRewrad .title {
+  background: #292929;
+  color: #f3c01a;
+  padding: 20px 5%;
+  margin-bottom: 20px;
+}
+html .myPage .mainArea .contentBox .myRewrad .rewrad_btn {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 20px;
+}
+html .myPage .mainArea .contentBox .myRewrad .rewrad_btn button {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  background: #292929;
+  color: #b1b1b1;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+html .myPage .mainArea .contentBox .myRewrad .rewrad_btn button:hover, html .myPage .mainArea .contentBox .myRewrad .rewrad_btn button:active, html .myPage .mainArea .contentBox .myRewrad .rewrad_btn button.active {
+  background: #dd2830;
+  color: #ffffff;
+}
+html .myPage .mainArea .contentBox .myRewrad .rewrad_btn button:first-child {
+  margin-right: 10px;
+}
+html .myPage .mainArea .contentBox .myRewrad .reward_stauts {
+  color: #ffffff;
+  font-size: 0.8rem;
+  text-align: center;
+}
+html .myPage .mainArea .mobile_content {
+  display: none;
+  width: 100%;
+  height: auto;
+}
+html .myPage .mainArea .mobile_content .innerBox {
+  width: 100%;
+  padding: 0 4vw 4vw;
+}
+html .myPage .mainArea .mobile_content .innerBox.settingACPW {
+  padding: 0 0 22vw;
+}
+html .myPage .mainArea .mobile_content .innerBox.settingACPW form {
+  width: 100%;
+  height: auto;
+}
+html .myPage .mainArea .mobile_content .innerBox.settingACPW form label {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #dd2830;
+  padding: 4vw 5vw;
+}
+html .myPage .mainArea .mobile_content .innerBox.settingACPW form label:last-child {
+  border: none;
+}
+html .myPage .mainArea .mobile_content .innerBox.settingACPW form label .inputTitle {
+  color: #dd2830;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 2vw;
+}
+html .myPage .mainArea .mobile_content .innerBox.settingACPW form label .databox {
+  width: auto;
+  height: auto;
+  position: relative;
+}
+html .myPage .mainArea .mobile_content .innerBox.settingACPW form label .databox input {
+  width: 100%;
+  height: auto;
+  background: #280606;
+  border: 1px solid #dd2830;
+  border-radius: 30px;
+  color: #ffffff;
+  font-size: 1rem;
+  padding: 8px 15px;
+  display: block;
+  margin-bottom: 10px;
+}
+html .myPage .mainArea .mobile_content .innerBox.settingACPW form label .databox input::-webkit-input-placeholder {
+  color: #dd2830;
+}
+html .myPage .mainArea .mobile_content .innerBox.settingACPW form label .databox input::-moz-placeholder {
+  color: #dd2830;
+}
+html .myPage .mainArea .mobile_content .innerBox.settingACPW form label .databox input:-ms-input-placeholder {
+  color: #dd2830;
+}
+html .myPage .mainArea .mobile_content .innerBox.settingACPW form label .databox input::-ms-input-placeholder {
+  color: #dd2830;
+}
+html .myPage .mainArea .mobile_content .innerBox.settingACPW form label .databox input::placeholder {
+  color: #dd2830;
+}
+html .myPage .mainArea .mobile_content .innerBox.settingACPW form label .databox i {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 5vw;
+}
+html .myPage .mainArea .mobile_content .innerBox.settingACPW form label .remind {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html .myPage .mainArea .mobile_content .innerBox.settingACPW form label .remind i {
+  margin-right: 4vw;
+}
+html .myPage .mainArea .mobile_content .innerBox.settingACPW form label .remind p {
+  max-width: 90%;
+  color: #66e123;
+  font-size: 0.975rem;
+  text-align: center;
+}
+html .myPage .mainArea .mobile_content .innerBox.settingACPW form label .submitBtn {
+  width: 50%;
+  height: 45px;
+  background: #dd2830;
+  border-radius: 50px;
+  border: none;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #cf0505;
+  display: none;
+  margin: 4vw auto;
+}
+html .myPage .mainArea .mobile_content .innerBox.settingACPW form label .submitBtn.display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+html .myPage .mainArea .mobile_content .innerBox.settingACPW form label i {
+  width: 6vw;
+  height: 6vw;
+}
+html .myPage .mainArea .mobile_content .innerBox.settingACPW form .checkBlock {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #dd2830;
+  padding: 4vw 5vw;
+}
+html .myPage .mainArea .mobile_content .innerBox.settingACPW form .checkBlock .inputTitle {
+  color: #dd2830;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 5vw;
+}
+html .myPage .mainArea .mobile_content .innerBox.settingACPW form .checkBlock .choess {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 5vw;
+}
+html .myPage .mainArea .mobile_content .innerBox.settingACPW form .checkBlock .choess:last-of-type {
+  margin: 0;
+}
+html .myPage .mainArea .mobile_content .innerBox.settingACPW form .checkBlock .choess .itemName {
+  width: 40%;
+  height: auto;
+}
+html .myPage .mainArea .mobile_content .innerBox.settingACPW form .checkBlock .choess .itemName p {
+  color: #ffffff;
+}
+html .myPage .mainArea .mobile_content .innerBox.settingACPW form .checkBlock .choess .item {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+html .myPage .mainArea .mobile_content .innerBox.settingACPW form .checkBlock .choess .item .check {
+  width: 50%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html .myPage .mainArea .mobile_content .innerBox.settingACPW form .checkBlock .choess .item .check input {
+  width: 20px;
+  height: 20px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  border-radius: 50px;
+  border: 1px solid #ffffff;
+  margin-right: 10px;
+}
+html .myPage .mainArea .mobile_content .innerBox.settingACPW form .checkBlock .choess .item .check input:checked {
+  background-color: #66e123;
+  -webkit-box-shadow: inset -0.5px -0.5px 1px #000000, inset 0.5px 0.5px 1px #000000;
+          box-shadow: inset -0.5px -0.5px 1px #000000, inset 0.5px 0.5px 1px #000000;
+}
+html .myPage .mainArea .mobile_content .innerBox.settingACPW form .checkBlock .choess .item .check label {
+  color: #ffffff;
+  white-space: nowrap;
+  padding: 0;
+}
+html .myPage .mainArea .mobile_content .innerBox.settingACPW .topLine {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 1px solid #b1b1b1;
+  position: relative;
+  padding: 4vw 0;
+}
+html .myPage .mainArea .mobile_content .innerBox.settingACPW .topLine button {
+  background: transparent;
+  border: 1px solid #dd2830;
+  border-radius: 30px;
+  color: #dd2830;
+  font-size: 1rem;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  padding: 5px 20px 6px 30px;
+}
+html .myPage .mainArea .mobile_content .innerBox.settingACPW .topLine button:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 4px 5px 4px 0;
+  border-color: transparent #dd2830 transparent transparent;
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  margin-right: 10px;
+}
+html .myPage .mainArea .mobile_content .innerBox.settingACPW .topLine p {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+html .myPage .mainArea .mobile_content .innerBox.settingACPW .topLine button {
+  left: 20px;
+}
+html .filter {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5019607843);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 999;
+}
+html .filter.display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+html .filter .jumpWindow {
+  display: none;
+  width: 80%;
+  height: auto;
+  background: #131313;
+  border: 1px solid #cf0505;
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+}
+html .filter .jumpWindow .jwTitle {
+  width: 100%;
+  height: 8vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #b8151b;
+  color: #ffffff;
+  padding: 20px;
+  position: relative;
+}
+html .filter .jumpWindow .jwTitle p {
+  white-space: nowrap;
+  font-size: 1rem;
+  font-weight: bold;
+}
+html .filter .jumpWindow .jwTitle i {
+  color: #ffffff;
+  font-size: 1.275rem;
+  position: absolute;
+  right: 20px;
+}
+html .filter .jumpWindow .content {
+  width: 100%;
+  height: auto;
+  padding: 0 10px;
+}
+html .filter .jumpWindow.cancelBet {
+  display: none;
+}
+html .filter .jumpWindow.cancelBet.display {
+  display: block;
+}
+html .filter .jumpWindow.cancelBet .content table {
+  width: 100%;
+}
+html .filter .jumpWindow.cancelBet .content table tr {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #848484;
+}
+html .filter .jumpWindow.cancelBet .content table tr:nth-of-type(3) td:last-child p {
+  color: #66e123;
+  font-weight: bold;
+}
+html .filter .jumpWindow.cancelBet .content table tr:nth-of-type(4) td:last-child p span {
+  line-height: 23px;
+}
+html .filter .jumpWindow.cancelBet .content table tr:nth-of-type(4) td:last-child p span.vs {
+  color: #b1b1b1;
+  font-size: 1rem;
+  margin: 2vw;
+}
+html .filter .jumpWindow.cancelBet .content table tr:last-child {
+  border: none;
+}
+html .filter .jumpWindow.cancelBet .content table tr:last-child td {
+  padding: 0;
+}
+html .filter .jumpWindow.cancelBet .content table tr td {
+  max-width: 0;
+  padding: 3vw 0;
+  vertical-align: middle;
+}
+html .filter .jumpWindow.cancelBet .content table tr td:first-child {
+  width: 40%;
+}
+html .filter .jumpWindow.cancelBet .content table tr td:first-child p {
+  color: #dd2830;
+  font-weight: bold;
+}
+html .filter .jumpWindow.cancelBet .content table tr td:last-child p {
+  color: #ffffff;
+}
+html .filter .jumpWindow.cancelBet .content table tr td p {
+  font-size: 0.975rem;
+}
+html .filter .jumpWindow.cancelBet .content table tr td button {
+  background: #dd2830;
+  border-radius: 50px;
+  border: none;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 60%;
+  height: 40px;
+  background: #cf0505;
+  margin: 4vw auto;
+}
+html .filter .jumpWindow.cancelBet .content .closeWindow {
+  background: #dd2830;
+  border-radius: 50px;
+  border: none;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 60%;
+  height: 40px;
+  background: #414141;
+  margin: 0 auto 3vw;
 }
 html .messagePage .mainArea .contentBox {
   width: 100%;
@@ -4456,8 +5625,8 @@ html .center .mainArea {
 html .center .mainArea .searchBox {
   display: none;
   width: 100%;
-  height: 40px;
-  margin: 50px 0 20px;
+  height: 9vw;
+  margin: 50px 0 2vw;
   position: relative;
 }
 html .center .mainArea .searchBox input {
@@ -4642,16 +5811,14 @@ html .center .mainArea .typselect.swiper02 .swiper-wrapper {
   height: auto;
 }
 html .center .mainArea .typselect.swiper02 .swiper-wrapper .swiper-slide {
-  width: 116px !important;
+  width: auto !important;
 }
 html .center .mainArea .typselect.swiper02 .swiper-wrapper .swiper-slide .gameTypeBox {
   width: auto;
-  max-width: 105px;
   height: auto;
   border: 3px solid #dd2830;
-  border-radius: 6px;
+  border-radius: 8px;
   padding: 0px 10px 10px;
-  margin: 0 10px 0 0;
   cursor: pointer;
 }
 html .center .mainArea .typselect.swiper02 .swiper-wrapper .swiper-slide .gameTypeBox:hover, html .center .mainArea .typselect.swiper02 .swiper-wrapper .swiper-slide .gameTypeBox:active, html .center .mainArea .typselect.swiper02 .swiper-wrapper .swiper-slide .gameTypeBox.active {
@@ -4695,61 +5862,41 @@ html .center .mainArea .typselect.swiper02 .swiper-wrapper .swiper-slide .gameTy
 }
 html .center .mainArea .typselect.swiper02 .swiper-button-prev02,
 html .center .mainArea .typselect.swiper02 .swiper-button-next02 {
-  width: 24px;
-  height: 52px;
+  width: 40px;
+  height: 40px;
   position: absolute;
-  top: 170px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 10;
 }
-html .center .mainArea .typselect.swiper02 .swiper-button-prev02::before, html .center .mainArea .typselect.swiper02 .swiper-button-prev02::after,
-html .center .mainArea .typselect.swiper02 .swiper-button-next02::before,
-html .center .mainArea .typselect.swiper02 .swiper-button-next02::after {
-  content: " ";
+html .center .mainArea .typselect.swiper02 .swiper-button-prev02::before,
+html .center .mainArea .typselect.swiper02 .swiper-button-next02::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(49, 49, 49, 0.8078431373);
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+html .center .mainArea .typselect.swiper02 .swiper-button-prev02 i,
+html .center .mainArea .typselect.swiper02 .swiper-button-next02 i {
+  color: #ffffff;
+  font-size: 1rem;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 50%;
 }
 html .center .mainArea .typselect.swiper02 .swiper-button-prev02 {
-  position: absolute;
-  left: -20px;
-  cursor: pointer;
-}
-html .center .mainArea .typselect.swiper02 .swiper-button-prev02::before {
-  width: 40px;
-  height: 40px;
-  background: rgba(49, 49, 49, 0.8078431373);
-  border-radius: 5px;
-  position: absolute;
-  top: -115px;
-  left: 20px;
-  z-index: 50;
-}
-html .center .mainArea .typselect.swiper02 .swiper-button-prev02 i {
-  font-size: 20px;
-  color: #ffffff;
-  position: absolute;
-  top: -105px;
-  left: 31px;
-  z-index: 50;
+  left: 0;
 }
 html .center .mainArea .typselect.swiper02 .swiper-button-next02 {
-  position: absolute;
-  right: 20px;
-  cursor: pointer;
-}
-html .center .mainArea .typselect.swiper02 .swiper-button-next02::before {
-  width: 40px;
-  height: 40px;
-  background: rgba(49, 49, 49, 0.8078431373);
-  border-radius: 5px;
-  position: absolute;
-  top: -115px;
-  right: -20px;
-  z-index: 50;
-}
-html .center .mainArea .typselect.swiper02 .swiper-button-next02 i {
-  font-size: 20px;
-  color: #ffffff;
-  position: absolute;
-  top: -104px;
-  left: 16px;
-  z-index: 50;
+  right: 0;
 }
 html .center .mainArea .countryList {
   width: 100%;
@@ -5996,418 +7143,6 @@ html .center aside.betRecordBtn .betCount:nth-of-type(2) {
 html .center aside.betRecordBtn .betCount p {
   color: #ffffff;
 }
-@media only screen and (max-width: 1100px) {
-  html .center .mainArea .gameContent .content {
-    gap: 20px 10px;
-  }
-  html .center .mainArea .gameContent .content .gBlock .down {
-    padding: 0.8rem;
-  }
-  html .center .mainArea .gameContent .content .gBlock .down .pkTeam {
-    padding: 1rem 0.8rem;
-  }
-  html .center .mainArea .gameContent .content .gBlock .down .pkTeam .outbox .team .teamName {
-    font-size: 0.75rem;
-  }
-  html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down {
-    padding: 0.8rem;
-  }
-  html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .pkTeam {
-    padding: 1rem 0.8rem;
-  }
-  html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .pkTeam .outbox .team .teamName {
-    font-size: 0.75rem;
-  }
-}
-@media only screen and (max-width: 1024px) {
-  html .center .left {
-    width: 0;
-    height: 100%;
-    position: fixed;
-    top: 90px;
-    left: 0;
-    z-index: 90;
-  }
-  html .center .left.active {
-    width: 100%;
-    background: rgba(0, 0, 0, 0.5019607843);
-  }
-  html .center .left .navTitle {
-    width: 250px;
-    background: #292929;
-    padding-left: 10px;
-  }
-  html .center .left ul {
-    width: 250px;
-    height: calc(100% - (1.2rem + 20px));
-    overflow-y: auto;
-    -ms-scroll-chaining: none;
-        overscroll-behavior: none;
-  }
-  html .center .left ul::-webkit-scrollbar {
-    width: 0;
-  }
-  html .center .leftSide {
-    padding-left: 30px;
-  }
-  html .center .leftSide {
-    display: none;
-  }
-}
-@media only screen and (max-width: 840px) {
-  html .center .mainArea .gameContent .content {
-    -ms-grid-columns: (1fr)[1];
-    grid-template-columns: repeat(1, 1fr);
-  }
-  html .center .mainArea .gameContent .content .gBlock .down {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    padding: 1rem;
-  }
-  html .center .mainArea .gameContent .content .gBlock .down .infoDetail {
-    width: 48%;
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-  }
-  html .center .mainArea .gameContent .content .gBlock .down .infoDetail .more {
-    display: block;
-    margin: 20px auto 0;
-    position: static;
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-  html .center .mainArea .gameContent .content .gBlock .down .infoDetail .more:hover, html .center .mainArea .gameContent .content .gBlock .down .infoDetail .more:active, html .center .mainArea .gameContent .content .gBlock .down .infoDetail .more.active {
-    -webkit-transform: translateY(2px);
-            transform: translateY(2px);
-  }
-  html .center .mainArea .gameContent .content .gBlock .down .pkTeam {
-    width: 48%;
-    -webkit-box-ordinal-group: 1;
-        -ms-flex-order: 0;
-            order: 0;
-  }
-  html .center .mainArea .gameContent .content .gBlock .down .pkTeam .winRWD {
-    display: block;
-  }
-  html .center .mainArea .gameContent .content .gBlock .down .winner {
-    display: none;
-  }
-  html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide {
-    width: 100% !important;
-  }
-  html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    padding: 1rem;
-  }
-  html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .infoDetail {
-    width: 48%;
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-  }
-  html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .infoDetail .more {
-    display: block;
-    margin: 20px auto 0;
-    position: static;
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-  html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .infoDetail .more:hover, html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .infoDetail .more:active, html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .infoDetail .more.active {
-    -webkit-transform: translateY(2px);
-            transform: translateY(2px);
-  }
-  html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .pkTeam {
-    width: 48%;
-    -webkit-box-ordinal-group: 1;
-        -ms-flex-order: 0;
-            order: 0;
-  }
-  html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .pkTeam .winRWD {
-    display: block;
-  }
-  html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .winner {
-    display: none;
-  }
-  html .center .right {
-    width: 0;
-    height: calc(100% - 90px);
-    position: fixed;
-    top: 90px;
-    left: 0;
-    z-index: 110;
-  }
-  html .center .right.active {
-    width: 100%;
-  }
-  html .center .right .betBlock {
-    width: 100%;
-    height: 100%;
-    border-radius: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  html .center .right .betBlock .topList {
-    -ms-flex-negative: 0;
-        flex-shrink: 0;
-  }
-  html .center .right .betBlock .topList li {
-    width: 25%;
-  }
-  html .center .right .betBlock .topList li p {
-    width: 100%;
-    text-align: center;
-  }
-  html .center .right .betBlock .betTypeList {
-    padding: 0;
-    -ms-flex-negative: 0;
-        flex-shrink: 0;
-  }
-  html .center .right .betBlock .betTypeList li {
-    width: 34%;
-  }
-  html .center .right .betBlock .betTypeList li a {
-    width: 100%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  html .center .right .betBlock .betContent {
-    height: 100%;
-  }
-  html .center .right .betBlock .smallFilter {
-    height: calc(100% - 47px);
-  }
-  html .center .right .betBlock .closeRight {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-negative: 0;
-        flex-shrink: 0;
-  }
-  html .center aside.betRecordBtn {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
-@media only screen and (max-width: 450px) {
-  html .center .leftSide {
-    display: none;
-  }
-  html .center .mainArea {
-    padding: 0;
-  }
-  html .center .mainArea.index {
-    padding: 20px 20px 22vw;
-  }
-  html .center .mainArea .searchBox {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  html .center .mainArea .featured {
-    display: none;
-  }
-  html .center .mainArea .swiper {
-    display: none;
-  }
-  html .center .mainArea .middleNav .topnav li {
-    width: 25%;
-  }
-  html .center .mainArea .gameContent .content .gBlock .down .infoDetail {
-    width: auto;
-  }
-  html .center .mainArea .gameContent .content .gBlock .down .pkTeam {
-    width: 54%;
-    margin: 0 1rem 0 0;
-    -ms-flex-negative: 0;
-        flex-shrink: 0;
-  }
-  html .center .mainArea .gameContent .content .gBlock .down .pkTeam .outbox .team svg {
-    margin: 0 0 1.5rem;
-  }
-  html .center .mainArea .gameContent .content .gBlock .down .pkTeam .outbox .team .teamName {
-    margin-bottom: 1.5rem;
-  }
-  html .center .mainArea .gameContent .content .gBlock .down .pkTeam .outbox .VS {
-    margin: 0 5px;
-  }
-  html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .infoDetail {
-    width: auto;
-  }
-  html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .pkTeam {
-    width: 54%;
-    margin: 0 1rem 0 0;
-    -ms-flex-negative: 0;
-        flex-shrink: 0;
-  }
-  html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .pkTeam .outbox .team svg {
-    margin: 0 0 1.5rem;
-  }
-  html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .pkTeam .outbox .team .teamName {
-    margin-bottom: 1.5rem;
-  }
-  html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .pkTeam .outbox .VS {
-    margin: 0 5px;
-  }
-  html .center .mainArea .right.active {
-    top: 46px;
-  }
-  html .center .mainArea .right .betBlock {
-    background: #000000;
-  }
-  html .center .mainArea .right .betBlock .topList ul li.active p {
-    color: #b8151b;
-  }
-  html .center .mainArea .right .betBlock .betTypeList {
-    background: rgba(49, 49, 49, 0.8078431373);
-  }
-  html .center .mainArea .right .betBlock .betTypeList li.active a::before {
-    background: #cf0505;
-  }
-  html .center .mainArea .right .betBlock .betTypeList li.active a p {
-    color: #cf0505;
-  }
-  html .center .mainArea .right .betBlock .betTypeList li a p {
-    color: #b1b1b1;
-  }
-  html .center .mainArea .right .betBlock .betContent .betData .bdOuter {
-    max-height: 500px;
-  }
-  html .center .mainArea .right .betBlock .betContent .betData .bdOuter .betDetail {
-    border-color: #dd2830;
-  }
-  html .center .mainArea .right .betBlock .betContent .betData .bdOuter .betDetail .bdTitle {
-    background: #414141;
-  }
-  html .center .mainArea .right .betBlock .betContent .betData .bdOuter .betDetail .bdTitle svg {
-    fill: #848484;
-  }
-  html .center .mainArea .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .top {
-    border-color: #dd2830;
-  }
-  html .center .mainArea .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .top span {
-    background: #e3373f;
-  }
-  html .center .mainArea .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .pkTeam {
-    background: #414141;
-  }
-  html .center .mainArea .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .pkTeam .VS {
-    color: #ffffff;
-  }
-  html .center .mainArea .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .wintext {
-    color: #dd2830;
-  }
-  html .center .mainArea .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .betwin {
-    border-color: #dd2830;
-  }
-  html .center .mainArea .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .betwin p {
-    color: #dd2830;
-  }
-  html .center .mainArea .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .betamount {
-    border-color: #cf0505;
-  }
-  html .center .mainArea .right .betBlock .betContent .betData .betTotal li p {
-    color: #ffffff;
-  }
-  html .center .mainArea .right .betBlock .closeRight {
-    background: #cf0505;
-  }
-  html .center .mainArea .contentBox {
-    display: none;
-  }
-  html .center .mainArea .mobile_content {
-    display: block;
-  }
-  html .center .right {
-    height: calc(100vh - 14vw - 55px);
-  }
-  html .center .right.active {
-    top: 50px;
-  }
-  html .center .right .betBlock {
-    background: #000000;
-  }
-  html .center .right .betBlock .topList li.active::before {
-    background: #b8151b;
-  }
-  html .center .right .betBlock .topList li.active p {
-    color: #b8151b;
-  }
-  html .center .right .betBlock .betTypeList {
-    background: rgba(49, 49, 49, 0.8078431373);
-  }
-  html .center .right .betBlock .betTypeList li.active a::before {
-    background: #cf0505;
-  }
-  html .center .right .betBlock .betTypeList li.active a p {
-    color: #cf0505;
-  }
-  html .center .right .betBlock .betTypeList li a p {
-    color: #b1b1b1;
-  }
-  html .center .right .betBlock .betContent .betData .bdOuter {
-    max-height: 500px;
-  }
-  html .center .right .betBlock .betContent .betData .bdOuter .betDetail {
-    border-color: #dd2830;
-  }
-  html .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdTitle {
-    background: #414141;
-  }
-  html .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdTitle svg {
-    fill: #848484;
-  }
-  html .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .top {
-    border-color: #dd2830;
-  }
-  html .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .top span {
-    background: #e3373f;
-  }
-  html .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .pkTeam {
-    background: #414141;
-  }
-  html .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .pkTeam .VS {
-    color: #ffffff;
-  }
-  html .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .wintext {
-    color: #dd2830;
-  }
-  html .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .betwin {
-    border-color: #dd2830;
-  }
-  html .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .betwin p {
-    color: #dd2830;
-  }
-  html .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .betamount {
-    border-color: #cf0505;
-  }
-  html .center .right .betBlock .betContent .betData .betTotal li p {
-    color: #ffffff;
-  }
-  html .center .right .betBlock .closeRight {
-    background: #cf0505;
-  }
-  html .center aside.betRecordBtn {
-    bottom: 85px;
-    right: 20px;
-  }
-}
 html footer {
   width: 100%;
   height: auto;
@@ -6896,15 +7631,222 @@ html footer .bottom {
     display: flex;
   }
 }
+
+@media only screen and (max-width: 1100px) {
+  html body main.innerPage .leftSide {
+    padding-left: 30px;
+  }
+  html body main .center .mainArea .gameContent .content {
+    gap: 20px 10px;
+  }
+  html body main .center .mainArea .gameContent .content .gBlock .down {
+    padding: 12px;
+  }
+  html body main .center .mainArea .gameContent .content .gBlock .down .pkTeam {
+    padding: 16px 12px;
+  }
+  html body main .center .mainArea .gameContent .content .gBlock .down .pkTeam .outbox .team .teamName {
+    font-size: 12px;
+  }
+  html body main .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down {
+    padding: 12px;
+  }
+  html body main .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .pkTeam {
+    padding: 16px 12px;
+  }
+  html body main .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .pkTeam .outbox .team .teamName {
+    font-size: 12px;
+  }
+}
 @media only screen and (max-width: 1024px) {
   html body main {
     padding-top: 100px;
   }
-  html body main.innerPage .left {
+  html body main.innerPage .center .left {
     display: block;
   }
+  html body main .center .left {
+    width: 0;
+    height: 100%;
+    position: fixed;
+    top: 90px;
+    left: 0;
+    z-index: 90;
+  }
+  html body main .center .left.active {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5019607843);
+  }
+  html body main .center .left .navTitle {
+    width: 250px;
+    background: #292929;
+    padding-left: 10px;
+  }
+  html body main .center .left ul {
+    width: 250px;
+    height: calc(100% - (1.2rem + 20px));
+    overflow-y: auto;
+    -ms-scroll-chaining: none;
+        overscroll-behavior: none;
+  }
+  html body main .center .left ul::-webkit-scrollbar {
+    width: 0;
+  }
 }
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 840px) {
+  html body main .center .mainArea .gameContent .content {
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+  }
+  html body main .center .mainArea .gameContent .content .gBlock .down {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 16px;
+  }
+  html body main .center .mainArea .gameContent .content .gBlock .down .infoDetail {
+    width: 48%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  html body main .center .mainArea .gameContent .content .gBlock .down .infoDetail .more {
+    display: block;
+    margin: 20px auto 0;
+    position: static;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  html body main .center .mainArea .gameContent .content .gBlock .down .infoDetail .more:hover, html body main .center .mainArea .gameContent .content .gBlock .down .infoDetail .more:active, html body main .center .mainArea .gameContent .content .gBlock .down .infoDetail .more.active {
+    -webkit-transform: translateY(2px);
+            transform: translateY(2px);
+  }
+  html body main .center .mainArea .gameContent .content .gBlock .down .pkTeam {
+    width: 48%;
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+    margin: 0;
+  }
+  html body main .center .mainArea .gameContent .content .gBlock .down .pkTeam .winRWD {
+    display: block;
+  }
+  html body main .center .mainArea .gameContent .content .gBlock .down .winner {
+    display: none;
+  }
+  html body main .center .mainArea .swiper03 .swiper-wrapper .swiper-slide {
+    width: 100% !important;
+  }
+  html body main .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 1rem;
+  }
+  html body main .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .infoDetail {
+    width: 48%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  html body main .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .infoDetail .more {
+    display: block;
+    margin: 20px auto 0;
+    position: static;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  html body main .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .infoDetail .more:hover, html body main .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .infoDetail .more:active, html body main .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .infoDetail .more.active {
+    -webkit-transform: translateY(2px);
+            transform: translateY(2px);
+  }
+  html body main .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .pkTeam {
+    width: 48%;
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+    margin: 0;
+  }
+  html body main .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .pkTeam .winRWD {
+    display: block;
+  }
+  html body main .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .winner {
+    display: none;
+  }
+  html body main .center .right {
+    width: 0;
+    height: calc(100% - 90px);
+    position: fixed;
+    top: 90px;
+    left: 0;
+    z-index: 110;
+  }
+  html body main .center .right.active {
+    width: 100%;
+  }
+  html body main .center .right .betBlock {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  html body main .center .right .betBlock .topList {
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+  }
+  html body main .center .right .betBlock .topList li {
+    width: 25%;
+  }
+  html body main .center .right .betBlock .topList li p {
+    width: 100%;
+    text-align: center;
+  }
+  html body main .center .right .betBlock .betTypeList {
+    padding: 0;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+  }
+  html body main .center .right .betBlock .betTypeList li {
+    width: 34%;
+  }
+  html body main .center .right .betBlock .betTypeList li a {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  html body main .center .right .betBlock .betContent {
+    height: 100%;
+  }
+  html body main .center .right .betBlock .smallFilter {
+    height: calc(100% - 47px);
+  }
+  html body main .center .right .betBlock .closeRight {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+  }
+  html body main .center aside.betRecordBtn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+@media only screen and (max-width: 500px) {
   html {
     font-size: 4vw;
   }
@@ -6916,5 +7858,178 @@ html footer .bottom {
   }
   html body main.inMain .mainArea .searchBox {
     margin-top: 0;
+  }
+  html body main .center .left,
+html body main .center .leftSide {
+    display: none;
+  }
+  html body main .center .mainArea {
+    padding: 0;
+  }
+  html body main .center .mainArea.index {
+    padding: 2vw 2vw 22vw;
+  }
+  html body main .center .mainArea.index .searchBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  html body main .center .mainArea.index .swiper {
+    display: none;
+  }
+  html body main .center .mainArea.index .middleNav .topnav li {
+    width: 25%;
+  }
+  html body main .center .mainArea.index .typselect.swiper02 {
+    padding: 4vw 3vw;
+  }
+  html body main .center .mainArea.index .typselect.swiper02 .swiper-wrapper .swiper-slide .gameTypeBox {
+    padding: 0 3vw 3vw;
+  }
+  html body main .center .mainArea.index .typselect.swiper02 .swiper-wrapper .swiper-slide .gameTypeBox .picBox {
+    width: 16vw;
+    height: 16vw;
+  }
+  html body main .center .mainArea.index .typselect.swiper02 .swiper-wrapper .swiper-slide .gameTypeBox .picBox svg {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  html body main .center .mainArea.index .typselect.swiper02 .swiper-wrapper .swiper-slide .gameTypeBox p {
+    max-width: 16vw;
+  }
+  html body main .center .mainArea.index .gameContent {
+    padding: 4vw 0 0;
+  }
+  html body main .center .mainArea.index .gameContent .content {
+    gap: 4vw 0;
+    padding: 4vw 0;
+  }
+  html body main .center .mainArea.index .gameContent .content .gBlock .down {
+    padding: 2vw;
+  }
+  html body main .center .mainArea.index .gameContent .content .gBlock .down .infoDetail {
+    width: 100%;
+  }
+  html body main .center .mainArea.index .gameContent .content .gBlock .down .pkTeam {
+    width: 58%;
+    padding: 7vw 4vw 4vw;
+    margin-right: 4vw;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+  }
+  html body main .center .mainArea.index .gameContent .content .gBlock .down .pkTeam .outbox .team svg {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    margin: 0 0 5vw;
+  }
+  html body main .center .mainArea.index .gameContent .content .gBlock .down .pkTeam .outbox .team .teamName {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 4vw;
+  }
+  html body main .center .mainArea.index .swiper03 .swiper-wrapper .swiper-slide .gBlock .down {
+    padding: 2vw;
+  }
+  html body main .center .mainArea.index .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .infoDetail {
+    width: 100%;
+  }
+  html body main .center .mainArea.index .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .pkTeam {
+    width: 58%;
+    padding: 7vw 4vw 4vw;
+    margin-right: 4vw;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+  }
+  html body main .center .mainArea.index .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .pkTeam .outbox .team svg {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    margin: 0 0 5vw;
+  }
+  html body main .center .mainArea.index .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .pkTeam .outbox .team .teamName {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 4vw;
+  }
+  html body main .center .mainArea .contentBox {
+    display: none;
+  }
+  html body main .center .mainArea .mobile_content {
+    display: block;
+  }
+  html body main .center .right {
+    display: none;
+    height: 100%;
+    top: 0;
+    z-index: 999;
+  }
+  html body main .center .right.active {
+    display: block;
+  }
+  html body main .center .right .betBlock {
+    background: #000000;
+  }
+  html body main .center .right .betBlock .topList li.active::before {
+    background: #b8151b;
+  }
+  html body main .center .right .betBlock .topList li.active p {
+    color: #b8151b;
+  }
+  html body main .center .right .betBlock .betTypeList {
+    background: rgba(49, 49, 49, 0.8078431373);
+  }
+  html body main .center .right .betBlock .betTypeList li:hover a::before, html body main .center .right .betBlock .betTypeList li:active a::before, html body main .center .right .betBlock .betTypeList li.active a::before {
+    background: #cf0505;
+  }
+  html body main .center .right .betBlock .betTypeList li:hover a p, html body main .center .right .betBlock .betTypeList li:active a p, html body main .center .right .betBlock .betTypeList li.active a p {
+    color: #cf0505;
+  }
+  html body main .center .right .betBlock .betTypeList li a p {
+    color: #b1b1b1;
+  }
+  html body main .center .right .betBlock .betContent .betData .bdOuter {
+    max-height: 60vh;
+  }
+  html body main .center .right .betBlock .betContent .betData .bdOuter .betDetail {
+    border-color: #dd2830;
+  }
+  html body main .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdTitle {
+    background: #414141;
+  }
+  html body main .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdTitle svg {
+    fill: #848484;
+  }
+  html body main .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .top {
+    border-color: #dd2830;
+  }
+  html body main .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .top span {
+    background: #e3373f;
+  }
+  html body main .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .pkTeam {
+    background: #414141;
+  }
+  html body main .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .pkTeam .VS {
+    color: #ffffff;
+  }
+  html body main .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .wintext {
+    color: #dd2830;
+  }
+  html body main .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .betwin {
+    border-color: #dd2830;
+  }
+  html body main .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .betwin p {
+    color: #dd2830;
+  }
+  html body main .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .betamount {
+    border-color: #cf0505;
+  }
+  html body main .center .right .betBlock .betContent .betData .betTotal li p {
+    color: #ffffff;
+  }
+  html body main .center .right .betBlock .closeRight {
+    background: #cf0505;
+  }
+  html body main .center .betRecordBtn {
+    bottom: 22vw;
+    right: 20px;
   }
 }

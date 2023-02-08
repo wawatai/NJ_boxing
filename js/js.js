@@ -116,7 +116,7 @@ $(function(){
     var swiper02 = new Swiper('.swiper02', {
         autoHeight: true,
         slidesPerView: "auto",
-        spaceBetween: 5,
+        spaceBetween: 10,
         freeMode: true,
         navigation: {
             nextEl: '.swiper-button-next02',
@@ -342,6 +342,16 @@ $(function(){
     })
 })
 
+//message
+$(function(){
+    $(".messagePage .messageBox li,.messagePage .innerBox.inner .backBtn").click(function(){
+        $(".messagePage .mobile_content .innerBox")
+        .toggleClass("display");
+
+        $(this).find(".unread")
+        .removeClass("display");
+    })
+})
 //jumpWindow 
 $(function(){
     $(".filter .jumpWindow .jwTitle .closeIC").click(function(){
@@ -379,4 +389,3 @@ $(function(){
         .addClass("display");
     })
 })
-

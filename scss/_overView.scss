@@ -1,0 +1,313 @@
+.myPage {
+
+    //中
+    .mainArea {
+        
+        .contentBox {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .pageTitle {
+                @include bigtitle_Line;
+                width: 100%;
+                margin-bottom: 50px;
+            }
+            
+            .overview {
+                width: 90%;
+                height: auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: $mainColor_4;
+                padding: 50px;
+                
+                table {
+                    width: 100%;
+                    height: auto;
+
+                    tr {
+                        &:last-child {
+                            border-top: 1px solid $subColor_5;
+
+                            td {
+
+                                &:first-child {
+
+                                    p {
+                                        text-align: right;
+                                    }
+                                }
+
+                                p {
+                                    line-height: 40px;
+                                }
+                            }
+                        }
+                    
+                        td {
+                            width: 15%;
+
+                            &:not(:first-child) {
+                                p {
+                                    text-align: right;
+                                }
+                            }
+
+                            &:first-child {
+                                width: 70%;
+                                p {
+                                    padding: 0 10px;
+                                }
+                            }
+
+                            &:last-child {
+                                
+                                p {
+                                    padding: 0 10px;
+                                }
+                            }
+
+                            p {
+                                color: $subColor_5;
+                                font-size: 0.9rem;
+                                line-height: 40px;
+                                padding: 0 5px;
+                                @include textHide;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .myRewrad {
+                width: 100%;
+                height: auto;
+                margin-top: 30px;
+                
+                .title {
+                    background: $mainBG_2;
+                    color: $subColor;
+                    padding: 20px 5%;
+                    margin-bottom: 20px;
+                }
+
+                .rewrad_btn {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-bottom: 20px;
+
+                    button {
+                        flex-shrink: 0;
+                        background: $mainBG_2;
+                        color: $subColor_5;
+                        border-radius: 20px;
+                        padding: 10px 20px;
+
+                        &:hover,&:active,&.active {
+                            background: $mainColor_6;
+                            color: $mainColor_3;
+                        }
+
+                        &:first-child {
+                            margin-right: 10px;
+                        }
+                    }
+                }
+
+                .reward_stauts {
+                    color: $mainColor_3;
+                    font-size: 0.8rem;
+                    text-align: center;
+                }
+            }
+        }
+
+        .mobile_content {
+            display: none;
+            width: 100%;
+            height: auto;
+
+            .innerBox {
+                width: 100%;
+                padding: 0 4vw 4vw;
+                
+                &.settingACPW  {
+                    padding: 0 0 22vw;
+
+                    form {
+                        width: 100%;
+                        height: auto;
+
+                        label {
+                            display: block;
+                            width: 100%;
+                            height: auto;
+                            border-bottom: 1px solid $mainColor_6;
+                            padding: 4vw 5vw;
+
+                            &:last-child {
+                                border: none;
+                            }
+
+                            .inputTitle {
+                                color: $mainColor_6;
+                                font-size: 1.2rem;
+                                font-weight: bold;
+                                margin-bottom: 2vw;
+                            }
+
+                            .databox {
+                                width: auto;
+                                height: auto;
+                                position: relative;
+
+                                input {
+                                    width: 100%;
+                                    height: auto;
+                                    @include inputStyle_2;
+                                    display: block;
+                                    margin-bottom: 10px;
+                                }
+
+                                i {
+                                    position: absolute;
+                                    top: 50%;
+                                    transform: translateY(-50%);
+                                    right: 5vw;
+                                }
+                            }
+
+                            .remind {
+                                width: 100%;
+                                height: auto;
+                                display: flex;
+                                align-items: center;
+
+                                i {
+                                    margin-right: 4vw;
+                                }
+
+                                p {
+                                    max-width: 90%;
+                                    color: $subColor_6;
+                                    font-size: 0.975rem;
+                                    text-align: center;
+                                }
+                            }
+
+                            .submitBtn {
+                                width: 50%;
+                                height: 45px;
+                                @include subBtn_2;
+                                background: $mainColor_7;
+                                display: none;
+                                margin: 4vw auto;
+
+                                &.display {
+                                    display: flex;
+                                }
+                            }
+
+                            
+                            i {
+                                width: 6vw;
+                                height: 6vw;
+                            }
+                        }
+
+                        .checkBlock {
+                            width: 100%;
+                            height: auto;
+                            border-bottom: 1px solid $mainColor_6;
+                            padding: 4vw 5vw;
+
+                            .inputTitle {
+                                color: $mainColor_6;
+                                font-size: 1.2rem;
+                                font-weight: bold;
+                                margin-bottom: 5vw;
+                            }
+
+                            .choess {
+                                width: 100%;
+                                height: auto;
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+                                margin-bottom: 5vw;
+
+                                &:last-of-type {
+                                    margin: 0;
+                                }
+                                
+                                .itemName {
+                                    width: 40%;
+                                    height: auto;
+
+                                    p {
+                                        color: $mainColor_3;
+                                    }
+                                }
+
+                                .item {
+                                    width: 60%;
+                                    display: flex;
+
+                                    .check {
+                                        width: 50%;
+                                        height: auto;
+                                        display: flex;
+                                        align-items: center;
+
+                                        input {
+                                            width: 20px;
+                                            height: 20px;
+                                            flex-shrink: 0;
+                                            border-radius: 50px;
+                                            border: 1px solid $mainColor_3;
+                                            margin-right: 10px;
+
+                                            &:checked {
+                                                background-color: $subColor_6;
+                                                box-shadow: inset -0.5px -0.5px 1px $mainColor_2,
+                                                            inset 0.5px 0.5px 1px $mainColor_2;
+                                            } 
+                                        }
+
+                                        
+
+                                        label {
+                                            color: $mainColor_3;
+                                            white-space: nowrap;
+                                            padding: 0;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    
+                    .topLine {
+                        width: 100%;
+                        height: auto;
+                        @include mobile_Title;
+
+                        button {
+                            left: 20px;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+    

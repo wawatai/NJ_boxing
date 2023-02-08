@@ -84,7 +84,7 @@
         }
     }
 
-    //左
+    //內頁左
     .leftSide {
         width: 250px;
         height: 640px;
@@ -198,11 +198,12 @@
         padding: 20px 30px;
         overflow: hidden;
 
+        //手機版用上搜尋列
         .searchBox {
             display: none;
             width: 100%;
-            height: 40px;
-            margin: 50px 0 20px;
+            height: 9vw;
+            margin: 50px 0 2vw;
             position: relative;
 
             input {
@@ -361,16 +362,14 @@
                     height: auto;
 
                     .swiper-slide {
-                        width: 116px !important;
+                        width: auto !important;
 
                         .gameTypeBox {
                             width: auto;
-                            max-width: 105px;
                             height: auto;
                             border: 3px solid $mainColor_6;
-                            border-radius: 6px;
+                            border-radius: 8px;
                             padding: 0px 10px 10px;
-                            margin: 0 10px 0 0;
                             cursor: pointer;
             
                             &:hover,&:active,&.active {
@@ -417,67 +416,39 @@
 
                 .swiper-button-prev02,
                 .swiper-button-next02 {
-                    width: 24px;
-                    height: 52px;
+                    width: 40px;
+                    height: 40px;
                     position: absolute;
-                    top: 170px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    cursor: pointer;
+                    z-index: 10;
 
-                    &::before,
-                    &::after {
-                        content: " ";
+                    &::before {
+                        content: "";
+                        width: 100%;
+                        height: 100%;
+                        background: $subColor_3;
+                        border-radius: 5px;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                    }
+
+                    i {
+                        color: $mainColor_3;
+                        font-size: 1rem;
+                        position: absolute;
+                        top: 50%;
+                        transform: translate(-50%,-50%);
+                        left: 50%;
                     }
                 }
-
                 .swiper-button-prev02 {
-                    position: absolute;
-                    left: -20px;
-                    cursor: pointer;
-                    
-                    &::before {
-                        width: 40px;
-                        height: 40px;
-                        background: $subColor_3;
-                        border-radius: 5px;
-                        position: absolute;
-                        top: -115px;
-                        left: 20px;
-                        z-index: 50;
-                    }
-
-                    i {
-                        font-size: 20px;
-                        color: $mainColor_3;
-                        position: absolute;
-                        top: -105px;
-                        left: 31px;
-                        z-index: 50;
-                    }
+                    left: 0;
                 }
-
                 .swiper-button-next02 {
-                    position: absolute;
-                    right: 20px;
-                    cursor: pointer;
-
-                    &::before {
-                        width: 40px;
-                        height: 40px;
-                        background: $subColor_3;
-                        border-radius: 5px;
-                        position: absolute;
-                        top: -115px;
-                        right: -20px;
-                        z-index: 50;
-                    }
-
-                    i {
-                        font-size: 20px;
-                        color: $mainColor_3;
-                        position: absolute;
-                        top: -104px;
-                        left: 16px;
-                        z-index: 50;
-                    }
+                    right: 0;
                 }
             }
         }
@@ -1224,673 +1195,6 @@
                 p {
                     color: $mainColor_3;
                 }
-            }
-        }
-    }
-
-    @media only screen and (max-width: 1100px) {
-        .mainArea {
-
-            .gameContent {
-                
-                .content {
-                    gap: 20px 10px;
-
-                    .gBlock {
-
-                        .down {
-                            padding: 0.8rem;
-                            
-                            .pkTeam {
-                                padding: 1rem 0.8rem;
-
-                                .outbox {
-
-                                    .team {
-
-                                        .teamName {
-                                            font-size: 0.75rem;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-
-            .swiper03 {
-
-                .swiper-wrapper {
-
-                    .swiper-slide {
-
-                        .gBlock {
-
-                            .down {
-                                padding: 0.8rem;
-                                
-                                .pkTeam {
-                                    padding: 1rem 0.8rem;
-    
-                                    .outbox {
-    
-                                        .team {
-    
-                                            .teamName {
-                                                font-size: 0.75rem;
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-    @media only screen and (max-width: 1024px) {
-        
-        .left {
-            width: 0;
-            height: 100%;
-            position: fixed;
-            top: 90px;
-            left: 0;
-            z-index: 90;
-
-            &.active {
-                width: 100%;
-                background: $filter;
-            }
-
-            .navTitle {
-                width: 250px;
-                background: $mainBG_2;
-                padding-left: 10px;
-            }
-
-            ul {
-                width: 250px;
-                height: calc(100% - (1.2rem + 20px));
-                overflow-y: auto;
-                overscroll-behavior: none;
-
-                &::-webkit-scrollbar {
-                    width: 0;
-                }
-            }
-        }
-
-        .leftSide {
-            padding-left: 30px;
-        }
-        
-        .leftSide {
-            display: none;
-        }
-    }
-
-    @media only screen and (max-width: 840px) {
-        
-        .mainArea {
-
-            .gameContent {
-
-                .content {
-                    grid-template-columns: repeat(1,1fr);
-
-                    .gBlock {
-                        
-                        .down {
-                            display: flex;
-                            justify-content: space-between;
-                            padding: 1rem;
-
-                            .infoDetail {
-                                width: 48%;
-                                order: 1;
-
-                                .more {
-                                    display: block;
-                                    margin: 20px auto 0;
-                                    position: static;
-                                    transform: translateX(0);
-
-                                    &:hover,&:active,&.active {
-                                        transform: translateY(2px);
-                                    }
-                                }
-                            }
-
-                            .pkTeam {
-                                width: 48%;
-                                order: 0;
-
-                                .winRWD {
-                                    display: block;
-                                }
-                            }
-
-                            .winner {
-                                display: none;
-                            }
-                        }
-                        
-                    }
-                }
-            }
-
-            .swiper03 {
-
-                .swiper-wrapper {
-
-                    .swiper-slide {
-                        width: 100% !important;
-
-                        .gBlock {
-                        
-                            .down {
-                                display: flex;
-                                justify-content: space-between;
-                                padding: 1rem;
-    
-                                .infoDetail {
-                                    width: 48%;
-                                    order: 1;
-    
-                                    .more {
-                                        display: block;
-                                        margin: 20px auto 0;
-                                        position: static;
-                                        transform: translateX(0);
-    
-                                        &:hover,&:active,&.active {
-                                            transform: translateY(2px);
-                                        }
-                                    }
-                                }
-    
-                                .pkTeam {
-                                    width: 48%;
-                                    order: 0;
-    
-                                    .winRWD {
-                                        display: block;
-                                    }
-                                }
-    
-                                .winner {
-                                    display: none;
-                                }
-                            }
-                            
-                        }
-                    }
-                }
-            }
-        }
-
-        .right {
-            width: 0;
-            height: calc(100% - 90px);
-            position: fixed;
-            top: 90px;
-            left: 0;
-            z-index: 110;
-
-            &.active {
-                width: 100%;
-            }
-
-            .betBlock {
-                width: 100%;
-                height: 100%;
-                border-radius: 0;
-                display: flex;
-                flex-direction: column;
-
-                .topList {
-                    flex-shrink: 0;
-
-                    li {
-                        width: 25%;
-                        
-                        p {
-                            width: 100%;
-                            text-align: center;
-                        }
-                    }
-                }
-
-                .betTypeList {
-                    padding: 0;
-                    flex-shrink: 0;
-
-                    li {
-                        width: 34%;
-    
-                        a {
-                            width: 100%;
-                            justify-content: center;
-                        }
-                    }
-                }
-
-                .betContent {
-                    height: 100%;
-                }
-
-                .smallFilter {
-                    height: calc(100% - 47px);
-                }
-
-                .closeRight {
-                    display: flex;
-                    flex-shrink: 0;
-                }
-            }
-        }
-        
-        aside {
-
-            &.betRecordBtn {
-                display: flex;
-            }
-        }
-    }
-
-    @media only screen and (max-width: 450px) {
-        .leftSide {
-            display: none;
-        }
-
-        .mainArea {
-            padding: 0;
-            
-            &.index {
-                padding: 20px 20px 22vw;
-            }
-
-            .searchBox {
-                display: flex;
-            }
-
-            .featured {
-                display: none;
-            }
-
-            .swiper {
-                display: none;
-            }
-
-            .middleNav {
-
-                .topnav {
-
-                    li {
-                        width: 25%;
-                    }
-                }
-            }
-
-            .gameContent {
-
-                .content {
-
-                    .gBlock {
-    
-                        .down {
-
-                            .infoDetail {
-                                width: auto;
-                            }
-        
-                            .pkTeam {
-                                width: 54%;
-                                margin: 0 1rem 0 0;
-                                flex-shrink: 0;
-
-                                .outbox {
-
-                                    .team {
-
-                                        svg {
-                                            margin: 0 0 1.5rem;
-                                        }
-
-                                        .teamName {
-                                            margin-bottom: 1.5rem;
-                                        }
-                                    }
-
-                                    .VS {
-                                        margin: 0 5px;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-
-            .swiper03 {
-
-                .swiper-wrapper {
-
-                    .swiper-slide {
-
-                        .gBlock {
-    
-                            .down {
-    
-                                .infoDetail {
-                                    width: auto;
-                                }
-            
-                                .pkTeam {
-                                    width: 54%;
-                                    margin: 0 1rem 0 0;
-                                    flex-shrink: 0;
-    
-                                    .outbox {
-    
-                                        .team {
-    
-                                            svg {
-                                                margin: 0 0 1.5rem;
-                                            }
-    
-                                            .teamName {
-                                                margin-bottom: 1.5rem;
-                                            }
-                                        }
-    
-                                        .VS {
-                                            margin: 0 5px;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-
-            .right {
-
-                &.active {
-                    top: 46px;
-                }
-    
-                .betBlock {
-                    background: $mainColor_2;
-    
-                    .topList {
-    
-                        ul {
-    
-                            li {
-    
-                                &.active {
-    
-                                    p {
-                                        color: $mainColor;
-                                    }
-                                }
-                            }
-                        }
-                    }
-    
-                    .betTypeList {
-                        background: $subColor_3;
-    
-                        li {
-    
-                            &.active {
-                                a {
-    
-                                    &::before {
-                                        background: $mainColor_7;;
-                                    }
-    
-                                    p {
-                                        color: $mainColor_7;
-                                    }
-                                }
-                            }
-                            a {
-    
-                                p {
-                                    color: $subColor_5;
-                                }
-                               
-                            }
-                        }
-                    }
-    
-                    .betContent {
-    
-                        .betData {
-    
-                            .bdOuter {
-                                max-height: 500px;
-    
-                                .betDetail {
-                                    border-color: $mainColor_6;
-        
-                                    .bdTitle {
-                                        background: $mainColor_4;
-    
-                                        svg {
-                                            fill: $subColor_9;
-                                        }
-                                    }
-    
-                                    .bdContent {
-    
-                                        .top {
-                                            border-color: $mainColor_6;
-    
-                                            span {
-                                                background: $subColor_11;
-                                            }
-                                        }
-    
-                                        .pkTeam {
-                                            background: $mainColor_4;
-    
-                                            .VS {
-                                                color: $mainColor_3;
-                                            }
-                                        }
-    
-                                        .wintext {
-                                            color: $mainColor_6;
-                                        }
-    
-                                        .betwin {
-                                            border-color: $mainColor_6;
-    
-                                            p {
-                                                color: $mainColor_6;
-                                            }
-                                        }
-    
-                                        .betamount {
-                                            border-color: $mainColor_7;
-                                        }
-    
-    
-                                    }
-                                }
-                            }
-    
-                            .betTotal {
-                                        
-                                li {
-                                    p {
-                                        color: $mainColor_3;
-                                    }
-                                }
-                            }
-                           
-                        }
-                    }
-    
-                    .closeRight {
-                        background: $mainColor_7;
-                    }
-                }
-            }
-
-            .contentBox {
-                display: none;
-            }
-
-            .mobile_content {
-                display: block;
-            }
-        }
-
-        .right {
-            height: calc(100vh - 14vw - 55px);
-
-            &.active {
-                top: 50px;
-            }
-
-            .betBlock {
-                background: $mainColor_2;
-
-                .topList {
-
-                    li {
-
-                        &.active {
-
-                            &::before {
-                                background: $mainColor;
-                            }
-
-                            p {
-                                color: $mainColor;
-                            }
-                        }
-                    }
-                }
-
-                .betTypeList {
-                    background: $subColor_3;
-
-                    li {
-
-                        &.active {
-
-                            a {
-
-                                &::before {
-                                    background: $mainColor_7;;
-                                }
-
-                                p {
-                                    color: $mainColor_7;
-                                }
-                            }
-                        }
-
-                        a {
-
-                            p {
-                                color: $subColor_5;
-                            }
-                           
-                        }
-                    }
-                }
-
-                .betContent {
-
-                    .betData {
-
-                        .bdOuter {
-                            max-height: 500px;
-
-                            .betDetail {
-                                border-color: $mainColor_6;
-    
-                                .bdTitle {
-                                    background: $mainColor_4;
-
-                                    svg {
-                                        fill: $subColor_9;
-                                    }
-                                }
-
-                                .bdContent {
-
-                                    .top {
-                                        border-color: $mainColor_6;
-
-                                        span {
-                                            background: $subColor_11;
-                                        }
-                                    }
-
-                                    .pkTeam {
-                                        background: $mainColor_4;
-
-                                        .VS {
-                                            color: $mainColor_3;
-                                        }
-                                    }
-                                    
-                                    .wintext {
-                                        color: $mainColor_6;
-                                    }
-
-                                    .betwin {
-                                        border-color: $mainColor_6;
-
-                                        p {
-
-                                            color: $mainColor_6;
-                                        }
-                                    }
-
-                                    .betamount {
-                                        border-color: $mainColor_7;
-                                    }
-                                }
-                            }
-                        }
-
-                        .betTotal {
-                                    
-                            li {
-
-                                p {
-                                    color: $mainColor_3;
-                                }
-                            }
-                        }
-                       
-                    }
-                }
-
-                .closeRight {
-                    background: $mainColor_7;
-                }
-            }
-        }
-
-        aside {
-
-            &.betRecordBtn {
-                bottom: 85px;
-                right: 20px;
             }
         }
     }

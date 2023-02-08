@@ -29,50 +29,12 @@ html {
     @import "./memberPage";
     @import "./betPage";
     @import "./servicePage";
+    @import "./settingPage";
+    @import "./settingACPW";
+    @import "./overView";
+    @import "./jumpWindow";
     @import "./message";
     @import "./mainWrap";
     @import "./footer";
-    @import "./rwd";
-
-    @media only screen and (max-width: 1024px) {
-
-        body {
-
-            main {
-                padding-top: 100px;
-
-                &.innerPage {
-
-                    .left {
-                        display: block;
-                    }
-                }
-            }
-        }
-    }
-
-    @media only screen and (max-width: 450px) {
-        font-size: 4vw;
-        
-        body {
-
-            main {
-                //手機版未登入
-                padding-top: 0px;
-    
-                //手機版已登入
-                &.inMain {
-                    padding-top: 50px;
-    
-                    .mainArea {
-    
-                        .searchBox {
-                            margin-top: 0;
-                        }
-                    }
-                }
-            }
-        }
-    }
 }
 
