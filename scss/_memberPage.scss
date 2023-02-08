@@ -136,7 +136,7 @@
 
             .innerBox {
                 width: 100%;
-                padding: 0 4vw 4vw;
+                padding: 0 4vw 19vw;
 
                 // 個人頁主頁
                 &.userHome {
@@ -291,21 +291,35 @@
                                 &.message_center {
 
                                     i {
-                                        background-position-y: 25%;
+                                        background-position-y: 16%;
                                     }
                                 }
 
                                 &.cs_service {
 
                                     i {
-                                        background-position-y: 50%;
+                                        background-position-y: 33%;
                                     }
                                 }
 
                                 &.feedback {
 
                                     i {
-                                        background-position-y: 75%;
+                                        background-position-y: 50%;
+                                    }
+                                }
+
+                                &.overView {
+
+                                    i {
+                                        background-position-y: 66%;
+                                    }
+                                }
+
+                                &.acpw {
+
+                                    i {
+                                        background-position-y: 82%;
                                     }
                                 }
 

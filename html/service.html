@@ -268,7 +268,7 @@
             <section class="leftSide">
                 <div class="navoutter">
                     <ul>
-                        <li>
+                        <li class="active">
                             <a href="./memberPage.html">
                                 <p>口座残高</p>
                                 <i class="fa-solid fa-chevron-right"></i>
@@ -296,24 +296,10 @@
                             </a>
                         </li>
                     </ul>
-                    <p class="navTitle">ボーナス情報</p>
-                    <ul>
-                        <li>
-                            <a href="javascript:;">
-                                <p>スポーツ</p>
-                                <i class="fa-solid fa-chevron-right"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:;">
-                                <p>カジノ</p>
-                                <i class="fa-solid fa-chevron-right"></i>
-                            </a>
-                        </li>
-                    </ul>
+                    
                     <p class="navTitle">マイベット</p>
                     <ul>
-                        <li class="active">
+                        <li>
                             <a href="./betRecord.html">
                                 <p>ベット中</p>
                                 <i class="fa-solid fa-chevron-right"></i>
@@ -326,31 +312,23 @@
                             </a>
                         </li>
                     </ul>
-                    <p class="navTitle">カジノ</p>
-                    <ul>
-                        <li>
-                            <a href="javascript:;">
-                                <p>カジノ履歴</p>
-                                <i class="fa-solid fa-chevron-right"></i>
-                            </a>
-                        </li>
-                    </ul>
+                   
                     <p class="navTitle">マイアカウント</p>
                     <ul>
                         <li>
-                            <a href="javascript:;">
+                            <a href="./memberInfo.html">
                                 <p>個人情報詳細</p>
                                 <i class="fa-solid fa-chevron-right"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="javascript:;">
+                            <a href="./memberSetting.html">
                                 <p>環境設定</p>
                                 <i class="fa-solid fa-chevron-right"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="javascript:;">
+                            <a href="./settingACPW.html">
                                 <p>セキュリティとパスワード</p>
                                 <i class="fa-solid fa-chevron-right"></i>
                             </a>
@@ -361,9 +339,6 @@
                                 <i class="fa-solid fa-chevron-right"></i>
                             </a>
                         </li>
-                    </ul>
-                    <p class="navTitle">メッセージ</p>
-                    <ul>
                         <li>
                             <a href="javascript:;">
                                 <p>メッセージボックス</p>
@@ -574,11 +549,48 @@
                 <div class="mobile_content">
                     <div class="innerBox">
                         <div class="topLine">
-                            <button class="backBtn" onclick="window.location.href='../html/login_index.html'">戻る</button>
+                            <button class="backBtn" onclick="window.location.href='./memberPage.html'">戻る</button>
                             <p class="pageName">顧客サービス</p>
                         </div>
                         <!-- 客服中心 -->
-                        
+                        <div class="userBox">
+                            <div class="userPic"></div>
+                            <div class="rightBox">
+                                <p class="userName">
+                                    Hi,
+                                    <span>user545</span>
+                                </p>
+                                <p class="text">カスタマー サービス センターへようこそ</p>
+                            </div>
+                        </div>
+                        <div class="linkBox">
+                            <ul>
+                                <li>
+                                    <div class="top">
+                                        <i class="service_ic main"></i>
+                                        <div class="textBox">
+                                            <p class="title">メインラインカスタマーサービス</p>
+                                            <p class="remind">Main Customer Support</p>
+                                        </div>
+                                    </div>
+                                    <p class="sp">7 * 24 時間特別ライン サービス</p>
+                                </li>
+                                <li>
+                                    <div class="top">
+                                        <i class="service_ic reserve"></i>
+                                        <div class="textBox">
+                                            <p class="title">メインラインカスタマーサービス</p>
+                                            <p class="remind">Reserve Customer Support</p>
+                                        </div>
+                                    </div>
+                                    <p class="sp">7 * 24 時間特別ライン サービス</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="otherLink" onclick="window.location.href='../html/feeback.html'">
+                            <i class="feeback_ic"></i>
+                            <p>フィードバック</p>
+                        </button>
                     </div>
                 </div>
             </section>
@@ -846,7 +858,7 @@
                     <p>ベット中</p>
                 </a>
             </li>
-            <li class="active">
+            <li>
                 <a href="./betResult.html">
                     <i class="winlose"></i>
                     <p>レース結果</p>
@@ -858,7 +870,7 @@
                     <p>ベット履歷</p>
                 </a>
             </li>
-            <li>
+            <li class="active">
                 <a href="./memberPage.html">
                     <i class="member"></i>
                     <p>マイページ</p>

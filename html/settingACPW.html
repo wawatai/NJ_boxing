@@ -70,7 +70,7 @@
                     <button class="deposit">入金</button>
                     <p>$<span class="dpAmount">0.00</span></p>
                 </div>
-                <div class="wallet">
+                <div class="wallet" onclick="window.location.href='./html/betRecord.html'">
                     <button class="walletBtn">マイベット</button>
                     <p>$<span class="walletNum">0.00</span></p>
                 </div>
@@ -108,7 +108,7 @@
         </div>
     </header>
     <main class="inMain innerPage">
-        <div class="center betPage">
+        <div class="center myPage">
             <!-- 左主NAV -->
             <section class="left">
                 <p class="navTitle">スポーツ</p>
@@ -365,538 +365,152 @@
             <!-- 中 -->
             <section class="mainArea">
                 <div class="contentBox">
-                    <p class="pageTitle">ベット中</p>
+                    <p class="pageTitle">口座残高</p>
                     <div class="overview">
                         <table>
                             <tr>
-                                <th>
-                                    <p>格鬪技</p>
-                                </th>
-                                <th colspan="2">
-                                    <p>|&emsp;当たり</p>
-                                </th>
-                                <th>
-                                    <p>M11513352<span></span></p>
-                                </th>
-                            </tr>
-                            <tr>
-                                <td colspan="4">
-                                    <div class="teamBox">
-                                        <p>UFC 283</p>
-                                        <p>Marcos, Daniel<span>VS</span>Oliveira, Saimon</p>
-                                    </div>
+                                <td colspan="2">
+                                    <p>キャッシュ</p>
+                                </td>
+                                <td>
+                                    <p>USD</p>
+                                </td>
+                                <td>
+                                    <p>0.00</p>
                                 </td>
                             </tr>
                             <tr>
-                                <td>
-                                    <p>賭け時間</p>
+                                <td colspan="2">
+                                    <p>カジノボーナス</p>
                                 </td>
                                 <td>
-                                    <p>09/07 18:00</p>
+                                    <p>USD</p>
                                 </td>
                                 <td>
-                                    <p>競技時間</p>
-                                </td>
-                                <td>
-                                    <p>09/08 18:00</p>
+                                    <p>0.00</p>
                                 </td>
                             </tr>
                             <tr>
-                                <td>
-                                    <p>有効な賭け</p>
+                                <td colspan="2">
+                                    <p>スポーツボーナス</p>
                                 </td>
                                 <td>
-                                    <p>0</p>
+                                    <p>USD</p>
                                 </td>
                                 <td>
-                                    <p>オッズ</p>
-                                </td>
-                                <td>
-                                    <p>0.88</p>
+                                    <p>0.00</p>
                                 </td>
                             </tr>
                             <tr>
-                                <td>
-                                    <p>賭けのオプション</p>
-                                </td>
-                                <td colspan="3">
-                                    <p>Marcos, Daniel</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p>結果</p>
-                                </td>
-                                <td colspan="3">
-                                    <div>
-                                        <p>起動しませんでした</p>
-                                        <div class="cancleBtn">キャンセル</div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p>賭け</p>
+                                <td colspan="2">
+                                    <p>合計</p>
                                 </td>
                                 <td>
-                                    <p>100</p>
+                                    <p>USD</p>
                                 </td>
                                 <td>
-                                    <p>払い戻し(予想)</p>
-                                </td>
-                                <td>
-                                    <p>88</p>
-                                </td>
-                            </tr>
-                        </table>
-                        <table>
-                            <tr>
-                                <th>
-                                    <p>格鬪技</p>
-                                </th>
-                                <th colspan="2">
-                                    <p>|&emsp;当たり</p>
-                                </th>
-                                <th>
-                                    <p>M11513352<span></span></p>
-                                </th>
-                            </tr>
-                            <tr>
-                                <td colspan="4">
-                                    <div class="teamBox">
-                                        <p>UFC 283</p>
-                                        <p>Marcos, Daniel<span>VS</span>Oliveira, Saimon</p>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p>賭け時間</p>
-                                </td>
-                                <td>
-                                    <p>09/07 18:00</p>
-                                </td>
-                                <td>
-                                    <p>競技時間</p>
-                                </td>
-                                <td>
-                                    <p>09/08 18:00</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p>有効な賭け</p>
-                                </td>
-                                <td>
-                                    <p>0</p>
-                                </td>
-                                <td>
-                                    <p>オッズ</p>
-                                </td>
-                                <td>
-                                    <p>0.88</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p>賭けのオプション</p>
-                                </td>
-                                <td colspan="3">
-                                    <p>Marcos, Daniel</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p>結果</p>
-                                </td>
-                                <td colspan="3">
-                                    <div>
-                                        <p>起動しませんでした</p>
-                                        <div class="cancleBtn">キャンセル</div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p>賭け</p>
-                                </td>
-                                <td>
-                                    <p>100</p>
-                                </td>
-                                <td>
-                                    <p>払い戻し(予想)</p>
-                                </td>
-                                <td>
-                                    <p>88</p>
+                                    <p>0.00</p>
                                 </td>
                             </tr>
                         </table>
                     </div>
-                    <div class="myResult">
-                        <div class="betAmount">
-                            <p>賭け
-                                <span>1000</span>
-                            </p>
+                    <div class="myRewrad">
+                        <p class="title">My Rewards</p>
+                        <div class="rewrad_btn">
+                            <button class="active">取得済</button>
+                            <button>
+                                <i class="fa-solid fa-lock"></i>
+                                未取得
+                            </button>
                         </div>
-                        <div class="result">
-                            <p>結果
-                                <span>0</span>
-                            </p>
-                        </div>
+                        <p class="reward_stauts"><span>使用中</span>のプロモーション</p>
                     </div>
                 </div>
-                <!-- 手機版內容 -->
                 <div class="mobile_content">
-                    <div class="innerBox">
+                    <!-- 設定 -->
+                    <div class="innerBox userSetting">
                         <div class="topLine">
-                            <button class="backBtn" onclick="window.location.href='../html/login_index.html'">戻る</button>
-                            <p class="pageName">レース結果</p>
+                            <button class="backBtn" onclick="window.location.href='./memberPage.html'">戻る</button>
+                            <p class="pageName">設定</p>
                         </div>
-                        <div class="selectNav">
-                            <label class="selectBox">
-                                <select>
-                                    <option>格鬪技</option>
-                                    <option>格鬪技</option>
-                                </select>
-                                <i class="arrow_ic"></i>
+                        <form>
+                            <label>
+                                <p class="inputTitle">オッズ形式</p>
+                                <div class="selectBox">
+                                    <select>
+                                        <option>---</option>
+                                        <option>+++</option>
+                                        <option>***</option>
+                                    </select>
+                                </div>
                             </label>
-                            <label class="selectBox">
-                                <select>
-                                    <option>2022-12-25</option>
-                                    <option>2022-12-26</option>
-                                </select>
-                                <i class="arrow_ic"></i>
+                            <label>
+                                <p class="inputTitle">言語</p>
+                                <div class="selectBox">
+                                    <select>
+                                        <option>日本語</option>
+                                        <option>English</option>
+                                        <option>中文</option>
+                                    </select>
+                                </div>
                             </label>
-                        </div>
-                        <!-- 投注結果 -->
-                        <div class="resultBox">
-                            <ul class="topnav">
-                                <li class="active"><p>今日</p></li>
-                                <li><p>明日</p></li>
-                            </ul>
-                            <table class="active">
-                                <tr>
-                                    <th colspan="4">
-                                        <p>UFC 283</p>
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <p>時間</p>
-                                    </td>
-                                    <td>
-                                        <p>チーム</p>
-                                    </td>
-                                    <td>
-                                        <p>前半</p>
-                                    </td>
-                                    <td>
-                                        <p>観客</p>
-                                    </td>
-                                </tr>
-                                <tr class="row">
-                                    <td class="date" rowspan="2">
-                                        <p>
-                                            09-06
-                                            <br>
-                                            15:30
-                                        </p>
-                                    </td>
-                                    <td class="name">
-                                        <div>
-                                            <svg><path d="M21.208,2.209a5.088,5.088,0,0,0-3.3-2.127A5.151,5.151,0,0,0,16.994,0H9.163a5.286,5.286,0,0,0-4.24,2.017,5.186,5.186,0,0,0-.962,4.025l.853,4.692L2.523,7.227,1.882,8a3.733,3.733,0,0,0-.092,4.718L5,17.314V21a3,3,0,0,0,3,3H18a3,3,0,0,0,3-3V16.052L22.036,6.043A5.092,5.092,0,0,0,21.208,2.209ZM18,20H8V18H18Z"></path></svg>
-                                            <p>Oliveira, Saimon</p>
+                            <div class="checkBlock">
+                                <p class="inputTitle">お知らせ</p>
+                                <div class="choess">
+                                    <div class="itemName">
+                                        <p>Eメール</p>
+                                    </div>
+                                    <div class="item">
+                                        <div class="check">
+                                            <input type="checkbox">
+                                            <label value="yes">はい</label>
                                         </div>
-                                    </td>
-                                    <td>
-                                        <p>1</p>
-                                    </td>
-                                    <td>
-                                        <p>2</p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="name">
-                                        <div>
-                                            <svg><path d="M21.208,2.209a5.088,5.088,0,0,0-3.3-2.127A5.151,5.151,0,0,0,16.994,0H9.163a5.286,5.286,0,0,0-4.24,2.017,5.186,5.186,0,0,0-.962,4.025l.853,4.692L2.523,7.227,1.882,8a3.733,3.733,0,0,0-.092,4.718L5,17.314V21a3,3,0,0,0,3,3H18a3,3,0,0,0,3-3V16.052L22.036,6.043A5.092,5.092,0,0,0,21.208,2.209ZM18,20H8V18H18Z"></path></svg>
-                                            <p>Marcos, Daniel</p>
+                                        <div class="check">
+                                            <input type="checkbox" checked>
+                                            <label value="no">いいえ</label>
                                         </div>
-                                    </td>
-                                    <td>
-                                        <p>0</p>
-                                    </td>
-                                    <td>
-                                        <p>1</p>
-                                    </td>
-                                </tr>
-                                <tr class="row">
-                                    <td class="date" rowspan="2">
-                                        <p>
-                                            09-06
-                                            <br>
-                                            15:30
-                                        </p>
-                                    </td>
-                                    <td class="name">
-                                        <div>
-                                            <svg><path d="M21.208,2.209a5.088,5.088,0,0,0-3.3-2.127A5.151,5.151,0,0,0,16.994,0H9.163a5.286,5.286,0,0,0-4.24,2.017,5.186,5.186,0,0,0-.962,4.025l.853,4.692L2.523,7.227,1.882,8a3.733,3.733,0,0,0-.092,4.718L5,17.314V21a3,3,0,0,0,3,3H18a3,3,0,0,0,3-3V16.052L22.036,6.043A5.092,5.092,0,0,0,21.208,2.209ZM18,20H8V18H18Z"></path></svg>
-                                            <p>Oliveira, Saimon</p>
+                                    </div>
+                                </div>
+                                <div class="choess">
+                                    <div class="itemName">
+                                        <p>電話</p>
+                                    </div>
+                                    <div class="item">
+                                        <div class="check">
+                                            <input type="checkbox">
+                                            <label value="yes">はい</label>
                                         </div>
-                                    </td>
-                                    <td>
-                                        <p>1</p>
-                                    </td>
-                                    <td>
-                                        <p>2</p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="name">
-                                        <div>
-                                            <svg><path d="M21.208,2.209a5.088,5.088,0,0,0-3.3-2.127A5.151,5.151,0,0,0,16.994,0H9.163a5.286,5.286,0,0,0-4.24,2.017,5.186,5.186,0,0,0-.962,4.025l.853,4.692L2.523,7.227,1.882,8a3.733,3.733,0,0,0-.092,4.718L5,17.314V21a3,3,0,0,0,3,3H18a3,3,0,0,0,3-3V16.052L22.036,6.043A5.092,5.092,0,0,0,21.208,2.209ZM18,20H8V18H18Z"></path></svg>
-                                            <p>Marcos, Daniel</p>
+                                        <div class="check">
+                                            <input type="checkbox" checked>
+                                            <label value="no">いいえ</label>
                                         </div>
-                                    </td>
-                                    <td>
-                                        <p>0</p>
-                                    </td>
-                                    <td>
-                                        <p>1</p>
-                                    </td>
-                                </tr>
-                                <tr class="row">
-                                    <td class="date" rowspan="2">
-                                        <p>
-                                            09-06
-                                            <br>
-                                            15:30
-                                        </p>
-                                    </td>
-                                    <td class="name">
-                                        <div>
-                                            <svg><path d="M21.208,2.209a5.088,5.088,0,0,0-3.3-2.127A5.151,5.151,0,0,0,16.994,0H9.163a5.286,5.286,0,0,0-4.24,2.017,5.186,5.186,0,0,0-.962,4.025l.853,4.692L2.523,7.227,1.882,8a3.733,3.733,0,0,0-.092,4.718L5,17.314V21a3,3,0,0,0,3,3H18a3,3,0,0,0,3-3V16.052L22.036,6.043A5.092,5.092,0,0,0,21.208,2.209ZM18,20H8V18H18Z"></path></svg>
-                                            <p>Oliveira, Saimon</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="checkBlock">
+                                <p class="inputTitle">お知らせ</p>
+                                <div class="choess">
+                                    <div class="itemName">
+                                        <p>プライベー<br>
+                                            トプロフィ<br>
+                                            ール</p>
+                                    </div>
+                                    <div class="item">
+                                        <div class="check">
+                                            <input type="checkbox">
+                                            <label value="yes">オン</label>
                                         </div>
-                                    </td>
-                                    <td>
-                                        <p>1</p>
-                                    </td>
-                                    <td>
-                                        <p>2</p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="name">
-                                        <div>
-                                            <svg><path d="M21.208,2.209a5.088,5.088,0,0,0-3.3-2.127A5.151,5.151,0,0,0,16.994,0H9.163a5.286,5.286,0,0,0-4.24,2.017,5.186,5.186,0,0,0-.962,4.025l.853,4.692L2.523,7.227,1.882,8a3.733,3.733,0,0,0-.092,4.718L5,17.314V21a3,3,0,0,0,3,3H18a3,3,0,0,0,3-3V16.052L22.036,6.043A5.092,5.092,0,0,0,21.208,2.209ZM18,20H8V18H18Z"></path></svg>
-                                            <p>Marcos, Daniel</p>
+                                        <div class="check">
+                                            <input type="checkbox" checked>
+                                            <label value="no">オフ</label>
                                         </div>
-                                    </td>
-                                    <td>
-                                        <p>0</p>
-                                    </td>
-                                    <td>
-                                        <p>1</p>
-                                    </td>
-                                </tr>
-                                <tr class="row">
-                                    <td class="date" rowspan="2">
-                                        <p>
-                                            09-06
-                                            <br>
-                                            15:30
-                                        </p>
-                                    </td>
-                                    <td class="name">
-                                        <div>
-                                            <svg><path d="M21.208,2.209a5.088,5.088,0,0,0-3.3-2.127A5.151,5.151,0,0,0,16.994,0H9.163a5.286,5.286,0,0,0-4.24,2.017,5.186,5.186,0,0,0-.962,4.025l.853,4.692L2.523,7.227,1.882,8a3.733,3.733,0,0,0-.092,4.718L5,17.314V21a3,3,0,0,0,3,3H18a3,3,0,0,0,3-3V16.052L22.036,6.043A5.092,5.092,0,0,0,21.208,2.209ZM18,20H8V18H18Z"></path></svg>
-                                            <p>Oliveira, Saimon</p>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <p>1</p>
-                                    </td>
-                                    <td>
-                                        <p>2</p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="name">
-                                        <div>
-                                            <svg><path d="M21.208,2.209a5.088,5.088,0,0,0-3.3-2.127A5.151,5.151,0,0,0,16.994,0H9.163a5.286,5.286,0,0,0-4.24,2.017,5.186,5.186,0,0,0-.962,4.025l.853,4.692L2.523,7.227,1.882,8a3.733,3.733,0,0,0-.092,4.718L5,17.314V21a3,3,0,0,0,3,3H18a3,3,0,0,0,3-3V16.052L22.036,6.043A5.092,5.092,0,0,0,21.208,2.209ZM18,20H8V18H18Z"></path></svg>
-                                            <p>Marcos, Daniel</p>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <p>0</p>
-                                    </td>
-                                    <td>
-                                        <p>1</p>
-                                    </td>
-                                </tr>
-                            </table>
-                            <table>
-                                <tr>
-                                    <th colspan="4">
-                                        <p>UFC 283</p>
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <p>時間</p>
-                                    </td>
-                                    <td>
-                                        <p>チーム</p>
-                                    </td>
-                                    <td>
-                                        <p>前半</p>
-                                    </td>
-                                    <td>
-                                        <p>観客</p>
-                                    </td>
-                                </tr>
-                                <tr class="row">
-                                    <td class="date" rowspan="2">
-                                        <p>
-                                            09-06
-                                            <br>
-                                            15:30
-                                        </p>
-                                    </td>
-                                    <td class="name">
-                                        <div>
-                                            <svg><path d="M21.208,2.209a5.088,5.088,0,0,0-3.3-2.127A5.151,5.151,0,0,0,16.994,0H9.163a5.286,5.286,0,0,0-4.24,2.017,5.186,5.186,0,0,0-.962,4.025l.853,4.692L2.523,7.227,1.882,8a3.733,3.733,0,0,0-.092,4.718L5,17.314V21a3,3,0,0,0,3,3H18a3,3,0,0,0,3-3V16.052L22.036,6.043A5.092,5.092,0,0,0,21.208,2.209ZM18,20H8V18H18Z"></path></svg>
-                                            <p>Oliveira, Saimon</p>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <p>1</p>
-                                    </td>
-                                    <td>
-                                        <p>2</p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="name">
-                                        <div>
-                                            <svg><path d="M21.208,2.209a5.088,5.088,0,0,0-3.3-2.127A5.151,5.151,0,0,0,16.994,0H9.163a5.286,5.286,0,0,0-4.24,2.017,5.186,5.186,0,0,0-.962,4.025l.853,4.692L2.523,7.227,1.882,8a3.733,3.733,0,0,0-.092,4.718L5,17.314V21a3,3,0,0,0,3,3H18a3,3,0,0,0,3-3V16.052L22.036,6.043A5.092,5.092,0,0,0,21.208,2.209ZM18,20H8V18H18Z"></path></svg>
-                                            <p>Marcos, Daniel</p>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <p>0</p>
-                                    </td>
-                                    <td>
-                                        <p>1</p>
-                                    </td>
-                                </tr>
-                                <tr class="row">
-                                    <td class="date" rowspan="2">
-                                        <p>
-                                            09-06
-                                            <br>
-                                            15:30
-                                        </p>
-                                    </td>
-                                    <td class="name">
-                                        <div>
-                                            <svg><path d="M21.208,2.209a5.088,5.088,0,0,0-3.3-2.127A5.151,5.151,0,0,0,16.994,0H9.163a5.286,5.286,0,0,0-4.24,2.017,5.186,5.186,0,0,0-.962,4.025l.853,4.692L2.523,7.227,1.882,8a3.733,3.733,0,0,0-.092,4.718L5,17.314V21a3,3,0,0,0,3,3H18a3,3,0,0,0,3-3V16.052L22.036,6.043A5.092,5.092,0,0,0,21.208,2.209ZM18,20H8V18H18Z"></path></svg>
-                                            <p>Oliveira, Saimon</p>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <p>1</p>
-                                    </td>
-                                    <td>
-                                        <p>2</p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="name">
-                                        <div>
-                                            <svg><path d="M21.208,2.209a5.088,5.088,0,0,0-3.3-2.127A5.151,5.151,0,0,0,16.994,0H9.163a5.286,5.286,0,0,0-4.24,2.017,5.186,5.186,0,0,0-.962,4.025l.853,4.692L2.523,7.227,1.882,8a3.733,3.733,0,0,0-.092,4.718L5,17.314V21a3,3,0,0,0,3,3H18a3,3,0,0,0,3-3V16.052L22.036,6.043A5.092,5.092,0,0,0,21.208,2.209ZM18,20H8V18H18Z"></path></svg>
-                                            <p>Marcos, Daniel</p>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <p>0</p>
-                                    </td>
-                                    <td>
-                                        <p>1</p>
-                                    </td>
-                                </tr>
-                                <tr class="row">
-                                    <td class="date" rowspan="2">
-                                        <p>
-                                            09-06
-                                            <br>
-                                            15:30
-                                        </p>
-                                    </td>
-                                    <td class="name">
-                                        <div>
-                                            <svg><path d="M21.208,2.209a5.088,5.088,0,0,0-3.3-2.127A5.151,5.151,0,0,0,16.994,0H9.163a5.286,5.286,0,0,0-4.24,2.017,5.186,5.186,0,0,0-.962,4.025l.853,4.692L2.523,7.227,1.882,8a3.733,3.733,0,0,0-.092,4.718L5,17.314V21a3,3,0,0,0,3,3H18a3,3,0,0,0,3-3V16.052L22.036,6.043A5.092,5.092,0,0,0,21.208,2.209ZM18,20H8V18H18Z"></path></svg>
-                                            <p>Oliveira, Saimon</p>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <p>1</p>
-                                    </td>
-                                    <td>
-                                        <p>2</p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="name">
-                                        <div>
-                                            <svg><path d="M21.208,2.209a5.088,5.088,0,0,0-3.3-2.127A5.151,5.151,0,0,0,16.994,0H9.163a5.286,5.286,0,0,0-4.24,2.017,5.186,5.186,0,0,0-.962,4.025l.853,4.692L2.523,7.227,1.882,8a3.733,3.733,0,0,0-.092,4.718L5,17.314V21a3,3,0,0,0,3,3H18a3,3,0,0,0,3-3V16.052L22.036,6.043A5.092,5.092,0,0,0,21.208,2.209ZM18,20H8V18H18Z"></path></svg>
-                                            <p>Marcos, Daniel</p>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <p>0</p>
-                                    </td>
-                                    <td>
-                                        <p>1</p>
-                                    </td>
-                                </tr>
-                                <tr class="row">
-                                    <td class="date" rowspan="2">
-                                        <p>
-                                            09-06
-                                            <br>
-                                            15:30
-                                        </p>
-                                    </td>
-                                    <td class="name">
-                                        <div>
-                                            <svg><path d="M21.208,2.209a5.088,5.088,0,0,0-3.3-2.127A5.151,5.151,0,0,0,16.994,0H9.163a5.286,5.286,0,0,0-4.24,2.017,5.186,5.186,0,0,0-.962,4.025l.853,4.692L2.523,7.227,1.882,8a3.733,3.733,0,0,0-.092,4.718L5,17.314V21a3,3,0,0,0,3,3H18a3,3,0,0,0,3-3V16.052L22.036,6.043A5.092,5.092,0,0,0,21.208,2.209ZM18,20H8V18H18Z"></path></svg>
-                                            <p>Oliveira, Saimon</p>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <p>1</p>
-                                    </td>
-                                    <td>
-                                        <p>2</p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="name">
-                                        <div>
-                                            <svg><path d="M21.208,2.209a5.088,5.088,0,0,0-3.3-2.127A5.151,5.151,0,0,0,16.994,0H9.163a5.286,5.286,0,0,0-4.24,2.017,5.186,5.186,0,0,0-.962,4.025l.853,4.692L2.523,7.227,1.882,8a3.733,3.733,0,0,0-.092,4.718L5,17.314V21a3,3,0,0,0,3,3H18a3,3,0,0,0,3-3V16.052L22.036,6.043A5.092,5.092,0,0,0,21.208,2.209ZM18,20H8V18H18Z"></path></svg>
-                                            <p>Marcos, Daniel</p>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <p>0</p>
-                                    </td>
-                                    <td>
-                                        <p>1</p>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <label>
+                                <div class="submitBtn display">個人情報変更</div>
+                            </label>
+                        </form>
                     </div>
                 </div>
             </section>
@@ -1156,33 +770,6 @@
             <p class="copyRight">スポーツベット・カジノなら MANEKI</p>
             <p class="copyRight">©2023 MANEKI</p>
         </div>
-        <!-- 手機版 -->
-        <ul class="mobileFooter">
-            <li>
-                <a href="./login_index.html">
-                    <i class="home"></i>
-                    <p>ベット中</p>
-                </a>
-            </li>
-            <li class="active">
-                <a href="./betResult.html">
-                    <i class="winlose"></i>
-                    <p>レース結果</p>
-                </a>
-            </li>
-            <li>
-                <a href="./betRecord.html">
-                    <i class="bet"></i>
-                    <p>ベット履歷</p>
-                </a>
-            </li>
-            <li>
-                <a href="./memberPage.html">
-                    <i class="member"></i>
-                    <p>マイページ</p>
-                </a>
-            </li>
-        </ul>
     </footer>
 </body>
 </html>

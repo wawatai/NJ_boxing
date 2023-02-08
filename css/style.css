@@ -34,6 +34,36 @@ header .top li i {
   background-size: 100%;
 }
 
+.servicePage .userPic {
+  background: url("../image/user.png") no-repeat center;
+  background-size: contain;
+}
+
+.servicePage .service_ic {
+  background: url("../image/icon/service_ic.png") no-repeat;
+  background-size: 200%;
+}
+
+.servicePage .feeback_ic {
+  background: url("../image/icon/mysmallNav_IC.png") no-repeat;
+  background-size: 100%;
+}
+
+.servicePage .contact_ic {
+  background: url("../image/icon/contact_ic.png") no-repeat;
+  background-size: 500%;
+}
+
+.servicePage .addPic_ic {
+  background: url("../image/icon/feeback_addPicture_ic.png") no-repeat center;
+  background-size: contain;
+}
+
+.messagePage .message_ic {
+  background: url("../image/icon/message_ic.png") no-repeat center;
+  background-size: contain;
+}
+
 footer .flag.jp {
   background: url("../image/icon/flag/JP.svg") no-repeat center;
   background-size: contain;
@@ -1904,7 +1934,7 @@ html .myPage .mainArea .mobile_content {
 }
 html .myPage .mainArea .mobile_content .innerBox {
   width: 100%;
-  padding: 0 4vw 4vw;
+  padding: 0 4vw 19vw;
 }
 html .myPage .mainArea .mobile_content .innerBox.userHome .topBox {
   width: 100%;
@@ -2060,13 +2090,19 @@ html .myPage .mainArea .mobile_content .innerBox.userHome .pageList li a.qa i {
   background-position-y: 0%;
 }
 html .myPage .mainArea .mobile_content .innerBox.userHome .pageList li a.message_center i {
-  background-position-y: 25%;
+  background-position-y: 16%;
 }
 html .myPage .mainArea .mobile_content .innerBox.userHome .pageList li a.cs_service i {
-  background-position-y: 50%;
+  background-position-y: 33%;
 }
 html .myPage .mainArea .mobile_content .innerBox.userHome .pageList li a.feedback i {
-  background-position-y: 75%;
+  background-position-y: 50%;
+}
+html .myPage .mainArea .mobile_content .innerBox.userHome .pageList li a.overView i {
+  background-position-y: 66%;
+}
+html .myPage .mainArea .mobile_content .innerBox.userHome .pageList li a.acpw i {
+  background-position-y: 82%;
 }
 html .myPage .mainArea .mobile_content .innerBox.userHome .pageList li a.logout i {
   background-position-y: 100%;
@@ -3412,7 +3448,7 @@ html .servicePage .mainArea .mobile_content {
 html .servicePage .mainArea .mobile_content .innerBox {
   width: 100%;
   height: auto;
-  padding: 0 4vw 4vw;
+  padding: 0 4vw 22vw;
 }
 html .servicePage .mainArea .mobile_content .innerBox .topLine {
   width: 100%;
@@ -3459,6 +3495,772 @@ html .servicePage .mainArea .mobile_content .innerBox .topLine p {
   color: #ffffff;
   font-size: 1.5rem;
   font-weight: bold;
+}
+html .servicePage .mainArea .mobile_content .innerBox .topnav {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 4px solid #b8151b;
+  margin: 4vw 0;
+}
+html .servicePage .mainArea .mobile_content .innerBox .topnav li {
+  width: 20%;
+  height: 35px;
+  background: #414141;
+  border-radius: 5px 5px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  padding: 0 1vw;
+  margin-right: 1vw;
+}
+html .servicePage .mainArea .mobile_content .innerBox .topnav li.active {
+  background: #b8151b;
+}
+html .servicePage .mainArea .mobile_content .innerBox .topnav li:last-child {
+  margin: 0;
+}
+html .servicePage .mainArea .mobile_content .innerBox .topnav li p {
+  color: #ffffff;
+  font-size: 0.85rem;
+  font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+html .servicePage .mainArea .mobile_content .innerBox .topnav li {
+  width: auto;
+  padding: 0 3vw;
+}
+html .servicePage .mainArea .mobile_content .innerBox .userBox {
+  width: 100%;
+  height: auto;
+  background: #202020;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 4vw;
+  margin: 4vw 0;
+}
+html .servicePage .mainArea .mobile_content .innerBox .userBox .userPic {
+  width: 15vw;
+  height: 15vw;
+  margin-right: 4vw;
+}
+html .servicePage .mainArea .mobile_content .innerBox .userBox .rightBox {
+  width: auto;
+  height: auto;
+}
+html .servicePage .mainArea .mobile_content .innerBox .userBox .rightBox .userName {
+  color: #b8151b;
+  font-size: 1rem;
+  font-weight: bold;
+}
+html .servicePage .mainArea .mobile_content .innerBox .userBox .rightBox .userName span {
+  color: #ffffff;
+}
+html .servicePage .mainArea .mobile_content .innerBox .userBox .rightBox .text {
+  color: #b8151b;
+  font-size: 0.85rem;
+  font-weight: bold;
+  margin-top: 2vw;
+}
+html .servicePage .mainArea .mobile_content .innerBox .linkBox {
+  width: 100%;
+  height: auto;
+}
+html .servicePage .mainArea .mobile_content .innerBox .linkBox ul {
+  width: 100%;
+  height: auto;
+}
+html .servicePage .mainArea .mobile_content .innerBox .linkBox ul li {
+  width: 100%;
+  height: auto;
+  border: solid 1px #b8151b;
+  border-radius: 8px;
+  padding: 4vw 2vw;
+  margin-bottom: 2vw;
+}
+html .servicePage .mainArea .mobile_content .innerBox .linkBox ul li:last-child {
+  margin: 0;
+}
+html .servicePage .mainArea .mobile_content .innerBox .linkBox ul li .top {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html .servicePage .mainArea .mobile_content .innerBox .linkBox ul li .top i {
+  width: 12vw;
+  height: 12vw;
+  margin-right: 2vw;
+}
+html .servicePage .mainArea .mobile_content .innerBox .linkBox ul li .top i.main {
+  background-position-x: 0;
+}
+html .servicePage .mainArea .mobile_content .innerBox .linkBox ul li .top i.reserve {
+  background-position-x: 100%;
+}
+html .servicePage .mainArea .mobile_content .innerBox .linkBox ul li .top .textBox {
+  width: auto;
+  height: auto;
+}
+html .servicePage .mainArea .mobile_content .innerBox .linkBox ul li .top .textBox .title {
+  color: #b8151b;
+  font-size: 1.15rem;
+  font-weight: bold;
+  margin-bottom: 2vw;
+}
+html .servicePage .mainArea .mobile_content .innerBox .linkBox ul li .top .textBox .remind {
+  color: #848484;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+html .servicePage .mainArea .mobile_content .innerBox .linkBox ul li .sp {
+  color: #66e123;
+  font-size: 0.85rem;
+  font-weight: bold;
+  margin-top: 2vw;
+  padding-left: 14vw;
+}
+html .servicePage .mainArea .mobile_content .innerBox .otherLink {
+  width: 100%;
+  height: 11vw;
+  background: #b8151b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  padding: 0 2vw;
+  margin-top: 4vw;
+}
+html .servicePage .mainArea .mobile_content .innerBox .otherLink::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 6px 4px 0 4px;
+  border-color: #ffffff transparent;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  pointer-events: none;
+  -webkit-transform: translateY(-50%) rotate(-90deg);
+          transform: translateY(-50%) rotate(-90deg);
+  right: 4vw;
+}
+html .servicePage .mainArea .mobile_content .innerBox .otherLink i {
+  width: 7vw;
+  height: 7vw;
+  background-position-y: 75%;
+  margin-right: 4vw;
+}
+html .servicePage .mainArea .mobile_content .innerBox .otherLink p {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+}
+html .servicePage .mainArea .mobile_content .innerBox .title {
+  width: 100%;
+  height: auto;
+  border-bottom: solid 2px #b8151b;
+  padding-bottom: 1.5vw;
+  margin-bottom: 2vw;
+}
+html .servicePage .mainArea .mobile_content .innerBox .title:first-child {
+  margin-top: 4vw;
+}
+html .servicePage .mainArea .mobile_content .innerBox .title p {
+  color: #b8151b;
+  font-size: 1rem;
+  font-weight: bold;
+}
+html .servicePage .mainArea .mobile_content .innerBox .contactBox {
+  width: 100%;
+  height: auto;
+}
+html .servicePage .mainArea .mobile_content .innerBox .contactBox ul {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10vw;
+}
+html .servicePage .mainArea .mobile_content .innerBox .contactBox ul li {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 4vw;
+}
+html .servicePage .mainArea .mobile_content .innerBox .contactBox ul li:last-child {
+  margin: 0;
+}
+html .servicePage .mainArea .mobile_content .innerBox .contactBox ul li i {
+  width: 15vw;
+  height: 15vw;
+  margin-right: 4vw;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+html .servicePage .mainArea .mobile_content .innerBox .contactBox ul li i.qq {
+  background-position-x: 25%;
+}
+html .servicePage .mainArea .mobile_content .innerBox .contactBox ul li i.skype {
+  background-position-x: 50%;
+}
+html .servicePage .mainArea .mobile_content .innerBox .contactBox ul li i.sugram {
+  background-position-x: 75%;
+}
+html .servicePage .mainArea .mobile_content .innerBox .contactBox ul li i.mail {
+  background-position-x: 100%;
+}
+html .servicePage .mainArea .mobile_content .innerBox .contactBox ul li .rightBox {
+  width: 100%;
+  height: auto;
+  border-left: solid 1px #b8151b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2vw 2vw 2vw 4vw;
+}
+html .servicePage .mainArea .mobile_content .innerBox .contactBox ul li .rightBox .textBox {
+  width: auto;
+  height: auto;
+}
+html .servicePage .mainArea .mobile_content .innerBox .contactBox ul li .rightBox .textBox .smallTitle {
+  color: #b8151b;
+  font-size: 1rem;
+  font-weight: bold;
+}
+html .servicePage .mainArea .mobile_content .innerBox .contactBox ul li .rightBox .textBox .text {
+  color: #ffffff;
+  font-size: 0.85rem;
+  font-weight: bold;
+  margin-top: 2vw;
+}
+html .servicePage .mainArea .mobile_content .innerBox .contactBox ul li .rightBox button {
+  width: auto;
+  height: auto;
+  background: #dd2830;
+  border-radius: 50px;
+  border: none;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #8e0b0b;
+  padding: 2vw 4vw;
+}
+html .servicePage .mainArea .mobile_content .innerBox .contactBox .serviceLink {
+  width: 80%;
+  height: 11vw;
+  background: #dd2830;
+  border-radius: 50px;
+  border: none;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: block;
+  margin: 0 auto;
+}
+html .servicePage .mainArea .mobile_content .innerBox .feebackBox {
+  width: 100%;
+  height: auto;
+}
+html .servicePage .mainArea .mobile_content .innerBox .feebackBox .selectBox {
+  display: block;
+  width: 100%;
+  height: auto;
+  position: relative;
+  margin-bottom: 8vw;
+}
+html .servicePage .mainArea .mobile_content .innerBox .feebackBox .selectBox select {
+  width: 100%;
+  height: 11vw;
+  background: #280606;
+  border: 1px solid #dd2830;
+  border-radius: 30px;
+  color: #dd2830;
+  font-size: 1rem;
+  padding: 8px 30px 10px 12px;
+}
+html .servicePage .mainArea .mobile_content .innerBox .feebackBox .selectBox i {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 0px 5px 9px;
+  border-color: transparent transparent transparent #dd2830;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  pointer-events: none;
+  -webkit-transform: translateY(-50%) rotate(90deg);
+          transform: translateY(-50%) rotate(90deg);
+  right: 6vw;
+}
+html .servicePage .mainArea .mobile_content .innerBox .feebackBox .textBox {
+  width: 100%;
+  height: auto;
+  background: #131313;
+  border: solid 1px #848484;
+  margin-bottom: 8vw;
+}
+html .servicePage .mainArea .mobile_content .innerBox .feebackBox .textBox textarea {
+  width: 100%;
+  height: 30vh;
+  background: none;
+  border: none;
+  outline: none;
+  resize: none;
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: bold;
+  line-height: 1.5rem;
+  font-family: "微軟正黑體";
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 3vw;
+}
+html .servicePage .mainArea .mobile_content .innerBox .feebackBox .textBox textarea::-webkit-input-placeholder {
+  color: #848484;
+}
+html .servicePage .mainArea .mobile_content .innerBox .feebackBox .textBox textarea::-moz-placeholder {
+  color: #848484;
+}
+html .servicePage .mainArea .mobile_content .innerBox .feebackBox .textBox textarea:-ms-input-placeholder {
+  color: #848484;
+}
+html .servicePage .mainArea .mobile_content .innerBox .feebackBox .textBox textarea::-ms-input-placeholder {
+  color: #848484;
+}
+html .servicePage .mainArea .mobile_content .innerBox .feebackBox .textBox textarea::placeholder {
+  color: #848484;
+}
+html .servicePage .mainArea .mobile_content .innerBox .feebackBox .textBox .imgBox {
+  width: 100%;
+  height: auto;
+  border-top: solid 1px #848484;
+  padding: 3vw;
+}
+html .servicePage .mainArea .mobile_content .innerBox .feebackBox .textBox .imgBox i {
+  width: 15vw;
+  height: 15vw;
+  margin-bottom: 4vw;
+}
+html .servicePage .mainArea .mobile_content .innerBox .feebackBox .textBox .imgBox p {
+  color: #66e123;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+html .servicePage .mainArea .mobile_content .innerBox .feebackBox button {
+  width: 50%;
+  height: 11vw;
+  background: #dd2830;
+  border-radius: 50px;
+  border: none;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+}
+html .messagePage .mainArea .contentBox {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+html .messagePage .mainArea .contentBox .pageTitle {
+  color: #f3c01a;
+  font-size: 1.3rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 1px;
+  padding: 0 0 15px;
+  position: relative;
+  width: 100%;
+  margin-bottom: 50px;
+}
+html .messagePage .mainArea .contentBox .pageTitle::before {
+  content: "";
+  width: 30%;
+  height: 5px;
+  background: #851316;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+}
+html .messagePage .mainArea .contentBox .pageTitle::after {
+  content: "";
+  width: 100%;
+  height: 5px;
+  background: #b8151b;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+html .messagePage .mainArea .contentBox .overview {
+  width: 90%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #414141;
+  padding: 50px;
+}
+html .messagePage .mainArea .contentBox .overview table {
+  width: 100%;
+  height: auto;
+}
+html .messagePage .mainArea .contentBox .overview table tr:last-child {
+  border-top: 1px solid #b1b1b1;
+}
+html .messagePage .mainArea .contentBox .overview table tr:last-child td:first-child p {
+  text-align: right;
+}
+html .messagePage .mainArea .contentBox .overview table tr:last-child td p {
+  line-height: 40px;
+}
+html .messagePage .mainArea .contentBox .overview table tr td {
+  width: 15%;
+}
+html .messagePage .mainArea .contentBox .overview table tr td:not(:first-child) p {
+  text-align: right;
+}
+html .messagePage .mainArea .contentBox .overview table tr td:first-child {
+  width: 70%;
+}
+html .messagePage .mainArea .contentBox .overview table tr td:first-child p {
+  padding: 0 10px;
+}
+html .messagePage .mainArea .contentBox .overview table tr td:last-child p {
+  padding: 0 10px;
+}
+html .messagePage .mainArea .contentBox .overview table tr td p {
+  color: #b1b1b1;
+  font-size: 0.9rem;
+  line-height: 40px;
+  padding: 0 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+html .messagePage .mainArea .contentBox .myRewrad {
+  width: 100%;
+  height: auto;
+  margin-top: 30px;
+}
+html .messagePage .mainArea .contentBox .myRewrad .title {
+  background: #292929;
+  color: #f3c01a;
+  padding: 20px 5%;
+  margin-bottom: 20px;
+}
+html .messagePage .mainArea .contentBox .myRewrad .rewrad_btn {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 20px;
+}
+html .messagePage .mainArea .contentBox .myRewrad .rewrad_btn button {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  background: #292929;
+  color: #b1b1b1;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+html .messagePage .mainArea .contentBox .myRewrad .rewrad_btn button:hover, html .messagePage .mainArea .contentBox .myRewrad .rewrad_btn button:active, html .messagePage .mainArea .contentBox .myRewrad .rewrad_btn button.active {
+  background: #dd2830;
+  color: #ffffff;
+}
+html .messagePage .mainArea .contentBox .myRewrad .rewrad_btn button:first-child {
+  margin-right: 10px;
+}
+html .messagePage .mainArea .contentBox .myRewrad .reward_stauts {
+  color: #ffffff;
+  font-size: 0.8rem;
+  text-align: center;
+}
+html .messagePage .mainArea .mobile_content {
+  display: none;
+  width: 100%;
+  height: auto;
+}
+html .messagePage .mainArea .mobile_content .innerBox {
+  display: none;
+  width: 100%;
+  height: auto;
+  padding: 0 4vw 22vw;
+}
+html .messagePage .mainArea .mobile_content .innerBox.display {
+  display: block;
+}
+html .messagePage .mainArea .mobile_content .innerBox .topLine {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 1px solid #b1b1b1;
+  position: relative;
+  padding: 4vw 0;
+}
+html .messagePage .mainArea .mobile_content .innerBox .topLine button {
+  background: transparent;
+  border: 1px solid #dd2830;
+  border-radius: 30px;
+  color: #dd2830;
+  font-size: 1rem;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  padding: 5px 20px 6px 30px;
+}
+html .messagePage .mainArea .mobile_content .innerBox .topLine button:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 4px 5px 4px 0;
+  border-color: transparent #dd2830 transparent transparent;
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  margin-right: 10px;
+}
+html .messagePage .mainArea .mobile_content .innerBox .topLine p {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+html .messagePage .mainArea .mobile_content .innerBox .topLine.small p {
+  font-size: 1.2rem;
+}
+html .messagePage .mainArea .mobile_content .innerBox .topnav {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 4px solid #b8151b;
+  margin: 4vw 0;
+}
+html .messagePage .mainArea .mobile_content .innerBox .topnav li {
+  width: 20%;
+  height: 35px;
+  background: #414141;
+  border-radius: 5px 5px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  padding: 0 1vw;
+  margin-right: 1vw;
+}
+html .messagePage .mainArea .mobile_content .innerBox .topnav li.active {
+  background: #b8151b;
+}
+html .messagePage .mainArea .mobile_content .innerBox .topnav li:last-child {
+  margin: 0;
+}
+html .messagePage .mainArea .mobile_content .innerBox .topnav li p {
+  color: #ffffff;
+  font-size: 0.85rem;
+  font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+html .messagePage .mainArea .mobile_content .innerBox .topnav li {
+  width: 25%;
+}
+html .messagePage .mainArea .mobile_content .innerBox .messageBox {
+  width: 100%;
+  height: auto;
+}
+html .messagePage .mainArea .mobile_content .innerBox .messageBox li {
+  width: 100%;
+  height: auto;
+  border: solid 2px #b8151b;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 4vw;
+  margin-bottom: 4vw;
+}
+html .messagePage .mainArea .mobile_content .innerBox .messageBox li:last-child {
+  margin: 0;
+}
+html .messagePage .mainArea .mobile_content .innerBox .messageBox li i {
+  width: 9vw;
+  height: 7vw;
+  margin-right: 4vw;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+html .messagePage .mainArea .mobile_content .innerBox .messageBox li .textBox {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+html .messagePage .mainArea .mobile_content .innerBox .messageBox li .textBox .title {
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 2vw;
+}
+html .messagePage .mainArea .mobile_content .innerBox .messageBox li .textBox .subTitle {
+  color: #848484;
+  font-size: 0.85rem;
+  font-weight: bold;
+  margin-bottom: 2vw;
+}
+html .messagePage .mainArea .mobile_content .innerBox .messageBox li .textBox .text {
+  width: 100%;
+  height: auto;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.2rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+html .messagePage .mainArea .mobile_content .innerBox .messageBox li .unread {
+  display: none;
+  width: 3vw;
+  height: 3vw;
+  background: #66e123;
+  border-radius: 50%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-left: 4vw;
+}
+html .messagePage .mainArea .mobile_content .innerBox .messageBox li .unread.display {
+  display: block;
+}
+html .messagePage .mainArea .mobile_content .innerBox .messageCnt {
+  width: 100%;
+  height: auto;
+  border: solid 2px #b8151b;
+  border-radius: 8px;
+  padding: 4vw;
+  margin-top: 4vw;
+}
+html .messagePage .mainArea .mobile_content .innerBox .messageCnt p:not(.date) {
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: bold;
+  line-height: 1.5rem;
+}
+html .messagePage .mainArea .mobile_content .innerBox .messageCnt .date {
+  color: #848484;
+  font-size: 0.85rem;
+  font-weight: bold;
+  margin-bottom: 4vw;
 }
 html .center {
   max-width: 1200px;

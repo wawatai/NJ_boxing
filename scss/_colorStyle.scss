@@ -27,6 +27,7 @@ $mainBG_1: #b61d21;
 $mainBG_2: #292929;
 
 $subBG_1: #202020;
+$subBG_2: #131313;
  
 //header
 $header_bottom_BG: #f3c01a;
@@ -301,6 +302,7 @@ $filter: #00000080;
     align-items: center;
     justify-content: center;
 }
+$subBtn_2_secondBG: #8e0b0b;
 
 //input
 @mixin inputStyle_1 {

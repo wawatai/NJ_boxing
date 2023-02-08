@@ -1,0 +1,269 @@
+.messagePage {
+
+    //中
+    .mainArea {
+        
+        .contentBox {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .pageTitle {
+                @include bigtitle_Line;
+                width: 100%;
+                margin-bottom: 50px;
+            }
+            
+            .overview {
+                width: 90%;
+                height: auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: $mainColor_4;
+                padding: 50px;
+                
+                table {
+                    width: 100%;
+                    height: auto;
+
+                    tr {
+                        &:last-child {
+                            border-top: 1px solid $subColor_5;
+
+                            td {
+
+                                &:first-child {
+
+                                    p {
+                                        text-align: right;
+                                    }
+                                }
+
+                                p {
+                                    line-height: 40px;
+                                }
+                            }
+                        }
+                    
+                        td {
+                            width: 15%;
+
+                            &:not(:first-child) {
+                                p {
+                                    text-align: right;
+                                }
+                            }
+
+                            &:first-child {
+                                width: 70%;
+                                p {
+                                    padding: 0 10px;
+                                }
+                            }
+
+                            &:last-child {
+                                
+                                p {
+                                    padding: 0 10px;
+                                }
+                            }
+
+                            p {
+                                color: $subColor_5;
+                                font-size: 0.9rem;
+                                line-height: 40px;
+                                padding: 0 5px;
+                                @include textHide;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .myRewrad {
+                width: 100%;
+                height: auto;
+                margin-top: 30px;
+                
+                .title {
+                    background: $mainBG_2;
+                    color: $subColor;
+                    padding: 20px 5%;
+                    margin-bottom: 20px;
+                }
+
+                .rewrad_btn {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-bottom: 20px;
+
+                    button {
+                        flex-shrink: 0;
+                        background: $mainBG_2;
+                        color: $subColor_5;
+                        border-radius: 20px;
+                        padding: 10px 20px;
+
+                        &:hover,&:active,&.active {
+                            background: $mainColor_6;
+                            color: $mainColor_3;
+                        }
+
+                        &:first-child {
+                            margin-right: 10px;
+                        }
+                    }
+                }
+
+                .reward_stauts {
+                    color: $mainColor_3;
+                    font-size: 0.8rem;
+                    text-align: center;
+                }
+            }
+        }
+
+        .mobile_content {
+            display: none;
+            width: 100%;
+            height: auto;
+
+            .innerBox {
+                display: none;
+                width: 100%;
+                height: auto;
+                padding: 0 4vw 22vw;
+
+                &.display {
+                    display: block;
+                }
+
+                .topLine {
+                    width: 100%;
+                    height: auto;
+                    @include mobile_Title;
+
+                    &.small {
+
+                        p {
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+
+                .topnav {
+                    width: 100%;
+                    height: auto;
+                    @include topNav;
+                    margin: 4vw 0;
+
+                    li {
+                        width: 25%;
+                    }
+                }
+
+                .messageBox {
+                    width: 100%;
+                    height: auto;
+
+                    li {
+                        width: 100%;
+                        height: auto;
+                        border: solid 2px $mainColor;
+                        border-radius: 8px;
+                        display: flex;
+                        align-items: center;
+                        padding: 4vw;
+                        margin-bottom: 4vw;
+
+                        &:last-child {
+                            margin: 0;
+                        }
+
+                        i {
+                            width: 9vw;
+                            height: 7vw;
+                            margin-right: 4vw;
+                            flex-shrink: 0;
+                        }
+
+                        .textBox {
+                            width: 100%;
+                            height: auto;
+                            overflow: hidden;
+
+                            .title {
+                                color: $mainColor_3;
+                                font-size: 1.2rem;
+                                font-weight: bold;
+                                margin-bottom: 2vw;
+                            }
+
+                            .subTitle {
+                                color: $subColor_9;
+                                font-size: 0.85rem;
+                                font-weight: bold;
+                                margin-bottom: 2vw;
+                            }
+
+                            .text {
+                                width: 100%;
+                                height: auto;
+                                color: $mainColor_3;
+                                font-size: 1rem;
+                                font-weight: bold;
+                                line-height: 1.2rem;
+                                @include textHide;
+                            }
+                        }
+
+                        .unread {
+                            display: none;
+                            width: 3vw;
+                            height: 3vw;
+                            background: $subColor_6;
+                            border-radius: 50%;
+                            flex-shrink: 0;
+                            margin-left: 4vw;
+
+                            &.display {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+
+                .messageCnt {
+                    width: 100%;
+                    height: auto;
+                    border: solid 2px $mainColor;
+                    border-radius: 8px;
+                    padding: 4vw;
+                    margin-top: 4vw;
+
+                    p:not(.date) {
+                        color: $mainColor_3;
+                        font-size: 0.9rem;
+                        font-weight: bold;
+                        line-height: 1.5rem;
+                    }
+
+                    .date {
+                        color: $subColor_9;
+                        font-size: 0.85rem;
+                        font-weight: bold;
+                        margin-bottom: 4vw;
+                    }
+                }
+            }
+        }
+    }
+}
+
+    

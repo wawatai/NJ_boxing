@@ -342,3 +342,41 @@ $(function(){
     })
 })
 
+//jumpWindow 
+$(function(){
+    $(".filter .jumpWindow .jwTitle .closeIC").click(function(){
+        $(this)
+        .closest(".jumpWindow")
+        .removeClass("display");
+
+        $(".filter")
+        .removeClass("display");
+    })
+
+    $(".filter .jumpWindow .closeWindow").click(function(){
+        $(this)
+        .closest(".jumpWindow")
+        .removeClass("display");
+
+        $(".filter")
+        .removeClass("display");
+    })
+
+    $(".filter .jumpWindow .submitBtn").click(function(){
+        $(this)
+        .closest(".jumpWindow")
+        .removeClass("display");
+
+        $(".filter")
+        .removeClass("display");
+    })
+
+    //撤銷投注
+    $(".cancleBtn").click(function(){
+        $(".filter")
+        .addClass("display")
+        .find(".jumpWindow.cancelBet")
+        .addClass("display");
+    })
+})
+
