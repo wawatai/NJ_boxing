@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Document</title>
     <link class="css" rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/8858aac5ee.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="../js/js.js"></script>
@@ -13,7 +15,7 @@
 <body onload="currentTime()">
     <header class="logINN">
         <!-- 上 -->
-        <div class="top">
+        <div class="top logINN">
             <a href="./login_index.html" class="logo">
                 <img src="../image/logo.png">
             </a>
@@ -70,7 +72,7 @@
                     <button class="deposit">入金</button>
                     <p>$<span class="dpAmount">0.00</span></p>
                 </div>
-                <div class="wallet" onclick="window.location.href='./html/betRecord.html'">
+                <div class="wallet" onclick="window.location.href='../html/betRecord.html'">
                     <button class="walletBtn">マイベット</button>
                     <p>$<span class="walletNum">0.00</span></p>
                 </div>
@@ -106,10 +108,47 @@
                 </p>
             </div>
         </div>
+        <!-- 下 -->
+        <div class="bottom">
+            <div class="mid">
+                <label class="searchBox">
+                    <input type="text">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </label>
+                <div class="checkBox">
+                    <p class="title">
+                        <span>デシマルオッズ</span>
+                        <i class="arrow"></i>
+                    </p>
+                    <ul>
+                        <p class="innerTitle">デシマルオッズ</p>
+                        <li>
+                            <label class="active">
+                                <input type="checkbox">
+                            </label>
+                            <p>デシマルオッズ</p>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox">
+                            </label>
+                            <p>フラクショナルオッズ</p>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox">
+                            </label>
+                            <p>アメリカンオッズ</p>
+                        </li>
+                    </ul>
+                </div>
+                <p class="time"></p>
+            </div>
+        </div>
     </header>
-    <main class="inMain innerPage">
-        <div class="center overViewPage">
-            <!-- 左主NAV -->
+    <main class="inMain">
+        <div class="center">
+            <!-- 左 -->
             <section class="left">
                 <p class="navTitle">スポーツ</p>
                 <ul>
@@ -264,198 +303,270 @@
                     </li>
                 </ul>
             </section>
-            <!-- 左 -->
-            <section class="leftSide">
-                <div class="navoutter">
-                    <ul>
-                        <li class="active">
-                            <a href="./memberPage.html">
-                                <p>口座残高</p>
-                                <i class="fa-solid fa-chevron-right"></i>
-                            </a>
-                        </li>
-                    </ul>
-                    <p class="navTitle">入出金</p>
-                    <ul>
-                        <li>
-                            <a href="javascript:;">
-                                <p>入金</p>
-                                <i class="fa-solid fa-chevron-right"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:;">
-                                <p>出金</p>
-                                <i class="fa-solid fa-chevron-right"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:;">
-                                <p>取引履歷</p>
-                                <i class="fa-solid fa-chevron-right"></i>
-                            </a>
-                        </li>
-                    </ul>
-                    
-                    <p class="navTitle">マイベット</p>
-                    <ul>
-                        <li>
-                            <a href="./betRecord.html">
-                                <p>ベット中</p>
-                                <i class="fa-solid fa-chevron-right"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="./betHistory.html">
-                                <p>ベット履歴</p>
-                                <i class="fa-solid fa-chevron-right"></i>
-                            </a>
-                        </li>
-                    </ul>
-                   
-                    <p class="navTitle">マイアカウント</p>
-                    <ul>
-                        <li>
-                            <a href="./memberInfo.html">
-                                <p>個人情報詳細</p>
-                                <i class="fa-solid fa-chevron-right"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="./memberSetting.html">
-                                <p>環境設定</p>
-                                <i class="fa-solid fa-chevron-right"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="./settingACPW.html">
-                                <p>セキュリティとパスワード</p>
-                                <i class="fa-solid fa-chevron-right"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:;">
-                                <p>確認書類</p>
-                                <i class="fa-solid fa-chevron-right"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:;">
-                                <p>メッセージボックス</p>
-                                <i class="fa-solid fa-chevron-right"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:;">
-                                <p>メッセージ送信</p>
-                                <i class="fa-solid fa-chevron-right"></i>
-                            </a>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <a href="../index.html">
-                                <p>ログアウト</p>
-                                <i class="fa-solid fa-chevron-right"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </section>
             <!-- 中 -->
-            <section class="mainArea">
-                <div class="contentBox">
-                    <p class="pageTitle">口座残高</p>
-                    <div class="overview">
-                        <table>
-                            <tr>
-                                <td colspan="2">
-                                    <p>キャッシュ</p>
-                                </td>
-                                <td>
-                                    <p>USD</p>
-                                </td>
-                                <td>
-                                    <p>0.00</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">
-                                    <p>カジノボーナス</p>
-                                </td>
-                                <td>
-                                    <p>USD</p>
-                                </td>
-                                <td>
-                                    <p>0.00</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">
-                                    <p>スポーツボーナス</p>
-                                </td>
-                                <td>
-                                    <p>USD</p>
-                                </td>
-                                <td>
-                                    <p>0.00</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">
-                                    <p>合計</p>
-                                </td>
-                                <td>
-                                    <p>USD</p>
-                                </td>
-                                <td>
-                                    <p>0.00</p>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="myRewrad">
-                        <p class="title">My Rewards</p>
-                        <div class="rewrad_btn">
-                            <button class="active">取得済</button>
-                            <button>
-                                <i class="fa-solid fa-lock"></i>
-                                未取得
-                            </button>
+            <section class="gameDetail">
+                <p class="title">Tukhugov, Zubaira
+                    <span class="vs">vs</span>
+                    Brenner, Elves
+                </p>
+                <p class="subTitle">12 Feb 2023 @ 07:00</p>
+               <div class="middleNav">
+                    <ul class="topnav">
+                        <li class="active"><p>全て</p></li>
+                    </ul>
+               </div>
+                <div class="pkteam">
+                    <div class="outbox">
+                        <div class="team">
+                            <svg class="cjchqkvecsag151-sportIcon-1 cjchqkvecsag151-sportIconHome-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M21.208,2.209a5.088,5.088,0,0,0-3.3-2.127A5.151,5.151,0,0,0,16.994,0H9.163a5.286,5.286,0,0,0-4.24,2.017,5.186,5.186,0,0,0-.962,4.025l.853,4.692L2.523,7.227,1.882,8a3.733,3.733,0,0,0-.092,4.718L5,17.314V21a3,3,0,0,0,3,3H18a3,3,0,0,0,3-3V16.052L22.036,6.043A5.092,5.092,0,0,0,21.208,2.209ZM18,20H8V18H18Z"></path></svg>
+                            <p class="teamName">Oliveira, Saimon</p>
                         </div>
-                        <p class="reward_stauts"><span>使用中</span>のプロモーション</p>
+                        <p class="VS">VS</p>
+                        <div class="team">
+                            <svg class="cjchqkvecsag151-sportIcon-1 cjchqkvecsag151-sportIconHome-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M21.208,2.209a5.088,5.088,0,0,0-3.3-2.127A5.151,5.151,0,0,0,16.994,0H9.163a5.286,5.286,0,0,0-4.24,2.017,5.186,5.186,0,0,0-.962,4.025l.853,4.692L2.523,7.227,1.882,8a3.733,3.733,0,0,0-.092,4.718L5,17.314V21a3,3,0,0,0,3,3H18a3,3,0,0,0,3-3V16.052L22.036,6.043A5.092,5.092,0,0,0,21.208,2.209ZM18,20H8V18H18Z"></path></svg>
+                            <p class="teamName">Marcos, Daniel</p>
+                        </div>
                     </div>
                 </div>
-                <div class="mobile_content">
-                    <!-- 設定 -->
-                    <div class="innerBox">
-                        <div class="topLine">
-                            <button class="backBtn" onclick="window.location.href='./memberPage.html'">戻る</button>
-                            <p class="pageName">口座残高</p>
-                        </div>
-                        <ul>
-                            <li>
-                                <p>キャッシュ</p>
-                                <p>$
-                                    <span>0</span>
-                                </p>
-                            </li>
-                            <li>
-                                <p>カジノボーナス</p>
-                                <p>$
-                                    <span>0</span>
-                                </p>
-                            </li>
-                            <li>
-                                <p>スポーツボーナス</p>
-                                <p>$
-                                    <span>0</span>
-                                </p>
-                            </li>
-                        </ul>
+                <p class="gTitle">勝者 ドローなし<span class="hint"></span></p>
+                <div class="info_content">
+                    <div class="infoBlock">
+                        <p>Oliveira, Saimon</p>
+                        <div class="rateBtn">1.16</div>
+                    </div>
+                    <div class="infoBlock">
+                        <p>Marcos, Daniel</p>
+                        <div class="rateBtn">4.55</div>
+                    </div>
+                </div>
+                <p class="gTitle">合計ラウンド<span class="hint"></span></p>
+                <div class="info_content">
+                    <div class="infoBlock">
+                        <p>上回る 2.5</p>
+                        <div class="rateBtn">1.69</div>
+                    </div>
+                    <div class="infoBlock">
+                        <p>下回る 2.5</p>
+                        <div class="rateBtn">2.05</div>
+                    </div>
+                </div>
+                <p class="gTitle">フルラウンド判定までいくか？<span class="hint"></span></p>
+                <div class="info_content">
+                    <div class="infoBlock">
+                        <p>はい</p>
+                        <div class="rateBtn">1.81</div>
+                    </div>
+                    <div class="infoBlock">
+                        <p>いいえ</p>
+                        <div class="rateBtn">1.90</div>
                     </div>
                 </div>
             </section>
+            <!-- 右 -->
+            <section class="right">
+                <div class="betBlock">
+                    <ul class="topList">
+                        <li class="active">
+                            <p>ベットスリップ</p>
+                        </li>
+                        <li>
+                            <p>ベット中</p>
+                        </li>
+                        <li>
+                            <p>結果</p>
+                        </li>
+                        <li>
+                            <p>チャット</p>
+                        </li>
+                    </ul>
+                    <ul class="betTypeList">
+                        <li>
+                            <a href="javascript:;">
+                                <p>シングル</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <p>マルチ</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <p>システム・ベット</p>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="betContent">
+                        <div class="noData display">
+                            <p>まだベットを選択していません。</p>
+                        </div>
+                        <div class="betData">
+                            <div class="bdOuter">
+                                 <!-- 投注注單 -->
+                                <div class="betDetail">
+                                    <div class="bdTitle">
+                                        <svg><g><path d="M21.208,2.209a5.088,5.088,0,0,0-3.3-2.127A5.151,5.151,0,0,0,16.994,0H9.163a5.286,5.286,0,0,0-4.24,2.017,5.186,5.186,0,0,0-.962,4.025l.853,4.692L2.523,7.227,1.882,8a3.733,3.733,0,0,0-.092,4.718L5,17.314V21a3,3,0,0,0,3,3H18a3,3,0,0,0,3-3V16.052L22.036,6.043A5.092,5.092,0,0,0,21.208,2.209ZM18,20H8V18H18Z"></path></g></svg>
+                                        <p>
+                                            <span class="date">12</span>
+                                            <span class="month">Feb</span>
+                                            <span class="year">2023</span>
+                                            @
+                                            <span class="time">07:00</span>
+                                        </p>
+                                    </div>
+                                    <div class="bdContent">
+                                        <div class="top">
+                                            <span>シングル</span>
+                                            <i class="fa-solid fa-xmark"></i>
+                                        </div>
+                                        <div class="pkTeam">
+                                            <div class="team win">
+                                                <svg class="cjchqkvecsag151-sportIcon-1 cjchqkvecsag151-sportIconHome-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M21.208,2.209a5.088,5.088,0,0,0-3.3-2.127A5.151,5.151,0,0,0,16.994,0H9.163a5.286,5.286,0,0,0-4.24,2.017,5.186,5.186,0,0,0-.962,4.025l.853,4.692L2.523,7.227,1.882,8a3.733,3.733,0,0,0-.092,4.718L5,17.314V21a3,3,0,0,0,3,3H18a3,3,0,0,0,3-3V16.052L22.036,6.043A5.092,5.092,0,0,0,21.208,2.209ZM18,20H8V18H18Z"></path></svg>
+                                                <div class="teamName">Oliveira, Saimon</div>
+                                            </div>
+                                            <p class="VS">VS</p>
+                                            <div class="team">
+                                                <svg class="cjchqkvecsag151-sportIcon-1 cjchqkvecsag151-sportIconHome-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M21.208,2.209a5.088,5.088,0,0,0-3.3-2.127A5.151,5.151,0,0,0,16.994,0H9.163a5.286,5.286,0,0,0-4.24,2.017,5.186,5.186,0,0,0-.962,4.025l.853,4.692L2.523,7.227,1.882,8a3.733,3.733,0,0,0-.092,4.718L5,17.314V21a3,3,0,0,0,3,3H18a3,3,0,0,0,3-3V16.052L22.036,6.043A5.092,5.092,0,0,0,21.208,2.209ZM18,20H8V18H18Z"></path></svg>
+                                                <div class="teamName">Marcos, Daniel</div>
+                                            </div>
+                                        </div>
+                                        <p class="wintext">勝者 ドローなし</p>
+                                        <div class="betwin">
+                                            <p class="team">Oliveira, Saimon</p>
+                                            <p class="betrate">1.59</p>
+                                        </div>
+                                        <div class="betamount">
+                                            <p>$</p>
+                                            <input type="text" placeholder="ベット額" maxlength="20" autocomplete="off">
+                                        </div>
+                                        <p class="return">
+                                            <span>払戻し（見込み）</span>
+                                            <span class="num">$0.00</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="betDetail">
+                                    <div class="bdTitle">
+                                        <svg><g><path d="M21.208,2.209a5.088,5.088,0,0,0-3.3-2.127A5.151,5.151,0,0,0,16.994,0H9.163a5.286,5.286,0,0,0-4.24,2.017,5.186,5.186,0,0,0-.962,4.025l.853,4.692L2.523,7.227,1.882,8a3.733,3.733,0,0,0-.092,4.718L5,17.314V21a3,3,0,0,0,3,3H18a3,3,0,0,0,3-3V16.052L22.036,6.043A5.092,5.092,0,0,0,21.208,2.209ZM18,20H8V18H18Z"></path></g></svg>
+                                        <p>
+                                            <span class="date">12</span>
+                                            <span class="month">Feb</span>
+                                            <span class="year">2023</span>
+                                            @
+                                            <span class="time">07:00</span>
+                                        </p>
+                                    </div>
+                                    <div class="bdContent">
+                                        <div class="top">
+                                            <span>シングル</span>
+                                            <i class="fa-solid fa-xmark"></i>
+                                        </div>
+                                        <div class="pkTeam">
+                                            <div class="team win">
+                                                <svg class="cjchqkvecsag151-sportIcon-1 cjchqkvecsag151-sportIconHome-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M21.208,2.209a5.088,5.088,0,0,0-3.3-2.127A5.151,5.151,0,0,0,16.994,0H9.163a5.286,5.286,0,0,0-4.24,2.017,5.186,5.186,0,0,0-.962,4.025l.853,4.692L2.523,7.227,1.882,8a3.733,3.733,0,0,0-.092,4.718L5,17.314V21a3,3,0,0,0,3,3H18a3,3,0,0,0,3-3V16.052L22.036,6.043A5.092,5.092,0,0,0,21.208,2.209ZM18,20H8V18H18Z"></path></svg>
+                                                <div class="teamName">Oliveira, Saimon</div>
+                                            </div>
+                                            <p class="VS">VS</p>
+                                            <div class="team">
+                                                <svg class="cjchqkvecsag151-sportIcon-1 cjchqkvecsag151-sportIconHome-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M21.208,2.209a5.088,5.088,0,0,0-3.3-2.127A5.151,5.151,0,0,0,16.994,0H9.163a5.286,5.286,0,0,0-4.24,2.017,5.186,5.186,0,0,0-.962,4.025l.853,4.692L2.523,7.227,1.882,8a3.733,3.733,0,0,0-.092,4.718L5,17.314V21a3,3,0,0,0,3,3H18a3,3,0,0,0,3-3V16.052L22.036,6.043A5.092,5.092,0,0,0,21.208,2.209ZM18,20H8V18H18Z"></path></svg>
+                                                <div class="teamName">Marcos, Daniel</div>
+                                            </div>
+                                        </div>
+                                        <p class="wintext">勝者 ドローなし</p>
+                                        <div class="betwin">
+                                            <p class="team">Oliveira, Saimon</p>
+                                            <p class="betrate">1.59</p>
+                                        </div>
+                                        <div class="betamount">
+                                            <p>$</p>
+                                            <input type="text" placeholder="ベット額" maxlength="20" autocomplete="off">
+                                        </div>
+                                        <p class="return">
+                                            <span>払戻し（見込み）</span>
+                                            <span class="num">$0.00</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="betDetail">
+                                    <div class="bdTitle">
+                                        <svg><g><path d="M21.208,2.209a5.088,5.088,0,0,0-3.3-2.127A5.151,5.151,0,0,0,16.994,0H9.163a5.286,5.286,0,0,0-4.24,2.017,5.186,5.186,0,0,0-.962,4.025l.853,4.692L2.523,7.227,1.882,8a3.733,3.733,0,0,0-.092,4.718L5,17.314V21a3,3,0,0,0,3,3H18a3,3,0,0,0,3-3V16.052L22.036,6.043A5.092,5.092,0,0,0,21.208,2.209ZM18,20H8V18H18Z"></path></g></svg>
+                                        <p>
+                                            <span class="date">12</span>
+                                            <span class="month">Feb</span>
+                                            <span class="year">2023</span>
+                                            @
+                                            <span class="time">07:00</span>
+                                        </p>
+                                    </div>
+                                    <div class="bdContent">
+                                        <div class="top">
+                                            <span>シングル</span>
+                                            <i class="fa-solid fa-xmark"></i>
+                                        </div>
+                                        <div class="pkTeam">
+                                            <div class="team win">
+                                                <svg class="cjchqkvecsag151-sportIcon-1 cjchqkvecsag151-sportIconHome-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M21.208,2.209a5.088,5.088,0,0,0-3.3-2.127A5.151,5.151,0,0,0,16.994,0H9.163a5.286,5.286,0,0,0-4.24,2.017,5.186,5.186,0,0,0-.962,4.025l.853,4.692L2.523,7.227,1.882,8a3.733,3.733,0,0,0-.092,4.718L5,17.314V21a3,3,0,0,0,3,3H18a3,3,0,0,0,3-3V16.052L22.036,6.043A5.092,5.092,0,0,0,21.208,2.209ZM18,20H8V18H18Z"></path></svg>
+                                                <div class="teamName">Oliveira, Saimon</div>
+                                            </div>
+                                            <p class="VS">VS</p>
+                                            <div class="team">
+                                                <svg class="cjchqkvecsag151-sportIcon-1 cjchqkvecsag151-sportIconHome-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M21.208,2.209a5.088,5.088,0,0,0-3.3-2.127A5.151,5.151,0,0,0,16.994,0H9.163a5.286,5.286,0,0,0-4.24,2.017,5.186,5.186,0,0,0-.962,4.025l.853,4.692L2.523,7.227,1.882,8a3.733,3.733,0,0,0-.092,4.718L5,17.314V21a3,3,0,0,0,3,3H18a3,3,0,0,0,3-3V16.052L22.036,6.043A5.092,5.092,0,0,0,21.208,2.209ZM18,20H8V18H18Z"></path></svg>
+                                                <div class="teamName">Marcos, Daniel</div>
+                                            </div>
+                                        </div>
+                                        <p class="wintext">勝者 ドローなし</p>
+                                        <div class="betwin">
+                                            <p class="team">Oliveira, Saimon</p>
+                                            <p class="betrate">1.59</p>
+                                        </div>
+                                        <div class="betamount">
+                                            <p>$</p>
+                                            <input type="text" placeholder="ベット額" maxlength="20" autocomplete="off">
+                                        </div>
+                                        <p class="return">
+                                            <span>払戻し（見込み）</span>
+                                            <span class="num">$0.00</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 注單總計 -->
+                            <ul class="betTotal">
+                                <li>
+                                    <p>オッズの変動を承認</p>
+                                    <div class="changeBtn active">
+                                        <i class="fa-sharp fa-solid fa-check"></i>
+                                        <span></span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>合計ベット額</p>
+                                    <span>$0.00</span>
+                                </li>
+                                <li>
+                                    <p>合計払戻し（見込み）</p>
+                                    <span>$0.00</span>
+                                </li>
+                                <li>
+                                    <button class="okBtn">ベットする</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="closeRight">
+                        <p>閉じる</p>
+                    </div>
+                </div>
+            </section>
+            <aside class="betRecordBtn">
+                <img src="../image/icon/bet_Ic.png">
+                <div class="betCount">
+                    <p>0</p>
+                </div>
+                <div class="betCount">
+                    <p>0</p>
+                </div>
+            </aside>
         </div>
     </main>
     <footer>
@@ -712,6 +823,33 @@
             <p class="copyRight">スポーツベット・カジノなら MANEKI</p>
             <p class="copyRight">©2023 MANEKI</p>
         </div>
+        <!-- 手機版 -->
+        <ul class="mobileFooter">
+            <li class="active">
+                <a href="./login_index.html">
+                    <i class="home"></i>
+                    <p>ホーム</p>
+                </a>
+            </li>
+            <li>
+                <a href="./betResult.html">
+                    <i class="winlose"></i>
+                    <p>レース結果</p>
+                </a>
+            </li>
+            <li>
+                <a href="./betRecord.html">
+                    <i class="bet"></i>
+                    <p>ベット履歷</p>
+                </a>
+            </li>
+            <li>
+                <a href="./memberPage.html">
+                    <i class="member"></i>
+                    <p>マイページ</p>
+                </a>
+            </li>
+        </ul>
     </footer>
 </body>
 </html>

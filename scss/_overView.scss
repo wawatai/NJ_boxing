@@ -1,4 +1,4 @@
-.myPage {
+.overViewPage {
 
     //中
     .mainArea {
@@ -138,173 +138,36 @@
                 width: 100%;
                 padding: 0 4vw 4vw;
                 
-                &.settingACPW  {
-                    padding: 0 0 22vw;
+                ul {
+                    width: 100%;
+                    height: auto;
+                    padding: 4vw;
+                    border-bottom: 1px solid $mainColor_7;
 
-                    form {
+                    li {
                         width: 100%;
-                        height: auto;
+                        height: 40px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
 
-                        label {
-                            display: block;
-                            width: 100%;
-                            height: auto;
-                            border-bottom: 1px solid $mainColor_6;
-                            padding: 4vw 5vw;
+                        p {
+                            color: $mainColor_3;
+                            font-size: 1rem;
 
                             &:last-child {
-                                border: none;
-                            }
-
-                            .inputTitle {
-                                color: $mainColor_6;
                                 font-size: 1.2rem;
                                 font-weight: bold;
-                                margin-bottom: 2vw;
                             }
-
-                            .databox {
-                                width: auto;
-                                height: auto;
-                                position: relative;
-
-                                input {
-                                    width: 100%;
-                                    height: auto;
-                                    @include inputStyle_2;
-                                    display: block;
-                                    margin-bottom: 10px;
-                                }
-
-                                i {
-                                    position: absolute;
-                                    top: 50%;
-                                    transform: translateY(-50%);
-                                    right: 5vw;
-                                }
-                            }
-
-                            .remind {
-                                width: 100%;
-                                height: auto;
-                                display: flex;
-                                align-items: center;
-
-                                i {
-                                    margin-right: 4vw;
-                                }
-
-                                p {
-                                    max-width: 90%;
-                                    color: $subColor_6;
-                                    font-size: 0.975rem;
-                                    text-align: center;
-                                }
-                            }
-
-                            .submitBtn {
-                                width: 50%;
-                                height: 45px;
-                                @include subBtn_2;
-                                background: $mainColor_7;
-                                display: none;
-                                margin: 4vw auto;
-
-                                &.display {
-                                    display: flex;
-                                }
-                            }
-
-                            
-                            i {
-                                width: 6vw;
-                                height: 6vw;
-                            }
-                        }
-
-                        .checkBlock {
-                            width: 100%;
-                            height: auto;
-                            border-bottom: 1px solid $mainColor_6;
-                            padding: 4vw 5vw;
-
-                            .inputTitle {
-                                color: $mainColor_6;
-                                font-size: 1.2rem;
-                                font-weight: bold;
-                                margin-bottom: 5vw;
-                            }
-
-                            .choess {
-                                width: 100%;
-                                height: auto;
-                                display: flex;
-                                align-items: center;
-                                justify-content: space-between;
-                                margin-bottom: 5vw;
-
-                                &:last-of-type {
-                                    margin: 0;
-                                }
-                                
-                                .itemName {
-                                    width: 40%;
-                                    height: auto;
-
-                                    p {
-                                        color: $mainColor_3;
-                                    }
-                                }
-
-                                .item {
-                                    width: 60%;
-                                    display: flex;
-
-                                    .check {
-                                        width: 50%;
-                                        height: auto;
-                                        display: flex;
-                                        align-items: center;
-
-                                        input {
-                                            width: 20px;
-                                            height: 20px;
-                                            flex-shrink: 0;
-                                            border-radius: 50px;
-                                            border: 1px solid $mainColor_3;
-                                            margin-right: 10px;
-
-                                            &:checked {
-                                                background-color: $subColor_6;
-                                                box-shadow: inset -0.5px -0.5px 1px $mainColor_2,
-                                                            inset 0.5px 0.5px 1px $mainColor_2;
-                                            } 
-                                        }
-
-                                        
-
-                                        label {
-                                            color: $mainColor_3;
-                                            white-space: nowrap;
-                                            padding: 0;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    
-                    .topLine {
-                        width: 100%;
-                        height: auto;
-                        @include mobile_Title;
-
-                        button {
-                            left: 20px;
                         }
                     }
                 }
-
+                
+                .topLine {
+                    width: 100%;
+                    height: auto;
+                    @include mobile_Title;
+                }
             }
         }
     }

@@ -577,9 +577,11 @@
                             .betContent {
 
                                 .betData {
+                                    max-height: calc(100vh - 127px);
+                                    overflow: auto;
 
                                     .bdOuter {
-                                        max-height: 60vh;
+                                        max-height: auto;
 
                                         .betDetail {
                                             border-color: $mainColor_6;

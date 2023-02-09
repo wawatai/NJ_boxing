@@ -3934,7 +3934,7 @@ html .servicePage .mainArea .mobile_content .innerBox .feebackBox button {
           justify-content: center;
   margin: 0 auto;
 }
-html .myPage .mainArea .contentBox {
+html .userSetting .mainArea .contentBox {
   width: 100%;
   height: auto;
   display: -webkit-box;
@@ -3951,7 +3951,7 @@ html .myPage .mainArea .contentBox {
       -ms-flex-pack: center;
           justify-content: center;
 }
-html .myPage .mainArea .contentBox .pageTitle {
+html .userSetting .mainArea .contentBox .pageTitle {
   color: #f3c01a;
   font-size: 1.3rem;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -3961,7 +3961,7 @@ html .myPage .mainArea .contentBox .pageTitle {
   width: 100%;
   margin-bottom: 50px;
 }
-html .myPage .mainArea .contentBox .pageTitle::before {
+html .userSetting .mainArea .contentBox .pageTitle::before {
   content: "";
   width: 30%;
   height: 5px;
@@ -3971,7 +3971,7 @@ html .myPage .mainArea .contentBox .pageTitle::before {
   bottom: 0;
   z-index: 10;
 }
-html .myPage .mainArea .contentBox .pageTitle::after {
+html .userSetting .mainArea .contentBox .pageTitle::after {
   content: "";
   width: 100%;
   height: 5px;
@@ -3980,7 +3980,7 @@ html .myPage .mainArea .contentBox .pageTitle::after {
   left: 0;
   bottom: 0;
 }
-html .myPage .mainArea .contentBox .overview {
+html .userSetting .mainArea .contentBox .overview {
   width: 90%;
   height: auto;
   display: -webkit-box;
@@ -3995,35 +3995,35 @@ html .myPage .mainArea .contentBox .overview {
   background: #414141;
   padding: 50px;
 }
-html .myPage .mainArea .contentBox .overview table {
+html .userSetting .mainArea .contentBox .overview table {
   width: 100%;
   height: auto;
 }
-html .myPage .mainArea .contentBox .overview table tr:last-child {
+html .userSetting .mainArea .contentBox .overview table tr:last-child {
   border-top: 1px solid #b1b1b1;
 }
-html .myPage .mainArea .contentBox .overview table tr:last-child td:first-child p {
+html .userSetting .mainArea .contentBox .overview table tr:last-child td:first-child p {
   text-align: right;
 }
-html .myPage .mainArea .contentBox .overview table tr:last-child td p {
+html .userSetting .mainArea .contentBox .overview table tr:last-child td p {
   line-height: 40px;
 }
-html .myPage .mainArea .contentBox .overview table tr td {
+html .userSetting .mainArea .contentBox .overview table tr td {
   width: 15%;
 }
-html .myPage .mainArea .contentBox .overview table tr td:not(:first-child) p {
+html .userSetting .mainArea .contentBox .overview table tr td:not(:first-child) p {
   text-align: right;
 }
-html .myPage .mainArea .contentBox .overview table tr td:first-child {
+html .userSetting .mainArea .contentBox .overview table tr td:first-child {
   width: 70%;
 }
-html .myPage .mainArea .contentBox .overview table tr td:first-child p {
+html .userSetting .mainArea .contentBox .overview table tr td:first-child p {
   padding: 0 10px;
 }
-html .myPage .mainArea .contentBox .overview table tr td:last-child p {
+html .userSetting .mainArea .contentBox .overview table tr td:last-child p {
   padding: 0 10px;
 }
-html .myPage .mainArea .contentBox .overview table tr td p {
+html .userSetting .mainArea .contentBox .overview table tr td p {
   color: #b1b1b1;
   font-size: 0.9rem;
   line-height: 40px;
@@ -4032,18 +4032,18 @@ html .myPage .mainArea .contentBox .overview table tr td p {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-html .myPage .mainArea .contentBox .myRewrad {
+html .userSetting .mainArea .contentBox .myRewrad {
   width: 100%;
   height: auto;
   margin-top: 30px;
 }
-html .myPage .mainArea .contentBox .myRewrad .title {
+html .userSetting .mainArea .contentBox .myRewrad .title {
   background: #292929;
   color: #f3c01a;
   padding: 20px 5%;
   margin-bottom: 20px;
 }
-html .myPage .mainArea .contentBox .myRewrad .rewrad_btn {
+html .userSetting .mainArea .contentBox .myRewrad .rewrad_btn {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4056,7 +4056,7 @@ html .myPage .mainArea .contentBox .myRewrad .rewrad_btn {
           justify-content: center;
   margin-bottom: 20px;
 }
-html .myPage .mainArea .contentBox .myRewrad .rewrad_btn button {
+html .userSetting .mainArea .contentBox .myRewrad .rewrad_btn button {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   background: #292929;
@@ -4064,58 +4064,55 @@ html .myPage .mainArea .contentBox .myRewrad .rewrad_btn button {
   border-radius: 20px;
   padding: 10px 20px;
 }
-html .myPage .mainArea .contentBox .myRewrad .rewrad_btn button:hover, html .myPage .mainArea .contentBox .myRewrad .rewrad_btn button:active, html .myPage .mainArea .contentBox .myRewrad .rewrad_btn button.active {
+html .userSetting .mainArea .contentBox .myRewrad .rewrad_btn button:hover, html .userSetting .mainArea .contentBox .myRewrad .rewrad_btn button:active, html .userSetting .mainArea .contentBox .myRewrad .rewrad_btn button.active {
   background: #dd2830;
   color: #ffffff;
 }
-html .myPage .mainArea .contentBox .myRewrad .rewrad_btn button:first-child {
+html .userSetting .mainArea .contentBox .myRewrad .rewrad_btn button:first-child {
   margin-right: 10px;
 }
-html .myPage .mainArea .contentBox .myRewrad .reward_stauts {
+html .userSetting .mainArea .contentBox .myRewrad .reward_stauts {
   color: #ffffff;
   font-size: 0.8rem;
   text-align: center;
 }
-html .myPage .mainArea .mobile_content {
+html .userSetting .mainArea .mobile_content {
   display: none;
   width: 100%;
   height: auto;
 }
-html .myPage .mainArea .mobile_content .innerBox {
+html .userSetting .mainArea .mobile_content .innerBox {
   width: 100%;
-  padding: 0 4vw 4vw;
-}
-html .myPage .mainArea .mobile_content .innerBox.userSetting {
   padding: 0 0 22vw;
 }
-html .myPage .mainArea .mobile_content .innerBox.userSetting form {
+html .userSetting .mainArea .mobile_content .innerBox form {
   width: 100%;
   height: auto;
 }
-html .myPage .mainArea .mobile_content .innerBox.userSetting form label {
+html .userSetting .mainArea .mobile_content .innerBox form label {
   display: block;
   width: 100%;
   height: auto;
   border-bottom: 1px solid #dd2830;
   padding: 4vw 5vw;
 }
-html .myPage .mainArea .mobile_content .innerBox.userSetting form label:last-child {
+html .userSetting .mainArea .mobile_content .innerBox form label:last-child {
   border: none;
 }
-html .myPage .mainArea .mobile_content .innerBox.userSetting form label .inputTitle {
+html .userSetting .mainArea .mobile_content .innerBox form label .inputTitle {
   color: #dd2830;
   font-size: 1.2rem;
   font-weight: bold;
   margin-bottom: 2vw;
 }
-html .myPage .mainArea .mobile_content .innerBox.userSetting form label .selectBox {
+html .userSetting .mainArea .mobile_content .innerBox form label .selectBox {
   display: inline-block;
   width: 80%;
   height: auto;
   position: relative;
   margin-bottom: 10px;
 }
-html .myPage .mainArea .mobile_content .innerBox.userSetting form label .selectBox::before {
+html .userSetting .mainArea .mobile_content .innerBox form label .selectBox::before {
   content: "";
   width: 0;
   height: 0;
@@ -4133,7 +4130,7 @@ html .myPage .mainArea .mobile_content .innerBox.userSetting form label .selectB
           transform: translateY(-50%) rotate(90deg);
   right: 10%;
 }
-html .myPage .mainArea .mobile_content .innerBox.userSetting form label .selectBox select {
+html .userSetting .mainArea .mobile_content .innerBox form label .selectBox select {
   width: 100%;
   height: auto;
   background: #280606;
@@ -4145,7 +4142,7 @@ html .myPage .mainArea .mobile_content .innerBox.userSetting form label .selectB
   display: block;
   color: #ffffff;
 }
-html .myPage .mainArea .mobile_content .innerBox.userSetting form label input {
+html .userSetting .mainArea .mobile_content .innerBox form label input {
   width: 87%;
   height: auto;
   background: #280606;
@@ -4157,28 +4154,28 @@ html .myPage .mainArea .mobile_content .innerBox.userSetting form label input {
   display: block;
   margin-bottom: 10px;
 }
-html .myPage .mainArea .mobile_content .innerBox.userSetting form label input::-webkit-input-placeholder {
+html .userSetting .mainArea .mobile_content .innerBox form label input::-webkit-input-placeholder {
   color: #dd2830;
 }
-html .myPage .mainArea .mobile_content .innerBox.userSetting form label input::-moz-placeholder {
+html .userSetting .mainArea .mobile_content .innerBox form label input::-moz-placeholder {
   color: #dd2830;
 }
-html .myPage .mainArea .mobile_content .innerBox.userSetting form label input:-ms-input-placeholder {
+html .userSetting .mainArea .mobile_content .innerBox form label input:-ms-input-placeholder {
   color: #dd2830;
 }
-html .myPage .mainArea .mobile_content .innerBox.userSetting form label input::-ms-input-placeholder {
+html .userSetting .mainArea .mobile_content .innerBox form label input::-ms-input-placeholder {
   color: #dd2830;
 }
-html .myPage .mainArea .mobile_content .innerBox.userSetting form label input::placeholder {
+html .userSetting .mainArea .mobile_content .innerBox form label input::placeholder {
   color: #dd2830;
 }
-html .myPage .mainArea .mobile_content .innerBox.userSetting form label label {
+html .userSetting .mainArea .mobile_content .innerBox form label label {
   width: 100%;
   color: #ffffff;
   border: none;
   padding: 3vw 0;
 }
-html .myPage .mainArea .mobile_content .innerBox.userSetting form label .submitBtn {
+html .userSetting .mainArea .mobile_content .innerBox form label .submitBtn {
   width: 50%;
   height: 45px;
   background: #dd2830;
@@ -4200,24 +4197,24 @@ html .myPage .mainArea .mobile_content .innerBox.userSetting form label .submitB
   display: none;
   margin: 0 auto 4vw;
 }
-html .myPage .mainArea .mobile_content .innerBox.userSetting form label .submitBtn.display {
+html .userSetting .mainArea .mobile_content .innerBox form label .submitBtn.display {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-html .myPage .mainArea .mobile_content .innerBox.userSetting form .checkBlock {
+html .userSetting .mainArea .mobile_content .innerBox form .checkBlock {
   width: 100%;
   height: auto;
   border-bottom: 1px solid #dd2830;
   padding: 4vw 5vw;
 }
-html .myPage .mainArea .mobile_content .innerBox.userSetting form .checkBlock .inputTitle {
+html .userSetting .mainArea .mobile_content .innerBox form .checkBlock .inputTitle {
   color: #dd2830;
   font-size: 1.2rem;
   font-weight: bold;
   margin-bottom: 5vw;
 }
-html .myPage .mainArea .mobile_content .innerBox.userSetting form .checkBlock .choess {
+html .userSetting .mainArea .mobile_content .innerBox form .checkBlock .choess {
   width: 100%;
   height: auto;
   display: -webkit-box;
@@ -4231,23 +4228,23 @@ html .myPage .mainArea .mobile_content .innerBox.userSetting form .checkBlock .c
           justify-content: space-between;
   margin-bottom: 5vw;
 }
-html .myPage .mainArea .mobile_content .innerBox.userSetting form .checkBlock .choess:last-of-type {
+html .userSetting .mainArea .mobile_content .innerBox form .checkBlock .choess:last-of-type {
   margin: 0;
 }
-html .myPage .mainArea .mobile_content .innerBox.userSetting form .checkBlock .choess .itemName {
+html .userSetting .mainArea .mobile_content .innerBox form .checkBlock .choess .itemName {
   width: 40%;
   height: auto;
 }
-html .myPage .mainArea .mobile_content .innerBox.userSetting form .checkBlock .choess .itemName p {
+html .userSetting .mainArea .mobile_content .innerBox form .checkBlock .choess .itemName p {
   color: #ffffff;
 }
-html .myPage .mainArea .mobile_content .innerBox.userSetting form .checkBlock .choess .item {
+html .userSetting .mainArea .mobile_content .innerBox form .checkBlock .choess .item {
   width: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-html .myPage .mainArea .mobile_content .innerBox.userSetting form .checkBlock .choess .item .check {
+html .userSetting .mainArea .mobile_content .innerBox form .checkBlock .choess .item .check {
   width: 50%;
   height: auto;
   display: -webkit-box;
@@ -4257,7 +4254,7 @@ html .myPage .mainArea .mobile_content .innerBox.userSetting form .checkBlock .c
       -ms-flex-align: center;
           align-items: center;
 }
-html .myPage .mainArea .mobile_content .innerBox.userSetting form .checkBlock .choess .item .check input {
+html .userSetting .mainArea .mobile_content .innerBox form .checkBlock .choess .item .check input {
   width: 20px;
   height: 20px;
   -ms-flex-negative: 0;
@@ -4266,17 +4263,17 @@ html .myPage .mainArea .mobile_content .innerBox.userSetting form .checkBlock .c
   border: 1px solid #ffffff;
   margin-right: 10px;
 }
-html .myPage .mainArea .mobile_content .innerBox.userSetting form .checkBlock .choess .item .check input:checked {
+html .userSetting .mainArea .mobile_content .innerBox form .checkBlock .choess .item .check input:checked {
   background-color: #66e123;
   -webkit-box-shadow: inset -0.5px -0.5px 1px #000000, inset 0.5px 0.5px 1px #000000;
           box-shadow: inset -0.5px -0.5px 1px #000000, inset 0.5px 0.5px 1px #000000;
 }
-html .myPage .mainArea .mobile_content .innerBox.userSetting form .checkBlock .choess .item .check label {
+html .userSetting .mainArea .mobile_content .innerBox form .checkBlock .choess .item .check label {
   color: #ffffff;
   white-space: nowrap;
   padding: 0;
 }
-html .myPage .mainArea .mobile_content .innerBox.userSetting .topLine {
+html .userSetting .mainArea .mobile_content .innerBox .topLine {
   width: 100%;
   height: auto;
   display: -webkit-box;
@@ -4292,7 +4289,7 @@ html .myPage .mainArea .mobile_content .innerBox.userSetting .topLine {
   position: relative;
   padding: 4vw 0;
 }
-html .myPage .mainArea .mobile_content .innerBox.userSetting .topLine button {
+html .userSetting .mainArea .mobile_content .innerBox .topLine button {
   background: transparent;
   border: 1px solid #dd2830;
   border-radius: 30px;
@@ -4303,7 +4300,7 @@ html .myPage .mainArea .mobile_content .innerBox.userSetting .topLine button {
   left: 0;
   padding: 5px 20px 6px 30px;
 }
-html .myPage .mainArea .mobile_content .innerBox.userSetting .topLine button:before {
+html .userSetting .mainArea .mobile_content .innerBox .topLine button:before {
   content: "";
   width: 0;
   height: 0;
@@ -4317,15 +4314,15 @@ html .myPage .mainArea .mobile_content .innerBox.userSetting .topLine button:bef
           transform: translateY(-50%);
   margin-right: 10px;
 }
-html .myPage .mainArea .mobile_content .innerBox.userSetting .topLine p {
+html .userSetting .mainArea .mobile_content .innerBox .topLine p {
   color: #ffffff;
   font-size: 1.5rem;
   font-weight: bold;
 }
-html .myPage .mainArea .mobile_content .innerBox.userSetting .topLine button {
+html .userSetting .mainArea .mobile_content .innerBox .topLine button {
   left: 20px;
 }
-html .myPage .mainArea .contentBox {
+html .settingACPW .mainArea .contentBox {
   width: 100%;
   height: auto;
   display: -webkit-box;
@@ -4342,7 +4339,7 @@ html .myPage .mainArea .contentBox {
       -ms-flex-pack: center;
           justify-content: center;
 }
-html .myPage .mainArea .contentBox .pageTitle {
+html .settingACPW .mainArea .contentBox .pageTitle {
   color: #f3c01a;
   font-size: 1.3rem;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -4352,7 +4349,7 @@ html .myPage .mainArea .contentBox .pageTitle {
   width: 100%;
   margin-bottom: 50px;
 }
-html .myPage .mainArea .contentBox .pageTitle::before {
+html .settingACPW .mainArea .contentBox .pageTitle::before {
   content: "";
   width: 30%;
   height: 5px;
@@ -4362,7 +4359,7 @@ html .myPage .mainArea .contentBox .pageTitle::before {
   bottom: 0;
   z-index: 10;
 }
-html .myPage .mainArea .contentBox .pageTitle::after {
+html .settingACPW .mainArea .contentBox .pageTitle::after {
   content: "";
   width: 100%;
   height: 5px;
@@ -4371,7 +4368,7 @@ html .myPage .mainArea .contentBox .pageTitle::after {
   left: 0;
   bottom: 0;
 }
-html .myPage .mainArea .contentBox .overview {
+html .settingACPW .mainArea .contentBox .overview {
   width: 90%;
   height: auto;
   display: -webkit-box;
@@ -4386,35 +4383,35 @@ html .myPage .mainArea .contentBox .overview {
   background: #414141;
   padding: 50px;
 }
-html .myPage .mainArea .contentBox .overview table {
+html .settingACPW .mainArea .contentBox .overview table {
   width: 100%;
   height: auto;
 }
-html .myPage .mainArea .contentBox .overview table tr:last-child {
+html .settingACPW .mainArea .contentBox .overview table tr:last-child {
   border-top: 1px solid #b1b1b1;
 }
-html .myPage .mainArea .contentBox .overview table tr:last-child td:first-child p {
+html .settingACPW .mainArea .contentBox .overview table tr:last-child td:first-child p {
   text-align: right;
 }
-html .myPage .mainArea .contentBox .overview table tr:last-child td p {
+html .settingACPW .mainArea .contentBox .overview table tr:last-child td p {
   line-height: 40px;
 }
-html .myPage .mainArea .contentBox .overview table tr td {
+html .settingACPW .mainArea .contentBox .overview table tr td {
   width: 15%;
 }
-html .myPage .mainArea .contentBox .overview table tr td:not(:first-child) p {
+html .settingACPW .mainArea .contentBox .overview table tr td:not(:first-child) p {
   text-align: right;
 }
-html .myPage .mainArea .contentBox .overview table tr td:first-child {
+html .settingACPW .mainArea .contentBox .overview table tr td:first-child {
   width: 70%;
 }
-html .myPage .mainArea .contentBox .overview table tr td:first-child p {
+html .settingACPW .mainArea .contentBox .overview table tr td:first-child p {
   padding: 0 10px;
 }
-html .myPage .mainArea .contentBox .overview table tr td:last-child p {
+html .settingACPW .mainArea .contentBox .overview table tr td:last-child p {
   padding: 0 10px;
 }
-html .myPage .mainArea .contentBox .overview table tr td p {
+html .settingACPW .mainArea .contentBox .overview table tr td p {
   color: #b1b1b1;
   font-size: 0.9rem;
   line-height: 40px;
@@ -4423,18 +4420,18 @@ html .myPage .mainArea .contentBox .overview table tr td p {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-html .myPage .mainArea .contentBox .myRewrad {
+html .settingACPW .mainArea .contentBox .myRewrad {
   width: 100%;
   height: auto;
   margin-top: 30px;
 }
-html .myPage .mainArea .contentBox .myRewrad .title {
+html .settingACPW .mainArea .contentBox .myRewrad .title {
   background: #292929;
   color: #f3c01a;
   padding: 20px 5%;
   margin-bottom: 20px;
 }
-html .myPage .mainArea .contentBox .myRewrad .rewrad_btn {
+html .settingACPW .mainArea .contentBox .myRewrad .rewrad_btn {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4447,7 +4444,7 @@ html .myPage .mainArea .contentBox .myRewrad .rewrad_btn {
           justify-content: center;
   margin-bottom: 20px;
 }
-html .myPage .mainArea .contentBox .myRewrad .rewrad_btn button {
+html .settingACPW .mainArea .contentBox .myRewrad .rewrad_btn button {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   background: #292929;
@@ -4455,286 +4452,53 @@ html .myPage .mainArea .contentBox .myRewrad .rewrad_btn button {
   border-radius: 20px;
   padding: 10px 20px;
 }
-html .myPage .mainArea .contentBox .myRewrad .rewrad_btn button:hover, html .myPage .mainArea .contentBox .myRewrad .rewrad_btn button:active, html .myPage .mainArea .contentBox .myRewrad .rewrad_btn button.active {
+html .settingACPW .mainArea .contentBox .myRewrad .rewrad_btn button:hover, html .settingACPW .mainArea .contentBox .myRewrad .rewrad_btn button:active, html .settingACPW .mainArea .contentBox .myRewrad .rewrad_btn button.active {
   background: #dd2830;
   color: #ffffff;
 }
-html .myPage .mainArea .contentBox .myRewrad .rewrad_btn button:first-child {
+html .settingACPW .mainArea .contentBox .myRewrad .rewrad_btn button:first-child {
   margin-right: 10px;
 }
-html .myPage .mainArea .contentBox .myRewrad .reward_stauts {
+html .settingACPW .mainArea .contentBox .myRewrad .reward_stauts {
   color: #ffffff;
   font-size: 0.8rem;
   text-align: center;
 }
-html .myPage .mainArea .mobile_content {
+html .settingACPW .mainArea .mobile_content {
   display: none;
   width: 100%;
   height: auto;
 }
-html .myPage .mainArea .mobile_content .innerBox {
+html .settingACPW .mainArea .mobile_content .innerBox {
   width: 100%;
-  padding: 0 4vw 4vw;
-}
-html .myPage .mainArea .mobile_content .innerBox.overView {
   padding: 0 0 22vw;
 }
-html .myPage .mainArea .mobile_content .innerBox.overView ul {
-  width: 100%;
-  height: auto;
-  padding: 4vw;
-  border-bottom: 1px solid #cf0505;
-}
-html .myPage .mainArea .mobile_content .innerBox.overView ul li {
-  width: 100%;
-  height: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-html .myPage .mainArea .mobile_content .innerBox.overView ul li p {
-  color: #ffffff;
-  font-size: 1rem;
-}
-html .myPage .mainArea .mobile_content .innerBox.overView ul li p:last-child {
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-html .myPage .mainArea .mobile_content .innerBox.overView .topLine {
-  width: 100%;
-  height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  border-bottom: 1px solid #b1b1b1;
-  position: relative;
-  padding: 4vw 0;
-}
-html .myPage .mainArea .mobile_content .innerBox.overView .topLine button {
-  background: transparent;
-  border: 1px solid #dd2830;
-  border-radius: 30px;
-  color: #dd2830;
-  font-size: 1rem;
-  font-weight: bold;
-  position: absolute;
-  left: 0;
-  padding: 5px 20px 6px 30px;
-}
-html .myPage .mainArea .mobile_content .innerBox.overView .topLine button:before {
-  content: "";
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 4px 5px 4px 0;
-  border-color: transparent #dd2830 transparent transparent;
-  position: absolute;
-  top: 50%;
-  left: 15px;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  margin-right: 10px;
-}
-html .myPage .mainArea .mobile_content .innerBox.overView .topLine p {
-  color: #ffffff;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-html .myPage .mainArea .mobile_content .innerBox.overView .topLine button {
-  left: 20px;
-}
-html .myPage .mainArea .contentBox {
-  width: 100%;
-  height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-html .myPage .mainArea .contentBox .pageTitle {
-  color: #f3c01a;
-  font-size: 1.3rem;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  letter-spacing: 1px;
-  padding: 0 0 15px;
-  position: relative;
-  width: 100%;
-  margin-bottom: 50px;
-}
-html .myPage .mainArea .contentBox .pageTitle::before {
-  content: "";
-  width: 30%;
-  height: 5px;
-  background: #851316;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  z-index: 10;
-}
-html .myPage .mainArea .contentBox .pageTitle::after {
-  content: "";
-  width: 100%;
-  height: 5px;
-  background: #b8151b;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-}
-html .myPage .mainArea .contentBox .overview {
-  width: 90%;
-  height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background: #414141;
-  padding: 50px;
-}
-html .myPage .mainArea .contentBox .overview table {
+html .settingACPW .mainArea .mobile_content .innerBox form {
   width: 100%;
   height: auto;
 }
-html .myPage .mainArea .contentBox .overview table tr:last-child {
-  border-top: 1px solid #b1b1b1;
-}
-html .myPage .mainArea .contentBox .overview table tr:last-child td:first-child p {
-  text-align: right;
-}
-html .myPage .mainArea .contentBox .overview table tr:last-child td p {
-  line-height: 40px;
-}
-html .myPage .mainArea .contentBox .overview table tr td {
-  width: 15%;
-}
-html .myPage .mainArea .contentBox .overview table tr td:not(:first-child) p {
-  text-align: right;
-}
-html .myPage .mainArea .contentBox .overview table tr td:first-child {
-  width: 70%;
-}
-html .myPage .mainArea .contentBox .overview table tr td:first-child p {
-  padding: 0 10px;
-}
-html .myPage .mainArea .contentBox .overview table tr td:last-child p {
-  padding: 0 10px;
-}
-html .myPage .mainArea .contentBox .overview table tr td p {
-  color: #b1b1b1;
-  font-size: 0.9rem;
-  line-height: 40px;
-  padding: 0 5px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-html .myPage .mainArea .contentBox .myRewrad {
-  width: 100%;
-  height: auto;
-  margin-top: 30px;
-}
-html .myPage .mainArea .contentBox .myRewrad .title {
-  background: #292929;
-  color: #f3c01a;
-  padding: 20px 5%;
-  margin-bottom: 20px;
-}
-html .myPage .mainArea .contentBox .myRewrad .rewrad_btn {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 20px;
-}
-html .myPage .mainArea .contentBox .myRewrad .rewrad_btn button {
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  background: #292929;
-  color: #b1b1b1;
-  border-radius: 20px;
-  padding: 10px 20px;
-}
-html .myPage .mainArea .contentBox .myRewrad .rewrad_btn button:hover, html .myPage .mainArea .contentBox .myRewrad .rewrad_btn button:active, html .myPage .mainArea .contentBox .myRewrad .rewrad_btn button.active {
-  background: #dd2830;
-  color: #ffffff;
-}
-html .myPage .mainArea .contentBox .myRewrad .rewrad_btn button:first-child {
-  margin-right: 10px;
-}
-html .myPage .mainArea .contentBox .myRewrad .reward_stauts {
-  color: #ffffff;
-  font-size: 0.8rem;
-  text-align: center;
-}
-html .myPage .mainArea .mobile_content {
-  display: none;
-  width: 100%;
-  height: auto;
-}
-html .myPage .mainArea .mobile_content .innerBox {
-  width: 100%;
-  padding: 0 4vw 4vw;
-}
-html .myPage .mainArea .mobile_content .innerBox.settingACPW {
-  padding: 0 0 22vw;
-}
-html .myPage .mainArea .mobile_content .innerBox.settingACPW form {
-  width: 100%;
-  height: auto;
-}
-html .myPage .mainArea .mobile_content .innerBox.settingACPW form label {
+html .settingACPW .mainArea .mobile_content .innerBox form label {
   display: block;
   width: 100%;
   height: auto;
   border-bottom: 1px solid #dd2830;
   padding: 4vw 5vw;
 }
-html .myPage .mainArea .mobile_content .innerBox.settingACPW form label:last-child {
+html .settingACPW .mainArea .mobile_content .innerBox form label:last-child {
   border: none;
 }
-html .myPage .mainArea .mobile_content .innerBox.settingACPW form label .inputTitle {
+html .settingACPW .mainArea .mobile_content .innerBox form label .inputTitle {
   color: #dd2830;
   font-size: 1.2rem;
   font-weight: bold;
   margin-bottom: 2vw;
 }
-html .myPage .mainArea .mobile_content .innerBox.settingACPW form label .databox {
+html .settingACPW .mainArea .mobile_content .innerBox form label .databox {
   width: auto;
   height: auto;
   position: relative;
 }
-html .myPage .mainArea .mobile_content .innerBox.settingACPW form label .databox input {
+html .settingACPW .mainArea .mobile_content .innerBox form label .databox input {
   width: 100%;
   height: auto;
   background: #280606;
@@ -4746,29 +4510,29 @@ html .myPage .mainArea .mobile_content .innerBox.settingACPW form label .databox
   display: block;
   margin-bottom: 10px;
 }
-html .myPage .mainArea .mobile_content .innerBox.settingACPW form label .databox input::-webkit-input-placeholder {
+html .settingACPW .mainArea .mobile_content .innerBox form label .databox input::-webkit-input-placeholder {
   color: #dd2830;
 }
-html .myPage .mainArea .mobile_content .innerBox.settingACPW form label .databox input::-moz-placeholder {
+html .settingACPW .mainArea .mobile_content .innerBox form label .databox input::-moz-placeholder {
   color: #dd2830;
 }
-html .myPage .mainArea .mobile_content .innerBox.settingACPW form label .databox input:-ms-input-placeholder {
+html .settingACPW .mainArea .mobile_content .innerBox form label .databox input:-ms-input-placeholder {
   color: #dd2830;
 }
-html .myPage .mainArea .mobile_content .innerBox.settingACPW form label .databox input::-ms-input-placeholder {
+html .settingACPW .mainArea .mobile_content .innerBox form label .databox input::-ms-input-placeholder {
   color: #dd2830;
 }
-html .myPage .mainArea .mobile_content .innerBox.settingACPW form label .databox input::placeholder {
+html .settingACPW .mainArea .mobile_content .innerBox form label .databox input::placeholder {
   color: #dd2830;
 }
-html .myPage .mainArea .mobile_content .innerBox.settingACPW form label .databox i {
+html .settingACPW .mainArea .mobile_content .innerBox form label .databox i {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   right: 5vw;
 }
-html .myPage .mainArea .mobile_content .innerBox.settingACPW form label .remind {
+html .settingACPW .mainArea .mobile_content .innerBox form label .remind {
   width: 100%;
   height: auto;
   display: -webkit-box;
@@ -4778,16 +4542,16 @@ html .myPage .mainArea .mobile_content .innerBox.settingACPW form label .remind 
       -ms-flex-align: center;
           align-items: center;
 }
-html .myPage .mainArea .mobile_content .innerBox.settingACPW form label .remind i {
+html .settingACPW .mainArea .mobile_content .innerBox form label .remind i {
   margin-right: 4vw;
 }
-html .myPage .mainArea .mobile_content .innerBox.settingACPW form label .remind p {
+html .settingACPW .mainArea .mobile_content .innerBox form label .remind p {
   max-width: 90%;
   color: #66e123;
   font-size: 0.975rem;
   text-align: center;
 }
-html .myPage .mainArea .mobile_content .innerBox.settingACPW form label .submitBtn {
+html .settingACPW .mainArea .mobile_content .innerBox form label .submitBtn {
   width: 50%;
   height: 45px;
   background: #dd2830;
@@ -4809,28 +4573,28 @@ html .myPage .mainArea .mobile_content .innerBox.settingACPW form label .submitB
   display: none;
   margin: 4vw auto;
 }
-html .myPage .mainArea .mobile_content .innerBox.settingACPW form label .submitBtn.display {
+html .settingACPW .mainArea .mobile_content .innerBox form label .submitBtn.display {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-html .myPage .mainArea .mobile_content .innerBox.settingACPW form label i {
+html .settingACPW .mainArea .mobile_content .innerBox form label i {
   width: 6vw;
   height: 6vw;
 }
-html .myPage .mainArea .mobile_content .innerBox.settingACPW form .checkBlock {
+html .settingACPW .mainArea .mobile_content .innerBox form .checkBlock {
   width: 100%;
   height: auto;
   border-bottom: 1px solid #dd2830;
   padding: 4vw 5vw;
 }
-html .myPage .mainArea .mobile_content .innerBox.settingACPW form .checkBlock .inputTitle {
+html .settingACPW .mainArea .mobile_content .innerBox form .checkBlock .inputTitle {
   color: #dd2830;
   font-size: 1.2rem;
   font-weight: bold;
   margin-bottom: 5vw;
 }
-html .myPage .mainArea .mobile_content .innerBox.settingACPW form .checkBlock .choess {
+html .settingACPW .mainArea .mobile_content .innerBox form .checkBlock .choess {
   width: 100%;
   height: auto;
   display: -webkit-box;
@@ -4844,23 +4608,23 @@ html .myPage .mainArea .mobile_content .innerBox.settingACPW form .checkBlock .c
           justify-content: space-between;
   margin-bottom: 5vw;
 }
-html .myPage .mainArea .mobile_content .innerBox.settingACPW form .checkBlock .choess:last-of-type {
+html .settingACPW .mainArea .mobile_content .innerBox form .checkBlock .choess:last-of-type {
   margin: 0;
 }
-html .myPage .mainArea .mobile_content .innerBox.settingACPW form .checkBlock .choess .itemName {
+html .settingACPW .mainArea .mobile_content .innerBox form .checkBlock .choess .itemName {
   width: 40%;
   height: auto;
 }
-html .myPage .mainArea .mobile_content .innerBox.settingACPW form .checkBlock .choess .itemName p {
+html .settingACPW .mainArea .mobile_content .innerBox form .checkBlock .choess .itemName p {
   color: #ffffff;
 }
-html .myPage .mainArea .mobile_content .innerBox.settingACPW form .checkBlock .choess .item {
+html .settingACPW .mainArea .mobile_content .innerBox form .checkBlock .choess .item {
   width: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-html .myPage .mainArea .mobile_content .innerBox.settingACPW form .checkBlock .choess .item .check {
+html .settingACPW .mainArea .mobile_content .innerBox form .checkBlock .choess .item .check {
   width: 50%;
   height: auto;
   display: -webkit-box;
@@ -4870,7 +4634,7 @@ html .myPage .mainArea .mobile_content .innerBox.settingACPW form .checkBlock .c
       -ms-flex-align: center;
           align-items: center;
 }
-html .myPage .mainArea .mobile_content .innerBox.settingACPW form .checkBlock .choess .item .check input {
+html .settingACPW .mainArea .mobile_content .innerBox form .checkBlock .choess .item .check input {
   width: 20px;
   height: 20px;
   -ms-flex-negative: 0;
@@ -4879,17 +4643,17 @@ html .myPage .mainArea .mobile_content .innerBox.settingACPW form .checkBlock .c
   border: 1px solid #ffffff;
   margin-right: 10px;
 }
-html .myPage .mainArea .mobile_content .innerBox.settingACPW form .checkBlock .choess .item .check input:checked {
+html .settingACPW .mainArea .mobile_content .innerBox form .checkBlock .choess .item .check input:checked {
   background-color: #66e123;
   -webkit-box-shadow: inset -0.5px -0.5px 1px #000000, inset 0.5px 0.5px 1px #000000;
           box-shadow: inset -0.5px -0.5px 1px #000000, inset 0.5px 0.5px 1px #000000;
 }
-html .myPage .mainArea .mobile_content .innerBox.settingACPW form .checkBlock .choess .item .check label {
+html .settingACPW .mainArea .mobile_content .innerBox form .checkBlock .choess .item .check label {
   color: #ffffff;
   white-space: nowrap;
   padding: 0;
 }
-html .myPage .mainArea .mobile_content .innerBox.settingACPW .topLine {
+html .settingACPW .mainArea .mobile_content .innerBox .topLine {
   width: 100%;
   height: auto;
   display: -webkit-box;
@@ -4905,7 +4669,7 @@ html .myPage .mainArea .mobile_content .innerBox.settingACPW .topLine {
   position: relative;
   padding: 4vw 0;
 }
-html .myPage .mainArea .mobile_content .innerBox.settingACPW .topLine button {
+html .settingACPW .mainArea .mobile_content .innerBox .topLine button {
   background: transparent;
   border: 1px solid #dd2830;
   border-radius: 30px;
@@ -4916,7 +4680,7 @@ html .myPage .mainArea .mobile_content .innerBox.settingACPW .topLine button {
   left: 0;
   padding: 5px 20px 6px 30px;
 }
-html .myPage .mainArea .mobile_content .innerBox.settingACPW .topLine button:before {
+html .settingACPW .mainArea .mobile_content .innerBox .topLine button:before {
   content: "";
   width: 0;
   height: 0;
@@ -4930,13 +4694,237 @@ html .myPage .mainArea .mobile_content .innerBox.settingACPW .topLine button:bef
           transform: translateY(-50%);
   margin-right: 10px;
 }
-html .myPage .mainArea .mobile_content .innerBox.settingACPW .topLine p {
+html .settingACPW .mainArea .mobile_content .innerBox .topLine p {
   color: #ffffff;
   font-size: 1.5rem;
   font-weight: bold;
 }
-html .myPage .mainArea .mobile_content .innerBox.settingACPW .topLine button {
+html .settingACPW .mainArea .mobile_content .innerBox .topLine button {
   left: 20px;
+}
+html .overViewPage .mainArea .contentBox {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+html .overViewPage .mainArea .contentBox .pageTitle {
+  color: #f3c01a;
+  font-size: 1.3rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 1px;
+  padding: 0 0 15px;
+  position: relative;
+  width: 100%;
+  margin-bottom: 50px;
+}
+html .overViewPage .mainArea .contentBox .pageTitle::before {
+  content: "";
+  width: 30%;
+  height: 5px;
+  background: #851316;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+}
+html .overViewPage .mainArea .contentBox .pageTitle::after {
+  content: "";
+  width: 100%;
+  height: 5px;
+  background: #b8151b;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+html .overViewPage .mainArea .contentBox .overview {
+  width: 90%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #414141;
+  padding: 50px;
+}
+html .overViewPage .mainArea .contentBox .overview table {
+  width: 100%;
+  height: auto;
+}
+html .overViewPage .mainArea .contentBox .overview table tr:last-child {
+  border-top: 1px solid #b1b1b1;
+}
+html .overViewPage .mainArea .contentBox .overview table tr:last-child td:first-child p {
+  text-align: right;
+}
+html .overViewPage .mainArea .contentBox .overview table tr:last-child td p {
+  line-height: 40px;
+}
+html .overViewPage .mainArea .contentBox .overview table tr td {
+  width: 15%;
+}
+html .overViewPage .mainArea .contentBox .overview table tr td:not(:first-child) p {
+  text-align: right;
+}
+html .overViewPage .mainArea .contentBox .overview table tr td:first-child {
+  width: 70%;
+}
+html .overViewPage .mainArea .contentBox .overview table tr td:first-child p {
+  padding: 0 10px;
+}
+html .overViewPage .mainArea .contentBox .overview table tr td:last-child p {
+  padding: 0 10px;
+}
+html .overViewPage .mainArea .contentBox .overview table tr td p {
+  color: #b1b1b1;
+  font-size: 0.9rem;
+  line-height: 40px;
+  padding: 0 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+html .overViewPage .mainArea .contentBox .myRewrad {
+  width: 100%;
+  height: auto;
+  margin-top: 30px;
+}
+html .overViewPage .mainArea .contentBox .myRewrad .title {
+  background: #292929;
+  color: #f3c01a;
+  padding: 20px 5%;
+  margin-bottom: 20px;
+}
+html .overViewPage .mainArea .contentBox .myRewrad .rewrad_btn {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 20px;
+}
+html .overViewPage .mainArea .contentBox .myRewrad .rewrad_btn button {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  background: #292929;
+  color: #b1b1b1;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+html .overViewPage .mainArea .contentBox .myRewrad .rewrad_btn button:hover, html .overViewPage .mainArea .contentBox .myRewrad .rewrad_btn button:active, html .overViewPage .mainArea .contentBox .myRewrad .rewrad_btn button.active {
+  background: #dd2830;
+  color: #ffffff;
+}
+html .overViewPage .mainArea .contentBox .myRewrad .rewrad_btn button:first-child {
+  margin-right: 10px;
+}
+html .overViewPage .mainArea .contentBox .myRewrad .reward_stauts {
+  color: #ffffff;
+  font-size: 0.8rem;
+  text-align: center;
+}
+html .overViewPage .mainArea .mobile_content {
+  display: none;
+  width: 100%;
+  height: auto;
+}
+html .overViewPage .mainArea .mobile_content .innerBox {
+  width: 100%;
+  padding: 0 4vw 4vw;
+}
+html .overViewPage .mainArea .mobile_content .innerBox ul {
+  width: 100%;
+  height: auto;
+  padding: 4vw;
+  border-bottom: 1px solid #cf0505;
+}
+html .overViewPage .mainArea .mobile_content .innerBox ul li {
+  width: 100%;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+html .overViewPage .mainArea .mobile_content .innerBox ul li p {
+  color: #ffffff;
+  font-size: 1rem;
+}
+html .overViewPage .mainArea .mobile_content .innerBox ul li p:last-child {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+html .overViewPage .mainArea .mobile_content .innerBox .topLine {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 1px solid #b1b1b1;
+  position: relative;
+  padding: 4vw 0;
+}
+html .overViewPage .mainArea .mobile_content .innerBox .topLine button {
+  background: transparent;
+  border: 1px solid #dd2830;
+  border-radius: 30px;
+  color: #dd2830;
+  font-size: 1rem;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  padding: 5px 20px 6px 30px;
+}
+html .overViewPage .mainArea .mobile_content .innerBox .topLine button:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 4px 5px 4px 0;
+  border-color: transparent #dd2830 transparent transparent;
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  margin-right: 10px;
+}
+html .overViewPage .mainArea .mobile_content .innerBox .topLine p {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 html .filter {
   display: none;
@@ -6581,6 +6569,219 @@ html .center .mainArea .swiper03 .swiper-button-prev03 {
 html .center .mainArea .swiper03 .swiper-button-next03 {
   right: 0;
 }
+html .center .gameDetail {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 5vw;
+  overflow: hidden;
+}
+html .center .gameDetail .title {
+  color: #ffffff;
+  font-size: 0.975rem;
+}
+html .center .gameDetail .title .vs {
+  font-size: 0.875rem;
+}
+html .center .gameDetail .subTitle {
+  color: #dd2830;
+  font-size: 0.875rem;
+  margin: 1vw 0 5vw;
+}
+html .center .gameDetail .middleNav {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+html .center .gameDetail .middleNav .topnav {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 4px solid #b8151b;
+}
+html .center .gameDetail .middleNav .topnav li {
+  width: 20%;
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #414141;
+  border-radius: 5px 5px 0 0;
+  padding: 0 5px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+html .center .gameDetail .middleNav .topnav li:last-child {
+  margin: 0;
+}
+html .center .gameDetail .middleNav .topnav li:hover, html .center .gameDetail .middleNav .topnav li:active, html .center .gameDetail .middleNav .topnav li.active {
+  background: #b8151b;
+}
+html .center .gameDetail .middleNav .topnav li:hover p, html .center .gameDetail .middleNav .topnav li:active p, html .center .gameDetail .middleNav .topnav li.active p {
+  color: #ffffff;
+}
+html .center .gameDetail .middleNav .topnav li p {
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+html .center .gameDetail .pkteam {
+  width: 100%;
+  height: auto;
+  padding: 20px 20px 10px;
+}
+html .center .gameDetail .pkteam .outbox {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html .center .gameDetail .pkteam .outbox .team {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+html .center .gameDetail .pkteam .outbox .team:first-child svg {
+  fill: #27a7f0;
+}
+html .center .gameDetail .pkteam .outbox .team svg {
+  width: 24px;
+  height: 24px;
+  fill: #dd2830;
+  -webkit-transform: scale(1.8);
+          transform: scale(1.8);
+  margin: 10px 0 40px;
+}
+html .center .gameDetail .pkteam .outbox .team .teamName {
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+}
+html .center .gameDetail .pkteam .outbox .VS {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0 10px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+html .center .gameDetail .gTitle {
+  width: 100%;
+  color: #dd2830;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0 0 20px;
+  position: relative;
+}
+html .center .gameDetail .gTitle::before {
+  content: "";
+  width: 30%;
+  height: 5px;
+  background: #851316;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+}
+html .center .gameDetail .gTitle::after {
+  content: "";
+  width: 100%;
+  height: 5px;
+  background: #b8151b;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+html .center .gameDetail .info_content {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 4vw 0;
+  margin-bottom: 5vw;
+}
+html .center .gameDetail .info_content .infoBlock {
+  width: 49%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: rgba(49, 49, 49, 0.8078431373);
+  padding: 0.8vw 1vw;
+  cursor: pointer;
+}
+html .center .gameDetail .info_content .infoBlock p {
+  color: #b1b1b1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+html .center .gameDetail .info_content .infoBlock .rateBtn {
+  width: auto;
+  height: auto;
+  background: #b8151b;
+  border-radius: 3px;
+  color: #ffffff;
+  font-size: 0.875rem;
+  padding: 1vw 2vw;
+}
 html .center .right {
   width: 300px;
   height: auto;
@@ -7986,8 +8187,12 @@ html body main .center .leftSide {
   html body main .center .right .betBlock .betTypeList li a p {
     color: #b1b1b1;
   }
+  html body main .center .right .betBlock .betContent .betData {
+    max-height: calc(100vh - 127px);
+    overflow: auto;
+  }
   html body main .center .right .betBlock .betContent .betData .bdOuter {
-    max-height: 60vh;
+    max-height: auto;
   }
   html body main .center .right .betBlock .betContent .betData .bdOuter .betDetail {
     border-color: #dd2830;
