@@ -143,6 +143,21 @@ $(function(){
         $(".mainArea .countryList ul")
         .addClass("active");
     })
+    
+    //ul smallTitle
+    $(".mainArea .countryList ul .smallTitle").click(function(event){
+        $(this).parent()
+        .toggleClass("active")
+        event.stopPropagation();
+    })
+    $(document).on("click",".fa-regular.fa-star",function(){
+        $(this)
+        .attr("class","fa-solid fa-star");
+    })
+    $(document).on("click",".fa-solid.fa-star",function(){
+        $(this)
+        .attr("class","fa-regular fa-star");
+    })
  
     //topnav
     $(".topnav li").click(function(){
@@ -161,31 +176,10 @@ $(function(){
         .find(".gameTypeBox")
         .removeClass("active");
     })
- 
-    //ul smallTitle
-    $(".mainArea .countryList ul .smallTitle").click(function(){
-        $(this).parent()
-        .toggleClass("active");
-    })
- 
-    $(document).on("click",".fa-regular.fa-star",function(){
-        $(this)
-        .attr("class","fa-solid fa-star");
-    })
-
-    $(document).on("click",".fa-solid.fa-star",function(){
-        $(this)
-        .attr("class","fa-regular fa-star");
-    })
 
     $(".betRecordBtn").click(function(){
         $("main .center .right")
         .addClass("active");
-    })
-
-    $(".mainArea .countryList ul .smallTitle").click(function(){
-        $(this).parent()
-        .toggleClass("active");
     })
 
     //gBlock 投注
