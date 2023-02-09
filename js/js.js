@@ -241,6 +241,14 @@ $(function(){
     }
 })
 
+//gameDetail
+$(function(){
+    $(".center .gameDetail .info_content .infoBlock").click(function(){
+        $(this)
+        .toggleClass("active");
+    })
+})
+
 //betPage
 $(function(){
     $(".betPage table th").click(function(){
@@ -398,5 +406,4 @@ $(function(){
         .find(".jumpWindow.cancelBet")
         .addClass("display");
     })
-
 })

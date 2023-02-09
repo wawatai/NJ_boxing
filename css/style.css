@@ -69,7 +69,8 @@ header .top li i {
   background-size: contain;
 }
 
-.settingACPW .remind i {
+.settingACPW .remind i,
+.center .gameDetail .gTitle .hint {
   background: url("../image/icon/remind_green.png") no-repeat center;
   background-size: contain;
 }
@@ -6369,7 +6370,7 @@ html .center .gameDetail {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 5vw;
+  padding: 5vw 5vw 19vw;
   overflow: hidden;
 }
 html .center .gameDetail .title {
@@ -6526,6 +6527,10 @@ html .center .gameDetail .gTitle::after {
   left: 0;
   bottom: 0;
 }
+html .center .gameDetail .gTitle .hint {
+  width: 8vw;
+  height: 8vw;
+}
 html .center .gameDetail .info_content {
   width: 100%;
   height: auto;
@@ -6553,9 +6558,15 @@ html .center .gameDetail .info_content .infoBlock {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background: rgba(0, 0, 0, 0.5019607843);
+  background: #414141;
   padding: 0.8vw 1vw;
   cursor: pointer;
+}
+html .center .gameDetail .info_content .infoBlock:hover, html .center .gameDetail .info_content .infoBlock:active {
+  background: #b8151b;
+}
+html .center .gameDetail .info_content .infoBlock.active {
+  background: #b8151b;
 }
 html .center .gameDetail .info_content .infoBlock p {
   color: #B1B1B1;

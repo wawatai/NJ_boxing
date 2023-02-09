@@ -689,7 +689,7 @@
         height: auto;
         display: flex;
         flex-direction: column;
-        padding: 5vw;
+        padding: 5vw 5vw 19vw;
         overflow: hidden;
 
         .title {
@@ -835,6 +835,11 @@
                 left: 0;
                 bottom: 0;
             }
+
+            .hint {
+                width: 8vw;
+                height: 8vw;
+            }
         }
 
         .info_content {
@@ -852,9 +857,17 @@
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                background: $filter;
+                background: $mainColor_4;
                 padding: 0.8vw 1vw;
                 cursor: pointer;
+
+                &:hover,&:active {
+                    background: $mainColor;
+                }
+
+                &.active {
+                    background: $mainColor;
+                }
 
                 p {
                     color: $mainColor_8;
