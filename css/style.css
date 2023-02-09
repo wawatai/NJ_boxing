@@ -7596,7 +7596,7 @@ html footer .mobileFooter li:active a p, html footer .mobileFooter li.active a p
     margin-bottom: 10px;
   }
 }
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 500px) {
   html footer {
     background: #851316;
     position: fixed;
