@@ -32,7 +32,7 @@
 
                     tr {
                         &:last-child {
-                            border-top: 1px solid $subColor_5;
+                            border-top: 1px solid $mainColor_8;
 
                             td {
 
@@ -73,7 +73,7 @@
                             }
 
                             p {
-                                color: $subColor_5;
+                                color: $mainColor_8;
                                 font-size: 0.9rem;
                                 line-height: 40px;
                                 padding: 0 5px;
@@ -90,8 +90,8 @@
                 margin-top: 30px;
                 
                 .title {
-                    background: $mainBG_2;
-                    color: $subColor;
+                    background: $mainColor_17;
+                    color: $mainColor_15;
                     padding: 20px 5%;
                     margin-bottom: 20px;
                 }
@@ -105,8 +105,8 @@
 
                     button {
                         flex-shrink: 0;
-                        background: $mainBG_2;
-                        color: $subColor_5;
+                        background: $mainColor_17;
+                        color: $mainColor_8;
                         border-radius: 20px;
                         padding: 10px 20px;
 
@@ -398,7 +398,7 @@
                                     justify-content: center;
                                     background: azure;
                                     border-radius: 50px;
-                                    border: 3px solid $subColor_5;
+                                    border: 3px solid $mainColor_8;
                                     position: absolute;
                                     bottom: 7px;
                                     right: -10px;
@@ -485,7 +485,7 @@
                             }
 
                             .editing {
-                                color: $subColor_6;
+                                color: $mainColor_10;
                             }
 
                             .remind {
@@ -526,8 +526,8 @@
 
                                 .submitBtn {
                                     width: 46%;
-                                    height: 45px;
-                                    @include subBtn_2;
+                                    height: auto;
+                                    @include btnStyle_2;
                                     display: none;
                                     margin: 0 auto 4vw;
 
@@ -541,7 +541,7 @@
                                     font-size: 1rem;
 
                                     span {
-                                        color: $subColor_9;
+                                        color: $mainColor_9;
                                         font-size: 0.9rem;
                                         line-height: 1.5rem;
                                     }
@@ -550,7 +550,7 @@
                                 .remind {
                                     width: 100%;
                                     height: auto;
-                                    background: $mainBG_2;
+                                    background: $mainColor_17;
                                     padding: 5vw;
                                     margin-bottom: 5vw;
 
@@ -565,7 +565,7 @@
                                         }
 
                                         span {
-                                            color: $subColor_6;
+                                            color: $mainColor_10;
                                             text-decoration: underline;
                                         }
                                     }

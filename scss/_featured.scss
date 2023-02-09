@@ -15,7 +15,7 @@
         transition: all 0.3s;
 
         .navTitle {
-            color: $subColor;
+            color: $mainColor_15;
             font-size: 1.2rem;
             font-weight: bold;
             padding: 10px 0;
@@ -24,7 +24,7 @@
         ul {
             width: 100%;
             height: auto;
-            background: $mainBG_2;
+            background: $mainColor_17;
 
             li {
                 width: 100%;
@@ -37,11 +37,11 @@
                         transform: translateX(-34px);
 
                         svg {
-                            fill: $subColor;
+                            fill: $mainColor_15;
                         }
 
                         p {
-                            color: $subColor;
+                            color: $mainColor_15;
                         }
                     }
                 }
@@ -50,11 +50,11 @@
                     a {
                         
                         svg {
-                            fill: $subColor;
+                            fill: $mainColor_15;
                         }
 
                         p {
-                            color: $subColor;
+                            color: $mainColor_15;
                         }
                     }
                 }
@@ -70,12 +70,12 @@
                     svg {
                         width: 24px;
                         height: 24px;
-                        fill: $subColor_5;
+                        fill: $mainColor_8;
                         margin-right: 10px;
                     }
 
                     p {
-                        color: $subColor_5;
+                        color: $mainColor_8;
                         font-size: 1rem;
                         font-weight: bold;
                     }
@@ -106,7 +106,7 @@
 
             .navTitle {
                 width: 250px;
-                background: $mainBG_2;
+                background: $mainColor_17;
                 padding-left: 10px;
             }
 
@@ -120,7 +120,7 @@
             height: auto;
 
             .navTitle {
-                color: $subColor;
+                color: $mainColor_15;
                 font-size: 1.2rem;
                 font-weight: bold;
                 padding: 10px 0;
@@ -130,7 +130,7 @@
             ul {
                 width: 100%;
                 height: auto;
-                background: $mainBG_2;
+                background: $mainColor_17;
                 border-radius: 10px;
                 margin-bottom: 30px;
 
@@ -149,7 +149,7 @@
                             transform: translateX(20px);
     
                             p {
-                                color: $subColor;
+                                color: $mainColor_15;
                             }
                         }
                     }
@@ -159,7 +159,7 @@
                             transform: translateX(20px);
     
                             p {
-                                color: $subColor;
+                                color: $mainColor_15;
                             }
                         }
                     }
@@ -174,13 +174,13 @@
                         padding: 0 10px;
     
                         p {
-                            color: $subColor_5;
+                            color: $mainColor_8;
                             font-size: 1rem;
                             font-weight: bold;
                         }
 
                         i {
-                            color: $subColor_5;
+                            color: $mainColor_8;
                             font-size: 0.8rem;
                         }
                     }
@@ -229,7 +229,7 @@
             height: 70px;
             display: flex;
             align-items: center;
-            background: $mainBG_2;
+            background: $mainColor_17;
             padding: 0 10px;
 
             p {
@@ -428,7 +428,7 @@
                         content: "";
                         width: 100%;
                         height: 100%;
-                        background: $subColor_3;
+                        background: $filter;
                         border-radius: 5px;
                         position: absolute;
                         top: 0;
@@ -473,7 +473,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                background: $mainBG_1;
+                background: $mainColor;
                 color: $mainColor_3;
                 font-size: 0.9rem;
                 font-weight: bold;
@@ -561,7 +561,7 @@
                             cursor: pointer;
 
                             &.fa-solid {
-                                color: $subColor;
+                                color: $mainColor_15;
                             }
                         }
                     }
@@ -658,7 +658,7 @@
                     content: "";
                     width: 100%;
                     height: 100%;
-                    background: $subColor_3;
+                    background: $filter;
                     border-radius: 5px;
                     position: absolute;
                     top: 0;
@@ -694,7 +694,7 @@
         .betBlock {
             width: 100%;
             height: auto;
-            background: $mainBG_1;
+            background: $mainColor;
             border-radius: 10px;
             position: relative;
             overflow: hidden;
@@ -719,7 +719,7 @@
                         content: "";
                         width: 100%;
                         height: 2px;
-                        background: $subColor_2;
+                        background: $mainColor_16;
                         position: absolute;
                         bottom: 0;
                         left: 0;
@@ -732,7 +732,7 @@
                         }
 
                         p {
-                            color: $subColor_2;
+                            color: $mainColor_16;
                         }
                     }
                     
@@ -748,7 +748,7 @@
             .betTypeList {
                 width: 100%;
                 height: auto;
-                background: $rightNav_bottom_BG;
+                background: $mainColor_6;
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
@@ -762,7 +762,7 @@
                         a {
                             
                             p {
-                                color: $rightNav_bottom_ActiveColor;
+                                color: $mainColor_15;
                             }
                         }
                     }
@@ -791,14 +791,14 @@
                             content: "";
                             width: 100%;
                             height: 2px;
-                            background: $subColor_2;
+                            background: $mainColor_16;
                             position: absolute;
                             bottom: 0;
                             left: 0;
                         }
 
                         p {
-                            color: $rightNav_bottom_Color;
+                            color: $mainColor_13;
                             font-size: 1rem;
                             font-weight: bold;
                         }
@@ -852,7 +852,7 @@
                             flex-direction: column;
                             align-items: center;
                             padding: 10px;
-                            border: 1px solid $subColor;
+                            border: 1px solid $mainColor_15;
                             border-radius: 5px;
 
                             &:not(:first-child) {
@@ -892,7 +892,7 @@
                                     display: flex;
                                     align-items: center;
                                     justify-content: space-between;
-                                    border-top: 1px solid $subColor;
+                                    border-top: 1px solid $mainColor_15;
                                     padding: 5px 0;
                                     margin: 10px 0 0;
 
@@ -947,7 +947,7 @@
                                         svg {
                                             width: 35px;
                                             height: 35px;
-                                            fill: $subColor_4;
+                                            fill: $mainColor_12;
                                             opacity: 0.6;
                                             margin: 10px 0;
                                         }
@@ -964,7 +964,7 @@
                                     }
 
                                     .VS {
-                                        color: $subColor;
+                                        color: $mainColor_15;
                                         font-size: 1rem;
                                         font-weight: bold;
                                         margin: 0 10px;
@@ -972,7 +972,7 @@
                                 }
 
                                 .wintext {
-                                    color: $subColor;
+                                    color: $mainColor_15;
                                     font-size: 0.975rem;
                                     font-weight: bold;
                                     margin: 10px 0;
@@ -983,7 +983,7 @@
                                     display: flex;
                                     justify-content: space-between;
                                     padding: 10px;
-                                    border: 1px solid $subColor;
+                                    border: 1px solid $mainColor_15;
                                     border-radius: 5px;
                                     margin-bottom: 10px;
 
@@ -998,11 +998,11 @@
                                     justify-content: space-between;
                                     padding-bottom: 15px;
                                     margin-bottom: 10px;
-                                    border-bottom: 1px solid $subColor;
+                                    border-bottom: 1px solid $mainColor_15;
                                     position: relative;
 
                                     p {
-                                        color: $subColor_9;
+                                        color: $mainColor_9;
                                         font-size: 0.875rem;
                                         position: absolute;
                                         top: 50%;
@@ -1056,7 +1056,7 @@
                             padding: 10px;
 
                             p {
-                                color: $subColor;
+                                color: $mainColor_15;
                             }
 
                             span {
@@ -1070,12 +1070,12 @@
                                 display: flex;
                                 align-items: center;
                                 justify-content: space-between;
-                                background: $subColor_9;
+                                background: $mainColor_9;
                                 border-radius: 50px;
                                 cursor: pointer;
 
                                 &.active {
-                                    background: $subColor_6;
+                                    background: $mainColor_10;
 
                                     i {
                                         display: block;
@@ -1084,7 +1084,7 @@
 
                                 i {
                                     display: none;
-                                    color: $subColor_10;
+                                    color: $mainColor_11;
                                     font-size: 1rem;
                                     font-weight: bold;
                                     margin: auto;
@@ -1099,7 +1099,7 @@
                             }
 
                            .okBtn {
-                                background: $subColor_7;
+                                background: $mainColor_13;
                                 border-radius: 50px;
                                 color: $mainColor_5;
                                 font-size: 0.875rem;
@@ -1108,7 +1108,7 @@
                                 margin: auto;
 
                                 &:hover,&:active,&.active {
-                                    background: $subColor;
+                                    background: $mainColor_15;
                                 }
                            }
                         }
@@ -1131,7 +1131,7 @@
                 button {
                     width: 150px;
                     height: 40px;
-                    @include rightNavBtn;
+                    @include btnStyle_1;
                 }
             }
 
@@ -1174,7 +1174,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                background: $subColor_6;
+                background: $mainColor_10;
                 border-radius: 50px;
                 position: absolute;
                 right: -8px;

@@ -19,7 +19,7 @@
         display: none;
         width: 80%;
         height: auto;
-        background: $jumpWindowBG;
+        background: $mainColor_18;
         border: 1px solid $mainColor_7;
         border-radius: 10px 10px 0 0;
         overflow: hidden;
@@ -72,7 +72,7 @@
                     tr {
                         width: 100%;
                         height: auto;
-                        border-bottom: 1px solid $subColor_9;
+                        border-bottom: 1px solid $mainColor_9;
 
                         
                         &:nth-of-type(3) {
@@ -82,7 +82,7 @@
                                 &:last-child {
 
                                     p {
-                                        color: $subColor_6;
+                                        color: $mainColor_10;
                                         font-weight: bold;
                                     }
                                 }
@@ -102,7 +102,7 @@
                                         line-height: 23px;
 
                                         &.vs {
-                                            color: $subColor_5;
+                                            color: $mainColor_8;
                                             font-size: 1rem;
                                             margin: 2vw;
                                         }
@@ -149,9 +149,9 @@
                             }
 
                             button {
-                                @include subBtn_2;
+                                @include btnStyle_2;
                                 width: 60%;
-                                height: 40px;
+                                height: auto;
                                 background: $mainColor_7;
                                 margin: 4vw auto;
                             }
@@ -160,9 +160,9 @@
                 }
 
                 .closeWindow {
-                    @include subBtn_2;
+                    @include btnStyle_2;
                     width: 60%;
-                    height: 40px;
+                    height: auto;
                     background: $mainColor_4;
                     margin: 0 auto 3vw;
                 }

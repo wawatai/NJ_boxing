@@ -10,7 +10,7 @@ header {
     .top {
         width: 100%;
         height: 90px;
-        background: $mainBG_1;
+        background: $mainColor;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -45,7 +45,7 @@ header {
                 &:hover,&:active,&.active {
 
                     p {
-                        color: $subColor;
+                        color: $mainColor_15;
                     }
                 }
     
@@ -103,7 +103,7 @@ header {
                 opacity: 0;
 
                 .title {
-                    color: $subColor;
+                    color: $mainColor_15;
                     font-size: 0.85rem;
                     font-weight: bold;
                     display: flex;
@@ -115,7 +115,7 @@ header {
                         height: 0;
                         border-style: solid;
                         border-width: 6px 4px 0 4px;
-                        border-color: $subColor transparent;
+                        border-color: $mainColor_15 transparent;
                         margin-left: 5px;
                     }
                 }
@@ -176,11 +176,11 @@ header {
             button {
                 width: 150px;
                 height: 30px;
-                @include headerBtn;
+                @include btnStyle_1;
                 margin-right: 10px;
 
                 &:last-child {
-                    background: $headerBtn_secondBG;
+                    background: $mainColor_3;
                     margin: 0;
                 }
             }
@@ -204,7 +204,7 @@ header {
                 opacity: 0;
 
                 .title {
-                    color: $subColor;
+                    color: $mainColor_15;
                     font-size: 0.85rem;
                     font-weight: bold;
                     display: flex;
@@ -216,7 +216,7 @@ header {
                         height: 0;
                         border-style: solid;
                         border-width: 6px 4px 0 4px;
-                        border-color: $subColor transparent;
+                        border-color: $mainColor_15 transparent;
                         margin-left: 5px;
                     }
                 }
@@ -294,7 +294,7 @@ header {
                 button {
                   
                     &:not(:last-child) {
-                        background: $subColor;
+                        background: $mainColor_15;
                         padding: 0 3px;
                         margin-right: 5px;
                     }
@@ -309,7 +309,7 @@ header {
                 background: none;
 
                 i {
-                    color: $subColor;
+                    color: $mainColor_15;
                     font-size: 1.5rem;
                 }
             }
@@ -360,7 +360,7 @@ header {
 
                 &.nav {
                     width: 65px;
-                    background: $subColor;
+                    background: $mainColor_15;
                     padding: 8px 0;
 
                     svg {
@@ -378,7 +378,7 @@ header {
                 svg {
                     width: 21px;
                     height: 21px;
-                    fill: $subColor;
+                    fill: $mainColor_15;
 
                     &.injected-svg {
                         display: none;
@@ -436,7 +436,7 @@ header {
             display: none;
             width: auto;
             order: 2;
-            background: $subColor_6;
+            background: $mainColor_10;
             border-radius: 30px;
             color: $mainColor_2;
             font-size: 4vw;
@@ -450,7 +450,7 @@ header {
     .bottom {
         width: 100%;
         height: 35px;
-        background: $header_bottom_BG;
+        background: $mainColor_15;
         position: relative;
 
         .mid {
@@ -566,238 +566,6 @@ header {
                 font-size: 0.75rem;
                 font-weight: bold;
                 margin: 0 0 2px 15px;
-            }
-        }
-    }
-
-    @media only screen and (max-width: 1315px) {
-        .top {
-
-            ul {
-                left: 40%;
-                li {
-                    &:last-child {
-                        display: none;
-                    }
-                }
-            }
-
-            .login_Area {
-                margin-left: 15px;
-
-                .checkBox {
-                    opacity: 1;
-                    pointer-events: auto !important;
-                    cursor: pointer;
-                }
-            }
-
-            .mem_Area {
-                margin-left: 15px;
-
-                .checkBox {
-                    opacity: 1;
-                    pointer-events: auto !important;
-                    cursor: pointer;
-                }
-            }
-        }
-    }
-
-    @media only screen and (max-width: 1210px) {
-        .bottom {
-
-            .mid {
-                margin: 0 10px;
-            }
-        }
-    }
-
-    @media only screen and (max-width: 1188px) {
-        .top {
-            ul {
-                li {
-                    &:nth-of-type(3) {
-                        display: none;
-                    }
-                }
-            }
-
-            .mem_Area {
-
-                .checkBox {
-                    ul {
-                        li {
-                            &:first-child {
-                                display: block;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-    @media only screen and (max-width: 1020px) {
-        .top {
-            padding: 0;
-            position: relative;
-
-            .logo {
-                position: absolute;
-                top: 15px;
-                left: 15px;
-
-                img {
-                    height: 40px;
-                    object-fit: contain;
-                }
-            }
-            ul {
-                display: flex;
-                left: 10px;
-                transform: translateX(0);
-                top: 70px;
-                
-                li {
-                    &:nth-of-type(3),
-                    &:nth-of-type(4){
-                        display: flex;
-                    }
-                    a {
-                        i {
-                            display: none;
-                        }
-                        p {
-                            font-size: 0.8rem;
-                        }
-                    }
-                }
-            }
-
-            .loginArea {
-                display: none;
-            }
-
-            .rwd_TOPNav {
-                display: flex;
-            }
-
-            .mem_Area {
-                position: absolute;
-                top: 20px;
-                right: 65px;
-                
-                .checkBox,
-                .money,
-                .message {
-                    display: none;
-                }
-                .account {
-                    order: 1;
-
-                    i {
-                        font-size: 3rem;
-                        cursor: pointer;
-                    }
-
-                    p {
-                        display: none;
-                    }
-                }
-                .wallet {
-                    order: 0;
-                    margin-right: 10px;
-
-                    button {
-                        display: none;
-                    }
-                }
-
-            }
-        }
-        .bottom {
-            display: none;
-        }
-    }
-
-    @media only screen and (max-width: 450px) {
-          // 已登入手機版header
-          &.logINN {
-
-            .top {
-                .mem_Area {
-                    order: 2;
-                    position: relative;
-                    top: 0;
-                    right: 0;
-                    
-                    .account {
-                        order: 1;
-                        margin: 0;
-    
-                        i {
-                            font-size: 5vw;
-                            cursor: pointer;
-                        }
-    
-                        p {
-                            display: none;
-                        }
-                    }
-                    .wallet {
-                        order: 0;
-                        margin-right: 10px;
-    
-                        button {
-                            display: none;
-                        }
-                    }
-                }
-            }
-        }
-
-
-        .top {
-            height: 50px;
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 0 20px;
-
-          
-
-            a {
-                &.logo {
-                    width: auto;
-                    height: auto;
-                    order: 1;
-                    margin-top: 3px;
-                    position: relative;
-                    top: 0;
-                    left: 0;
-
-                    img {
-                        height: 30px;
-                    }
-                }
-            }
-            
-            ul {
-                display: none;
-            }
-
-            .rwd_TOPNav {
-                display: none;
-            }
-
-            .langBox {
-                display: flex;
-            }
-
-            .mobile_Login {
-                display: block;
             }
         }
     }

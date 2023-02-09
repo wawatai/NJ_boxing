@@ -147,7 +147,7 @@
                                             color: $mainColor_3;
     
                                             span {
-                                                color: $subColor_6;
+                                                color: $mainColor_10;
                                                 margin: 0 10px;
                                             }
                                         }
@@ -159,7 +159,7 @@
                                     height: 30px;
                                     align-items: center;
                                     justify-content: center;
-                                    background: $subColor_6;
+                                    background: $mainColor_10;
                                     color: $mainColor_2;
                                     font-size: 0.9rem;
                                     font-weight: bold;
@@ -168,7 +168,7 @@
                                     cursor: pointer;
 
                                     &:hover,&:active,&.active {
-                                        background: $subColor;
+                                        background: $mainColor_15;
                                     }
                                 }
 
@@ -190,8 +190,8 @@
                 height: auto;
                 
                 .title {
-                    background: $mainBG_2;
-                    color: $subColor;
+                    background: $mainColor_17;
+                    color: $mainColor_15;
                     padding: 20px 5%;
                     margin-bottom: 20px;
                 }
@@ -205,8 +205,8 @@
 
                     button {
                         flex-shrink: 0;
-                        background: $mainBG_2;
-                        color: $subColor_5;
+                        background: $mainColor_17;
+                        color: $mainColor_8;
                         border-radius: 20px;
                         padding: 10px 20px;
 
@@ -411,7 +411,7 @@
                                                 color: $mainColor_3;
         
                                                 span {
-                                                    color: $subColor_6;
+                                                    color: $mainColor_10;
                                                     margin: 0 2vw;
                                                 }
                                             }
@@ -421,7 +421,9 @@
                                     .cancleBtn {
                                         width: auto;
                                         height: auto;
-                                        @include subBtn_1;
+                                        @include btnStyle_2;
+                                        background: $mainColor_10;
+                                        color: $mainColor_2;
                                     }
                                 }
     
@@ -509,7 +511,7 @@
                                 }
 
                                 span {
-                                    background: $subColor_6;
+                                    background: $mainColor_10;
                                     border-radius: 5px;
                                     color: $mainColor_2;
                                     font-size: 0.875rem;
@@ -575,7 +577,7 @@
                             &:nth-of-type(2) {
 
                                 td {
-                                    background: $subBG_1;
+                                    background: $mainColor_17;
 
                                     p {
                                         color: $mainColor;
@@ -603,7 +605,7 @@
                                         width: 50%;
 
                                         svg {
-                                            fill: $subColor_4;
+                                            fill: $mainColor_12;
                                         }
                                     }
                                     &:nth-of-type(3),
@@ -638,7 +640,7 @@
                                 &.date {
 
                                     p {
-                                        color: $subColor_9;
+                                        color: $mainColor_9;
                                         line-height: 1.2rem;
                                     }
                                 }
@@ -669,7 +671,7 @@
                                 }
     
                                 p {
-                                    color: $subColor_6;
+                                    color: $mainColor_10;
                                     font-size: 0.85rem;
                                     font-weight: bold;
                                     text-align: center;
@@ -711,7 +713,7 @@
                             &:nth-of-type(2) {
 
                                 td {
-                                    background: $subBG_1;
+                                    background: $mainColor_17;
 
                                     p {
                                         color: $mainColor;
@@ -777,7 +779,7 @@
             .myResult {
                 width: 100%;
                 height: auto;
-                background: $mainBG_2;
+                background: $mainColor_17;
                 border-top: 1px solid $mainColor_6;
                 display: flex;
                 position: fixed;

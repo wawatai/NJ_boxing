@@ -1,7 +1,7 @@
 .register {
     width: 1100px;
     height: auto;
-    background: $register_BG;
+    background: $mainColor_18;
     border-radius: 5px;
     padding: 40px 70px 10px;
     margin: 0 auto;
@@ -240,7 +240,7 @@
                 .must {
                     width: auto;
                     height: auto;
-                    background: $mainBG_1;
+                    background: $mainColor;
                     border-radius: 3px;
                     color: $mainColor_3;
                     font-size: 0.75rem;
@@ -290,7 +290,7 @@
                 line-height: 1.5rem;
 
                 a {
-                    color: $subColor_2;
+                    color: $mainColor_16;
                 }
             }
         }
@@ -298,7 +298,7 @@
         button {
             width: 150px;
             height: 40px;
-            @include headerBtn;
+            @include btnStyle_1;
             display: block;
             margin: 20px auto 0;
         }
@@ -308,14 +308,14 @@
 .loginBox {
     width: 1100px;
     height: auto;
-    background: $register_BG;
+    background: $mainColor_18;
     border-radius: 5px;
     padding: 20px 0;
     margin: 40px auto;
 
     p {
         width: 100%;
-        color: $subColor;
+        color: $mainColor_15;
         font-size: 1rem;
         font-weight: bold;
         text-align: center;
@@ -325,9 +325,9 @@
     button {
         width: 130px;
         height: 30px;
-        @include headerBtn;
+        @include btnStyle_1;
         display: block;
-        background: $headerBtn_secondBG;
+        background: $mainColor_3;
         margin: 0 auto;
     }
 }

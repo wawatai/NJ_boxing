@@ -1,7 +1,7 @@
 footer {
     width: 100%;
     height: auto;
-    background: $mainBG_2;
+    background: $mainColor_17;
 
     //上
     .top {
@@ -53,12 +53,12 @@ footer {
                         &:hover,&:active,&.active {
 
                             p {
-                                color: $subColor;
+                                color: $mainColor_15;
                             }
                         }
 
                         p {
-                            color: $subColor_5;
+                            color: $mainColor_8;
                             font-size: 0.75rem;
                         }
                     }
@@ -208,7 +208,7 @@ footer {
 
             .coDetail {
                 max-width: 670px;
-                color: $subColor_5;
+                color: $mainColor_8;
                 font-size: 1rem;
                 line-height: 20px;
             }
@@ -219,7 +219,7 @@ footer {
     .bottom {
         width: 100%;
         height: 70px;
-        background: $mainBG_1;
+        background: $mainColor;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -275,7 +275,7 @@ footer {
                 }
 
                 p {
-                    color: $subColor_7;
+                    color: $mainColor_13;
                     font-size: 3vw;
                     margin-top: 5px;
                 }

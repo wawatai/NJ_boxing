@@ -32,7 +32,7 @@
 
                     tr {
                         &:last-child {
-                            border-top: 1px solid $subColor_5;
+                            border-top: 1px solid $mainColor_8;
 
                             td {
 
@@ -73,7 +73,7 @@
                             }
 
                             p {
-                                color: $subColor_5;
+                                color: $mainColor_8;
                                 font-size: 0.9rem;
                                 line-height: 40px;
                                 padding: 0 5px;
@@ -90,8 +90,8 @@
                 margin-top: 30px;
                 
                 .title {
-                    background: $mainBG_2;
-                    color: $subColor;
+                    background: $mainColor_17;
+                    color: $mainColor_15;
                     padding: 20px 5%;
                     margin-bottom: 20px;
                 }
@@ -105,8 +105,8 @@
 
                     button {
                         flex-shrink: 0;
-                        background: $mainBG_2;
-                        color: $subColor_5;
+                        background: $mainColor_17;
+                        color: $mainColor_8;
                         border-radius: 20px;
                         padding: 10px 20px;
 
@@ -160,7 +160,7 @@
                 .userBox {
                     width: 100%;
                     height: auto;
-                    background: $subBG_1;
+                    background: $mainColor_17;
                     border-radius: 8px;
                     display: flex;
                     align-items: center;
@@ -248,7 +248,7 @@
                                     }
 
                                     .remind {
-                                        color: $subColor_9;
+                                        color: $mainColor_9;
                                         font-size: 0.85rem;
                                         font-weight: bold;
                                     }
@@ -256,7 +256,7 @@
                             }
 
                             .sp {
-                                color: $subColor_6;
+                                color: $mainColor_10;
                                 font-size: 0.85rem;
                                 font-weight: bold;
                                 margin-top: 2vw;
@@ -385,9 +385,8 @@
                                 button {
                                     width: auto;
                                     height: auto;
-                                    @include subBtn_2;
-                                    background: $subBtn_2_secondBG;
-                                    padding: 2vw 4vw;
+                                    @include btnStyle_2;
+                                    background: $mainColor_5;
                                 }
                             }
                         }
@@ -395,8 +394,8 @@
 
                     .serviceLink {
                         width: 80%;
-                        height: 11vw;
-                        @include subBtn_2;
+                        height: auto;
+                        @include btnStyle_2;
                         display: block;
                         margin: 0 auto;
                     }
@@ -429,8 +428,8 @@
                     .textBox {
                         width: 100%;
                         height: auto;
-                        background: $subBG_2;
-                        border: solid 1px $subColor_9;
+                        background: $mainColor_18;
+                        border: solid 1px $mainColor_9;
                         margin-bottom: 8vw;
 
                         textarea {
@@ -449,14 +448,14 @@
                             padding: 3vw;
 
                             &::placeholder {
-                                color: $subColor_9;
+                                color: $mainColor_9;
                             }
                         }
 
                         .imgBox {
                             width: 100%;
                             height: auto;
-                            border-top: solid 1px $subColor_9;
+                            border-top: solid 1px $mainColor_9;
                             padding: 3vw;
 
                             i {
@@ -466,7 +465,7 @@
                             }
 
                             p {
-                                color: $subColor_6;
+                                color: $mainColor_10;
                                 font-size: 0.75rem;
                                 font-weight: bold;
                             }
@@ -475,8 +474,8 @@
 
                     button {
                         width: 50%;
-                        height: 11vw;
-                        @include subBtn_2;
+                        height: auto;
+                        @include btnStyle_2;
                         margin: 0 auto;
                     }
                 }
