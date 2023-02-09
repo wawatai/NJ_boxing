@@ -4693,9 +4693,39 @@ html .filter .jumpWindow {
   border-radius: 10px 10px 0 0;
   overflow: hidden;
 }
-html .filter .jumpWindow .jwTitle {
-  width: 100%;
-  height: 8vw;
+html .filter .jumpWindow.plsLogIn {
+  display: none;
+}
+html .filter .jumpWindow.plsLogIn.display {
+  display: block;
+}
+html .filter .jumpWindow.plsLogIn .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+html .filter .jumpWindow.plsLogIn .content p {
+  color: #ffffff;
+  text-align: center;
+  margin: 0vh auto 5vh;
+}
+html .filter .jumpWindow.plsLogIn .content .closeWindow {
+  background: #dd2830;
+  border-radius: 50px;
+  border: none;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4705,26 +4735,11 @@ html .filter .jumpWindow .jwTitle {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: #b8151b;
-  color: #ffffff;
-  padding: 20px;
-  position: relative;
-}
-html .filter .jumpWindow .jwTitle p {
-  white-space: nowrap;
-  font-size: 1rem;
-  font-weight: bold;
-}
-html .filter .jumpWindow .jwTitle i {
-  color: #ffffff;
-  font-size: 1.275rem;
-  position: absolute;
-  right: 20px;
-}
-html .filter .jumpWindow .content {
-  width: 100%;
+  padding: 2vw 3vw;
+  width: 60%;
   height: auto;
-  padding: 0 10px;
+  background: #414141;
+  margin: 0 auto 3vw;
 }
 html .filter .jumpWindow.cancelBet {
   display: none;
@@ -4819,6 +4834,40 @@ html .filter .jumpWindow.cancelBet .content .closeWindow {
   height: auto;
   background: #414141;
   margin: 0 auto 3vw;
+}
+html .filter .jumpWindow .jwTitle {
+  width: 100%;
+  height: 8vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #b8151b;
+  color: #ffffff;
+  padding: 20px;
+  position: relative;
+}
+html .filter .jumpWindow .jwTitle p {
+  white-space: nowrap;
+  font-size: 1rem;
+  font-weight: bold;
+}
+html .filter .jumpWindow .jwTitle i {
+  color: #ffffff;
+  font-size: 1.275rem;
+  position: absolute;
+  right: 20px;
+}
+html .filter .jumpWindow .content {
+  width: 100%;
+  height: auto;
+  min-height: 30vh;
+  padding: 0 10px;
 }
 html .messagePage .mainArea .contentBox {
   width: 100%;

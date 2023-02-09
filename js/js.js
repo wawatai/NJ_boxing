@@ -346,6 +346,7 @@ $(function(){
         .removeClass("display");
     })
 })
+
 //jumpWindow 
 $(function(){
     $(".filter .jumpWindow .jwTitle .closeIC").click(function(){
@@ -375,6 +376,21 @@ $(function(){
         .removeClass("display");
     })
 
+    //請先登入
+    var child = $("main:not(.inMain)").children();
+    $("main:not(.inMain)").click().click(function(child){
+        $(".filter")
+        .addClass("display")
+        .find(".jumpWindow.plsLogIn")
+        .addClass("display");
+    })
+    $("footer.unlog .mobileFooter:not(:first-child)").click().click(function(child){
+        $(".filter")
+        .addClass("display")
+        .find(".jumpWindow.plsLogIn")
+        .addClass("display");
+    })
+
     //撤銷投注
     $(".cancleBtn").click(function(){
         $(".filter")
@@ -382,4 +398,5 @@ $(function(){
         .find(".jumpWindow.cancelBet")
         .addClass("display");
     })
+
 })
